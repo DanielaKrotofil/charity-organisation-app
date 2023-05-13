@@ -1,0 +1,26 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1683985042382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683985084909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+The aim of the project is to create a place where everyone will be able to give away unnecessary things to trusted institutions.\r\n+\r\n+The project will be a website with a simple form that will make it easier for users to return items.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683985135480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n+The project includes: HTML, SASS, REACT.JS\r\n+\r\n The aim of the project is to create a place where everyone will be able to give away unnecessary things to trusted institutions.\r\n \r\n The project will be a website with a simple form that will make it easier for users to return items.\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1683985042382,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}
