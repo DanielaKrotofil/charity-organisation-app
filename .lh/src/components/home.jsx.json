@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 22,
+            "activePatchIndex": 29,
             "patches": [
                 {
                     "date": 1683986341922,
@@ -96,6 +96,34 @@
                 {
                     "date": 1683993094081,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n     Home\r\n-    <HomeHeader/>\r\n+    <HomeHeader className='container'/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683994853192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import HomeHeader from './HomeHeader';\r\n+import * as Scroll from 'react-scroll';\r\n+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n     Home\r\n"
+                },
+                {
+                    "date": 1683996194115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n     Home\r\n-    <HomeHeader className='container'/>\r\n+    <HomeHeader className='container homeheader'/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683996393498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n     Home\r\n-    <HomeHeader className='container homeheader'/>\r\n+    <HomeHeader className='container'/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683996451173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n     Home\r\n-    <HomeHeader className='container'/>\r\n+    <HomeHeader className='container homeheader'/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683996607418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n-    Home\r\n     <HomeHeader className='container homeheader'/>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1683996632832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n-    <HomeHeader className='container homeheader'/>\r\n+    <HomeHeader className='container home__homeheader'/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683996813084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n-    <HomeHeader className='container home__homeheader'/>\r\n+    <HomeHeader className='container'/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683986341922,

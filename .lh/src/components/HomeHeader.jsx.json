@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 16,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1683988520382,
@@ -72,6 +72,82 @@
                 {
                     "date": 1683993115233,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n-    \r\n     </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683995672588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,11 @@\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n+    <div>\r\n+        x\r\n+    </div>\r\n     </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683995732323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n-import homeImage from '../assets/Home-Hero-Image.jpg'\r\n+import homeImage from '../assets/Home-Hero-Image.jpg';\r\n+import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n     <div>\r\n-        x\r\n+        <img src={decorationline} alt=\"line\"/>\r\n     </div>\r\n     </>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1683996003882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n     <div>\r\n+        <h2></h2>\r\n         <img src={decorationline} alt=\"line\"/>\r\n     </div>\r\n     </>)\r\n }\r\n"
+                },
+                {
+                    "date": 1683996018440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n     <div>\r\n-        <h2></h2>\r\n+        <h2>Zacznij pomagać!</h2>\r\n         <img src={decorationline} alt=\"line\"/>\r\n     </div>\r\n     </>)\r\n }\r\n"
+                },
+                {
+                    "date": 1683996069210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n     <div>\r\n         <h2>Zacznij pomagać!</h2>\r\n+        <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n         <img src={decorationline} alt=\"line\"/>\r\n     </div>\r\n     </>)\r\n }\r\n"
+                },
+                {
+                    "date": 1683996120180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,11 @@\n     <div>\r\n         <h2>Zacznij pomagać!</h2>\r\n         <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n         <img src={decorationline} alt=\"line\"/>\r\n+        <div>\r\n+            <button></button>\r\n+        </div>\r\n     </div>\r\n     </>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1683996134658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n         <h2>Zacznij pomagać!</h2>\r\n         <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n         <img src={decorationline} alt=\"line\"/>\r\n         <div>\r\n+            <button>ODDAJ RZECZY</button>\r\n             <button></button>\r\n         </div>\r\n     </div>\r\n     </>)\r\n"
+                },
+                {
+                    "date": 1683996144148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n         <img src={decorationline} alt=\"line\"/>\r\n         <div>\r\n             <button>ODDAJ RZECZY</button>\r\n-            <button></button>\r\n+            <button>ZORGANIZUJ ZBIÓRKĘ</button>\r\n         </div>\r\n     </div>\r\n     </>)\r\n }\r\n"
+                },
+                {
+                    "date": 1683996241970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n-    <img src={homeImage} className='home__image'></img>\r\n+    <img src={homeImage} className='homeheader__image'></img>\r\n     <div>\r\n         <h2>Zacznij pomagać!</h2>\r\n         <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n         <img src={decorationline} alt=\"line\"/>\r\n"
+                },
+                {
+                    "date": 1683996287653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,12 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n-    <img src={homeImage} className='homeheader__image'></img>\r\n     <div>\r\n+        <img src={homeImage} className='homeheader__image'></img>\r\n+    </div>\r\n+    <div>\r\n         <h2>Zacznij pomagać!</h2>\r\n         <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n         <img src={decorationline} alt=\"line\"/>\r\n         <div>\r\n"
+                },
+                {
+                    "date": 1683996403656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import homeImage from '../assets/Home-Hero-Image.jpg';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeHeader = () => {\r\n-    return (<>\r\n+    return (<section className='homeheader'>\r\n     <div>\r\n         <img src={homeImage} className='homeheader__image'></img>\r\n     </div>\r\n     <div>\r\n@@ -14,8 +14,8 @@\n             <button>ODDAJ RZECZY</button>\r\n             <button>ZORGANIZUJ ZBIÓRKĘ</button>\r\n         </div>\r\n     </div>\r\n-    </>)\r\n+    </section>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683996425229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,22 @@\n import homeImage from '../assets/Home-Hero-Image.jpg';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeHeader = () => {\r\n-    return (<section className='homeheader'>\r\n-    <div>\r\n-        <img src={homeImage} className='homeheader__image'></img>\r\n-    </div>\r\n-    <div>\r\n-        <h2>Zacznij pomagać!</h2>\r\n-        <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n-        <img src={decorationline} alt=\"line\"/>\r\n+    return (\r\n+    <section className='homeheader'>\r\n         <div>\r\n-            <button>ODDAJ RZECZY</button>\r\n-            <button>ZORGANIZUJ ZBIÓRKĘ</button>\r\n+            <img src={homeImage} className='homeheader__image'></img>\r\n         </div>\r\n-    </div>\r\n+        <div>\r\n+            <h2>Zacznij pomagać!</h2>\r\n+            <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n+            <img src={decorationline} alt=\"line\"/>\r\n+            <div>\r\n+                <button>ODDAJ RZECZY</button>\r\n+                <button>ZORGANIZUJ ZBIÓRKĘ</button>\r\n+            </div>\r\n+        </div>\r\n     </section>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683996445562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeHeader = () => {\r\n     return (\r\n-    <section className='homeheader'>\r\n+    <>\r\n         <div>\r\n             <img src={homeImage} className='homeheader__image'></img>\r\n         </div>\r\n         <div>\r\n@@ -15,8 +15,8 @@\n                 <button>ODDAJ RZECZY</button>\r\n                 <button>ZORGANIZUJ ZBIÓRKĘ</button>\r\n             </div>\r\n         </div>\r\n-    </section>)\r\n+    </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683996675461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const HomeHeader = () => {\r\n     return (\r\n     <>\r\n         <div>\r\n-            <img src={homeImage} className='homeheader__image'></img>\r\n+            <img src={homeImage} className='home__homeheader__image'></img>\r\n         </div>\r\n         <div>\r\n             <h2>Zacznij pomagać!</h2>\r\n             <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n"
+                },
+                {
+                    "date": 1683996774798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeHeader = () => {\r\n     return (\r\n-    <>\r\n+    <section>\r\n         <div>\r\n             <img src={homeImage} className='home__homeheader__image'></img>\r\n         </div>\r\n         <div>\r\n@@ -15,8 +15,8 @@\n                 <button>ODDAJ RZECZY</button>\r\n                 <button>ZORGANIZUJ ZBIÓRKĘ</button>\r\n             </div>\r\n         </div>\r\n-    </>)\r\n+    </section>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683996818464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeHeader = () => {\r\n     return (\r\n-    <section>\r\n+    <section className='home__homeheader'>\r\n         <div>\r\n             <img src={homeImage} className='home__homeheader__image'></img>\r\n         </div>\r\n         <div>\r\n"
+                },
+                {
+                    "date": 1683996855312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <section className='home__homeheader'>\r\n         <div>\r\n             <img src={homeImage} className='home__homeheader__image'></img>\r\n         </div>\r\n-        <div>\r\n+        <div className='home__homeheader__image'>\r\n             <h2>Zacznij pomagać!</h2>\r\n             <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n             <img src={decorationline} alt=\"line\"/>\r\n             <div>\r\n"
+                },
+                {
+                    "date": 1683996869464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <section className='home__homeheader'>\r\n         <div>\r\n             <img src={homeImage} className='home__homeheader__image'></img>\r\n         </div>\r\n-        <div className='home__homeheader__image'>\r\n+        <div className='home__homeheader__text'>\r\n             <h2>Zacznij pomagać!</h2>\r\n             <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>\r\n             <img src={decorationline} alt=\"line\"/>\r\n             <div>\r\n"
+                },
+                {
+                    "date": 1683996999338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeHeader = () => {\r\n     return (\r\n-    <section className='home__homeheader'>\r\n+    <section className='home__homeheader container'>\r\n         <div>\r\n             <img src={homeImage} className='home__homeheader__image'></img>\r\n         </div>\r\n         <div className='home__homeheader__text'>\r\n"
                 }
             ],
             "date": 1683988520382,

@@ -1,8 +1,22 @@
+@import '../settings/variables';
 .home {
     display: flex;
     flex-direction: column;
 
-    &__image {
-        max-width: 885px;
+    &__homeheader {
+        display: flex;
+        align-items: baseline;
+
+        &__image {
+            max-width: 885px;
+        }
+
+        &__text {
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 10%;
+        }
     }
 }
