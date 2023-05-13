@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/contact.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1683987795344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683988348368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n const Contact = () => {\r\n-    return <>Contact</>\r\n+    return (<>Contact</>)\r\n }\r\n export default Contact\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1683987795344,
+            "name": "Commit-0",
+            "content": "const Contact = () => {\r\n    return <>Contact</>\r\n}\r\nexport default Contact"
+        }
+    ]
+}

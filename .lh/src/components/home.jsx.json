@@ -1,0 +1,106 @@
+{
+    "sourceFile": "src/components/home.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1683986341922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683986374087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n const Home = () => {\r\n     return <>Home</>\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683988352075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n const Home = () => {\r\n-    return <>Home</>\r\n+    return (<>Home</>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683988617151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n+\r\n+\r\n const Home = () => {\r\n-    return (<>Home</>)\r\n+    return (<>\r\n+    Home\r\n+    </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683990215970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n+import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n-\r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n+    <img src={homeImage}></img>\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991144952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n+import { HomeHeader } from './HomeHeader'\r\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n"
+                },
+                {
+                    "date": 1683991157352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n-import homeImage from '../assets/Home-Hero-Image.jpg'\r\n+\r\n import { HomeHeader } from './HomeHeader'\r\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n-    <img src={homeImage}></img>\r\n+    \r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991192567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,10 @@\n-\r\n import { HomeHeader } from './HomeHeader'\r\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n-    \r\n+    <HomeHeader/>\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991298093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n-    <HomeHeader/>\r\n+\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991449892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n-\r\n+    <HomeHeader/>\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991506754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n-    <HomeHeader/>\r\n+\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991517905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n-\r\n+    <HomeHeader/>\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991523677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n-    <HomeHeader/>\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991529314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n+    <H\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991535600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n+import homeImage from '../assets/Home-Hero-Image.jpg'\r\n import { HomeHeader } from './HomeHeader'\r\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n-    <H\r\n+    <img src={homeImage}></img>\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991541576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n-import { HomeHeader } from './HomeHeader'\r\n+import\r\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n"
+                },
+                {
+                    "date": 1683991568658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n-import homeImage from '../assets/Home-Hero-Image.jpg'\r\n-import\r\n+import homeImage from '../assets/Home-Hero-Image.jpg';\r\n+import HomeHeader from './HomeHeader';\r\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n     <img src={homeImage}></img>\r\n+    <HomeHeader/>\r\n     </>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991585439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,10 @@\n-import homeImage from '../assets/Home-Hero-Image.jpg';\r\n+\r\n import HomeHeader from './HomeHeader';\r\n \r\n const Home = () => {\r\n     return (<>\r\n     Home\r\n-    <img src={homeImage}></img>\r\n     <HomeHeader/>\r\n     </>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1683991595091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-\r\n import HomeHeader from './HomeHeader';\r\n \r\n const Home = () => {\r\n     return (<>\r\n"
+                },
+                {
+                    "date": 1683991815458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import HomeHeader from './HomeHeader';\r\n \r\n const Home = () => {\r\n-    return (<>\r\n+    return (<section className='home'>\r\n     Home\r\n     <HomeHeader/>\r\n-    </>)\r\n+    </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683993065917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import HomeHeader from './HomeHeader';\r\n \r\n const Home = () => {\r\n-    return (<section className='home'>\r\n+    return (<section className='home container'>\r\n     Home\r\n     <HomeHeader/>\r\n     </section>)\r\n }\r\n"
+                },
+                {
+                    "date": 1683993072068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import HomeHeader from './HomeHeader';\r\n \r\n const Home = () => {\r\n-    return (<section className='home container'>\r\n+    return (<section className='home'>\r\n     Home\r\n     <HomeHeader/>\r\n     </section>)\r\n }\r\n"
+                },
+                {
+                    "date": 1683993094081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n     Home\r\n-    <HomeHeader/>\r\n+    <HomeHeader className='container'/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1683986341922,
+            "name": "Commit-0",
+            "content": "const Home = () => {\r\n    return <>Home</>\r\n}"
+        }
+    ]
+}

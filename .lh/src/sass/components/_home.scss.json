@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/sass/components/_home.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1683991843387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683991856341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n .home {\r\n-    margin-right: 10px;\r\n+    margin-right: 142px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683992007087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,7 @@\n .home {\r\n     margin-right: 142px;\r\n+\r\n+    &__image {\r\n+        \r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683992017471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .home {\r\n     margin-right: 142px;\r\n \r\n     &__image {\r\n-        \r\n+        max-width: 500px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683992028835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .home {\r\n     margin-right: 142px;\r\n \r\n     &__image {\r\n-        max-width: 500px;\r\n+        max-width: 885px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683992825366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n .home {\r\n     margin-right: 142px;\r\n+    \r\n \r\n     &__image {\r\n         max-width: 885px;\r\n     }\r\n"
+                },
+                {
+                    "date": 1683992976513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .home {\r\n     margin-right: 142px;\r\n-    \r\n+    background-color: $color-yellow;\r\n \r\n     &__image {\r\n         max-width: 885px;\r\n     }\r\n"
+                },
+                {
+                    "date": 1683992998352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n .home {\r\n-    margin-right: 142px;\r\n     background-color: $color-yellow;\r\n \r\n     &__image {\r\n         max-width: 885px;\r\n"
+                },
+                {
+                    "date": 1683993136569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n .home {\r\n-    background-color: $color-yellow;\r\n \r\n     &__image {\r\n         max-width: 885px;\r\n     }\r\n"
+                },
+                {
+                    "date": 1683993155797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n .home {\r\n+    display: flex;\r\n+    flex-direction: column;\r\n \r\n     &__image {\r\n         max-width: 885px;\r\n     }\r\n"
+                }
+            ],
+            "date": 1683991843387,
+            "name": "Commit-0",
+            "content": ".home {\r\n    margin-right: 10px;\r\n}"
+        }
+    ]
+}

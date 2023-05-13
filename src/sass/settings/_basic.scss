@@ -1,0 +1,14 @@
+@import './variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-basic;
+    background-color: $color-base;
+}
+
+.container {
+    margin-right: 142px;
+}

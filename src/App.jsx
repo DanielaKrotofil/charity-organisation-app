@@ -1,25 +1,63 @@
-import { useState } from 'react'
-import './App.css'
+import './sass/main.scss'
+import React from 'react';
+import {
+  HashRouter,
+  Route,
+  Routes,
+  Link,
+  NavLink,
+  Outlet
+} from 'react-router-dom';
+import Home from './components/home';
+import { LoginForm } from './components/login';
+import { RegisterForm } from './components/register';
 
-function App() {
-  const [count, setCount] = useState(0)
+const Layout = () => {
 
+  const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 900 } : undefined
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <>
+          <nav>
+              <ul>
+                  <li><NavLink style={getStyle()} to='/'>Strona głowna</NavLink></li>
+                  <li><NavLink style={getStyle()} to='logowanie'>Login</NavLink></li>
+                  <li><NavLink style={getStyle()} to='rejestracja'>Register</NavLink></li>
+              </ul>
+          </nav>
+          <Outlet/>
+      </>
+  )
+}
+
+const App = () => {
+  return (
+      <HashRouter>
+          <Routes>
+              <Route element={<Layout/>}>
+                  <Route path='/' element={<Home/>}/>
+                  <Route path='logowanie' element={<LoginForm />} />
+                  <Route path='rejestracja' element={<RegisterForm />} />
+              </Route>
+          </Routes>
+      </HashRouter>
   )
 }
 
 export default App
+/**
+ Home (/)
+Home – Organizations (/)
+Home – Local (/)
+Home – Logged In (/)
+Form - Step 1 (/oddaj-rzeczy)
+Form - Step 2 (/oddaj-rzeczy)
+Form - Step 2 - Opened Select (/oddaj-rzeczy)
+Form - Step 3 (/oddaj-rzeczy)
+Form - Step 3 - Opened Select (/oddaj-rzeczy)
+Form - Step 4 (/oddaj-rzeczy)
+Form - Summary (/oddaj-rzeczy)
+Form - Thank You (/oddaj-rzeczy)
+Login (/logowanie)
+Register (/rejestracja)
+Logoutn (/wylogowano)
+ */

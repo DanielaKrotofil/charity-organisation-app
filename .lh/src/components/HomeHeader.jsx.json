@@ -1,0 +1,82 @@
+{
+    "sourceFile": "src/components/HomeHeader.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1683988520382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683991152145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n+import homeImage from '../assets/Home-Hero-Image.jpg'\r\n export const HomeHeader = () => {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991177285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,8 @@\n+import { render } from 'react-dom'\r\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n\\ No newline at end of file\n-export const HomeHeader = () => {}\n+\r\n+export const HomeHeader = () => {\r\n+    render (<>\r\n+    <img src={homeImage}></img>\r\n+    </>)\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991251933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import { render } from 'react-dom'\r\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n-export const HomeHeader = () => {\r\n+const HomeHeader = () => {\r\n     render (<>\r\n     <img src={homeImage}></img>\r\n     </>)\r\n\\ No newline at end of file\n-}\n+}\r\n+\r\n+export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991400412,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n const HomeHeader = () => {\r\n     render (<>\r\n-    <img src={homeImage}></img>\r\n+    \r\n     </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991406326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n const HomeHeader = () => {\r\n     render (<>\r\n-    \r\n+    <img src={homeImage}></img>\r\n     </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991426581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { render } from 'react-dom'\r\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n const HomeHeader = () => {\r\n-    render (<>\r\n+    return (<>\r\n     <img src={homeImage}></img>\r\n     </>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1683991441498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import { render } from 'react-dom'\r\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n"
+                },
+                {
+                    "date": 1683991490306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n-    <img src={homeImage}></img>\r\n+    \r\n     </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991514858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n-    \r\n+    <img src={homeImage}></img>\r\n     </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683991976387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n-    <img src={homeImage}></img>\r\n+    <img src={homeImage} className='home__image'></img>\r\n     </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683992611620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n+import * as Scroll from 'react-scroll';\r\n+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n"
+                },
+                {
+                    "date": 1683992661665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,15 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n import * as Scroll from 'react-scroll';\r\n import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n+let Link      = Scroll.Link;\r\n+let Button    = Scroll.Button;\r\n+let Element   = Scroll.Element;\r\n+let Events    = Scroll.Events;\r\n+let scroll    = Scroll.animateScroll;\r\n+let scrollSpy = Scroll.scrollSpy;\r\n+\r\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n     </>)\r\n"
+                },
+                {
+                    "date": 1683992676736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,6 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n-import * as Scroll from 'react-scroll';\r\n-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n-let Link      = Scroll.Link;\r\n-let Button    = Scroll.Button;\r\n-let Element   = Scroll.Element;\r\n-let Events    = Scroll.Events;\r\n-let scroll    = Scroll.animateScroll;\r\n-let scrollSpy = Scroll.scrollSpy;\r\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n"
+                },
+                {
+                    "date": 1683992758232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n import homeImage from '../assets/Home-Hero-Image.jpg'\r\n \r\n-\r\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n     </>)\r\n"
+                },
+                {
+                    "date": 1683992793127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n+    \r\n     </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683993115233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \r\n const HomeHeader = () => {\r\n     return (<>\r\n     <img src={homeImage} className='home__image'></img>\r\n-    \r\n     </>)\r\n }\r\n \r\n export default HomeHeader\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1683988520382,
+            "name": "Commit-0",
+            "content": "export const HomeHeader = () => {}"
+        }
+    ]
+}

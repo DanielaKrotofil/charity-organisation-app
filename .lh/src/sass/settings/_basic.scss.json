@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/sass/settings/_basic.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1683989555016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1683989585410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,5 @@\n @import './variables';\r\n+\r\n+body {\r\n+    font-family: $font-family-basic;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683989615253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n @import './variables';\r\n \r\n body {\r\n     font-family: $font-family-basic;\r\n+    background-color: $color-base;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683989658716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,10 @@\n @import './variables';\r\n \r\n+* {\r\n+    box-sizing: border-box;\r\n+}\r\n+\r\n body {\r\n     font-family: $font-family-basic;\r\n     background-color: $color-base;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1683993014629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,9 @@\n \r\n body {\r\n     font-family: $font-family-basic;\r\n     background-color: $color-base;\r\n+}\r\n+\r\n+.container {\r\n+    margin-right: 142px;\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1683989555016,
+            "name": "Commit-0",
+            "content": "@import './variables';\r\n"
+        }
+    ]
+}
