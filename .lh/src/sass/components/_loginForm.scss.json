@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/sass/components/_loginForm.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1684417591992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684417603809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n .LoginForm {\r\n-    display: block;\r\n+    display: inline;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684417628827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,6 @@\n .LoginForm {\r\n-    display: inline;\r\n+    display: flex;\r\n+    align-items: center;\r\n+    justify-content: center;\r\n+    gap: 2em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684417666856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n .LoginForm {\r\n     display: flex;\r\n+    flex-direction: column;\r\n     align-items: center;\r\n     justify-content: center;\r\n     gap: 2em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684417831496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n     flex-direction: column;\r\n     align-items: center;\r\n     justify-content: center;\r\n     gap: 2em;\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684417841715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,6 @@\n     flex-direction: column;\r\n     align-items: center;\r\n     justify-content: center;\r\n     gap: 2em;\r\n-    \r\n+    text-decoration: none;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684417856272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,8 @@\n     flex-direction: column;\r\n     align-items: center;\r\n     justify-content: center;\r\n     gap: 2em;\r\n-    text-decoration: none;\r\n+    a {\r\n+        text-decoration: none;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1684417591992,
+            "name": "Commit-0",
+            "content": ".LoginForm {\r\n    display: block;\r\n}"
+        }
+    ]
+}
