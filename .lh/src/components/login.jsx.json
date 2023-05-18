@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 17,
+            "activePatchIndex": 22,
             "patches": [
                 {
                     "date": 1683990596457,
@@ -76,6 +76,26 @@
                 {
                     "date": 1684422994457,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,7 @@\n     <h1>LOGOWANIE</h1>\r\n     <h2>Strona w budowie</h2>\r\n     <div className='home__homeheader__buttons'>\r\n         <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n-        <Link to=\"/rejestracja\" className='button'>Rejestracja</Link>\r\n     </div>\r\n     </section>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684428138028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Link } from 'react-router-dom';\r\n \r\n export const LoginForm = () => {\r\n     return (<section className='LoginForm'>\r\n-    <h1>LOGOWANIE</h1>\r\n+    <h1>Zaloguj się</h1>\r\n     <h2>Strona w budowie</h2>\r\n     <div className='home__homeheader__buttons'>\r\n         <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684428146234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import { Link } from 'react-router-dom';\r\n+import decorationline from '../assets/Decoration.svg';\r\n \r\n export const LoginForm = () => {\r\n     return (<section className='LoginForm'>\r\n     <h1>Zaloguj się</h1>\r\n"
+                },
+                {
+                    "date": 1684428157626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \r\n export const LoginForm = () => {\r\n     return (<section className='LoginForm'>\r\n     <h1>Zaloguj się</h1>\r\n+    <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <h2>Strona w budowie</h2>\r\n     <div className='home__homeheader__buttons'>\r\n         <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684428251364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const LoginForm = () => {\r\n     return (<section className='LoginForm'>\r\n-    <h1>Zaloguj się</h1>\r\n+    <h3>Zaloguj się</h3>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <h2>Strona w budowie</h2>\r\n     <div className='home__homeheader__buttons'>\r\n         <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n"
+                },
+                {
+                    "date": 1684428265063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export const LoginForm = () => {\r\n     return (<section className='LoginForm'>\r\n     <h3>Zaloguj się</h3>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <h2>Strona w budowie</h2>\r\n+    <h6>Strona w budowie</h6>\r\n     <div className='home__homeheader__buttons'>\r\n         <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </div>\r\n     </section>)\r\n"
                 }
             ],
             "date": 1683990596457,

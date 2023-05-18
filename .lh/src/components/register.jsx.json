@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1683990639048,
@@ -36,6 +36,18 @@
                 {
                     "date": 1684417815984,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,8 @@\n     return (<section className='LoginForm'>\r\n     <h1>REJESTRACJA</h1>\r\n     <h2>Strona w budowie</h2>\r\n     <div>\r\n-        <Link to=\"/\" className='button'>WRACAM na główną stronę</Link>\r\n+        <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </div>\r\n     </section>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684428380518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Link } from 'react-router-dom';\r\n \r\n export const RegisterForm = () => {\r\n     return (<section className='LoginForm'>\r\n-    <h1>REJESTRACJA</h1>\r\n+    <h3>Zarejestruj się</h3>\r\n     <h2>Strona w budowie</h2>\r\n     <div>\r\n         <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684428396042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import { Link } from 'react-router-dom';\r\n+import decorationline from '../assets/Decoration.svg';\r\n \r\n export const RegisterForm = () => {\r\n     return (<section className='LoginForm'>\r\n     <h3>Zarejestruj się</h3>\r\n"
+                },
+                {
+                    "date": 1684428411658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n \r\n export const RegisterForm = () => {\r\n     return (<section className='LoginForm'>\r\n     <h3>Zarejestruj się</h3>\r\n-    <h2>Strona w budowie</h2>\r\n+    <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n+    <h6>Strona w budowie</h6>\r\n     <div>\r\n         <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </div>\r\n     </section>)\r\n"
                 }
             ],
             "date": 1683990639048,
