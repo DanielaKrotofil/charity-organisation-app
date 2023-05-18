@@ -1,0 +1,154 @@
+{
+    "sourceFile": "src/sass/components/_homeabout.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 34,
+            "patches": [
+                {
+                    "date": 1684415399548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684415486059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n-.HomeThreeColumns {\r\n-    display: flex;\r\n+.about {\r\n+    .HomeThreeColumns {\r\n+        display: flex;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684415516773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,3 @@\n-.about {\r\n-    .HomeThreeColumns {\r\n-        display: flex;\r\n-    }\r\n-}\n\\ No newline at end of file\n+.HomeThreeColumns {\r\n+    display: flex;\r\n+}\r\n"
+                },
+                {
+                    "date": 1684415602764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n+\r\n }\r\n"
+                },
+                {
+                    "date": 1684415634419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n \r\n+    h6 {\r\n+        text-transform: uppercase;\r\n+    }\r\n }\r\n"
+                },
+                {
+                    "date": 1684415650254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n+    background-color: $color-yellow;\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684415673705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\r\n .HomeThreeColumns {\r\n     display: flex;\r\n     background-color: $color-yellow;\r\n \r\n"
+                },
+                {
+                    "date": 1684415680853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+@import '../settings/variables';\r\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     background-color: $color-yellow;\r\n"
+                },
+                {
+                    "date": 1684415951952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n @import '../settings/variables';\r\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n+    justify-content: space-between;\r\n     background-color: $color-yellow;\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684416036458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n+    line-height: 1.1em;\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684416042292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n-    line-height: 1.1em;\r\n+    line-height: 1.5em;\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684416059401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n     line-height: 1.5em;\r\n+    text-align: center;\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684416075331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,12 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n     line-height: 1.5em;\r\n-    text-align: center;\r\n+    \r\n+    &__box {\r\n+        text-align: center;\r\n+    }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684416103801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     line-height: 1.5em;\r\n     \r\n     &__box {\r\n         text-align: center;\r\n+        color: red;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684416120410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     line-height: 1.5em;\r\n     \r\n     &__box {\r\n         text-align: center;\r\n-        color: red;\r\n+        padding: 1.5em;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684416127723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     line-height: 1.5em;\r\n     \r\n     &__box {\r\n         text-align: center;\r\n-        padding: 1.5em;\r\n+        padding: 2em;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684416143873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n     line-height: 1.5em;\r\n+    padding: 1.5em;\r\n     \r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n"
+                },
+                {
+                    "date": 1684416158082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n     line-height: 1.5em;\r\n     padding: 1.5em;\r\n-    \r\n+\r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684416886092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,11 @@\n \r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n+        display: flex;\r\n+        flex-direction: column;\r\n+        gap: 1em;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684416909339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         text-align: center;\r\n         padding: 2em;\r\n         display: flex;\r\n         flex-direction: column;\r\n-        gap: 1em;\r\n+        gap: 1.3em;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684416926468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,6 +16,7 @@\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n+        margin-top: 1em;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684416962337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n     line-height: 1.5em;\r\n-    padding: 1.5em;\r\n+    padding: 1.65em;\r\n \r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n"
+                },
+                {
+                    "date": 1684416972256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n     line-height: 1.5em;\r\n-    padding: 1.65em;\r\n+    padding: 1.7em;\r\n \r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n"
+                },
+                {
+                    "date": 1684416998882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         text-align: center;\r\n         padding: 2em;\r\n         display: flex;\r\n         flex-direction: column;\r\n-        gap: 1.3em;\r\n+        gap: 1.35em;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684417010178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n     line-height: 1.5em;\r\n-    padding: 1.7em;\r\n+    padding: 1.7em 2em;\r\n \r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n"
+                },
+                {
+                    "date": 1684417015592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     background-color: $color-yellow;\r\n     line-height: 1.5em;\r\n-    padding: 1.7em 2em;\r\n+    padding: 1.7em 2.5em;\r\n \r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n"
+                },
+                {
+                    "date": 1684417025471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         text-align: center;\r\n         padding: 2em;\r\n         display: flex;\r\n         flex-direction: column;\r\n-        gap: 1.35em;\r\n+        gap: 1.5em;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684417047098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n-    background-color: $color-yellow;\r\n     line-height: 1.5em;\r\n     padding: 1.7em 2.5em;\r\n \r\n     &__box {\r\n"
+                },
+                {
+                    "date": 1684417146509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n     padding: 1.7em 2.5em;\r\n+    background-color: $color-yellow;\r\n \r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n"
+                },
+                {
+                    "date": 1684417202460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n-    padding: 1.7em 2.5em;\r\n+    padding: 1.7em 3em;\r\n     background-color: $color-yellow;\r\n \r\n     &__box {\r\n         text-align: center;\r\n"
+                },
+                {
+                    "date": 1684417214342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n-    padding: 1.7em 3em;\r\n+    padding: 1.7em 4em;\r\n     background-color: $color-yellow;\r\n \r\n     &__box {\r\n         text-align: center;\r\n"
+                },
+                {
+                    "date": 1684417256402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n     padding: 1.7em 4em;\r\n     background-color: $color-yellow;\r\n+    max-height: 35%;\r\n \r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n"
+                },
+                {
+                    "date": 1684417268806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n     padding: 1.7em 4em;\r\n     background-color: $color-yellow;\r\n-    max-height: 35%;\r\n+    max-height: 40%;\r\n \r\n     &__box {\r\n         text-align: center;\r\n         padding: 2em;\r\n"
+                },
+                {
+                    "date": 1684417283117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n-    padding: 1.7em 4em;\r\n+    padding: 1.5em 4em;\r\n     background-color: $color-yellow;\r\n     max-height: 40%;\r\n \r\n     &__box {\r\n"
+                },
+                {
+                    "date": 1684417292979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n-    padding: 1.5em 4em;\r\n+    padding: 1.2em 4em;\r\n     background-color: $color-yellow;\r\n     max-height: 40%;\r\n \r\n     &__box {\r\n"
+                }
+            ],
+            "date": 1684415399548,
+            "name": "Commit-0",
+            "content": ".HomeThreeColumns {\r\n    display: flex;\r\n}"
+        }
+    ]
+}

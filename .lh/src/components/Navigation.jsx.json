@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 42,
+            "activePatchIndex": 44,
             "patches": [
                 {
                     "date": 1684393043140,
@@ -176,6 +176,14 @@
                 {
                     "date": 1684403979948,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,15 +38,13 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <div className=\"\">\r\n-        <section id=\"start\"><HomeHeader/></section>\r\n-        <section id=\"about\"><HomeAbout/></section>\r\n-        <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-        <section id=\"fundations\"><HomeFundations/></section>\r\n-        <section id=\"contact\"><Contact/></section>\r\n-      </div>\r\n+      <section id=\"start\"><HomeHeader/></section>\r\n+      <section id=\"about\"><HomeAbout/></section>\r\n+      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n+      <section id=\"fundations\"><HomeFundations/></section>\r\n+      <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684417157955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n import HomeFundations from \"./HomeFundations\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n-    <div className=\"navigation container\">\r\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1684417178335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n import HomeFundations from \"./HomeFundations\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n-      <header className=\"nav\">\r\n+    <div className=\"navigation\">\r\n+      <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n               <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n@@ -37,9 +38,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <section id=\"start\"><HomeHeader/></section>\r\n+      <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n       <section id=\"about\"><HomeAbout/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n"
                 }
             ],
             "date": 1684393043140,

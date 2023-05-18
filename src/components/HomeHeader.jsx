@@ -1,4 +1,3 @@
-import { LoginForm } from './login';
 import decorationline from '../assets/Decoration.svg';
 import { Link } from 'react-router-dom';
 
@@ -6,8 +5,8 @@ const HomeHeader = () => {
     return (
     <section className='home__homeheader '>
         <div className='home__homeheader__text'>
-            <h2>Zacznij pomagać!</h2>
-            <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
+            <h5>Zacznij pomagać!</h5>
+            <h5>Oddaj niechciane rzeczy w zaufane ręce</h5>
             <img src={decorationline} alt="line"/>
             <div className='home__homeheader__buttons'>
                 <Link to="/logowanie" className='button'>ODDAJ <br/> RZECZY</Link>

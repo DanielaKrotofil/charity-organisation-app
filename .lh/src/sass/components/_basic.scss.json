@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/sass/components/_basic.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1684416194891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684416214656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +0,0 @@\n-h2 {\r\n-    font-size: 1.5rem;\r\n-}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1684416194891,
+            "name": "Commit-0",
+            "content": "h2 {\r\n    font-size: 1.5rem;\r\n}"
+        }
+    ]
+}

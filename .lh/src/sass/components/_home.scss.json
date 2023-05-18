@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 171,
+            "activePatchIndex": 172,
             "patches": [
                 {
                     "date": 1683991843387,
@@ -692,6 +692,10 @@
                 {
                     "date": 1684414333829,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,15 +34,8 @@\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n             font-size: 1.3em;\r\n-            padding:  0.5em 1em;\r\n-        width: 9em;\r\n-        background-color: $color-white;\r\n-        border: 0.038em solid $color-dark-grey;\r\n-        color: $color-dark-grey;\r\n-        font-family: $font-family-basic;\r\n-        font-weight: lighter;\r\n \r\n             a {\r\n                 text-decoration: none;\r\n             }\r\n"
+                },
+                {
+                    "date": 1684416190059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,11 +23,9 @@\n             img {\r\n                 max-width: 10em;\r\n             }\r\n \r\n-            h2 {\r\n-                font-size: 1.5rem;\r\n-            }\r\n+            \r\n         }\r\n \r\n         &__buttons {\r\n             display: flex;\r\n@@ -43,6 +41,12 @@\n     }\r\n }\r\n \r\n .button {\r\n-    \r\n+    padding:  0.5em 1em;\r\n+    width: 9em;\r\n+    background-color: $color-white;\r\n+    border: 0.038em solid $color-dark-grey;\r\n+    color: $color-dark-grey;\r\n+    font-family: $font-family-basic;\r\n+    font-weight: lighter;\r\n }\r\n"
                 }
             ],
             "date": 1683991843387,

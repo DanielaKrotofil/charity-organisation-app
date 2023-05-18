@@ -1,7 +1,7 @@
 import HomeThreeColumns from "./HomeThreeColumns"
 import HomeSimpleSteps from "./HomeSimpleSteps"
 const HomeAbout = () => {
-    return (<>O co chodzi?
+    return (<>
     <HomeThreeColumns/>
     <HomeSimpleSteps/>
     </>)

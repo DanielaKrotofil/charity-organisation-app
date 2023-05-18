@@ -7,8 +7,8 @@ import HomeFundations from "./HomeFundations";
 
 export default function Navigation() {
   return (
-    <div className="navigation container">
-      <header className="nav">
+    <div className="navigation">
+      <header className="nav container">
         <nav className="nav__container__actions">
           <ul>
             <li>
@@ -39,7 +39,7 @@ export default function Navigation() {
           </ul>
         </nav>
       </header>
-      <section id="start"><HomeHeader/></section>
+      <section id="start" className="container"><HomeHeader/></section>
       <section id="about"><HomeAbout/></section>
       <section id="aboutus"><HomeAboutUs/></section>
       <section id="fundations"><HomeFundations/></section>
