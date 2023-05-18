@@ -1,3 +1,4 @@
+
 import './sass/main.scss'
 import React from 'react';
 import {
@@ -17,11 +18,10 @@ const Layout = () => {
   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 900 } : undefined
   return (
       <>
-          <nav>
+          <nav className='mainNav container'>
               <ul>
-                  <li><NavLink style={getStyle()} to='/'>Strona głowna</NavLink></li>
-                  <li><NavLink style={getStyle()} to='logowanie'>Login</NavLink></li>
-                  <li><NavLink style={getStyle()} to='rejestracja'>Register</NavLink></li>
+                  <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>
+                  <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>
               </ul>
           </nav>
           <Outlet/>

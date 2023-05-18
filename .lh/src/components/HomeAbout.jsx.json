@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/HomeAbout.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1684393828031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684394011030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n const HomeAbout = () => {\r\n-    return (<>Home About</>)\r\n+    return (<>Home About cokolwiek</>)\r\n }\r\n export default HomeAbout\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684398892921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n const HomeAbout = () => {\r\n-    return (<>Home About cokolwiek</>)\r\n+    return (<>Hek</>)\r\n }\r\n export default HomeAbout\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684399015556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,9 @@\n+import HomeThreeColumns from \"./HomeThreeColumns\"\r\n+import HomeSimpleSteps from \"./HomeSimpleSteps\"\r\n const HomeAbout = () => {\r\n-    return (<>Hek</>)\r\n+    return (<>O co chodzi?\r\n+    <HomeThreeColumns/>\r\n+    <HomeSimpleSteps/>\r\n+    </>)\r\n }\r\n export default HomeAbout\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1684393828031,
+            "name": "Commit-0",
+            "content": "const HomeAbout = () => {\r\n    return (<>Home About</>)\r\n}\r\nexport default HomeAbout"
+        }
+    ]
+}

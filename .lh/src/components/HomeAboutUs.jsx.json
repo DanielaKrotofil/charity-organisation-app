@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/HomeAboutUs.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1684393813791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684398902029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n const HomeAboutUs = () => {\r\n-    return (<>Home About Us</>)\r\n+    return (<>O nas</>)\r\n }\r\n export default HomeAboutUs\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1684393813791,
+            "name": "Commit-0",
+            "content": "const HomeAboutUs = () => {\r\n    return (<>Home About Us</>)\r\n}\r\nexport default HomeAboutUs"
+        }
+    ]
+}

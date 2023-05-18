@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1683988547969,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684398652289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,5 @@\n-export const HomeThreeColumns = () => {}\n\\ No newline at end of file\n+const HomeThreeColumns = () =>{\r\n+    return (<h1>3 kolumny</h1>)\r\n+}\r\n+\r\n+export default HomeThreeColumns\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683988547969,

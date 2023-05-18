@@ -1,0 +1,162 @@
+{
+    "sourceFile": "src/components/Navigation.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 36,
+            "patches": [
+                {
+                    "date": 1684393043140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684393696337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,52 +1,38 @@\n-import React from 'react';\r\n-import { NavLink, useLocation, useHistory } from 'react-router-dom';\r\n-import * as Scroll from 'react-scroll';\r\n+import { Link } from \"react-scroll\";\r\n \r\n export default function Navigation() {\r\n-  const path = useLocation().pathname;\r\n-  const location = path.split('/')[1];\r\n-  const history = useHistory();\r\n-  const scroller = Scroll.scroller;\r\n-\r\n-  const scrollToAnchor = () => {\r\n-    scroller.scrollTo('anchor', {\r\n-      duration: 1500,\r\n-      delay: 100,\r\n-      smooth: true,\r\n-      offset: 50\r\n-    });\r\n-  };\r\n-\r\n-  const goToHomeAndScroll = async () => {\r\n-    await closeMobile();\r\n-    await history.push('/');\r\n-    await scroller.scrollTo('anchor', {\r\n-      duration: 1500,\r\n-      delay: 100,\r\n-      smooth: true,\r\n-      offset: 50\r\n-    });\r\n-  };\r\n-\r\n-  const closeMobile = () => {};\r\n-\r\n   return (\r\n-    <div className=\"container\">\r\n-      <div className=\"navigation\">\r\n-        <NavLink to=\"/home\" activeClassName=\"active\">\r\n-          Home\r\n-        </NavLink>\r\n-        <NavLink to=\"/other\" activeClassName=\"active\">\r\n-          Other Page\r\n-        </NavLink>\r\n-      </div>\r\n-      {location === 'home' ? (\r\n-        <button onClick={scrollToAnchor}>Scroll to anchor</button>\r\n-      ) : (\r\n-        <button onClick={goToHomeAndScroll}>\r\n-          Go to Home and Scroll to anchor\r\n-        </button>\r\n-      )}\r\n+    <div className=\"App\">\r\n+      <header className=\"nav\">\r\n\\ No newline at end of file\n+        <nav className=\"nav__container__actions\">\r\n+          <ul>\r\n+            <li>\r\n+              <Link activeClass=\"active\" smooth spy to=\"about\">\r\n+                ABOUT\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link activeClass=\"active\" smooth spy to=\"projects\">\r\n+                PROJECTS\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link activeClass=\"active\" smooth spy to=\"blog\">\r\n+                BLOG\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link activeClass=\"active\" smooth spy to=\"contact\">\r\n+                CONTACT ME\r\n+              </Link>\r\n+            </li>\r\n+          </ul>\r\n+        </nav>\r\n+      </header>\r\n+      <section id=\"about\">ABOUT</section>\r\n+      <section id=\"projects\">PROJECTS</section>\r\n+      <section id=\"blog\">BLOG</section>\r\n+      <section id=\"contact\">CONTACT ME</section>\r\n     </div>\r\n   );\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1684393769229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import { Link } from \"react-scroll\";\r\n+import HomeHeader from \"./HomeHeader\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"App\">\r\n@@ -34,5 +35,5 @@\n       <section id=\"blog\">BLOG</section>\r\n       <section id=\"contact\">CONTACT ME</section>\r\n     </div>\r\n   );\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1684393848253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,9 @@\n import { Link } from \"react-scroll\";\r\n import HomeHeader from \"./HomeHeader\";\r\n+import HomeAbout from \"./HomeAbout\";\r\n+import HomeAboutUs from \"./HomeAboutUs\";\r\n+import Contact from \"./HomeContactFooter\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"App\">\r\n"
+                },
+                {
+                    "date": 1684393972157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"about\">\r\n-                ABOUT\r\n+                <HomeAbout/>\r\n               </Link>\r\n             </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"projects\">\r\n"
+                },
+                {
+                    "date": 1684394028406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"about\">\r\n-                <HomeAbout/>\r\n+                <HomeAbout/\r\n               </Link>\r\n             </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"projects\">\r\n"
+                },
+                {
+                    "date": 1684394057349,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"about\">\r\n-                <HomeAbout/\r\n+                ABOUT\r\n               </Link>\r\n             </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"projects\">\r\n@@ -32,9 +32,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <section id=\"about\">ABOUT</section>\r\n+      <section id=\"about\"><></section>\r\n       <section id=\"projects\">PROJECTS</section>\r\n       <section id=\"blog\">BLOG</section>\r\n       <section id=\"contact\">CONTACT ME</section>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684394067643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <section id=\"about\"><></section>\r\n+      <section id=\"about\"><HomeAbout/></section>\r\n       <section id=\"projects\">PROJECTS</section>\r\n       <section id=\"blog\">BLOG</section>\r\n       <section id=\"contact\">CONTACT ME</section>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684394095597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,13 @@\n     <div className=\"App\">\r\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n+          <li>\r\n+              <Link activeClass=\"active\" smooth spy to=\"about\">\r\n+                ABOUT\r\n+              </Link>\r\n+            </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"about\">\r\n                 ABOUT\r\n               </Link>\r\n"
+                },
+                {
+                    "date": 1684394110204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n           <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"about\">\r\n-                ABOUT\r\n+                Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"about\">\r\n"
+                },
+                {
+                    "date": 1684394135704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n               </Link>\r\n             </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"about\">\r\n-                ABOUT\r\n+                O co chodzi?\r\n               </Link>\r\n             </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"projects\">\r\n"
+                },
+                {
+                    "date": 1684394175103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n                 O co chodzi?\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"projects\">\r\n-                PROJECTS\r\n+              <Link activeClass=\"active\" smooth spy to=\"aboutus\">\r\n+                O nas\r\n               </Link>\r\n             </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"blog\">\r\n@@ -38,9 +38,9 @@\n           </ul>\r\n         </nav>\r\n       </header>\r\n       <section id=\"about\"><HomeAbout/></section>\r\n-      <section id=\"projects\">PROJECTS</section>\r\n+      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"blog\">BLOG</section>\r\n       <section id=\"contact\">CONTACT ME</section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1684394347115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n           <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"about\">\r\n+              <Link activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n@@ -37,8 +37,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n+      <section id=\"start\"><HomeHeader/></section>\r\n       <section id=\"about\"><HomeAbout/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"blog\">BLOG</section>\r\n       <section id=\"contact\">CONTACT ME</section>\r\n"
+                },
+                {
+                    "date": 1684394428656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,24 +25,24 @@\n                 O nas\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"blog\">\r\n-                BLOG\r\n+              <Link activeClass=\"active\" smooth spy to=\"fundations\">\r\n+                Fundacje i organizacje\r\n               </Link>\r\n             </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"contact\">\r\n-                CONTACT ME\r\n+                \r\n               </Link>\r\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n       <section id=\"start\"><HomeHeader/></section>\r\n       <section id=\"about\"><HomeAbout/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"blog\">BLOG</section>\r\n-      <section id=\"contact\">CONTACT ME</section>\r\n+      <section id=\"fundations\">Fundacje i organizacje</section>\r\n+      <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1684394436981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n               </Link>\r\n             </li>\r\n             <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"contact\">\r\n-                \r\n+                Kontakt\r\n               </Link>\r\n             </li>\r\n           </ul>\r\n         </nav>\r\n"
+                },
+                {
+                    "date": 1684394601522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import Contact from \"./HomeContactFooter\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n-    <div className=\"App\">\r\n+    <div className=\"navigation\">\r\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n           <li>\r\n"
+                },
+                {
+                    "date": 1684395398305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     <div className=\"navigation\">\r\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n-          <li>\r\n+            <li>\r\n               <Link activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n"
+                },
+                {
+                    "date": 1684395919386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"start\">\r\n+              <Link id=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1684396143536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <section id=\"start\"><HomeHeader/></section>\r\n+      <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n       <section id=\"about\"><HomeAbout/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\">Fundacje i organizacje</section>\r\n       <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684396171568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,11 +38,11 @@\n           </ul>\r\n         </nav>\r\n       </header>\r\n       <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n-      <section id=\"about\"><HomeAbout/></section>\r\n-      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\">Fundacje i organizacje</section>\r\n-      <section id=\"contact\"><Contact/></section>\r\n+      <section id=\"about\" className=\"container\"><HomeAbout/></section>\r\n+      <section id=\"aboutus\" className=\"container\"><HomeAboutUs/></section>\r\n+      <section id=\"fundations\" className=\"container\">Fundacje i organizacje</section>\r\n+      <section id=\"contact\" className=\"container\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1684396177718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n       </header>\r\n       <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n       <section id=\"about\" className=\"container\"><HomeAbout/></section>\r\n       <section id=\"aboutus\" className=\"container\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\" className=\"container\">Fundacje i organizacje</section>\r\n-      <section id=\"contact\" className=\"container\"><Contact/></section>\r\n+      <section id=\"fundations\">Fundacje i organizacje</section>\r\n+      <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1684396183481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,10 @@\n           </ul>\r\n         </nav>\r\n       </header>\r\n       <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n-      <section id=\"about\" className=\"container\"><HomeAbout/></section>\r\n-      <section id=\"aboutus\" className=\"container\"><HomeAboutUs/></section>\r\n+      <section id=\"about\"><HomeAbout/></section>\r\n+      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\">Fundacje i organizacje</section>\r\n       <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1684396222052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,12 +37,14 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n-      <section id=\"about\"><HomeAbout/></section>\r\n-      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\">Fundacje i organizacje</section>\r\n-      <section id=\"contact\"><Contact/></section>\r\n+      <div className=\"container\">\r\n+        <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n+        <section id=\"about\"><HomeAbout/></section>\r\n+        <section id=\"aboutus\"><HomeAboutUs/></section>\r\n+        <section id=\"fundations\">Fundacje i organizacje</section>\r\n+        <section id=\"contact\"><Contact/></section>\r\n+      </div>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1684396239753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import Contact from \"./HomeContactFooter\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n-    <div className=\"navigation\">\r\n+    <div className=\"navigation container\">\r\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1684397005712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link id=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n+              <Link id=\"startlink\" className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1684397029775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link id=\"startlink\" className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n+              <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1684397047463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n           </ul>\r\n         </nav>\r\n       </header>\r\n       <div className=\"container\">\r\n-        <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n+        <section id=\"start\"><HomeHeader/></section>\r\n         <section id=\"about\"><HomeAbout/></section>\r\n         <section id=\"aboutus\"><HomeAboutUs/></section>\r\n         <section id=\"fundations\">Fundacje i organizacje</section>\r\n         <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684397741851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   return (\r\n     <div className=\"navigation container\">\r\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n-          <ul>\r\n+          <ul className=\"nav__container__ul\">\r\n             <li>\r\n               <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n"
+                },
+                {
+                    "date": 1684397759720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   return (\r\n     <div className=\"navigation container\">\r\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n-          <ul className=\"nav__container__ul\">\r\n+          <ul className=\"nav__container__actions\">\r\n             <li>\r\n               <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n"
+                },
+                {
+                    "date": 1684398326869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   return (\r\n     <div className=\"navigation container\">\r\n       <header className=\"nav\">\r\n         <nav className=\"nav__container__actions\">\r\n-          <ul className=\"nav__container__actions\">\r\n+          <ul >\r\n             <li>\r\n               <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n@@ -39,12 +39,22 @@\n         </nav>\r\n       </header>\r\n       <div className=\"container\">\r\n         <section id=\"start\"><HomeHeader/></section>\r\n+        <section id=\"aboutus\"><HomeAboutUs/></section>\r\n         <section id=\"about\"><HomeAbout/></section>\r\n-        <section id=\"aboutus\"><HomeAboutUs/></section>\r\n         <section id=\"fundations\">Fundacje i organizacje</section>\r\n         <section id=\"contact\"><Contact/></section>\r\n       </div>\r\n     </div>\r\n   );\r\n }\r\n+\r\n+/*\r\n+HomeHeader\r\n+HomeThreeColumns\r\n+HomeSimpleSteps\r\n+HomeAboutUs\r\n+HomeAbout\r\n+HomeContactForm\r\n+HomeFooter\r\n+*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684398435483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import HomeHeader from \"./HomeHeader\";\r\n import HomeAbout from \"./HomeAbout\";\r\n import HomeAboutUs from \"./HomeAboutUs\";\r\n import Contact from \"./HomeContactFooter\";\r\n+import { HomeThreeColumns } from \"./HomeThreeColumns\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation container\">\r\n"
+                },
+                {
+                    "date": 1684398460500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n import HomeHeader from \"./HomeHeader\";\r\n import HomeAbout from \"./HomeAbout\";\r\n import HomeAboutUs from \"./HomeAboutUs\";\r\n import Contact from \"./HomeContactFooter\";\r\n-import { HomeThreeColumns } from \"./HomeThreeColumns\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation container\">\r\n"
+                },
+                {
+                    "date": 1684398775637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n         </nav>\r\n       </header>\r\n       <div className=\"container\">\r\n         <section id=\"start\"><HomeHeader/></section>\r\n+        <section><HomeThreeColumns/></section>\r\n         <section id=\"aboutus\"><HomeAboutUs/></section>\r\n         <section id=\"about\"><HomeAbout/></section>\r\n         <section id=\"fundations\">Fundacje i organizacje</section>\r\n         <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684398795224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import HomeHeader from \"./HomeHeader\";\r\n import HomeAbout from \"./HomeAbout\";\r\n import HomeAboutUs from \"./HomeAboutUs\";\r\n import Contact from \"./HomeContactFooter\";\r\n+import HomeThreeColumns from \"./HomeThreeColumns\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation container\">\r\n"
+                },
+                {
+                    "date": 1684398867070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,10 @@\n import HomeAbout from \"./HomeAbout\";\r\n import HomeAboutUs from \"./HomeAboutUs\";\r\n import Contact from \"./HomeContactFooter\";\r\n import HomeThreeColumns from \"./HomeThreeColumns\";\r\n+import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n+import HomeFundations from \"./HomeFundations\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation container\">\r\n@@ -41,11 +43,12 @@\n       </header>\r\n       <div className=\"container\">\r\n         <section id=\"start\"><HomeHeader/></section>\r\n         <section><HomeThreeColumns/></section>\r\n+        <section><HomeSimpleSteps/></section>\r\n         <section id=\"aboutus\"><HomeAboutUs/></section>\r\n         <section id=\"about\"><HomeAbout/></section>\r\n-        <section id=\"fundations\">Fundacje i organizacje</section>\r\n+        <section id=\"fundations\"><HomeFundations/></section>\r\n         <section id=\"contact\"><Contact/></section>\r\n       </div>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1684398961714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,12 +42,10 @@\n         </nav>\r\n       </header>\r\n       <div className=\"container\">\r\n         <section id=\"start\"><HomeHeader/></section>\r\n-        <section><HomeThreeColumns/></section>\r\n-        <section><HomeSimpleSteps/></section>\r\n+        <section id=\"about\"><HomeAbout/></section>\r\n         <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-        <section id=\"about\"><HomeAbout/></section>\r\n         <section id=\"fundations\"><HomeFundations/></section>\r\n         <section id=\"contact\"><Contact/></section>\r\n       </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684399031214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,8 @@\n import HomeHeader from \"./HomeHeader\";\r\n import HomeAbout from \"./HomeAbout\";\r\n import HomeAboutUs from \"./HomeAboutUs\";\r\n import Contact from \"./HomeContactFooter\";\r\n-import HomeThreeColumns from \"./HomeThreeColumns\";\r\n-import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import HomeFundations from \"./HomeFundations\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n"
+                }
+            ],
+            "date": 1684393043140,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { NavLink, useLocation, useHistory } from 'react-router-dom';\r\nimport * as Scroll from 'react-scroll';\r\n\r\nexport default function Navigation() {\r\n  const path = useLocation().pathname;\r\n  const location = path.split('/')[1];\r\n  const history = useHistory();\r\n  const scroller = Scroll.scroller;\r\n\r\n  const scrollToAnchor = () => {\r\n    scroller.scrollTo('anchor', {\r\n      duration: 1500,\r\n      delay: 100,\r\n      smooth: true,\r\n      offset: 50\r\n    });\r\n  };\r\n\r\n  const goToHomeAndScroll = async () => {\r\n    await closeMobile();\r\n    await history.push('/');\r\n    await scroller.scrollTo('anchor', {\r\n      duration: 1500,\r\n      delay: 100,\r\n      smooth: true,\r\n      offset: 50\r\n    });\r\n  };\r\n\r\n  const closeMobile = () => {};\r\n\r\n  return (\r\n    <div className=\"container\">\r\n      <div className=\"navigation\">\r\n        <NavLink to=\"/home\" activeClassName=\"active\">\r\n          Home\r\n        </NavLink>\r\n        <NavLink to=\"/other\" activeClassName=\"active\">\r\n          Other Page\r\n        </NavLink>\r\n      </div>\r\n      {location === 'home' ? (\r\n        <button onClick={scrollToAnchor}>Scroll to anchor</button>\r\n      ) : (\r\n        <button onClick={goToHomeAndScroll}>\r\n          Go to Home and Scroll to anchor\r\n        </button>\r\n      )}\r\n    </div>\r\n  );\r\n}"
+        }
+    ]
+}

@@ -1,10 +1,8 @@
-import HomeHeader from './HomeHeader';
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import Navigation from './Navigation';
 
 const Home = () => {
     return (<section className='home'>
-    <HomeHeader className='container'/>
+    <Navigation/>
     </section>)
 }
 

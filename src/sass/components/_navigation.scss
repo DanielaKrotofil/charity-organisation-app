@@ -1,0 +1,72 @@
+@import '../settings/variables';
+.mainNav {
+  padding-top: 1.3em;
+  &__registration {
+    border: 0.075em solid $color-yellow;
+    padding: 0.4em 0.6em;
+  }
+
+  ul {
+    gap: 1rem;
+
+    li {
+      color: $color-grey;
+
+      a {
+        text-decoration: none;
+        color: $color-grey;
+      }
+    }
+  }
+}
+
+.navigation {
+  color: $color-dark-grey;
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+}
+
+.startlink {
+  border: 0.75px solid $color-dark-grey;
+  padding: 0.55em 1em;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &__actions {
+      flex-flow: row nowrap;
+      flex: 1;
+
+      ul {
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  list-style: none;
+  padding: 1.3em 0;
+  li {
+    cursor: pointer;
+  }
+}
+

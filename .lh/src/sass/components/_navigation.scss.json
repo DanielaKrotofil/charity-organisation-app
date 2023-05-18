@@ -1,0 +1,366 @@
+{
+    "sourceFile": "src/sass/components/_navigation.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 87,
+            "patches": [
+                {
+                    "date": 1684394531172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684394609949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n \r\n \r\n-.App {\r\n+.navigation {\r\n     font-family: sans-serif;\r\n     text-align: center;\r\n   }\r\n   \r\n"
+                },
+                {
+                    "date": 1684394615348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n+@import '../settings/variables';\r\n \r\n-\r\n .navigation {\r\n     font-family: sans-serif;\r\n     text-align: center;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684394639142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n @import '../settings/variables';\r\n \r\n .navigation {\r\n-    font-family: sans-serif;\r\n     text-align: center;\r\n   }\r\n   \r\n   section {\r\n"
+                },
+                {
+                    "date": 1684394645875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n @import '../settings/variables';\r\n \r\n .navigation {\r\n+  \r\n     text-align: center;\r\n   }\r\n   \r\n   section {\r\n"
+                },
+                {
+                    "date": 1684394666300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n @import '../settings/variables';\r\n \r\n .navigation {\r\n+  color: $color-dark-grey;\r\n+  text-align: center;\r\n+}\r\n   \r\n-    text-align: center;\r\n-  }\r\n-  \r\n   section {\r\n     display: grid;\r\n     place-items: center;\r\n     height: 100vh;\r\n"
+                },
+                {
+                    "date": 1684394860420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     color: #3b3b3c;\r\n     background: #eaf2fa;\r\n   }\r\n   \r\n-  .nav {\r\n+.nav {\r\n     display: flex;\r\n     align-items: center;\r\n     position: -webkit-sticky;\r\n     position: sticky;\r\n@@ -35,44 +35,43 @@\n     width: calc(100% - 1.5rem);\r\n     background-color: #fff;\r\n     padding: 0 1rem;\r\n     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);\r\n-  }\r\n-  \r\n-  .nav__container {\r\n+\r\n+  &__container {\r\n     display: flex;\r\n     flex-flow: row nowrap;\r\n     align-items: center;\r\n     justify-content: space-between;\r\n     width: 100%;\r\n     height: 100%;\r\n     margin: 0 auto;\r\n     position: relative;\r\n+\r\n+    &__actions {\r\n+      display: inline-flex;\r\n+      flex-flow: row nowrap;\r\n+      padding-left: 50px;\r\n+      flex: 1;\r\n+    }\r\n   }\r\n-  \r\n-  .nav__container__actions {\r\n-    display: inline-flex;\r\n-    flex-flow: row nowrap;\r\n-    padding-left: 50px;\r\n-    flex: 1;\r\n-  }\r\n-  \r\n-  .active {\r\n-    font-weight: bold;\r\n-  }\r\n-  \r\n-  ul {\r\n-    display: flex;\r\n-    gap: 1rem;\r\n-    font-size: 0.9rem;\r\n-    list-style: none;\r\n-    padding: 0;\r\n-  }\r\n\\ No newline at end of file\n-  \r\n-  li {\r\n-    cursor: pointer;\r\n-  }\r\n-  \r\n-  li:hover {\r\n+}\r\n+\r\n+.active {\r\n+  font-weight: bold;\r\n+}\r\n+\r\n+ul {\r\n+  display: flex;\r\n+  gap: 1rem;\r\n+  font-size: 0.9rem;\r\n+  list-style: none;\r\n+  padding: 0;\r\n+}\r\n+\r\n+li {\r\n+  cursor: pointer;\r\n+\r\n+  &:hover {\r\n     text-decoration: underline;\r\n   }\r\n-  \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684394879665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,12 +55,8 @@\n     }\r\n   }\r\n }\r\n \r\n-.active {\r\n-  font-weight: bold;\r\n-}\r\n-\r\n ul {\r\n   display: flex;\r\n   gap: 1rem;\r\n   font-size: 0.9rem;\r\n"
+                },
+                {
+                    "date": 1684394903340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,9 @@\n     }\r\n   }\r\n }\r\n \r\n+\r\n ul {\r\n   display: flex;\r\n   gap: 1rem;\r\n   font-size: 0.9rem;\r\n"
+                },
+                {
+                    "date": 1684394939774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n   #contact {\r\n     color: #3b3b3c;\r\n     background: #eaf2fa;\r\n   }\r\n-  \r\n+\r\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n     position: -webkit-sticky;\r\n@@ -55,8 +55,11 @@\n     }\r\n   }\r\n }\r\n \r\n+.active {\r\n+  font-weight: bold;\r\n+}\r\n \r\n ul {\r\n   display: flex;\r\n   gap: 1rem;\r\n"
+                },
+                {
+                    "date": 1684394996203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,21 +3,21 @@\n .navigation {\r\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n-  \r\n-  section {\r\n-    display: grid;\r\n-    place-items: center;\r\n-    height: 100vh;\r\n-    font-size: 32px;\r\n-    font-weight: bold;\r\n-  }\r\n-  \r\n-  #about {\r\n-    margin-top: -80px;\r\n-  }\r\n-  \r\n+\r\n+section {\r\n+  display: grid;\r\n+  place-items: center;\r\n+  height: 100vh;\r\n+  font-size: 32px;\r\n+  font-weight: bold;\r\n+}\r\n+\r\n+#about {\r\n+  margin-top: -80px;\r\n+}\r\n+\r\n   #projects,\r\n   #contact {\r\n     color: #3b3b3c;\r\n     background: #eaf2fa;\r\n"
+                },
+                {
+                    "date": 1684395014984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,18 +12,8 @@\n   font-size: 32px;\r\n   font-weight: bold;\r\n }\r\n \r\n-#about {\r\n-  margin-top: -80px;\r\n-}\r\n-\r\n-  #projects,\r\n-  #contact {\r\n-    color: #3b3b3c;\r\n-    background: #eaf2fa;\r\n-  }\r\n-\r\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n     position: -webkit-sticky;\r\n"
+                },
+                {
+                    "date": 1684395063296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,11 +22,9 @@\n     z-index: 2;\r\n     height: 70px;\r\n     min-height: 70px;\r\n     width: calc(100% - 1.5rem);\r\n-    background-color: #fff;\r\n     padding: 0 1rem;\r\n-    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);\r\n \r\n   &__container {\r\n     display: flex;\r\n     flex-flow: row nowrap;\r\n"
+                },
+                {
+                    "date": 1684395091622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n }\r\n \r\n section {\r\n   display: grid;\r\n-  place-items: center;\r\n   height: 100vh;\r\n   font-size: 32px;\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1684395158104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n }\r\n \r\n .nav {\r\n     display: flex;\r\n-    align-items: center;\r\n     position: -webkit-sticky;\r\n     position: sticky;\r\n     top: -5px;\r\n     z-index: 2;\r\n"
+                },
+                {
+                    "date": 1684395164011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n }\r\n \r\n .nav {\r\n     display: flex;\r\n+\r\n     position: -webkit-sticky;\r\n     position: sticky;\r\n     top: -5px;\r\n     z-index: 2;\r\n"
+                },
+                {
+                    "date": 1684395228846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n }\r\n \r\n .nav {\r\n     display: flex;\r\n-\r\n+    align-items: center;\r\n+    justify-content: flex-end;\r\n     position: -webkit-sticky;\r\n     position: sticky;\r\n     top: -5px;\r\n     z-index: 2;\r\n"
+                },
+                {
+                    "date": 1684395242795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \r\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n-    justify-content: flex-end;\r\n+   \r\n     position: -webkit-sticky;\r\n     position: sticky;\r\n     top: -5px;\r\n     z-index: 2;\r\n"
+                },
+                {
+                    "date": 1684395255683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,17 +14,12 @@\n \r\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n-   \r\n+    justify-content: flex-end;\r\n     position: -webkit-sticky;\r\n     position: sticky;\r\n-    top: -5px;\r\n-    z-index: 2;\r\n-    height: 70px;\r\n-    min-height: 70px;\r\n-    width: calc(100% - 1.5rem);\r\n-    padding: 0 1rem;\r\n+    \r\n \r\n   &__container {\r\n     display: flex;\r\n     flex-flow: row nowrap;\r\n"
+                },
+                {
+                    "date": 1684395281750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,16 @@\n \r\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n-    justify-content: flex-end;\r\n     position: -webkit-sticky;\r\n     position: sticky;\r\n-    \r\n+    top: -5px;\r\n+    z-index: 2;\r\n+    height: 70px;\r\n+    min-height: 70px;\r\n+    width: calc(100% - 1.5rem);\r\n+    padding: 0 1rem;\r\n \r\n   &__container {\r\n     display: flex;\r\n     flex-flow: row nowrap;\r\n@@ -44,8 +48,9 @@\n }\r\n \r\n ul {\r\n   display: flex;\r\n+  justify-content: flex-end;\r\n   gap: 1rem;\r\n   font-size: 0.9rem;\r\n   list-style: none;\r\n   padding: 0;\r\n"
+                },
+                {
+                    "date": 1684395329334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,9 @@\n \r\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n-    position: -webkit-sticky;\r\n-    position: sticky;\r\n+\r\n     top: -5px;\r\n     z-index: 2;\r\n     height: 70px;\r\n     min-height: 70px;\r\n"
+                },
+                {
+                    "date": 1684395334953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,8 @@\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n \r\n-    top: -5px;\r\n-    z-index: 2;\r\n-    height: 70px;\r\n-    min-height: 70px;\r\n-    width: calc(100% - 1.5rem);\r\n-    padding: 0 1rem;\r\n \r\n   &__container {\r\n     display: flex;\r\n     flex-flow: row nowrap;\r\n"
+                },
+                {
+                    "date": 1684395358272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,22 +12,21 @@\n   font-weight: bold;\r\n }\r\n \r\n .nav {\r\n-    display: flex;\r\n-    align-items: center;\r\n+  display: flex;\r\n+  align-items: center;\r\n \r\n-\r\n   &__container {\r\n     display: flex;\r\n     flex-flow: row nowrap;\r\n     align-items: center;\r\n     justify-content: space-between;\r\n     width: 100%;\r\n     height: 100%;\r\n     margin: 0 auto;\r\n-    position: relative;\r\n \r\n+\r\n     &__actions {\r\n       display: inline-flex;\r\n       flex-flow: row nowrap;\r\n       padding-left: 50px;\r\n"
+                },
+                {
+                    "date": 1684395364714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n     justify-content: space-between;\r\n     width: 100%;\r\n     height: 100%;\r\n     margin: 0 auto;\r\n+    position: relative;\r\n \r\n-\r\n     &__actions {\r\n       display: inline-flex;\r\n       flex-flow: row nowrap;\r\n       padding-left: 50px;\r\n"
+                },
+                {
+                    "date": 1684395445882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,6 @@\n \r\n li {\r\n   cursor: pointer;\r\n \r\n-  &:hover {\r\n-    text-decoration: underline;\r\n-  }\r\n+  \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684395563342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n .navigation {\r\n   color: $color-dark-grey;\r\n   text-align: center;\r\n+  scroll-behavior: smooth;\r\n }\r\n \r\n section {\r\n   display: grid;\r\n"
+                },
+                {
+                    "date": 1684395585747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .navigation {\r\n   color: $color-dark-grey;\r\n   text-align: center;\r\n-  scroll-behavior: smooth;\r\n+  \r\n }\r\n \r\n section {\r\n   display: grid;\r\n"
+                },
+                {
+                    "date": 1684395591496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \r\n .navigation {\r\n   color: $color-dark-grey;\r\n   text-align: center;\r\n-  \r\n }\r\n \r\n section {\r\n   display: grid;\r\n@@ -13,10 +12,10 @@\n   font-weight: bold;\r\n }\r\n \r\n .nav {\r\n-  display: flex;\r\n-  align-items: center;\r\n+    display: flex;\r\n+    align-items: center;\r\n \r\n   &__container {\r\n     display: flex;\r\n     flex-flow: row nowrap;\r\n@@ -51,6 +50,8 @@\n \r\n li {\r\n   cursor: pointer;\r\n \r\n-  \r\n+  &:hover {\r\n+    text-decoration: underline;\r\n+  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684395726146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     margin: 0 auto;\r\n     position: relative;\r\n \r\n     &__actions {\r\n-      display: inline-flex;\r\n+      \r\n       flex-flow: row nowrap;\r\n       padding-left: 50px;\r\n       flex: 1;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684395772090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,11 +26,10 @@\n     margin: 0 auto;\r\n     position: relative;\r\n \r\n     &__actions {\r\n-      \r\n       flex-flow: row nowrap;\r\n-      padding-left: 50px;\r\n+      padding-left: 0.5em;\r\n       flex: 1;\r\n     }\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1684395813565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n \r\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n+    padding: 35px;\r\n \r\n   &__container {\r\n     display: flex;\r\n     flex-flow: row nowrap;\r\n"
+                },
+                {
+                    "date": 1684395846283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n section {\r\n   display: grid;\r\n   height: 100vh;\r\n   font-size: 32px;\r\n-  font-weight: bold;\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684395928654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,12 @@\n   height: 100vh;\r\n   font-size: 32px;\r\n }\r\n \r\n+#startlink {\r\n+  margin-top: -80px;\r\n+}\r\n+\r\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n     padding: 35px;\r\n"
+                },
+                {
+                    "date": 1684395949405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   font-size: 32px;\r\n }\r\n \r\n #startlink {\r\n-  margin-top: -80px;\r\n+  border: 1px solid $color-yellow;\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684395970706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n }\r\n \r\n #startlink {\r\n   border: 1px solid $color-yellow;\r\n+  padding: 20px 9px;\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684395992668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n }\r\n \r\n #startlink {\r\n   border: 1px solid $color-yellow;\r\n-  padding: 20px 9px;\r\n+  padding: 9px 20px;\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684396006092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   font-size: 32px;\r\n }\r\n \r\n #startlink {\r\n-  border: 1px solid $color-yellow;\r\n+  border: 1px solid $color-grey;\r\n   padding: 9px 20px;\r\n }\r\n \r\n .nav {\r\n"
+                },
+                {
+                    "date": 1684396044164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   font-size: 32px;\r\n }\r\n \r\n #startlink {\r\n-  border: 1px solid $color-grey;\r\n+  border: 0.75px solid $color-dark-grey;\r\n   padding: 9px 20px;\r\n }\r\n \r\n .nav {\r\n"
+                },
+                {
+                    "date": 1684396064894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n section {\r\n   display: grid;\r\n   height: 100vh;\r\n-  font-size: 32px;\r\n+  font-size: 18px;\r\n }\r\n \r\n #startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n"
+                },
+                {
+                    "date": 1684396259393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,8 @@\n     position: relative;\r\n \r\n     &__actions {\r\n       flex-flow: row nowrap;\r\n-      padding-left: 0.5em;\r\n       flex: 1;\r\n     }\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1684396275263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n     position: relative;\r\n \r\n     &__actions {\r\n       flex-flow: row nowrap;\r\n+\r\n       flex: 1;\r\n     }\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1684396296438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,8 @@\n     position: relative;\r\n \r\n     &__actions {\r\n       flex-flow: row nowrap;\r\n-\r\n       flex: 1;\r\n     }\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1684396471721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n }\r\n \r\n li {\r\n   cursor: pointer;\r\n+  font-size: 1em;\r\n \r\n   &:hover {\r\n     text-decoration: underline;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684396483399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n }\r\n \r\n li {\r\n   cursor: pointer;\r\n-  font-size: 1em;\r\n+  font-size: 1.2em;\r\n \r\n   &:hover {\r\n     text-decoration: underline;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684396531074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n }\r\n \r\n li {\r\n   cursor: pointer;\r\n-  font-size: 1.2em;\r\n+  font-size: 0.8em;\r\n \r\n   &:hover {\r\n     text-decoration: underline;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684396568014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n \r\n .nav {\r\n     display: flex;\r\n     align-items: center;\r\n-    padding: 35px;\r\n \r\n   &__container {\r\n     display: flex;\r\n     flex-flow: row nowrap;\r\n"
+                },
+                {
+                    "date": 1684396615161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n \r\n section {\r\n   display: grid;\r\n   height: 100vh;\r\n-  font-size: 18px;\r\n }\r\n \r\n #startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n@@ -51,9 +50,8 @@\n }\r\n \r\n li {\r\n   cursor: pointer;\r\n-  font-size: 0.8em;\r\n \r\n   &:hover {\r\n     text-decoration: underline;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684396624291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n ul {\r\n   display: flex;\r\n   justify-content: flex-end;\r\n   gap: 1rem;\r\n-  font-size: 0.9rem;\r\n+  font-size: 0.8rem;\r\n   list-style: none;\r\n   padding: 0;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684396637705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n   justify-content: flex-end;\r\n   gap: 1rem;\r\n   font-size: 0.8rem;\r\n   list-style: none;\r\n-  padding: 0;\r\n+  padding: 0 1em;\r\n }\r\n \r\n li {\r\n   cursor: pointer;\r\n"
+                },
+                {
+                    "date": 1684396648060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n   justify-content: flex-end;\r\n   gap: 1rem;\r\n   font-size: 0.8rem;\r\n   list-style: none;\r\n-  padding: 0 1em;\r\n+  padding: 1em 0;\r\n }\r\n \r\n li {\r\n   cursor: pointer;\r\n"
+                },
+                {
+                    "date": 1684396690177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,5 @@\n }\r\n \r\n li {\r\n   cursor: pointer;\r\n-\r\n-  &:hover {\r\n-    text-decoration: underline;\r\n-  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684396715636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,12 +35,8 @@\n     }\r\n   }\r\n }\r\n \r\n-.active {\r\n-  font-weight: bold;\r\n-}\r\n-\r\n ul {\r\n   display: flex;\r\n   justify-content: flex-end;\r\n   gap: 1rem;\r\n"
+                },
+                {
+                    "date": 1684396738929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n #startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n-  padding: 9px 20px;\r\n+\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684396744917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n #startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n-\r\n+  padding: 9px 20px;\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684396773964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   text-align: center;\r\n }\r\n \r\n section {\r\n-  display: grid;\r\n+\r\n   height: 100vh;\r\n }\r\n \r\n #startlink {\r\n"
+                },
+                {
+                    "date": 1684396793280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   text-align: center;\r\n }\r\n \r\n section {\r\n-\r\n+  display: grid;\r\n   height: 100vh;\r\n }\r\n \r\n #startlink {\r\n"
+                },
+                {
+                    "date": 1684396802842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n   text-align: center;\r\n }\r\n \r\n section {\r\n-  display: grid;\r\n   height: 100vh;\r\n }\r\n \r\n #startlink {\r\n"
+                },
+                {
+                    "date": 1684396819920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n \r\n #startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n   padding: 9px 20px;\r\n+  background-color: $color-yellow;\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684396841147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n \r\n #startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n   padding: 9px 20px;\r\n-  background-color: $color-yellow;\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684397017060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n section {\r\n   height: 100vh;\r\n }\r\n \r\n-#startlink {\r\n+.startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n   padding: 9px 20px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684397124252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n @import '../settings/variables';\r\n+.mainNav {\r\n+  \r\n+}\r\n \r\n .navigation {\r\n   color: $color-dark-grey;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1684397188504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,13 @@\n @import '../settings/variables';\r\n .mainNav {\r\n-  \r\n+  li {\r\n+    cursor: pointer;\r\n+\r\n+    a {\r\n+      text-decoration: none;\r\n+    }\r\n+  }\r\n }\r\n \r\n .navigation {\r\n   color: $color-dark-grey;\r\n@@ -44,9 +50,9 @@\n   gap: 1rem;\r\n   font-size: 0.8rem;\r\n   list-style: none;\r\n   padding: 1em 0;\r\n-}\r\n \r\n-li {\r\n-  cursor: pointer;\r\n+  li {\r\n+    cursor: pointer;\r\n+  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684397421666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,10 @@\n @import '../settings/variables';\r\n .mainNav {\r\n+\r\n+  &__registration {\r\n+    border: 0.5em solid $color-yellow;\r\n+  }\r\n   li {\r\n     cursor: pointer;\r\n \r\n     a {\r\n"
+                },
+                {
+                    "date": 1684397432407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import '../settings/variables';\r\n .mainNav {\r\n \r\n   &__registration {\r\n-    border: 0.5em solid $color-yellow;\r\n+    border: 0.05em solid $color-yellow;\r\n   }\r\n   li {\r\n     cursor: pointer;\r\n \r\n"
+                },
+                {
+                    "date": 1684397441906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import '../settings/variables';\r\n .mainNav {\r\n \r\n   &__registration {\r\n-    border: 0.05em solid $color-yellow;\r\n+    border: 0.075em solid $color-yellow;\r\n   }\r\n   li {\r\n     cursor: pointer;\r\n \r\n"
+                },
+                {
+                    "date": 1684397457562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     border: 0.075em solid $color-yellow;\r\n   }\r\n   li {\r\n     cursor: pointer;\r\n+    color: $color-grey;\r\n \r\n     a {\r\n       text-decoration: none;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684397466613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     color: $color-grey;\r\n \r\n     a {\r\n       text-decoration: none;\r\n+      color: $color-grey;\r\n     }\r\n   }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684397494092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n .mainNav {\r\n \r\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n+    padding: 0.1em 0.2em;\r\n   }\r\n   li {\r\n     cursor: pointer;\r\n     color: $color-grey;\r\n"
+                },
+                {
+                    "date": 1684397505468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n .mainNav {\r\n \r\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n-    padding: 0.1em 0.2em;\r\n+    padding: 0.2em 0.3em;\r\n   }\r\n   li {\r\n     cursor: pointer;\r\n     color: $color-grey;\r\n"
+                },
+                {
+                    "date": 1684397518059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n .mainNav {\r\n \r\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n-    padding: 0.2em 0.3em;\r\n+    padding: 0.4em 0.6em;\r\n   }\r\n   li {\r\n     cursor: pointer;\r\n     color: $color-grey;\r\n"
+                },
+                {
+                    "date": 1684397546121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import '../settings/variables';\r\n .mainNav {\r\n-\r\n+  padding-top: 0.5em;\r\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n     padding: 0.4em 0.6em;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684397555262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import '../settings/variables';\r\n .mainNav {\r\n-  padding-top: 0.5em;\r\n+  padding-top: 1em;\r\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n     padding: 0.4em 0.6em;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684397565904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n @import '../settings/variables';\r\n .mainNav {\r\n-  padding-top: 1em;\r\n+  padding-top: 1.3em;\r\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n     padding: 0.4em 0.6em;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684397591350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n }\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n-  padding: 9px 20px;\r\n+  padding: 0.4em 0.6em;\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684397602536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n }\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n-  padding: 0.4em 0.6em;\r\n+  padding: 0.55em 1em;\r\n }\r\n \r\n .nav {\r\n     display: flex;\r\n"
+                },
+                {
+                    "date": 1684397630761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n   justify-content: flex-end;\r\n   gap: 1rem;\r\n   font-size: 0.8rem;\r\n   list-style: none;\r\n-  padding: 1em 0;\r\n+  padding: 1.5em 0;\r\n \r\n   li {\r\n     cursor: pointer;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684397640684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n   justify-content: flex-end;\r\n   gap: 1rem;\r\n   font-size: 0.8rem;\r\n   list-style: none;\r\n-  padding: 1.5em 0;\r\n+  padding: 1.3em 0;\r\n \r\n   li {\r\n     cursor: pointer;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684397667610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n \r\n ul {\r\n   display: flex;\r\n   justify-content: flex-end;\r\n-  gap: 1rem;\r\n+  gap: 1.2rem;\r\n   font-size: 0.8rem;\r\n   list-style: none;\r\n   padding: 1.3em 0;\r\n \r\n"
+                },
+                {
+                    "date": 1684397682508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n \r\n ul {\r\n   display: flex;\r\n   justify-content: flex-end;\r\n-  gap: 1.2rem;\r\n+  gap: 1.4rem;\r\n   font-size: 0.8rem;\r\n   list-style: none;\r\n   padding: 1.3em 0;\r\n \r\n"
+                },
+                {
+                    "date": 1684397716060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n \r\n ul {\r\n   display: flex;\r\n   justify-content: flex-end;\r\n-  gap: 1.4rem;\r\n+  gap: 1rem;\r\n   font-size: 0.8rem;\r\n   list-style: none;\r\n   padding: 1.3em 0;\r\n \r\n"
+                },
+                {
+                    "date": 1684397786604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,20 +46,20 @@\n \r\n     &__actions {\r\n       flex-flow: row nowrap;\r\n       flex: 1;\r\n+\r\n+      ul {\r\n+        display: flex;\r\n+        justify-content: flex-end;\r\n+        gap: 1rem;\r\n+        font-size: 0.8rem;\r\n+        list-style: none;\r\n+        padding: 1.3em 0;\r\n+        \r\n+      }\r\n     }\r\n   }\r\n }\r\n \r\n-ul {\r\n-  display: flex;\r\n\\ No newline at end of file\n-  justify-content: flex-end;\r\n-  gap: 1rem;\r\n-  font-size: 0.8rem;\r\n-  list-style: none;\r\n-  padding: 1.3em 0;\r\n \r\n-  li {\r\n-    cursor: pointer;\r\n-  }\r\n-}\n+\r\n"
+                },
+                {
+                    "date": 1684397794461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,5 +61,4 @@\n   }\r\n }\r\n \r\n \r\n-\r\n"
+                },
+                {
+                    "date": 1684397805606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n     border: 0.075em solid $color-yellow;\r\n     padding: 0.4em 0.6em;\r\n   }\r\n   li {\r\n-    cursor: pointer;\r\n     color: $color-grey;\r\n \r\n     a {\r\n       text-decoration: none;\r\n@@ -60,5 +59,7 @@\n     }\r\n   }\r\n }\r\n \r\n-\r\n+li {\r\n+  cursor: pointer;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684397841936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,7 +59,15 @@\n     }\r\n   }\r\n }\r\n \r\n-li {\r\n-  cursor: pointer;\r\n-}\n\\ No newline at end of file\n+ul {\r\n+  display: flex;\r\n+  justify-content: flex-end;\r\n+  font-size: 0.8rem;\r\n+  list-style: none;\r\n+  padding: 1.3em 0;\r\n+  li {\r\n+    cursor: pointer;\r\n+  }\r\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1684397864582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,15 +47,9 @@\n       flex-flow: row nowrap;\r\n       flex: 1;\r\n \r\n       ul {\r\n-        display: flex;\r\n-        justify-content: flex-end;\r\n-        gap: 1rem;\r\n-        font-size: 0.8rem;\r\n-        list-style: none;\r\n-        padding: 1.3em 0;\r\n-        \r\n+        gap: 2rem;\r\n       }\r\n     }\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1684397884985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,11 +46,8 @@\n     &__actions {\r\n       flex-flow: row nowrap;\r\n       flex: 1;\r\n \r\n-      ul {\r\n-        gap: 2rem;\r\n-      }\r\n     }\r\n   }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684397909249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,14 +4,17 @@\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n     padding: 0.4em 0.6em;\r\n   }\r\n-  li {\r\n-    color: $color-grey;\r\n-\r\n-    a {\r\n-      text-decoration: none;\r\n+  ul {\r\n+    gap: 1rem;\r\n+    li {\r\n       color: $color-grey;\r\n+  \r\n+      a {\r\n+        text-decoration: none;\r\n+        color: $color-grey;\r\n+      }\r\n     }\r\n   }\r\n }\r\n \r\n@@ -46,8 +49,11 @@\n     &__actions {\r\n       flex-flow: row nowrap;\r\n       flex: 1;\r\n \r\n+      ul {\r\n+        gap: 2rem;\r\n+      }\r\n     }\r\n   }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684397955671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,15 @@\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n     padding: 0.4em 0.6em;\r\n   }\r\n+\r\n   ul {\r\n     gap: 1rem;\r\n+\r\n     li {\r\n       color: $color-grey;\r\n-  \r\n+\r\n       a {\r\n         text-decoration: none;\r\n         color: $color-grey;\r\n       }\r\n"
+                }
+            ],
+            "date": 1684394531172,
+            "name": "Commit-0",
+            "content": "\r\n\r\n.App {\r\n    font-family: sans-serif;\r\n    text-align: center;\r\n  }\r\n  \r\n  section {\r\n    display: grid;\r\n    place-items: center;\r\n    height: 100vh;\r\n    font-size: 32px;\r\n    font-weight: bold;\r\n  }\r\n  \r\n  #about {\r\n    margin-top: -80px;\r\n  }\r\n  \r\n  #projects,\r\n  #contact {\r\n    color: #3b3b3c;\r\n    background: #eaf2fa;\r\n  }\r\n  \r\n  .nav {\r\n    display: flex;\r\n    align-items: center;\r\n    position: -webkit-sticky;\r\n    position: sticky;\r\n    top: -5px;\r\n    z-index: 2;\r\n    height: 70px;\r\n    min-height: 70px;\r\n    width: calc(100% - 1.5rem);\r\n    background-color: #fff;\r\n    padding: 0 1rem;\r\n    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);\r\n  }\r\n  \r\n  .nav__container {\r\n    display: flex;\r\n    flex-flow: row nowrap;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    width: 100%;\r\n    height: 100%;\r\n    margin: 0 auto;\r\n    position: relative;\r\n  }\r\n  \r\n  .nav__container__actions {\r\n    display: inline-flex;\r\n    flex-flow: row nowrap;\r\n    padding-left: 50px;\r\n    flex: 1;\r\n  }\r\n  \r\n  .active {\r\n    font-weight: bold;\r\n  }\r\n  \r\n  ul {\r\n    display: flex;\r\n    gap: 1rem;\r\n    font-size: 0.9rem;\r\n    list-style: none;\r\n    padding: 0;\r\n  }\r\n  \r\n  li {\r\n    cursor: pointer;\r\n  }\r\n  \r\n  li:hover {\r\n    text-decoration: underline;\r\n  }\r\n  "
+        }
+    ]
+}

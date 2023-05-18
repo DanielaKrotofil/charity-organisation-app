@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/HomeNav.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1684392800153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1684392800153,
+            "name": "Commit-0",
+            "content": "import React from 'react';\r\nimport { NavLink, useLocation, useHistory } from 'react-router-dom';\r\nimport * as Scroll from 'react-scroll';\r\n\r\nexport default function Navigation() {\r\n  const path = useLocation().pathname;\r\n  const location = path.split('/')[1];\r\n  const history = useHistory();\r\n  const scroller = Scroll.scroller;\r\n\r\n  const scrollToAnchor = () => {\r\n    scroller.scrollTo('anchor', {\r\n      duration: 1500,\r\n      delay: 100,\r\n      smooth: true,\r\n      offset: 50\r\n    });\r\n  };\r\n\r\n  const goToHomeAndScroll = async () => {\r\n    await closeMobile();\r\n    await history.push('/');\r\n    await scroller.scrollTo('anchor', {\r\n      duration: 1500,\r\n      delay: 100,\r\n      smooth: true,\r\n      offset: 50\r\n    });\r\n  };\r\n\r\n  const closeMobile = () => {};\r\n\r\n  return (\r\n    <div className=\"container\">\r\n      <div className=\"navigation\">\r\n        <NavLink to=\"/home\" activeClassName=\"active\">\r\n          Home\r\n        </NavLink>\r\n        <NavLink to=\"/other\" activeClassName=\"active\">\r\n          Other Page\r\n        </NavLink>\r\n      </div>\r\n      {location === 'home' ? (\r\n        <button onClick={scrollToAnchor}>Scroll to anchor</button>\r\n      ) : (\r\n        <button onClick={goToHomeAndScroll}>\r\n          Go to Home and Scroll to anchor\r\n        </button>\r\n      )}\r\n    </div>\r\n  );\r\n}"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 57,
+            "activePatchIndex": 83,
             "patches": [
                 {
                     "date": 1683983953405,
@@ -236,6 +236,110 @@
                 {
                     "date": 1683991086891,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n   Link,\n   NavLink,\n   Outlet\n } from 'react-router-dom';\n-import Contact from './components/HomeContactFooter';\n import Home from './components/home';\n import { LoginForm } from './components/login';\n import { RegisterForm } from './components/register';\n \n"
+                },
+                {
+                    "date": 1684392980347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,16 @@\n+export default function Other() {\n+    return (\n+      <>\n+        <h1>Other page</h1>\n+        <p>blablabla</p>\n+      </>\n+    );\n+  }\n+  \n+\n+\n+/*\n import './sass/main.scss'\n import React from 'react';\n import {\n   HashRouter,\n"
+                },
+                {
+                    "date": 1684393009112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,28 @@\n-export default function Other() {\n-    return (\n-      <>\n-        <h1>Other page</h1>\n-        <p>blablabla</p>\n-      </>\n-    );\n-  }\n-  \n+import React from 'react';\n+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n+import './style.css';\n \n+import Navigation from './Navigation';\n+import Home from './Home';\n+import Other from './Other';\n \n+export default function App() {\n+  return (\n+    <Router>\n+      <Navigation />\n+      <Route path=\"/home\">\n+        <Home />\n+      </Route>\n+      <Route path=\"/other\">\n+        <Other />\n+      </Route>\n+      <Route exact path=\"/\">\n+        <Redirect to=\"/home\" />\n+      </Route>\n+    </Router>\n+  );\n+}\n /*\n import './sass/main.scss'\n import React from 'react';\n import {\n"
+                },
+                {
+                    "date": 1684393061871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react';\n import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n import './style.css';\n \n-import Navigation from './Navigation';\n+import Navigation from './components/Navigation';\n import Home from './Home';\n import Other from './Other';\n \n export default function App() {\n"
+                },
+                {
+                    "date": 1684393104947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n import './style.css';\n \n import Navigation from './components/Navigation';\n-import Home from './Home';\n+import Home from './components/home';\n import Other from './Other';\n \n export default function App() {\n   return (\n"
+                },
+                {
+                    "date": 1684393140990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import './style.css';\n \n import Navigation from './components/Navigation';\n import Home from './components/home';\n-import Other from './Other';\n+import Other from './components/Other';\n \n export default function App() {\n   return (\n     <Router>\n"
+                },
+                {
+                    "date": 1684393156583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react';\n import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n-import './style.css';\n+import './sass/main.scss'\n \n import Navigation from './components/Navigation';\n import Home from './components/home';\n import Other from './components/Other';\n"
+                },
+                {
+                    "date": 1684393248985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,15 @@\n import React from 'react';\n import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n+import React from 'react';\n+import {\n+  HashRouter,\n+  Route,\n+  Routes,\n+  Link,\n+  NavLink,\n+  Outlet\n+} from 'react-router-dom';\n import './sass/main.scss'\n \n import Navigation from './components/Navigation';\n import Home from './components/home';\n"
+                },
+                {
+                    "date": 1684393272129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n+\n import React from 'react';\n import {\n   HashRouter,\n   Route,\n"
+                },
+                {
+                    "date": 1684393277553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import React from 'react';\n \n import React from 'react';\n import {\n   HashRouter,\n"
+                },
+                {
+                    "date": 1684393302647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n   Route,\n   Routes,\n   Link,\n   NavLink,\n-  Outlet\n+  Outlet,\n+  BrowserRouter as Router, Route, Redirect\n } from 'react-router-dom';\n import './sass/main.scss'\n \n import Navigation from './components/Navigation';\n"
+                },
+                {
+                    "date": 1684393317642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n \n+\n import React from 'react';\n import {\n   HashRouter,\n   Route,\n"
+                },
+                {
+                    "date": 1684393329322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,7 @@\n \n-\n+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n import React from 'react';\n-import {\n-  HashRouter,\n-  Route,\n-  Routes,\n-  Link,\n-  NavLink,\n-  Outlet,\n-  BrowserRouter as Router, Route, Redirect\n-} from 'react-router-dom';\n-import './sass/main.scss'\n \n import Navigation from './components/Navigation';\n import Home from './components/home';\n import Other from './components/Other';\n"
+                },
+                {
+                    "date": 1684393350300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n+import { BrowserRouter as Router, Route, Redirect, Route } from 'react-router-dom';\n import React from 'react';\n \n import Navigation from './components/Navigation';\n import Home from './components/home';\n"
+                },
+                {
+                    "date": 1684393373627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-import { BrowserRouter as Router, Route, Redirect, Route } from 'react-router-dom';\n+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n import React from 'react';\n \n import Navigation from './components/Navigation';\n import Home from './components/home';\n"
+                },
+                {
+                    "date": 1684393471062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,5 @@\n \n-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';\n-import React from 'react';\n-\n-import Navigation from './components/Navigation';\n-import Home from './components/home';\n-import Other from './components/Other';\n-\n-export default function App() {\n-  return (\n-    <Router>\n-      <Navigation />\n-      <Route path=\"/home\">\n-        <Home />\n-      </Route>\n-      <Route path=\"/other\">\n-        <Other />\n-      </Route>\n-      <Route exact path=\"/\">\n-        <Redirect to=\"/home\" />\n-      </Route>\n-    </Router>\n-  );\n-}\n-/*\n import './sass/main.scss'\n import React from 'react';\n import {\n   HashRouter,\n"
+                },
+                {
+                    "date": 1684397097823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 900 } : undefined\n   return (\n       <>\n-          <nav>\n+          <nav className='mainNav'>\n               <ul>\n                   <li><NavLink style={getStyle()} to='/'>Strona głowna</NavLink></li>\n                   <li><NavLink style={getStyle()} to='logowanie'>Login</NavLink></li>\n                   <li><NavLink style={getStyle()} to='rejestracja'>Register</NavLink></li>\n"
+                },
+                {
+                    "date": 1684397228674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n       <>\n           <nav className='mainNav'>\n               <ul>\n                   <li><NavLink style={getStyle()} to='/'>Strona głowna</NavLink></li>\n-                  <li><NavLink style={getStyle()} to='logowanie'>Login</NavLink></li>\n-                  <li><NavLink style={getStyle()} to='rejestracja'>Register</NavLink></li>\n+                  <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n+                  <li><NavLink style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n           <Outlet/>\n       </>\n@@ -33,10 +33,9 @@\n const App = () => {\n   return (\n       <HashRouter>\n           <Routes>\n-              <Route element={<Layout/>}>\n-                  <Route path='/' element={<Home/>}/>\n+              <Route element={<Layout/>}\n                   <Route path='logowanie' element={<LoginForm />} />\n                   <Route path='rejestracja' element={<RegisterForm />} />\n               </Route>\n           </Routes>\n"
+                },
+                {
+                    "date": 1684397238999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n   return (\n       <>\n           <nav className='mainNav'>\n               <ul>\n-                  <li><NavLink style={getStyle()} to='/'>Strona głowna</NavLink></li>\n                   <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n@@ -33,9 +32,9 @@\n const App = () => {\n   return (\n       <HashRouter>\n           <Routes>\n-              <Route element={<Layout/>}\n+              <Route element={<Layout/>}>\n                   <Route path='logowanie' element={<LoginForm />} />\n                   <Route path='rejestracja' element={<RegisterForm />} />\n               </Route>\n           </Routes>\n"
+                },
+                {
+                    "date": 1684397247138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n   return (\n       <>\n           <nav className='mainNav'>\n               <ul>\n+\n                   <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n"
+                },
+                {
+                    "date": 1684397254056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   return (\n       <>\n           <nav className='mainNav'>\n               <ul>\n-\n+                  <li><NavLink style={getStyle()} to='/'>Strona głowna</NavLink></li>\n                   <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n@@ -34,8 +34,9 @@\n   return (\n       <HashRouter>\n           <Routes>\n               <Route element={<Layout/>}>\n+                  <Route path='/' element={<Home/>}/>\n                   <Route path='logowanie' element={<LoginForm />} />\n                   <Route path='rejestracja' element={<RegisterForm />} />\n               </Route>\n           </Routes>\n"
+                },
+                {
+                    "date": 1684397272595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n   return (\n       <>\n           <nav className='mainNav'>\n               <ul>\n-                  <li><NavLink style={getStyle()} to='/'>Strona głowna</NavLink></li>\n+                  \n                   <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n"
+                },
+                {
+                    "date": 1684397285167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n   return (\n       <HashRouter>\n           <Routes>\n               <Route element={<Layout/>}>\n-                  <Route path='/' element={<Home/>}/>\n+                  \n                   <Route path='logowanie' element={<LoginForm />} />\n                   <Route path='rejestracja' element={<RegisterForm />} />\n               </Route>\n           </Routes>\n"
+                },
+                {
+                    "date": 1684397300174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n   return (\n       <>\n           <nav className='mainNav'>\n               <ul>\n-                  \n                   <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n@@ -34,9 +33,9 @@\n   return (\n       <HashRouter>\n           <Routes>\n               <Route element={<Layout/>}>\n-                  \n+                  <Route path='/' element={<Home/>}/>\n                   <Route path='logowanie' element={<LoginForm />} />\n                   <Route path='rejestracja' element={<RegisterForm />} />\n               </Route>\n           </Routes>\n"
+                },
+                {
+                    "date": 1684397310467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 900 } : undefined\n   return (\n       <>\n-          <nav className='mainNav'>\n+          <nav className='mainNav container'>\n               <ul>\n                   <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n"
+                },
+                {
+                    "date": 1684397375681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       <>\n           <nav className='mainNav container'>\n               <ul>\n                   <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n-                  <li><NavLink style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n+                  <li><NavLink className={main} style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n           <Outlet/>\n       </>\n"
+                },
+                {
+                    "date": 1684397399189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n       <>\n           <nav className='mainNav container'>\n               <ul>\n                   <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n-                  <li><NavLink className={main} style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n+                  <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n           <Outlet/>\n       </>\n"
                 }
             ],
             "date": 1683983953405,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 29,
+            "activePatchIndex": 36,
             "patches": [
                 {
                     "date": 1683986341922,
@@ -124,6 +124,34 @@
                 {
                     "date": 1683996813084,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n-    <HomeHeader className='container home__homeheader'/>\r\n+    <HomeHeader className='container'/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684393077455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+\r\n+\r\n+/*\r\n import HomeHeader from './HomeHeader';\r\n import * as Scroll from 'react-scroll';\r\n import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n@@ -7,5 +10,6 @@\n     <HomeHeader className='container'/>\r\n     </section>)\r\n }\r\n \r\n-export default Home\n\\ No newline at end of file\n+export default Home\r\n+*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684393094993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,35 @@\n+import React from 'react';\r\n+import * as Scroll from 'react-scroll';\r\n \r\n+export default function Home() {\r\n+  const Element = Scroll.Element;\r\n \r\n+  return (\r\n+    <div>\r\n+      <h1>Home</h1>\r\n+      <p>Welcome</p>\r\n+      <p>\r\n+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida\r\n+        fermentum purus egestas blandit. Nam nisl sem, feugiat hendrerit magna\r\n+        non, ullamcorper pharetra nibh. Sed vestibulum nisi enim, non bibendum\r\n+        lorem aliquam non. Cras turpis risus, elementum a sapien quis, dictum...\r\n+      </p>\r\n+      <p>\r\n+        Sed volutpat, turpis vitae cursus viverra, quam tortor maximus felis,\r\n+        tempus eleifend nulla metus et sapien. Curabitur vitae sodales dolor.\r\n+        Phasellus a ultrices felis. Aenean efficitur nibh sit amet tortor...\r\n+      </p>\r\n+      <Element name=\"anchor\">\r\n+        Nam nisi nisi, aliquet at blandit et, pulvinar sit amet quam. Sed\r\n+        euismod ex dui, posuere tristique purus tincidunt in. Orci varius\r\n+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus\r\n+        mus. Vestibulum sit amet nisi commodo, pretium quam non, scelerisque...\r\n+      </Element>\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n /*\r\n import HomeHeader from './HomeHeader';\r\n import * as Scroll from 'react-scroll';\r\n import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n"
+                },
+                {
+                    "date": 1684393490245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,36 +1,5 @@\n-import React from 'react';\r\n-import * as Scroll from 'react-scroll';\r\n \r\n-export default function Home() {\r\n-  const Element = Scroll.Element;\r\n-\r\n-  return (\r\n-    <div>\r\n-      <h1>Home</h1>\r\n-      <p>Welcome</p>\r\n-      <p>\r\n-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida\r\n-        fermentum purus egestas blandit. Nam nisl sem, feugiat hendrerit magna\r\n-        non, ullamcorper pharetra nibh. Sed vestibulum nisi enim, non bibendum\r\n-        lorem aliquam non. Cras turpis risus, elementum a sapien quis, dictum...\r\n-      </p>\r\n-      <p>\r\n-        Sed volutpat, turpis vitae cursus viverra, quam tortor maximus felis,\r\n-        tempus eleifend nulla metus et sapien. Curabitur vitae sodales dolor.\r\n-        Phasellus a ultrices felis. Aenean efficitur nibh sit amet tortor...\r\n-      </p>\r\n-      <Element name=\"anchor\">\r\n-        Nam nisi nisi, aliquet at blandit et, pulvinar sit amet quam. Sed\r\n-        euismod ex dui, posuere tristique purus tincidunt in. Orci varius\r\n-        natoque penatibus et magnis dis parturient montes, nascetur ridiculus\r\n-        mus. Vestibulum sit amet nisi commodo, pretium quam non, scelerisque...\r\n-      </Element>\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-/*\r\n import HomeHeader from './HomeHeader';\r\n import * as Scroll from 'react-scroll';\r\n import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n@@ -40,5 +9,4 @@\n     </section>)\r\n }\r\n \r\n export default Home\r\n-*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684393651888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n \r\n import HomeHeader from './HomeHeader';\r\n-import * as Scroll from 'react-scroll';\r\n-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'\r\n \r\n+\r\n const Home = () => {\r\n     return (<section className='home'>\r\n-    <HomeHeader className='container'/>\r\n+    \r\n     </section>)\r\n }\r\n \r\n export default Home\r\n+//<HomeHeader className='container'/>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684393707647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n \r\n import HomeHeader from './HomeHeader';\r\n+import Navigation from './Navigation';\r\n \r\n-\r\n const Home = () => {\r\n     return (<section className='home'>\r\n-    \r\n+    <Navigation/>\r\n     </section>)\r\n }\r\n \r\n export default Home\r\n"
+                },
+                {
+                    "date": 1684396913932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,5 @@\n     <Navigation/>\r\n     </section>)\r\n }\r\n \r\n-export default Home\r\n-//<HomeHeader className='container'/>\n\\ No newline at end of file\n+export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684396935323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-\r\n-import HomeHeader from './HomeHeader';\r\n import Navigation from './Navigation';\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n"
                 }
             ],
             "date": 1683986341922,
