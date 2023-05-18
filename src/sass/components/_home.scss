@@ -1,22 +1,50 @@
 @import '../settings/variables';
+
 .home {
     display: flex;
     flex-direction: column;
+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/55%;
 
     &__homeheader {
         display: flex;
-        align-items: baseline;
-
-        &__image {
-            max-width: 885px;
-        }
+        justify-content: flex-end;
+        align-items: center;
 
         &__text {
             display: flex;
             gap: 1em;
             flex-direction: column;
             text-align: center;
-            margin-left: 10%;
+            white-space: nowrap;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 1em;
+
+            img {
+                max-width: 10em;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            gap: 1.5rem;
+            text-align: center;
+            padding-top: 1em;
+            font-size: 1.3em;
         }
     }
+}
+
+.button {
+    padding:  0.5em 1em;
+    width: 9em;
+    background-color: $color-white;
+    border: 0.038em solid $color-dark-grey;
+    color: $color-dark-grey;
+    font-family: $font-family-basic;
+    font-weight: lighter;
 }

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 43,
+            "activePatchIndex": 166,
             "patches": [
                 {
                     "date": 1683991843387,
@@ -180,6 +180,498 @@
                 {
                     "date": 1683997231030,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         }\r\n \r\n         &__text {\r\n             display: flex;\r\n-            gap: 0.1em;\r\n+            gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n             margin-left: 10%;\r\n         }\r\n"
+                },
+                {
+                    "date": 1684399323225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,11 @@\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n             margin-left: 10%;\r\n+\r\n+            h2 {\r\n+                font-size: 1rem;\r\n+            }\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399341056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             text-align: center;\r\n             margin-left: 10%;\r\n \r\n             h2 {\r\n-                font-size: 1rem;\r\n+                font-size: 2rem;\r\n             }\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399346377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             text-align: center;\r\n             margin-left: 10%;\r\n \r\n             h2 {\r\n-                font-size: 2rem;\r\n+                font-size: 1.5rem;\r\n             }\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399357958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n-            margin-left: 10%;\r\n+            \r\n \r\n             h2 {\r\n                 font-size: 1.5rem;\r\n             }\r\n"
+                },
+                {
+                    "date": 1684399406648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n+            flex-wrap: nowrap;\r\n             \r\n \r\n             h2 {\r\n                 font-size: 1.5rem;\r\n"
+                },
+                {
+                    "date": 1684399435164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,8 @@\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n             flex-wrap: nowrap;\r\n-            \r\n \r\n             h2 {\r\n                 font-size: 1.5rem;\r\n             }\r\n"
+                },
+                {
+                    "date": 1684399460451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n-            flex-wrap: nowrap;\r\n+            white-space: nowrap;\r\n \r\n             h2 {\r\n                 font-size: 1.5rem;\r\n             }\r\n"
+                },
+                {
+                    "date": 1684399470819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,13 @@\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n-            white-space: nowrap;\r\n+            \r\n \r\n             h2 {\r\n                 font-size: 1.5rem;\r\n+                white-space: nowrap;\r\n             }\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399479432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,13 +15,12 @@\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n-            \r\n+            white-space: nowrap;\r\n \r\n             h2 {\r\n                 font-size: 1.5rem;\r\n-                white-space: nowrap;\r\n             }\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399547848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,12 @@\n             flex-direction: column;\r\n             text-align: center;\r\n             white-space: nowrap;\r\n \r\n+            img {\r\n+                max-width: 285px;\r\n+            }\r\n+\r\n             h2 {\r\n                 font-size: 1.5rem;\r\n             }\r\n         }\r\n"
+                },
+                {
+                    "date": 1684399600533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n             text-align: center;\r\n             white-space: nowrap;\r\n \r\n             img {\r\n-                max-width: 285px;\r\n+                max-width: 10em;\r\n             }\r\n \r\n             h2 {\r\n                 font-size: 1.5rem;\r\n"
+                },
+                {
+                    "date": 1684399622512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n             white-space: nowrap;\r\n+            align-items: center;\r\n \r\n             img {\r\n                 max-width: 10em;\r\n             }\r\n"
+                },
+                {
+                    "date": 1684399638175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n             flex-direction: column;\r\n             text-align: center;\r\n             white-space: nowrap;\r\n             align-items: center;\r\n+            justify-content: center;\r\n \r\n             img {\r\n                 max-width: 10em;\r\n             }\r\n"
+                },
+                {
+                    "date": 1684399687614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,10 @@\n             h2 {\r\n                 font-size: 1.5rem;\r\n             }\r\n         }\r\n+\r\n+        &__buttons {\r\n+            gap: 1rem;\r\n+        }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399694896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n             }\r\n         }\r\n \r\n         &__buttons {\r\n+            display: flex;\r\n             gap: 1rem;\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399712129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,8 @@\n         }\r\n \r\n         &__buttons {\r\n             display: flex;\r\n-            gap: 1rem;\r\n+            gap: 1.5rem;\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399736943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,7 +31,8 @@\n \r\n         &__buttons {\r\n             display: flex;\r\n             gap: 1.5rem;\r\n+            text-align: center;\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399772200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,7 +32,8 @@\n         &__buttons {\r\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n+            padding: 1em 2em;\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399803121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,11 @@\n         &__buttons {\r\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n-            padding: 1em 2em;\r\n+\r\n+            button {\r\n+                padding 1em 2em;\r\n+            }\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399819607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,11 +32,7 @@\n         &__buttons {\r\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n-\r\n-            button {\r\n-                padding 1em 2em;\r\n-            }\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684399857075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,4 +35,8 @@\n             text-align: center;\r\n         }\r\n     }\r\n }\r\n+\r\n+.button {\r\n+    padding: 0.1em;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684399882165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,6 +37,6 @@\n     }\r\n }\r\n \r\n .button {\r\n-    padding: 0.1em;\r\n+    padding: 1em 2em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684399956377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,6 @@\n }\r\n \r\n .button {\r\n     padding: 1em 2em;\r\n+    background-color: $color-base;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400002985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,6 +38,7 @@\n }\r\n \r\n .button {\r\n     padding: 1em 2em;\r\n-    background-color: $color-base;\r\n+    background-color: $color-white;\r\n+    border: 0.1em solid $color-dark-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400021992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,6 +39,6 @@\n \r\n .button {\r\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n-    border: 0.1em solid $color-dark-grey;\r\n+    border: 0.08em solid $color-dark-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400033015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,6 +39,6 @@\n \r\n .button {\r\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n-    border: 0.08em solid $color-dark-grey;\r\n+    border: 0.068em solid $color-dark-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400043996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n         &__buttons {\r\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n+            color: $color-dark-grey;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684400064225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n         &__buttons {\r\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n-            color: $color-dark-grey;\r\n+            \r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684400103355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,7 @@\n .button {\r\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n+    color: $color-dark-grey;\r\n+    width: 310px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400117966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    width: 310px;\r\n+    width: 210px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400127931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    width: 210px;\r\n+    width: 200px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400144355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    width: 200px;\r\n+    max-width: 200px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400150428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    max-width: 200px;\r\n+    width: 200px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400155648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    width: 200px;\r\n+    width: 10em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400165826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    width: 10em;\r\n+    width: 13em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400171618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    width: 13em;\r\n+    width: 12.5em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400193012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n     padding: 1em 2em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    width: 12.5em;\r\n+    width: 12.15em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400207300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n         &__buttons {\r\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n-            \r\n+            padding-top: 1em;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684400260624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,5 +43,6 @@\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     width: 12.15em;\r\n+    font-family: $font-family-basic;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400296705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n }\r\n \r\n .button {\r\n-    padding: 1em 2em;\r\n+    padding: 1em 1.8em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     width: 12.15em;\r\n"
+                },
+                {
+                    "date": 1684400302643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n }\r\n \r\n .button {\r\n-    padding: 1em 1.8em;\r\n+    padding: 1em ;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     width: 12.15em;\r\n"
+                },
+                {
+                    "date": 1684400318290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,11 +38,11 @@\n     }\r\n }\r\n \r\n .button {\r\n-    padding: 1em ;\r\n+    padding: 1em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    width: 12.15em;\r\n+    width: 12em;\r\n     font-family: $font-family-basic;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400331658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,7 +42,6 @@\n     padding: 1em;\r\n     background-color: $color-white;\r\n     border: 0.068em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n-    width: 12em;\r\n     font-family: $font-family-basic;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400340993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n                 max-width: 10em;\r\n             }\r\n \r\n             h2 {\r\n-                font-size: 1.5rem;\r\n+                font-size: 1.65rem;\r\n             }\r\n         }\r\n \r\n         &__buttons {\r\n"
+                },
+                {
+                    "date": 1684400348030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n                 max-width: 10em;\r\n             }\r\n \r\n             h2 {\r\n-                font-size: 1.65rem;\r\n+                font-size: 1.5rem;\r\n             }\r\n         }\r\n \r\n         &__buttons {\r\n"
+                },
+                {
+                    "date": 1684400371643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n+            font-size: 1.5em;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684400378835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n-            font-size: 1.5em;\r\n+            font-size: 1em;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684400384539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n-            font-size: 1em;\r\n+            font-size: 1.3em;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684400404837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,8 @@\n \r\n .button {\r\n     padding: 1em;\r\n     background-color: $color-white;\r\n-    border: 0.068em solid $color-dark-grey;\r\n+    border: 0.058em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400411277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,8 @@\n \r\n .button {\r\n     padding: 1em;\r\n     background-color: $color-white;\r\n-    border: 0.058em solid $color-dark-grey;\r\n+    border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684400432757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n+    width: ;\r\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n"
+                },
+                {
+                    "date": 1684401056810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n-    width: ;\r\n+    width: 12em;\r\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n"
+                },
+                {
+                    "date": 1684401085845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n-    width: 12em;\r\n+    width: 11.5em;\r\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n"
+                },
+                {
+                    "date": 1684401163247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n+        background-color: $color-yellow;\r\n \r\n         &__image {\r\n             max-width: 885px;\r\n         }\r\n@@ -34,8 +35,9 @@\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n             font-size: 1.3em;\r\n+            background-color: $color-dark-yellow;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684401179584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n             max-width: 885px;\r\n         }\r\n \r\n         &__text {\r\n+            background-color: $color-dark-yellow;\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n@@ -35,9 +36,8 @@\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n             font-size: 1.3em;\r\n-            background-color: $color-dark-yellow;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684401235019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         align-items: baseline;\r\n         background-color: $color-yellow;\r\n \r\n         &__image {\r\n-            max-width: 885px;\r\n+            max-width: 30em;\r\n         }\r\n \r\n         &__text {\r\n             background-color: $color-dark-yellow;\r\n"
+                },
+                {
+                    "date": 1684401249987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n         align-items: baseline;\r\n         background-color: $color-yellow;\r\n \r\n         &__image {\r\n-            max-width: 30em;\r\n+            max-width: 50em;\r\n+            align-items: center;\r\n         }\r\n \r\n         &__text {\r\n             background-color: $color-dark-yellow;\r\n"
+                },
+                {
+                    "date": 1684401284613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,10 @@\n         display: flex;\r\n         align-items: baseline;\r\n         background-color: $color-yellow;\r\n \r\n-        &__image {\r\n+        img {\r\n             max-width: 50em;\r\n-            align-items: center;\r\n         }\r\n \r\n         &__text {\r\n             background-color: $color-dark-yellow;\r\n"
+                },
+                {
+                    "date": 1684401313387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,11 @@\n         display: flex;\r\n         align-items: baseline;\r\n         background-color: $color-yellow;\r\n \r\n-        img {\r\n+        &__image {\r\n             max-width: 50em;\r\n+            padding-top: 1em;\r\n         }\r\n \r\n         &__text {\r\n             background-color: $color-dark-yellow;\r\n"
+                },
+                {
+                    "date": 1684401325725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         background-color: $color-yellow;\r\n \r\n         &__image {\r\n             max-width: 50em;\r\n-            padding-top: 1em;\r\n+            padding-top: 4em;\r\n         }\r\n \r\n         &__text {\r\n             background-color: $color-dark-yellow;\r\n"
+                },
+                {
+                    "date": 1684401355128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         background-color: $color-yellow;\r\n \r\n         &__image {\r\n             max-width: 50em;\r\n-            padding-top: 4em;\r\n+            padding: 4em;\r\n         }\r\n \r\n         &__text {\r\n             background-color: $color-dark-yellow;\r\n"
+                },
+                {
+                    "date": 1684401364400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         align-items: baseline;\r\n         background-color: $color-yellow;\r\n \r\n         &__image {\r\n-            max-width: 50em;\r\n+            max-width: 80em;\r\n             padding: 4em;\r\n         }\r\n \r\n         &__text {\r\n"
+                },
+                {
+                    "date": 1684401386517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n         align-items: baseline;\r\n         background-color: $color-yellow;\r\n \r\n         &__image {\r\n-            max-width: 80em;\r\n-            padding: 4em;\r\n+            max-width: 60em;\r\n+            padding-top: 4em;\r\n         }\r\n \r\n         &__text {\r\n             background-color: $color-dark-yellow;\r\n"
+                },
+                {
+                    "date": 1684401399671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         background-color: $color-yellow;\r\n \r\n         &__image {\r\n             max-width: 60em;\r\n-            padding-top: 4em;\r\n+            padding-top: 2em;\r\n         }\r\n \r\n         &__text {\r\n             background-color: $color-dark-yellow;\r\n"
+                },
+                {
+                    "date": 1684401424592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n             white-space: nowrap;\r\n-            align-items: center;\r\n+            \r\n             justify-content: center;\r\n \r\n             img {\r\n                 max-width: 10em;\r\n"
+                },
+                {
+                    "date": 1684401439397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n             white-space: nowrap;\r\n-            \r\n+            align-items: center;\r\n             justify-content: center;\r\n \r\n             img {\r\n                 max-width: 10em;\r\n"
+                },
+                {
+                    "date": 1684401457274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n             text-align: center;\r\n             white-space: nowrap;\r\n             align-items: center;\r\n             justify-content: center;\r\n+            padding: 1em;\r\n \r\n             img {\r\n                 max-width: 10em;\r\n             }\r\n"
+                },
+                {
+                    "date": 1684401474130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,17 +5,15 @@\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n-        background-color: $color-yellow;\r\n \r\n         &__image {\r\n             max-width: 60em;\r\n             padding-top: 2em;\r\n         }\r\n \r\n         &__text {\r\n-            background-color: $color-dark-yellow;\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             text-align: center;\r\n"
+                },
+                {
+                    "date": 1684401485242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         display: flex;\r\n         align-items: baseline;\r\n \r\n         &__image {\r\n-            max-width: 60em;\r\n+            max-width: 50em;\r\n             padding-top: 2em;\r\n         }\r\n \r\n         &__text {\r\n"
+                },
+                {
+                    "date": 1684402085946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         align-items: baseline;\r\n \r\n         &__image {\r\n             max-width: 50em;\r\n-            padding-top: 2em;\r\n+            position: absolute;\r\n         }\r\n \r\n         &__text {\r\n             display: flex;\r\n"
+                },
+                {
+                    "date": 1684402111122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n \r\n         &__image {\r\n             max-width: 50em;\r\n             position: absolute;\r\n+            top: 0;\r\n+            left: 0;\r\n         }\r\n \r\n         &__text {\r\n             display: flex;\r\n"
+                },
+                {
+                    "date": 1684402152801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         align-items: baseline;\r\n \r\n         &__image {\r\n             max-width: 50em;\r\n-            position: absolute;\r\n+            position: relative;\r\n             top: 0;\r\n             left: 0;\r\n         }\r\n \r\n"
+                },
+                {
+                    "date": 1684402174896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         align-items: baseline;\r\n \r\n         &__image {\r\n             max-width: 50em;\r\n-            position: relative;\r\n+            position: abolute;\r\n             top: 0;\r\n             left: 0;\r\n         }\r\n \r\n"
+                },
+                {
+                    "date": 1684402631692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         &__image {\r\n             max-width: 50em;\r\n             position: abolute;\r\n             top: 0;\r\n-            left: 0;\r\n+            left: -2;\r\n         }\r\n \r\n         &__text {\r\n             display: flex;\r\n"
+                },
+                {
+                    "date": 1684402638691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         &__image {\r\n             max-width: 50em;\r\n             position: abolute;\r\n             top: 0;\r\n-            left: -2;\r\n+            left: -20;\r\n         }\r\n \r\n         &__text {\r\n             display: flex;\r\n"
+                },
+                {
+                    "date": 1684402764901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n @import '../settings/variables';\r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n+    \r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684402827968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n @import '../settings/variables';\r\n+\r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    \r\n+    background-image: url('/src/assets/Home-Hero-Image.jpg');\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684402882519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n     background-image: url('/src/assets/Home-Hero-Image.jpg');\r\n+    background-repeat: no-repeat;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684402974665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background-image: url('/src/assets/Home-Hero-Image.jpg');\r\n-    background-repeat: no-repeat;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat center/cover;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684403011827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat center/cover;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684403051295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat center/cover;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684403114544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat center/cover;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat center/50%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684403124790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat center/50%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top/50%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684403138606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top/50%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/50%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684403150008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/50%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684403168164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/65%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684403175682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/65%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         align-items: baseline;\r\n"
+                },
+                {
+                    "date": 1684403230765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n             flex-direction: column;\r\n             text-align: center;\r\n             white-space: nowrap;\r\n             align-items: center;\r\n-            justify-content: center;\r\n+            justify-content: flex-end;\r\n             padding: 1em;\r\n \r\n             img {\r\n                 max-width: 10em;\r\n"
+                },
+                {
+                    "date": 1684403245076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,25 +15,9 @@\n             top: 0;\r\n             left: -20;\r\n         }\r\n \r\n-        &__text {\r\n-            display: flex;\r\n-            gap: 1em;\r\n-            flex-direction: column;\r\n-            text-align: center;\r\n-            white-space: nowrap;\r\n-            align-items: center;\r\n-            justify-content: flex-end;\r\n-            padding: 1em;\r\n-\r\n-            img {\r\n-                max-width: 10em;\r\n-            }\r\n-\r\n-            h2 {\r\n-                font-size: 1.5rem;\r\n-            }\r\n+         }\r\n         }\r\n \r\n         &__buttons {\r\n             display: flex;\r\n"
+                },
+                {
+                    "date": 1684403251142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,9 @@\n             top: 0;\r\n             left: -20;\r\n         }\r\n \r\n-         }\r\n-        }\r\n+        \r\n \r\n         &__buttons {\r\n             display: flex;\r\n             gap: 1.5rem;\r\n"
+                },
+                {
+                    "date": 1684403270740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,19 +6,36 @@\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n-        align-items: baseline;\r\n+        \r\n \r\n         &__image {\r\n             max-width: 50em;\r\n             position: abolute;\r\n             top: 0;\r\n             left: -20;\r\n         }\r\n \r\n-        \r\n+        &__text {\r\n+            display: flex;\r\n+            gap: 1em;\r\n+            flex-direction: column;\r\n+            text-align: center;\r\n+            white-space: nowrap;\r\n+            align-items: center;\r\n+            justify-content: flex-end;\r\n+            padding: 1em;\r\n \r\n+            img {\r\n+                max-width: 10em;\r\n+            }\r\n+\r\n+            h2 {\r\n+                font-size: 1.5rem;\r\n+            }\r\n+        }\r\n+\r\n         &__buttons {\r\n             display: flex;\r\n             gap: 1.5rem;\r\n             text-align: center;\r\n"
+                },
+                {
+                    "date": 1684403279898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n-        \r\n+        align-items: baseline;\r\n \r\n         &__image {\r\n             max-width: 50em;\r\n             position: abolute;\r\n"
+                },
+                {
+                    "date": 1684403294129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,11 @@\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n-        align-items: baseline;\r\n+        align-items: center;\r\n \r\n+\r\n         &__image {\r\n             max-width: 50em;\r\n             position: abolute;\r\n             top: 0;\r\n"
+                },
+                {
+                    "date": 1684403307734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n-        align-items: center;\r\n+        align-items: flex-start;\r\n \r\n \r\n         &__image {\r\n             max-width: 50em;\r\n"
+                },
+                {
+                    "date": 1684403319184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n-        align-items: flex-start;\r\n \r\n \r\n+\r\n         &__image {\r\n             max-width: 50em;\r\n             position: abolute;\r\n             top: 0;\r\n"
+                },
+                {
+                    "date": 1684403330492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,10 @@\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n+        justify-content: flex-end;\r\n \r\n-\r\n-\r\n         &__image {\r\n             max-width: 50em;\r\n             position: abolute;\r\n             top: 0;\r\n"
+                },
+                {
+                    "date": 1684403343515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n+        background-color: $color-yellow;\r\n \r\n         &__image {\r\n             max-width: 50em;\r\n             position: abolute;\r\n"
+                },
+                {
+                    "date": 1684403355637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,8 @@\n         justify-content: flex-end;\r\n         background-color: $color-yellow;\r\n \r\n         &__image {\r\n-            max-width: 50em;\r\n             position: abolute;\r\n             top: 0;\r\n             left: -20;\r\n         }\r\n"
+                },
+                {
+                    "date": 1684403396962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,21 +2,15 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n         background-color: $color-yellow;\r\n \r\n-        &__image {\r\n-            position: abolute;\r\n-            top: 0;\r\n-            left: -20;\r\n-        }\r\n-\r\n         &__text {\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1684403413071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n-        background-color: $color-yellow;\r\n+        \r\n \r\n         &__text {\r\n             display: flex;\r\n             gap: 1em;\r\n"
+                },
+                {
+                    "date": 1684403444277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n-        \r\n+        background-color: $color-yellow;\r\n+        width: 80%;\r\n \r\n         &__text {\r\n             display: flex;\r\n             gap: 1em;\r\n"
+                },
+                {
+                    "date": 1684403451354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n         background-color: $color-yellow;\r\n-        width: 80%;\r\n \r\n         &__text {\r\n             display: flex;\r\n             gap: 1em;\r\n"
+                },
+                {
+                    "date": 1684403464774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n         background-color: $color-yellow;\r\n+        margin-left: 10em;\r\n \r\n         &__text {\r\n             display: flex;\r\n             gap: 1em;\r\n"
+                },
+                {
+                    "date": 1684403475027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n         background-color: $color-yellow;\r\n-        margin-left: 10em;\r\n \r\n         &__text {\r\n             display: flex;\r\n             gap: 1em;\r\n"
+                },
+                {
+                    "date": 1684403533108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,40 +4,9 @@\n     display: flex;\r\n     flex-direction: column;\r\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n \r\n-    &__homeheader {\r\n-        display: flex;\r\n-        justify-content: flex-end;\r\n-        background-color: $color-yellow;\r\n-\r\n-        &__text {\r\n-            display: flex;\r\n-            gap: 1em;\r\n-            flex-direction: column;\r\n-            text-align: center;\r\n-            white-space: nowrap;\r\n-            align-items: center;\r\n-            justify-content: flex-end;\r\n-            padding: 1em;\r\n-\r\n-            img {\r\n-                max-width: 10em;\r\n-            }\r\n-\r\n-            h2 {\r\n-                font-size: 1.5rem;\r\n-            }\r\n-        }\r\n-\r\n-        &__buttons {\r\n-            display: flex;\r\n-            gap: 1.5rem;\r\n-            text-align: center;\r\n-            padding-top: 1em;\r\n-            font-size: 1.3em;\r\n-        }\r\n-    }\r\n+    \r\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n"
+                },
+                {
+                    "date": 1684403546564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     display: flex;\r\n     flex-direction: column;\r\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n \r\n-    \r\n+    background-color: $color-yellow;\r\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n"
+                },
+                {
+                    "date": 1684403558359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,40 @@\n     display: flex;\r\n     flex-direction: column;\r\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n \r\n-    background-color: $color-yellow;\r\n+    &__homeheader {\r\n+        display: flex;\r\n+        justify-content: flex-end;\r\n+        background-color: $color-yellow;\r\n+\r\n+        &__text {\r\n+            display: flex;\r\n+            gap: 1em;\r\n+            flex-direction: column;\r\n+            text-align: center;\r\n+            white-space: nowrap;\r\n+            align-items: center;\r\n+            justify-content: flex-end;\r\n+            padding: 1em;\r\n+\r\n+            img {\r\n+                max-width: 10em;\r\n+            }\r\n+\r\n+            h2 {\r\n+                font-size: 1.5rem;\r\n+            }\r\n+        }\r\n+\r\n+        &__buttons {\r\n+            display: flex;\r\n+            gap: 1.5rem;\r\n+            text-align: center;\r\n+            padding-top: 1em;\r\n+            font-size: 1.3em;\r\n+        }\r\n+    }\r\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n"
+                },
+                {
+                    "date": 1684403581260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,40 +4,9 @@\n     display: flex;\r\n     flex-direction: column;\r\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n \r\n-    &__homeheader {\r\n-        display: flex;\r\n-        justify-content: flex-end;\r\n-        background-color: $color-yellow;\r\n-\r\n-        &__text {\r\n-            display: flex;\r\n-            gap: 1em;\r\n-            flex-direction: column;\r\n-            text-align: center;\r\n-            white-space: nowrap;\r\n-            align-items: center;\r\n-            justify-content: flex-end;\r\n-            padding: 1em;\r\n-\r\n-            img {\r\n-                max-width: 10em;\r\n-            }\r\n-\r\n-            h2 {\r\n-                font-size: 1.5rem;\r\n-            }\r\n-        }\r\n-\r\n-        &__buttons {\r\n-            display: flex;\r\n-            gap: 1.5rem;\r\n-            text-align: center;\r\n-            padding-top: 1em;\r\n-            font-size: 1.3em;\r\n-        }\r\n-    }\r\n+    background-color: $color-yellow;\r\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n"
+                },
+                {
+                    "date": 1684403593202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,40 @@\n     flex-direction: column;\r\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n \r\n     background-color: $color-yellow;\r\n+    &__homeheader {\r\n+        display: flex;\r\n+        justify-content: flex-end;\r\n+        background-color: $color-yellow;\r\n+\r\n+        &__text {\r\n+            display: flex;\r\n+            gap: 1em;\r\n+            flex-direction: column;\r\n+            text-align: center;\r\n+            white-space: nowrap;\r\n+            align-items: center;\r\n+            justify-content: flex-end;\r\n+            padding: 1em;\r\n+\r\n+            img {\r\n+                max-width: 10em;\r\n+            }\r\n+\r\n+            h2 {\r\n+                font-size: 1.5rem;\r\n+            }\r\n+        }\r\n+\r\n+        &__buttons {\r\n+            display: flex;\r\n+            gap: 1.5rem;\r\n+            text-align: center;\r\n+            padding-top: 1em;\r\n+            font-size: 1.3em;\r\n+        }\r\n+    }\r\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n"
+                },
+                {
+                    "date": 1684403619948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n     display: flex;\r\n     flex-direction: column;\r\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n \r\n-    background-color: $color-yellow;\r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n         background-color: $color-yellow;\r\n"
+                },
+                {
+                    "date": 1684403716394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,40 +4,9 @@\n     display: flex;\r\n     flex-direction: column;\r\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n \r\n-    &__homeheader {\r\n-        display: flex;\r\n-        justify-content: flex-end;\r\n-        background-color: $color-yellow;\r\n-\r\n-        &__text {\r\n-            display: flex;\r\n-            gap: 1em;\r\n-            flex-direction: column;\r\n-            text-align: center;\r\n-            white-space: nowrap;\r\n-            align-items: center;\r\n-            justify-content: flex-end;\r\n-            padding: 1em;\r\n-\r\n-            img {\r\n-                max-width: 10em;\r\n-            }\r\n-\r\n-            h2 {\r\n-                font-size: 1.5rem;\r\n-            }\r\n-        }\r\n-\r\n-        &__buttons {\r\n-            display: flex;\r\n-            gap: 1.5rem;\r\n-            text-align: center;\r\n-            padding-top: 1em;\r\n-            font-size: 1.3em;\r\n-        }\r\n-    }\r\n+    \r\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n"
+                },
+                {
+                    "date": 1684403753325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,40 @@\n     display: flex;\r\n     flex-direction: column;\r\n     background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n \r\n-    \r\n+    &__homeheader {\r\n+        display: flex;\r\n+        justify-content: flex-end;\r\n+        background-color: $color-yellow;\r\n+\r\n+        &__text {\r\n+            display: flex;\r\n+            gap: 1em;\r\n+            flex-direction: column;\r\n+            text-align: center;\r\n+            white-space: nowrap;\r\n+            align-items: center;\r\n+            justify-content: flex-end;\r\n+            padding: 1em;\r\n+\r\n+            img {\r\n+                max-width: 10em;\r\n+            }\r\n+\r\n+            h2 {\r\n+                font-size: 1.5rem;\r\n+            }\r\n+        }\r\n+\r\n+        &__buttons {\r\n+            display: flex;\r\n+            gap: 1.5rem;\r\n+            text-align: center;\r\n+            padding-top: 1em;\r\n+            font-size: 1.3em;\r\n+        }\r\n+    }\r\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n"
+                },
+                {
+                    "date": 1684403768773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/20%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n"
+                },
+                {
+                    "date": 1684403905098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n+        align-items: baseline;\r\n         background-color: $color-yellow;\r\n \r\n         &__text {\r\n             display: flex;\r\n"
+                },
+                {
+                    "date": 1684403913165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n-        align-items: baseline;\r\n+        align-items: center;\r\n         background-color: $color-yellow;\r\n \r\n         &__text {\r\n             display: flex;\r\n"
+                },
+                {
+                    "date": 1684403925128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n         align-items: center;\r\n-        background-color: $color-yellow;\r\n \r\n         &__text {\r\n             display: flex;\r\n             gap: 1em;\r\n"
+                },
+                {
+                    "date": 1684404154136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/60%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/55%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n"
+                },
+                {
+                    "date": 1684404203187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n-    width: 11.5em;\r\n+    width: 11em;\r\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n"
+                },
+                {
+                    "date": 1684404224001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n-    width: 11em;\r\n+    width: 10em;\r\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n"
+                },
+                {
+                    "date": 1684404263043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n }\r\n \r\n .button {\r\n     padding: 1em;\r\n-    width: 10em;\r\n+    width: 9em;\r\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n"
+                },
+                {
+                    "date": 1684404275256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     }\r\n }\r\n \r\n .button {\r\n-    padding: 1em;\r\n+    padding: 1em 0.5em;\r\n     width: 9em;\r\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n"
+                },
+                {
+                    "date": 1684404281773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     }\r\n }\r\n \r\n .button {\r\n-    padding: 1em 0.5em;\r\n+    padding:  0.5em 1em;\r\n     width: 9em;\r\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n"
+                },
+                {
+                    "date": 1684404323798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,5 +45,6 @@\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n-}\n\\ No newline at end of file\n+    font-weight: lighter;\r\n+}\r\n"
                 }
             ],
             "date": 1683991843387,

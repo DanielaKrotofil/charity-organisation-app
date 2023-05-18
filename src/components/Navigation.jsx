@@ -10,7 +10,7 @@ export default function Navigation() {
     <div className="navigation container">
       <header className="nav">
         <nav className="nav__container__actions">
-          <ul >
+          <ul>
             <li>
               <Link className="startlink" activeClass="active" smooth spy to="start">
                 Start
@@ -39,13 +39,11 @@ export default function Navigation() {
           </ul>
         </nav>
       </header>
-      <div className="container">
-        <section id="start"><HomeHeader/></section>
-        <section id="about"><HomeAbout/></section>
-        <section id="aboutus"><HomeAboutUs/></section>
-        <section id="fundations"><HomeFundations/></section>
-        <section id="contact"><Contact/></section>
-      </div>
+      <section id="start"><HomeHeader/></section>
+      <section id="about"><HomeAbout/></section>
+      <section id="aboutus"><HomeAboutUs/></section>
+      <section id="fundations"><HomeFundations/></section>
+      <section id="contact"><Contact/></section>
     </div>
   );
 }

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 87,
+            "activePatchIndex": 93,
             "patches": [
                 {
                     "date": 1684394531172,
@@ -356,6 +356,30 @@
                 {
                     "date": 1684397955671,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,15 @@\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n     padding: 0.4em 0.6em;\r\n   }\r\n+\r\n   ul {\r\n     gap: 1rem;\r\n+\r\n     li {\r\n       color: $color-grey;\r\n-  \r\n+\r\n       a {\r\n         text-decoration: none;\r\n         color: $color-grey;\r\n       }\r\n"
+                },
+                {
+                    "date": 1684402491662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n @import '../settings/variables';\r\n .mainNav {\r\n   padding-top: 1.3em;\r\n+  background-image: url('/src/assets/Background-Form.jpg');\r\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n     padding: 0.4em 0.6em;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684402510335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n @import '../settings/variables';\r\n .mainNav {\r\n   padding-top: 1.3em;\r\n-  background-image: url('/src/assets/Background-Form.jpg');\r\n+\r\n   &__registration {\r\n     border: 0.075em solid $color-yellow;\r\n     padding: 0.4em 0.6em;\r\n   }\r\n"
+                },
+                {
+                    "date": 1684404063517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,12 +25,10 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-section {\r\n-  height: 100vh;\r\n-}\r\n \r\n+\r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n   padding: 0.55em 1em;\r\n }\r\n"
+                },
+                {
+                    "date": 1684404073136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,12 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n+section {\r\n+  height: 100vh;\r\n+}\r\n \r\n-\r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n   padding: 0.55em 1em;\r\n }\r\n"
+                },
+                {
+                    "date": 1684404087453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   text-align: center;\r\n }\r\n \r\n section {\r\n-  height: 100vh;\r\n+  max-height: 100vh;\r\n }\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n"
+                },
+                {
+                    "date": 1684404099365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   text-align: center;\r\n }\r\n \r\n section {\r\n-  max-height: 100vh;\r\n+  height: 100vh;\r\n }\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n"
                 }
             ],
             "date": 1684394531172,

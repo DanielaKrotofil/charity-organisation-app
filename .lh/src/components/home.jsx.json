@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 36,
+            "activePatchIndex": 40,
             "patches": [
                 {
                     "date": 1683986341922,
@@ -152,6 +152,22 @@
                 {
                     "date": 1684396935323,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-\r\n-import HomeHeader from './HomeHeader';\r\n import Navigation from './Navigation';\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n"
+                },
+                {
+                    "date": 1684402707938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import Navigation from './Navigation';\r\n+import homeImage from '../assets/Home-Hero-Image.jpg';\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n     <Navigation/>\r\n"
+                },
+                {
+                    "date": 1684402724115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n import homeImage from '../assets/Home-Hero-Image.jpg';\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n-    <Navigation/>\r\n+        <img src={homeImage} className='home__homeheader__image'></img>\r\n+        <Navigation/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684402745435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n         <img src={homeImage} className='home__homeheader__image'></img>\r\n-        <Navigation/>\r\n+    <Navigation/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684402751895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,9 @@\n import homeImage from '../assets/Home-Hero-Image.jpg';\r\n \r\n const Home = () => {\r\n     return (<section className='home'>\r\n-        <img src={homeImage} className='home__homeheader__image'></img>\r\n-    <Navigation/>\r\n+        <Navigation/>\r\n     </section>)\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683986341922,
