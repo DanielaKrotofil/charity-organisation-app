@@ -20,3 +20,21 @@ h3 {
 h5 {
     font-size: 1.5rem;
 }
+
+.decoration-line {
+    max-width: 10em;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+.line {
+    display: block;
+    height: 1px;
+    width: 5em;
+    background: #222;
+    flex-grow: 1;
+  }

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 35,
+            "activePatchIndex": 101,
             "patches": [
                 {
                     "date": 1684415399548,
@@ -148,6 +148,270 @@
                 {
                     "date": 1684419921999,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,2 @@\n @import '../settings/variables';\r\n \r\n-.HomeThreeColumns {\r\n-    display: flex;\r\n-    justify-content: space-between;\r\n-    line-height: 1.5em;\r\n-    padding: 1.2em 4em;\r\n-    background-color: $color-yellow;\r\n-    max-height: 40%;\r\n-\r\n-    &__box {\r\n-        text-align: center;\r\n-        padding: 2em;\r\n-        display: flex;\r\n-        flex-direction: column;\r\n-        gap: 1.5em;\r\n-    }\r\n-\r\n-    h6 {\r\n-        text-transform: uppercase;\r\n-        margin-top: 1em;\r\n-    }\r\n-}\r\n"
+                },
+                {
+                    "date": 1684420739171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,6 @@\n @import '../settings/variables';\r\n \r\n+.about {\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420937466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,6 @@\n \r\n .about {\r\n     display: flex;\r\n     flex-direction: column;\r\n+    align-items: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420951924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n .about {\r\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n+    justify-content: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420969618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,5 @@\n .about {\r\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n-    justify-content: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420981401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n .about {\r\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n+    gap: 2em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684421157273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,9 @@\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 2em;\r\n+\r\n+    &__steps {\r\n+        display: flex;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684421291489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,7 @@\n     gap: 2em;\r\n \r\n     &__steps {\r\n         display: flex;\r\n+        background-color: $color-base;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684421313930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,6 @@\n     gap: 2em;\r\n \r\n     &__steps {\r\n         display: flex;\r\n-        background-color: $color-base;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423464702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,8 @@\n     align-items: center;\r\n     gap: 2em;\r\n \r\n     &__steps {\r\n+        padding:  1em 3em;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423483190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     align-items: center;\r\n     gap: 2em;\r\n \r\n     &__steps {\r\n-        padding:  1em 3em;\r\n+        padding:  1em 5em;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423498507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     align-items: center;\r\n     gap: 2em;\r\n \r\n     &__steps {\r\n-        padding:  1em 5em;\r\n+        margin:  1em 5em;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423510520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     align-items: center;\r\n     gap: 2em;\r\n \r\n     &__steps {\r\n-        margin:  1em 5em;\r\n+        padding:  1em 5em;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423520722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     align-items: center;\r\n     gap: 2em;\r\n \r\n     &__steps {\r\n-        padding:  1em 5em;\r\n+        padding:  1em 0;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423530947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     align-items: center;\r\n     gap: 2em;\r\n \r\n     &__steps {\r\n-        padding:  1em 0;\r\n+        padding:  6em 0;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423556323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n     align-items: center;\r\n     gap: 2em;\r\n \r\n     &__steps {\r\n+        background-color: $color-base;\r\n         padding:  6em 0;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423613463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     gap: 2em;\r\n \r\n     &__steps {\r\n         background-color: $color-base;\r\n+        width: 100vh;\r\n         padding:  6em 0;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423622173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     gap: 2em;\r\n \r\n     &__steps {\r\n         background-color: $color-base;\r\n-        width: 100vh;\r\n+        width: 100%;\r\n         padding:  6em 0;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423640010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n \r\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n+        align-items: center;\r\n         padding:  6em 0;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423656595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n         align-items: center;\r\n+        justify-content:space-between;\r\n         padding:  6em 0;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423669238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n         align-items: center;\r\n-        justify-content:space-between;\r\n+        justify-content:space-around;\r\n         padding:  6em 0;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423680481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n         align-items: center;\r\n-        justify-content:space-around;\r\n+        justify-content:space-between;\r\n         padding:  6em 0;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423688518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n         background-color: $color-base;\r\n         width: 100%;\r\n         align-items: center;\r\n         justify-content:space-between;\r\n-        padding:  6em 0;\r\n+        padding:  6em 3em;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423700125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n         background-color: $color-base;\r\n         width: 100%;\r\n         align-items: center;\r\n         justify-content:space-between;\r\n-        padding:  6em 3em;\r\n+        padding:  6em 5em;\r\n         display: flex;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423729021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,6 +12,10 @@\n         align-items: center;\r\n         justify-content:space-between;\r\n         padding:  6em 5em;\r\n         display: flex;\r\n+\r\n+        &-box {\r\n+            max-width: 20%;\r\n+        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423756137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,8 @@\n         display: flex;\r\n \r\n         &-box {\r\n             max-width: 20%;\r\n+            padding: 1em;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423763924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,7 @@\n         display: flex;\r\n \r\n         &-box {\r\n             max-width: 20%;\r\n-            padding: 1em;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424130696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,9 @@\n         &-box {\r\n             max-width: 20%;\r\n         }\r\n     }\r\n+}\r\n+\r\n+.line {\r\n+    border-top: 10px solid black;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424212632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,6 +20,9 @@\n     }\r\n }\r\n \r\n .line {\r\n-    border-top: 10px solid black;\r\n+  display: block;\r\n+  height: 3px;\r\n+  background: #222;\r\n+  flex-grow: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424221161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,8 @@\n }\r\n \r\n .line {\r\n   display: block;\r\n-  height: 3px;\r\n+  height: 1px;\r\n   background: #222;\r\n   flex-grow: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424256052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,8 @@\n \r\n .line {\r\n   display: block;\r\n   height: 1px;\r\n+  width: 0.1em;\r\n   background: #222;\r\n   flex-grow: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424263434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n \r\n .line {\r\n   display: block;\r\n   height: 1px;\r\n-  width: 0.1em;\r\n+  width: 1em;\r\n   background: #222;\r\n   flex-grow: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424270063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n \r\n .line {\r\n   display: block;\r\n   height: 1px;\r\n-  width: 1em;\r\n+  width: 5em;\r\n   background: #222;\r\n   flex-grow: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424308987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,4 @@\n         }\r\n     }\r\n }\r\n \r\n-.line {\r\n-  display: block;\r\n-  height: 1px;\r\n-  width: 5em;\r\n-  background: #222;\r\n-  flex-grow: 1;\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424330309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,5 @@\n         &-box {\r\n             max-width: 20%;\r\n         }\r\n     }\r\n-}\r\n-\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424359817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,10 @@\n         display: flex;\r\n \r\n         &-box {\r\n             max-width: 20%;\r\n+            display: flex;\r\n+            align-items: center;\r\n+            justify-content: center;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424372460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n \r\n         &-box {\r\n             max-width: 20%;\r\n             display: flex;\r\n+            flex-direction: column;\r\n             align-items: center;\r\n             justify-content: center;\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1684424383061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n \r\n         &-box {\r\n             max-width: 20%;\r\n             display: flex;\r\n+            gap: 1em;\r\n             flex-direction: column;\r\n             align-items: center;\r\n             justify-content: center;\r\n         }\r\n"
+                },
+                {
+                    "date": 1684424417590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n         align-items: center;\r\n-        justify-content:space-between;\r\n+        justify-content:center;\r\n+        gap: 2.3em;\r\n         padding:  6em 5em;\r\n         display: flex;\r\n \r\n         &-box {\r\n"
+                },
+                {
+                    "date": 1684424429870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n-        align-items: center;\r\n+        align-items: baseline;\r\n         justify-content:center;\r\n         gap: 2.3em;\r\n         padding:  6em 5em;\r\n         display: flex;\r\n"
+                },
+                {
+                    "date": 1684424502715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         padding:  6em 5em;\r\n         display: flex;\r\n \r\n         &-box {\r\n-            max-width: 20%;\r\n+            max-width: 18%;\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             align-items: center;\r\n"
+                },
+                {
+                    "date": 1684424560320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n         display: flex;\r\n \r\n         &-box {\r\n             max-width: 18%;\r\n+            padding: 6em;\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             align-items: center;\r\n"
+                },
+                {
+                    "date": 1684424600915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         display: flex;\r\n \r\n         &-box {\r\n             max-width: 18%;\r\n-            padding: 6em;\r\n+            padding: 5.5em;\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             align-items: center;\r\n"
+                },
+                {
+                    "date": 1684424607244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         display: flex;\r\n \r\n         &-box {\r\n             max-width: 18%;\r\n-            padding: 5.5em;\r\n+            padding: 5em;\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             align-items: center;\r\n"
+                },
+                {
+                    "date": 1684424614953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         display: flex;\r\n \r\n         &-box {\r\n             max-width: 18%;\r\n-            padding: 5em;\r\n+            padding: 4em;\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             align-items: center;\r\n"
+                },
+                {
+                    "date": 1684424626150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         display: flex;\r\n \r\n         &-box {\r\n             max-width: 18%;\r\n-            padding: 4em;\r\n+            padding: 0 4em;\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n             align-items: center;\r\n"
+                },
+                {
+                    "date": 1684424658263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n         width: 100%;\r\n         align-items: baseline;\r\n         justify-content:center;\r\n         gap: 2.3em;\r\n-        padding:  6em 5em;\r\n+        padding: 5em;\r\n         display: flex;\r\n \r\n         &-box {\r\n             max-width: 18%;\r\n"
+                },
+                {
+                    "date": 1684424688633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 2em;\r\n+    padding-top: 2em;\r\n \r\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n"
+                },
+                {
+                    "date": 1684424776305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,5 +25,10 @@\n             align-items: center;\r\n             justify-content: center;\r\n         }\r\n     }\r\n+\r\n+    .button-big {\r\n+        margin-bottom: 0;\r\n+        padding-bottom: 0;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424806395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,8 @@\n         }\r\n     }\r\n \r\n     .button-big {\r\n-        margin-bottom: 0;\r\n-        padding-bottom: 0;\r\n+        display: flex;\r\n+        justify-content: end;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424831473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 2em;\r\n     padding-top: 2em;\r\n+    background-color: $color-yellow;a\r\n \r\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n"
+                },
+                {
+                    "date": 1684424846870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 2em;\r\n     padding-top: 2em;\r\n-    background-color: $color-yellow;a\r\n+    background-color: ;a\r\n \r\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n"
+                },
+                {
+                    "date": 1684424905876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 2em;\r\n     padding-top: 2em;\r\n-    background-color: ;a\r\n \r\n     &__steps {\r\n         background-color: $color-base;\r\n         width: 100%;\r\n@@ -30,6 +29,7 @@\n \r\n     .button-big {\r\n         display: flex;\r\n         justify-content: end;\r\n+        align-items: flex-end;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424925315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,6 +30,7 @@\n     .button-big {\r\n         display: flex;\r\n         justify-content: end;\r\n         align-items: flex-end;\r\n+        align-content: end;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424952801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,7 @@\n         }\r\n     }\r\n \r\n     .button-big {\r\n-        display: flex;\r\n-        justify-content: end;\r\n-        align-items: flex-end;\r\n-        align-content: end;\r\n+        position: absolute;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424960864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,7 +27,7 @@\n         }\r\n     }\r\n \r\n     .button-big {\r\n-        position: absolute;\r\n+        position: relative;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424970926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,7 +27,8 @@\n         }\r\n     }\r\n \r\n     .button-big {\r\n-        position: relative;\r\n+        position: absolute;\r\n+        \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425000971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,7 +28,7 @@\n     }\r\n \r\n     .button-big {\r\n         position: absolute;\r\n-        \r\n+        bottom: 0;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425012745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,7 +28,7 @@\n     }\r\n \r\n     .button-big {\r\n         position: absolute;\r\n-        bottom: 0;\r\n+        bottom: 10;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425018761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,7 +28,7 @@\n     }\r\n \r\n     .button-big {\r\n         position: absolute;\r\n-        bottom: 10;\r\n+        bottom: 10em;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425028557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,7 +28,7 @@\n     }\r\n \r\n     .button-big {\r\n         position: absolute;\r\n-        bottom: 10em;\r\n+        bottom: 0;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425035436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n @import '../settings/variables';\r\n \r\n .about {\r\n+    position: relative;\r\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 2em;\r\n"
+                },
+                {
+                    "date": 1684425111555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,7 @@\n     }\r\n \r\n     .button-big {\r\n         position: absolute;\r\n-        bottom: 0;\r\n+        bottom: 10px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425128850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,7 @@\n         }\r\n     }\r\n \r\n     .button-big {\r\n-        position: absolute;\r\n-        bottom: 10px;\r\n+        \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425187216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n @import '../settings/variables';\r\n \r\n .about {\r\n-    position: relative;\r\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 2em;\r\n@@ -26,9 +25,6 @@\n             align-items: center;\r\n             justify-content: center;\r\n         }\r\n     }\r\n-\r\n-    .button-big {\r\n-        \r\n-    }\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425200665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,8 @@\n             align-items: center;\r\n             justify-content: center;\r\n         }\r\n     }\r\n-    \r\n+    .button-big {\r\n+        margin-bottom: 0;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425231370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,5 @@\n             align-items: center;\r\n             justify-content: center;\r\n         }\r\n     }\r\n-    .button-big {\r\n-        margin-bottom: 0;\r\n-    }\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1684415399548,

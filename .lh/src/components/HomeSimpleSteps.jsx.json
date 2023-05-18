@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 51,
             "patches": [
                 {
                     "date": 1684398617838,
@@ -52,6 +52,166 @@
                 {
                     "date": 1684419316794,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     <div>\r\n         <img src={icon1} alt=\"t-shirt\"/>\r\n         <img src={icon2} alt=\"bag\"/>\r\n         <img src={icon3} alt=\"search\"/>\r\n-        <img src={icon4} alt=\"arraws\"/>\r\n+        <img src={icon4} alt=\"arrows\"/>\r\n     </div>\r\n     </>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684420550786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n         <img src={icon2} alt=\"bag\"/>\r\n         <img src={icon3} alt=\"search\"/>\r\n         <img src={icon4} alt=\"arrows\"/>\r\n     </div>\r\n+    \r\n     </>)\r\n }\r\n \r\n export default HomeSimpleSteps\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420569289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import decorationline from '../assets/Decoration.svg';\r\n+import { Link } from 'react-router-dom';\r\n import icon1 from '../assets/Icon-1.svg';\r\n import icon2 from '../assets/Icon-2.svg';\r\n import icon3 from '../assets/Icon-3.svg';\r\n import icon4 from '../assets/Icon-4.svg';\r\n@@ -14,9 +15,9 @@\n         <img src={icon2} alt=\"bag\"/>\r\n         <img src={icon3} alt=\"search\"/>\r\n         <img src={icon4} alt=\"arrows\"/>\r\n     </div>\r\n-    \r\n+\r\n     </>)\r\n }\r\n \r\n export default HomeSimpleSteps\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420580833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         <img src={icon2} alt=\"bag\"/>\r\n         <img src={icon3} alt=\"search\"/>\r\n         <img src={icon4} alt=\"arrows\"/>\r\n     </div>\r\n-\r\n+    <Link to=\"/logowanie\" className='button'>ODDAJ <br/> RZECZY</Link>\r\n     </>)\r\n }\r\n \r\n export default HomeSimpleSteps\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420609008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n         <img src={icon2} alt=\"bag\"/>\r\n         <img src={icon3} alt=\"search\"/>\r\n         <img src={icon4} alt=\"arrows\"/>\r\n     </div>\r\n-    <Link to=\"/logowanie\" className='button'>ODDAJ <br/> RZECZY</Link>\r\n+    <div className=\"buttons\">\r\n+        <Link to=\"/logowanie\" className='button'>ODDAJ <br/> RZECZY</Link>\r\n+    </div>\r\n     </>)\r\n }\r\n \r\n export default HomeSimpleSteps\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420697024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,3 @@\n-import decorationline from '../assets/Decoration.svg';\r\n-import { Link } from 'react-router-dom';\r\n-import icon1 from '../assets/Icon-1.svg';\r\n-import icon2 from '../assets/Icon-2.svg';\r\n-import icon3 from '../assets/Icon-3.svg';\r\n-import icon4 from '../assets/Icon-4.svg';\r\n+import { BrowserRouter } from \"react-router-dom\";\r\n \r\n-\r\n-const HomeSimpleSteps = () =>{\r\n-    return (<>\r\n-    <h1>Wystarczą 4 proste kroki</h1>\r\n-    <img src={decorationline} alt=\"line\"/>\r\n-    <div>\r\n-        <img src={icon1} alt=\"t-shirt\"/>\r\n-        <img src={icon2} alt=\"bag\"/>\r\n-        <img src={icon3} alt=\"search\"/>\r\n-        <img src={icon4} alt=\"arrows\"/>\r\n-    </div>\r\n-    <div className=\"buttons\">\r\n-        <Link to=\"/logowanie\" className='button'>ODDAJ <br/> RZECZY</Link>\r\n-    </div>\r\n-    </>)\r\n-}\r\n-\r\n\\ No newline at end of file\n-export default HomeSimpleSteps\n+BrowserRouter\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420709741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,25 @@\n-import { BrowserRouter } from \"react-router-dom\";\r\n+import decorationline from '../assets/Decoration.svg';\r\n+import { Link } from 'react-router-dom';\r\n\\ No newline at end of file\n+import icon1 from '../assets/Icon-1.svg';\r\n+import icon2 from '../assets/Icon-2.svg';\r\n+import icon3 from '../assets/Icon-3.svg';\r\n+import icon4 from '../assets/Icon-4.svg';\r\n \r\n-BrowserRouter\n+\r\n+const HomeSimpleSteps = () =>{\r\n+    return (<section className='about'>\r\n+    <h1>Wystarczą 4 proste kroki</h1>\r\n+    <img src={decorationline} alt=\"line\"/>\r\n+    <div>\r\n+        <img src={icon1} alt=\"t-shirt\"/>\r\n+        <img src={icon2} alt=\"bag\"/>\r\n+        <img src={icon3} alt=\"search\"/>\r\n+        <img src={icon4} alt=\"arrows\"/>\r\n+    </div>\r\n+    <div className=\"buttons\">\r\n+        <Link to=\"/logowanie\" className='button'>ODDAJ <br/> RZECZY</Link>\r\n+    </div>\r\n+    </section>)\r\n+}\r\n+\r\n+export default HomeSimpleSteps\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684420784532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n \r\n const HomeSimpleSteps = () =>{\r\n     return (<section className='about'>\r\n-    <h1>Wystarczą 4 proste kroki</h1>\r\n+    <h5>Wystarczą 4 proste kroki</h5>\r\n     <img src={decorationline} alt=\"line\"/>\r\n     <div>\r\n         <img src={icon1} alt=\"t-shirt\"/>\r\n         <img src={icon2} alt=\"bag\"/>\r\n"
+                },
+                {
+                    "date": 1684420889271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const HomeSimpleSteps = () =>{\r\n     return (<section className='about'>\r\n     <h5>Wystarczą 4 proste kroki</h5>\r\n-    <img src={decorationline} alt=\"line\"/>\r\n+    <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <div>\r\n         <img src={icon1} alt=\"t-shirt\"/>\r\n         <img src={icon2} alt=\"bag\"/>\r\n         <img src={icon3} alt=\"search\"/>\r\n"
+                },
+                {
+                    "date": 1684420998195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         <img src={icon3} alt=\"search\"/>\r\n         <img src={icon4} alt=\"arrows\"/>\r\n     </div>\r\n     <div className=\"buttons\">\r\n-        <Link to=\"/logowanie\" className='button'>ODDAJ <br/> RZECZY</Link>\r\n+        <Link to=\"/logowanie\" className='button'>ODDAJ RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684421057826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const HomeSimpleSteps = () =>{\r\n     return (<section className='about'>\r\n     <h5>Wystarczą 4 proste kroki</h5>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <div>\r\n+    <div >\r\n         <img src={icon1} alt=\"t-shirt\"/>\r\n         <img src={icon2} alt=\"bag\"/>\r\n         <img src={icon3} alt=\"search\"/>\r\n         <img src={icon4} alt=\"arrows\"/>\r\n"
+                },
+                {
+                    "date": 1684421071321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const HomeSimpleSteps = () =>{\r\n     return (<section className='about'>\r\n     <h5>Wystarczą 4 proste kroki</h5>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <div >\r\n+    <div className='about__steps'>\r\n         <img src={icon1} alt=\"t-shirt\"/>\r\n         <img src={icon2} alt=\"bag\"/>\r\n         <img src={icon3} alt=\"search\"/>\r\n         <img src={icon4} alt=\"arrows\"/>\r\n"
+                },
+                {
+                    "date": 1684421141602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,20 @@\n     return (<section className='about'>\r\n     <h5>Wystarczą 4 proste kroki</h5>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <div className='about__steps'>\r\n-        <img src={icon1} alt=\"t-shirt\"/>\r\n-        <img src={icon2} alt=\"bag\"/>\r\n-        <img src={icon3} alt=\"search\"/>\r\n-        <img src={icon4} alt=\"arrows\"/>\r\n+        <div className=\"about__steps-box\">\r\n+            <img src={icon1} alt=\"t-shirt\"/>\r\n+        </div>\r\n+        <div className=\"about__steps-box\">\r\n+            <img src={icon2} alt=\"bag\"/>\r\n+        </div>\r\n+        <div className=\"about__steps-box\">\r\n+            <img src={icon3} alt=\"search\"/>\r\n+        </div>\r\n+        <div className=\"about__steps-box\">\r\n+            <img src={icon4} alt=\"arrows\"/>\r\n+        </div>\r\n     </div>\r\n     <div className=\"buttons\">\r\n         <Link to=\"/logowanie\" className='button'>ODDAJ RZECZY</Link>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684421433521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,14 +12,19 @@\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <div className='about__steps'>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon1} alt=\"t-shirt\"/>\r\n+            <h6>Wybierz rzeczy</h6>\r\n+            <p>ubrania, zabawki, sprzęt i inne</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon2} alt=\"bag\"/>\r\n+            <h6>Spakuj je</h6>\r\n+            <p>skorzystaj z worków na śmieci</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon3} alt=\"search\"/>\r\n+            <h6>Zdecyduj kom</h6>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon4} alt=\"arrows\"/>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1684421854791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,15 @@\n             <p>skorzystaj z worków na śmieci</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon3} alt=\"search\"/>\r\n-            <h6>Zdecyduj kom</h6>\r\n+            <h6>Zdecyduj komu chcesz pomóc</h6>\r\n+            <p>wybierz zaufane miejsce</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon4} alt=\"arrows\"/>\r\n+            <h6>Zamów kuriera</h6>\r\n+            <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div className=\"buttons\">\r\n         <Link to=\"/logowanie\" className='button'>ODDAJ RZECZY</Link>\r\n"
+                },
+                {
+                    "date": 1684421893758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <h6>Zamów kuriera</h6>\r\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n-    <div className=\"buttons\">\r\n+    <div className=\"buttons \">\r\n         <Link to=\"/logowanie\" className='button'>ODDAJ RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n"
+                },
+                {
+                    "date": 1684421924421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <h6>Zamów kuriera</h6>\r\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n-    <div className=\"buttons \">\r\n-        <Link to=\"/logowanie\" className='button'>ODDAJ RZECZY</Link>\r\n+    <div className=\"buttons\">\r\n+        <Link to=\"/logowanie\" className='button button-big'>ODDAJ RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422020405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div className=\"buttons\">\r\n-        <Link to=\"/logowanie\" className='button button-big'>ODDAJ RZECZY</Link>\r\n+        <Link to=\"/logowanie\" className='button button-big'>ODDAJ <br /> RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422230303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,12 @@\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div className=\"buttons\">\r\n-        <Link to=\"/logowanie\" className='button button-big'>ODDAJ <br /> RZECZY</Link>\r\n+        <Link to=\"/logowanie\" className='button button-big'>\r\n+            `ODDAJ\r\n+            RZECZY`\r\n+        </Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422388754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,10 @@\n import icon4 from '../assets/Icon-4.svg';\r\n \r\n \r\n const HomeSimpleSteps = () =>{\r\n+    const text = `ODDAJ\r\n+    RZECZY`\r\n     return (<section className='about'>\r\n     <h5>Wystarczą 4 proste kroki</h5>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <div className='about__steps'>\r\n@@ -32,12 +34,9 @@\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div className=\"buttons\">\r\n-        <Link to=\"/logowanie\" className='button button-big'>\r\n-            `ODDAJ\r\n-            RZECZY`\r\n-        </Link>\r\n+        <Link to=\"/logowanie\" className='button button-big'>{text}</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422399071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n \r\n \r\n const HomeSimpleSteps = () =>{\r\n     const text = `ODDAJ\r\n+    kwa\r\n     RZECZY`\r\n     return (<section className='about'>\r\n     <h5>Wystarczą 4 proste kroki</h5>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n"
+                },
+                {
+                    "date": 1684422411606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n const HomeSimpleSteps = () =>{\r\n     const text = `ODDAJ\r\n     kwa\r\n-    RZECZY`\r\n+    RZECZY`;\r\n     return (<section className='about'>\r\n     <h5>Wystarczą 4 proste kroki</h5>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <div className='about__steps'>\r\n"
+                },
+                {
+                    "date": 1684422441538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,9 @@\n \r\n \r\n const HomeSimpleSteps = () =>{\r\n     const text = `ODDAJ\r\n-    kwa\r\n-    RZECZY`;\r\n+    RZECZY`\r\n     return (<section className='about'>\r\n     <h5>Wystarczą 4 proste kroki</h5>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <div className='about__steps'>\r\n@@ -34,9 +33,9 @@\n             <h6>Zamów kuriera</h6>\r\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n-    <div className=\"buttons\">\r\n+    <div >\r\n         <Link to=\"/logowanie\" className='button button-big'>{text}</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n"
+                },
+                {
+                    "date": 1684422452430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div >\r\n-        <Link to=\"/logowanie\" className='button button-big'>{text}</Link>\r\n+        <Link to=\"/logowanie\" >{text}</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422515917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div >\r\n-        <Link to=\"/logowanie\" >{text}</Link>\r\n+        <Link to=\"/logowanie\" >ODDAJ <br /> RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422562556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div >\r\n-        <Link to=\"/logowanie\" >ODDAJ <br /> RZECZY</Link>\r\n+        <Link to=\"/logowanie\" className='button'>ODDAJ <br /> RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422570881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div >\r\n-        <Link to=\"/logowanie\" className='button'>ODDAJ <br /> RZECZY</Link>\r\n+        <Link to=\"/logowanie\" className='button-big'>ODDAJ <br /> RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422754332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,10 @@\n             <h6>Zamów kuriera</h6>\r\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n-    <div >\r\n-        <Link to=\"/logowanie\" className='button-big'>ODDAJ <br /> RZECZY</Link>\r\n+    <div className='button-big'>\r\n+        <Link to=\"/logowanie\" >ODDAJ <br /> RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684423093538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n             <h6>Zamów kuriera</h6>\r\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n-    <div className='button-big'>\r\n+    <div className='button button-big'>\r\n         <Link to=\"/logowanie\" >ODDAJ <br /> RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n"
+                },
+                {
+                    "date": 1684423107822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n             <h6>Zamów kuriera</h6>\r\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n-    <div className='button button-big'>\r\n+    <div className='button-big'>\r\n         <Link to=\"/logowanie\" >ODDAJ <br /> RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n }\r\n"
+                },
+                {
+                    "date": 1684423431733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n import icon4 from '../assets/Icon-4.svg';\r\n \r\n \r\n const HomeSimpleSteps = () =>{\r\n-    const text = `ODDAJ\r\n-    RZECZY`\r\n+\r\n     return (<section className='about'>\r\n     <h5>Wystarczą 4 proste kroki</h5>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <div className='about__steps'>\r\n"
+                },
+                {
+                    "date": 1684423948128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     <div className='about__steps'>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon1} alt=\"t-shirt\"/>\r\n             <h6>Wybierz rzeczy</h6>\r\n+            <span></span>\r\n             <p>ubrania, zabawki, sprzęt i inne</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon2} alt=\"bag\"/>\r\n"
+                },
+                {
+                    "date": 1684423962688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <div className='about__steps'>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon1} alt=\"t-shirt\"/>\r\n             <h6>Wybierz rzeczy</h6>\r\n-            <span></span>\r\n+            <span className='line'></span>\r\n             <p>ubrania, zabawki, sprzęt i inne</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon2} alt=\"bag\"/>\r\n"
+                },
+                {
+                    "date": 1684424038510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <div className='about__steps'>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon1} alt=\"t-shirt\"/>\r\n             <h6>Wybierz rzeczy</h6>\r\n-            <span className='line'></span>\r\n+            <span className='line'/>\r\n             <p>ubrania, zabawki, sprzęt i inne</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon2} alt=\"bag\"/>\r\n"
+                },
+                {
+                    "date": 1684424447175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon2} alt=\"bag\"/>\r\n             <h6>Spakuj je</h6>\r\n+            <span className='line'/>\r\n             <p>skorzystaj z worków na śmieci</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon3} alt=\"search\"/>\r\n@@ -30,8 +31,9 @@\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon4} alt=\"arrows\"/>\r\n             <h6>Zamów kuriera</h6>\r\n+            <span className='line'/>\r\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div className='button-big'>\r\n"
+                },
+                {
+                    "date": 1684424452848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon3} alt=\"search\"/>\r\n             <h6>Zdecyduj komu chcesz pomóc</h6>\r\n+            <span className='line'/>\r\n             <p>wybierz zaufane miejsce</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon4} alt=\"arrows\"/>\r\n"
+                },
+                {
+                    "date": 1684424464583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n             <p>skorzystaj z worków na śmieci</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon3} alt=\"search\"/>\r\n-            <h6>Zdecyduj komu chcesz pomóc</h6>\r\n+            <h6>Zdecyduj komu <br /> chcesz pomóc</h6>\r\n             <span className='line'/>\r\n             <p>wybierz zaufane miejsce</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n"
+                },
+                {
+                    "date": 1684424481242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n         <div className=\"about__steps-box\">\r\n             <img src={icon4} alt=\"arrows\"/>\r\n             <h6>Zamów kuriera</h6>\r\n             <span className='line'/>\r\n-            <p>kurier przyjedzie w dogodnym terminie</p>\r\n+            <p>kurier przyjedzie <br /> w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div className='button-big'>\r\n         <Link to=\"/logowanie\" >ODDAJ <br /> RZECZY</Link>\r\n"
+                },
+                {
+                    "date": 1684424538403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,15 +15,15 @@\n         <div className=\"about__steps-box\">\r\n             <img src={icon1} alt=\"t-shirt\"/>\r\n             <h6>Wybierz rzeczy</h6>\r\n             <span className='line'/>\r\n-            <p>ubrania, zabawki, sprzęt i inne</p>\r\n+            <p>ubrania, zabawki, <br /> sprzęt i inne</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon2} alt=\"bag\"/>\r\n             <h6>Spakuj je</h6>\r\n             <span className='line'/>\r\n-            <p>skorzystaj z worków na śmieci</p>\r\n+            <p>skorzystaj z <br /> worków na śmieci</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon3} alt=\"search\"/>\r\n             <h6>Zdecyduj komu <br /> chcesz pomóc</h6>\r\n"
+                },
+                {
+                    "date": 1684424586637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,27 +15,27 @@\n         <div className=\"about__steps-box\">\r\n             <img src={icon1} alt=\"t-shirt\"/>\r\n             <h6>Wybierz rzeczy</h6>\r\n             <span className='line'/>\r\n-            <p>ubrania, zabawki, <br /> sprzęt i inne</p>\r\n+            <p>ubrania, zabawki, sprzęt i inne</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon2} alt=\"bag\"/>\r\n             <h6>Spakuj je</h6>\r\n             <span className='line'/>\r\n-            <p>skorzystaj z <br /> worków na śmieci</p>\r\n+            <p>skorzystaj z worków na śmieci</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon3} alt=\"search\"/>\r\n-            <h6>Zdecyduj komu <br /> chcesz pomóc</h6>\r\n+            <h6>Zdecyduj komu chcesz pomóc</h6>\r\n             <span className='line'/>\r\n             <p>wybierz zaufane miejsce</p>\r\n         </div>\r\n         <div className=\"about__steps-box\">\r\n             <img src={icon4} alt=\"arrows\"/>\r\n             <h6>Zamów kuriera</h6>\r\n             <span className='line'/>\r\n-            <p>kurier przyjedzie <br /> w dogodnym terminie</p>\r\n+            <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n     <div className='button-big'>\r\n         <Link to=\"/logowanie\" >ODDAJ <br /> RZECZY</Link>\r\n"
+                },
+                {
+                    "date": 1684425065317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n             <span className='line'/>\r\n             <p>kurier przyjedzie w dogodnym terminie</p>\r\n         </div>\r\n     </div>\r\n+    <span></span>\r\n     <div className='button-big'>\r\n         <Link to=\"/logowanie\" >ODDAJ <br /> RZECZY</Link>\r\n     </div>\r\n     </section>)\r\n"
                 }
             ],
             "date": 1684398617838,

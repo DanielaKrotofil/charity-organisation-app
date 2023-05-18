@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 22,
+            "activePatchIndex": 34,
             "patches": [
                 {
                     "date": 1683989555016,
@@ -96,6 +96,54 @@
                 {
                     "date": 1684419802784,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,11 +11,9 @@\n \r\n .container {\r\n     margin-right: 142px;\r\n }\r\n-.space {\r\n-    margin-top: 3em;\r\n-}\r\n+\r\n h3 {\r\n     font-size: 3rem;\r\n     font-weight: lighter;\r\n }\r\n"
+                },
+                {
+                    "date": 1684420878073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,9 @@\n     font-weight: lighter;\r\n }\r\n h5 {\r\n     font-size: 1.5rem;\r\n+}\r\n+\r\n+.decoration-line {\r\n+    max-width: 10em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684422682403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,9 @@\n }\r\n \r\n .decoration-line {\r\n     max-width: 10em;\r\n+}\r\n+\r\n+a {\r\n+    text-decoration: none;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684422697459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,6 @@\n }\r\n \r\n a {\r\n     text-decoration: none;\r\n+    text-align: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684422709873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,5 +27,6 @@\n \r\n a {\r\n     text-decoration: none;\r\n     text-align: center;\r\n+    align-items: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684423994867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,5 +28,9 @@\n a {\r\n     text-decoration: none;\r\n     text-align: center;\r\n     align-items: center;\r\n+}\r\n+\r\n+.line {\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424019537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n     align-items: center;\r\n }\r\n \r\n .line {\r\n-    \r\n+    border-top: 1px solid $color-dark-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424068205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,7 @@\n     align-items: center;\r\n }\r\n \r\n .line {\r\n-    border-top: 1px solid $color-dark-grey;\r\n+    height: 1px;\r\n+    background: black;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424081094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,7 +31,7 @@\n     align-items: center;\r\n }\r\n \r\n .line {\r\n-    height: 1px;\r\n+    height: 10px;\r\n     background: black;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424103980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,7 +31,6 @@\n     align-items: center;\r\n }\r\n \r\n .line {\r\n-    height: 10px;\r\n-    background: black;\r\n+    border-top: 1px solid black;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424113263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n     align-items: center;\r\n }\r\n \r\n .line {\r\n-    border-top: 1px solid black;\r\n+    border-top: 10px solid black;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424128578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,7 +30,4 @@\n     text-align: center;\r\n     align-items: center;\r\n }\r\n \r\n-.line {\r\n-    border-top: 10px solid black;\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684424311790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,4 +30,11 @@\n     text-align: center;\r\n     align-items: center;\r\n }\r\n \r\n+.line {\r\n+    display: block;\r\n+    height: 1px;\r\n+    width: 5em;\r\n+    background: #222;\r\n+    flex-grow: 1;\r\n+  }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683989555016,

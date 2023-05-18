@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 191,
+            "activePatchIndex": 222,
             "patches": [
                 {
                     "date": 1683991843387,
@@ -772,6 +772,130 @@
                 {
                     "date": 1684420098253,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n-    padding: 1.4em 7em;\r\n+    padding: 1.6em 7em;\r\n     background-color: $color-yellow;\r\n     max-height: 40%;\r\n \r\n     &__box {\r\n"
+                },
+                {
+                    "date": 1684420850947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,8 @@\n             white-space: nowrap;\r\n             align-items: center;\r\n             justify-content: flex-end;\r\n             padding: 1em;\r\n-\r\n-            img {\r\n-                max-width: 10em;\r\n-            }\r\n         }\r\n \r\n         &__buttons {\r\n             display: flex;\r\n"
+                },
+                {
+                    "date": 1684421952761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,12 @@\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n     font-weight: lighter;\r\n+\r\n+    &-big {\r\n+        \r\n+    }\r\n }\r\n \r\n \r\n .HomeThreeColumns {\r\n"
+                },
+                {
+                    "date": 1684421982704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     font-family: $font-family-basic;\r\n     font-weight: lighter;\r\n \r\n     &-big {\r\n-        \r\n+        padding: 4em;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684421991538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     font-family: $font-family-basic;\r\n     font-weight: lighter;\r\n \r\n     &-big {\r\n-        padding: 4em;\r\n+        padding: 3.5em;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422001437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     font-family: $font-family-basic;\r\n     font-weight: lighter;\r\n \r\n     &-big {\r\n-        padding: 3.5em;\r\n+        padding: 3.25em;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422588493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     font-family: $font-family-basic;\r\n     font-weight: lighter;\r\n \r\n     &-big {\r\n-        padding: 3.25em;\r\n+        \r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422606416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     font-family: $font-family-basic;\r\n     font-weight: lighter;\r\n \r\n     &-big {\r\n-        \r\n+        padding: 3.25em;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422612883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     font-family: $font-family-basic;\r\n     font-weight: lighter;\r\n \r\n     &-big {\r\n-        padding: 3.25em;\r\n+        padding: 2.25em;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422618660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n     font-family: $font-family-basic;\r\n     font-weight: lighter;\r\n \r\n     &-big {\r\n-        padding: 2.25em;\r\n+        padding: 1.25em;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422636423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n     font-weight: lighter;\r\n \r\n     &-big {\r\n         padding: 1.25em;\r\n+        align-items: center;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422645668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     font-weight: lighter;\r\n \r\n     &-big {\r\n         padding: 1.25em;\r\n-        align-items: center;\r\n+        text-align: center;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422660562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,8 @@\n     font-weight: lighter;\r\n \r\n     &-big {\r\n         padding: 1.25em;\r\n-        text-align: center;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422674156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,12 +27,8 @@\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n             font-size: 1.3em;\r\n-\r\n-            a {\r\n-                text-decoration: none;\r\n-            }\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422729496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,10 @@\n     font-family: $font-family-basic;\r\n     font-weight: lighter;\r\n \r\n     &-big {\r\n+        background-color: $color-white;\r\n+        border: 0.038em solid $color-dark-grey;\r\n         padding: 1.25em;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422737340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n \r\n     &-big {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n-        padding: 1.25em;\r\n+        \r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422772828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n \r\n     &-big {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n-        \r\n+        padding: 2.25em;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422795861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n     &-big {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 2.25em;\r\n+        color: $color-dark-grey;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422825193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n \r\n     &-big {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n-        padding: 2.25em;\r\n+        padding: 2.25em 5em;\r\n         color: $color-dark-grey;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422841188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 2.25em 5em;\r\n         color: $color-dark-grey;\r\n+        line-height: 1em;\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422860267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,11 @@\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 2.25em 5em;\r\n         color: $color-dark-grey;\r\n-        line-height: 1em;\r\n+        a {\r\n+            line-height: 1em;\r\n+        }\r\n     }\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1684422878798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 2.25em 5em;\r\n         color: $color-dark-grey;\r\n         a {\r\n-            line-height: 1em;\r\n+            font-size: 2em;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422887191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 2.25em 5em;\r\n         color: $color-dark-grey;\r\n         a {\r\n-            font-size: 2em;\r\n+            font-size: 1.2em;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422917515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n \r\n     &-big {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n-        padding: 2.25em 5em;\r\n+        padding: 2em 5em;\r\n         color: $color-dark-grey;\r\n         a {\r\n             font-size: 1.2em;\r\n         }\r\n"
+                },
+                {
+                    "date": 1684422923154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 2em 5em;\r\n         color: $color-dark-grey;\r\n         a {\r\n-            font-size: 1.2em;\r\n+            font-size: 1.4em;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684422932820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n \r\n     &-big {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n-        padding: 2em 5em;\r\n+        padding: 1.5em 3.5em;\r\n         color: $color-dark-grey;\r\n         a {\r\n             font-size: 1.4em;\r\n         }\r\n"
+                },
+                {
+                    "date": 1684422956696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 1.5em 3.5em;\r\n         color: $color-dark-grey;\r\n+\r\n         a {\r\n             font-size: 1.4em;\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1684423161809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,10 @@\n \r\n     &-big {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n+        font-family: $font-family-basic;\r\n+        font-weight: lighter;\r\n         padding: 1.5em 3.5em;\r\n         color: $color-dark-grey;\r\n \r\n         a {\r\n"
+                },
+                {
+                    "date": 1684423240121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,15 +43,15 @@\n \r\n     &-big {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n-        font-family: $font-family-basic;\r\n-        font-weight: lighter;\r\n         padding: 1.5em 3.5em;\r\n-        color: $color-dark-grey;\r\n \r\n         a {\r\n             font-size: 1.4em;\r\n+            font-family: $font-family-basic;\r\n+            color: $color-dark-grey;\r\n+            font-weight: lighter;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684423291708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,32 +31,11 @@\n         }\r\n     }\r\n }\r\n \r\n-.button {\r\n-    padding:  0.5em 1em;\r\n-    width: 9em;\r\n-    background-color: $color-white;\r\n-    border: 0.038em solid $color-dark-grey;\r\n-    color: $color-dark-grey;\r\n-    font-family: $font-family-basic;\r\n-    font-weight: lighter;\r\n \r\n-    &-big {\r\n-        background-color: $color-white;\r\n-        border: 0.038em solid $color-dark-grey;\r\n-        padding: 1.5em 3.5em;\r\n \r\n-        a {\r\n-            font-size: 1.4em;\r\n-            font-family: $font-family-basic;\r\n-            color: $color-dark-grey;\r\n-            font-weight: lighter;\r\n-        }\r\n-    }\r\n-}\r\n \r\n-\r\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n"
+                },
+                {
+                    "date": 1684423348406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,13 +22,9 @@\n             padding: 1em;\r\n         }\r\n \r\n         &__buttons {\r\n-            display: flex;\r\n-            gap: 1.5rem;\r\n-            text-align: center;\r\n-            padding-top: 1em;\r\n-            font-size: 1.3em;\r\n+            \r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684423365885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,12 +20,8 @@\n             align-items: center;\r\n             justify-content: flex-end;\r\n             padding: 1em;\r\n         }\r\n-\r\n-        &__buttons {\r\n-            \r\n-        }\r\n     }\r\n }\r\n \r\n \r\n"
                 }
             ],
             "date": 1683991843387,

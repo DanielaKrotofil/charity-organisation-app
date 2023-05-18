@@ -1,0 +1,33 @@
+
+@import '../settings/variables';
+
+.buttons-set {
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1.3em;
+}
+
+.button {
+    padding:  0.5em 1em;
+    width: 9em;
+    background-color: $color-white;
+    border: 0.038em solid $color-dark-grey;
+    color: $color-dark-grey;
+    font-family: $font-family-basic;
+    font-weight: lighter;
+
+    &-big {
+        background-color: $color-white;
+        border: 0.038em solid $color-dark-grey;
+        padding: 1.5em 3.5em;
+
+        a {
+            font-size: 1.4em;
+            font-family: $font-family-basic;
+            color: $color-dark-grey;
+            font-weight: lighter;
+        }
+    }
+}

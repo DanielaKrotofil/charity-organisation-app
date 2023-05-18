@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/sass/components/_buttons.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1684423294785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684423323892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+\r\n+@import '../settings/variables';\r\n+\r\n .button {\r\n     padding:  0.5em 1em;\r\n     width: 9em;\r\n     background-color: $color-white;\r\n"
+                },
+                {
+                    "date": 1684423342714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,11 @@\n \r\n @import '../settings/variables';\r\n \r\n+.buttons-set {\r\n+\r\n+}\r\n+\r\n .button {\r\n     padding:  0.5em 1em;\r\n     width: 9em;\r\n     background-color: $color-white;\r\n"
+                },
+                {
+                    "date": 1684423359784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,13 @@\n \r\n @import '../settings/variables';\r\n \r\n .buttons-set {\r\n-\r\n+    display: flex;\r\n+    gap: 1.5rem;\r\n+    text-align: center;\r\n+    padding-top: 1em;\r\n+    font-size: 1.3em;\r\n }\r\n \r\n .button {\r\n     padding:  0.5em 1em;\r\n"
+                }
+            ],
+            "date": 1684423294785,
+            "name": "Commit-0",
+            "content": ".button {\r\n    padding:  0.5em 1em;\r\n    width: 9em;\r\n    background-color: $color-white;\r\n    border: 0.038em solid $color-dark-grey;\r\n    color: $color-dark-grey;\r\n    font-family: $font-family-basic;\r\n    font-weight: lighter;\r\n\r\n    &-big {\r\n        background-color: $color-white;\r\n        border: 0.038em solid $color-dark-grey;\r\n        padding: 1.5em 3.5em;\r\n\r\n        a {\r\n            font-size: 1.4em;\r\n            font-family: $font-family-basic;\r\n            color: $color-dark-grey;\r\n            font-weight: lighter;\r\n        }\r\n    }\r\n}"
+        }
+    ]
+}

@@ -20,35 +20,11 @@
             align-items: center;
             justify-content: flex-end;
             padding: 1em;
-
-            img {
-                max-width: 10em;
-            }
-        }
-
-        &__buttons {
-            display: flex;
-            gap: 1.5rem;
-            text-align: center;
-            padding-top: 1em;
-            font-size: 1.3em;
-
-            a {
-                text-decoration: none;
-            }
         }
     }
 }
 
-.button {
-    padding:  0.5em 1em;
-    width: 9em;
-    background-color: $color-white;
-    border: 0.038em solid $color-dark-grey;
-    color: $color-dark-grey;
-    font-family: $font-family-basic;
-    font-weight: lighter;
-}
+
 
 
 .HomeThreeColumns {
