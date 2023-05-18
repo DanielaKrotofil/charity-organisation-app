@@ -1,5 +1,6 @@
-import homeImage from '../assets/Home-Hero-Image.jpg';
+import { LoginForm } from './login';
 import decorationline from '../assets/Decoration.svg';
+import { Link } from 'react-router-dom';
 
 const HomeHeader = () => {
     return (
@@ -9,8 +10,8 @@ const HomeHeader = () => {
             <h2>Oddaj niechciane rzeczy w zaufane ręce</h2>
             <img src={decorationline} alt="line"/>
             <div className='home__homeheader__buttons'>
-                <button className='button'>ODDAJ <br/> RZECZY</button>
-                <button className='button'>ZORGANIZUJ <br/> ZBIÓRKĘ</button>
+                <Link to="/logowanie" className='button'>ODDAJ <br/> RZECZY</Link>
+                <Link to="/logowanie" className='button'>ZORGANIZUJ <br/> ZBIÓRKĘ</Link>
             </div>
         </div>
     </section>)

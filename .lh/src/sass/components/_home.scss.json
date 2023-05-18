@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 166,
+            "activePatchIndex": 171,
             "patches": [
                 {
                     "date": 1683991843387,
@@ -672,6 +672,26 @@
                 {
                     "date": 1684404323798,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,5 +45,6 @@\n     background-color: $color-white;\r\n     border: 0.038em solid $color-dark-grey;\r\n     color: $color-dark-grey;\r\n     font-family: $font-family-basic;\r\n-}\n\\ No newline at end of file\n+    font-weight: lighter;\r\n+}\r\n"
+                },
+                {
+                    "date": 1684414220068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,12 @@\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n             font-size: 1.3em;\r\n+\r\n+            a {\r\n+                text-decoration: none;\r\n+            }\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684414244207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,21 +34,19 @@\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n             font-size: 1.3em;\r\n+            padding:  0.5em 1em;\r\n+            width: 9em;\r\n+            background-color: $color-white;\r\n+            border: 0.038em solid $color-dark-grey;\r\n+            color: $color-dark-grey;\r\n+            font-family: $font-family-basic;\r\n+            font-weight: lighter;\r\n \r\n             a {\r\n                 text-decoration: none;\r\n+                text-transform: uppercase;\r\n             }\r\n         }\r\n     }\r\n }\r\n-\r\n-.button {\r\n-    padding:  0.5em 1em;\r\n-    width: 9em;\r\n-    background-color: $color-white;\r\n-    border: 0.038em solid $color-dark-grey;\r\n-    color: $color-dark-grey;\r\n-    font-family: $font-family-basic;\r\n-    font-weight: lighter;\r\n-}\r\n"
+                },
+                {
+                    "date": 1684414322223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n             font-weight: lighter;\r\n \r\n             a {\r\n                 text-decoration: none;\r\n-                text-transform: uppercase;\r\n+                text-transform: ;\r\n             }\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684414328476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,18 +35,21 @@\n             text-align: center;\r\n             padding-top: 1em;\r\n             font-size: 1.3em;\r\n             padding:  0.5em 1em;\r\n-            width: 9em;\r\n-            background-color: $color-white;\r\n-            border: 0.038em solid $color-dark-grey;\r\n-            color: $color-dark-grey;\r\n-            font-family: $font-family-basic;\r\n-            font-weight: lighter;\r\n+        width: 9em;\r\n+        background-color: $color-white;\r\n+        border: 0.038em solid $color-dark-grey;\r\n+        color: $color-dark-grey;\r\n+        font-family: $font-family-basic;\r\n+        font-weight: lighter;\r\n \r\n             a {\r\n                 text-decoration: none;\r\n-                text-transform: ;\r\n             }\r\n         }\r\n     }\r\n }\r\n+\r\n+.button {\r\n+    \r\n+}\r\n"
+                },
+                {
+                    "date": 1684414333829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,15 +34,8 @@\n             gap: 1.5rem;\r\n             text-align: center;\r\n             padding-top: 1em;\r\n             font-size: 1.3em;\r\n-            padding:  0.5em 1em;\r\n-        width: 9em;\r\n-        background-color: $color-white;\r\n-        border: 0.038em solid $color-dark-grey;\r\n-        color: $color-dark-grey;\r\n-        font-family: $font-family-basic;\r\n-        font-weight: lighter;\r\n \r\n             a {\r\n                 text-decoration: none;\r\n             }\r\n"
                 }
             ],
             "date": 1683991843387,

@@ -1,6 +1,6 @@
 export const RegisterForm = () => {
     return (<>
-    REGISTER FORM
-    in progress
+    <h1>REJESTRACJA</h1>
+    Strona w budowie
     </>)
 }

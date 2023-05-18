@@ -2,7 +2,7 @@
 
 export const LoginForm = () => {
     return (<>
-    LOGIN FORM
-    in progress
+    <h1>LOGOWANIE</h1>
+    Strona w budowie
     </>)
 }
