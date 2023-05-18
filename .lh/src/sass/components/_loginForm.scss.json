@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1684417591992,
@@ -32,6 +32,10 @@
                 {
                     "date": 1684417856272,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,8 @@\n     flex-direction: column;\r\n     align-items: center;\r\n     justify-content: center;\r\n     gap: 2em;\r\n-    text-decoration: none;\r\n+    a {\r\n+        text-decoration: none;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684419926550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,5 @@\n     gap: 2em;\r\n     a {\r\n         text-decoration: none;\r\n     }\r\n-}\n\\ No newline at end of file\n+}\r\n"
                 }
             ],
             "date": 1684417591992,

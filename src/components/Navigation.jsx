@@ -1,7 +1,8 @@
 import { Link } from "react-scroll";
 import HomeHeader from "./HomeHeader";
-import HomeAbout from "./HomeAbout";
+import HomeThreeColumns from "./HomeThreeColumns";
 import HomeAboutUs from "./HomeAboutUs";
+import HomeSimpleSteps from "./HomeSimpleSteps";
 import Contact from "./HomeContactFooter";
 import HomeFundations from "./HomeFundations";
 
@@ -39,8 +40,11 @@ export default function Navigation() {
           </ul>
         </nav>
       </header>
-      <section id="start" className="container"><HomeHeader/></section>
-      <section id="about"><HomeAbout/></section>
+      <section id="start" >
+        <HomeHeader/>
+        <HomeThreeColumns/>
+      </section>
+      <section id="about"><HomeSimpleSteps/></section>
       <section id="aboutus"><HomeAboutUs/></section>
       <section id="fundations"><HomeFundations/></section>
       <section id="contact"><Contact/></section>

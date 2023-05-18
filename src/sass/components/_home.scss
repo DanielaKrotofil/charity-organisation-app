@@ -9,6 +9,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        margin: 9.5em;
 
         &__text {
             display: flex;
@@ -22,7 +23,7 @@
 
             img {
                 max-width: 10em;
-            } 
+            }
         }
 
         &__buttons {
@@ -47,4 +48,27 @@
     color: $color-dark-grey;
     font-family: $font-family-basic;
     font-weight: lighter;
+}
+
+
+.HomeThreeColumns {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5em;
+    padding: 1.6em 7em;
+    background-color: $color-yellow;
+    max-height: 40%;
+
+    &__box {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 25%;
+        gap: 1.35em;
+    }
+
+    h6 {
+        text-transform: uppercase;
+        margin-top: 1em;
+    }
 }

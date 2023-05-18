@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 34,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1684415399548,
@@ -144,6 +144,10 @@
                 {
                     "date": 1684417292979,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n-    padding: 1.5em 4em;\r\n+    padding: 1.2em 4em;\r\n     background-color: $color-yellow;\r\n     max-height: 40%;\r\n \r\n     &__box {\r\n"
+                },
+                {
+                    "date": 1684419921999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,2 @@\n @import '../settings/variables';\r\n \r\n-.HomeThreeColumns {\r\n-    display: flex;\r\n-    justify-content: space-between;\r\n-    line-height: 1.5em;\r\n-    padding: 1.2em 4em;\r\n-    background-color: $color-yellow;\r\n-    max-height: 40%;\r\n-\r\n-    &__box {\r\n-        text-align: center;\r\n-        padding: 2em;\r\n-        display: flex;\r\n-        flex-direction: column;\r\n-        gap: 1.5em;\r\n-    }\r\n-\r\n-    h6 {\r\n-        text-transform: uppercase;\r\n-        margin-top: 1em;\r\n-    }\r\n-}\r\n"
                 }
             ],
             "date": 1684415399548,

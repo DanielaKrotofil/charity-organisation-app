@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 44,
+            "activePatchIndex": 60,
             "patches": [
                 {
                     "date": 1684393043140,
@@ -184,6 +184,70 @@
                 {
                     "date": 1684417178335,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n import HomeFundations from \"./HomeFundations\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n-      <header className=\"nav\">\r\n+    <div className=\"navigation\">\r\n+      <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n               <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n@@ -37,9 +38,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <section id=\"start\"><HomeHeader/></section>\r\n+      <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n       <section id=\"about\"><HomeAbout/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684418431795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { Link } from \"react-scroll\";\r\n import HomeHeader from \"./HomeHeader\";\r\n import HomeAbout from \"./HomeAbout\";\r\n import HomeAboutUs from \"./HomeAboutUs\";\r\n+import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n import HomeFundations from \"./HomeFundations\";\r\n \r\n export default function Navigation() {\r\n@@ -39,9 +40,9 @@\n           </ul>\r\n         </nav>\r\n       </header>\r\n       <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n-      <section id=\"about\"><HomeAbout/></section>\r\n+      <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684418545419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <section id=\"start\" className=\"container\"><HomeHeader/></section>\r\n+      <section id=\"start\" ><HomeHeader/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684418612814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Link } from \"react-scroll\";\r\n import HomeHeader from \"./HomeHeader\";\r\n-import HomeAbout from \"./HomeAbout\";\r\n+import HomeThreeColumns from \"./HomeThreeColumns\";\r\n import HomeAboutUs from \"./HomeAboutUs\";\r\n import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n import HomeFundations from \"./HomeFundations\";\r\n@@ -39,9 +39,12 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <section id=\"start\" ><HomeHeader/></section>\r\n+      <section id=\"start\" >\r\n+        <HomeHeader/>\r\n+        <HomeThreeColumns/>\r\n+      </section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684418799211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,10 +43,12 @@\n       <section id=\"start\" >\r\n         <HomeHeader/>\r\n         <HomeThreeColumns/>\r\n       </section>\r\n+      \r\n+\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n-      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n+      \r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1684418807503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,10 +43,9 @@\n       <section id=\"start\" >\r\n         <HomeHeader/>\r\n         <HomeThreeColumns/>\r\n       </section>\r\n-      \r\n-\r\n+      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       \r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684418842568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,11 +43,10 @@\n       <section id=\"start\" >\r\n         <HomeHeader/>\r\n         <HomeThreeColumns/>\r\n       </section>\r\n+      <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"about\"><HomeSimpleSteps/></section>\r\n-      \r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1684418875999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         </nav>\r\n       </header>\r\n       <section id=\"start\" >\r\n         <HomeHeader/>\r\n-        <HomeThreeColumns/>\r\n+        \r\n       </section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n"
+                },
+                {
+                    "date": 1684419008414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n         </nav>\r\n       </header>\r\n       <section id=\"start\" >\r\n         <HomeHeader/>\r\n-        \r\n+        <HomeThreeColumns/>\r\n       </section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n"
+                },
+                {
+                    "date": 1684419364835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,11 @@\n         </nav>\r\n       </header>\r\n       <section id=\"start\" >\r\n         <HomeHeader/>\r\n-        <HomeThreeColumns/>\r\n+        \r\n       </section>\r\n+      <HomeThreeColumns/>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684419376851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,8 @@\n         </nav>\r\n       </header>\r\n       <section id=\"start\" >\r\n         <HomeHeader/>\r\n-        \r\n       </section>\r\n       <HomeThreeColumns/>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n"
+                },
+                {
+                    "date": 1684419397523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n       </header>\r\n       <section id=\"start\" >\r\n         <HomeHeader/>\r\n       </section>\r\n-      <HomeThreeColumns/>\r\n+      \r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684419482585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,10 @@\n         </nav>\r\n       </header>\r\n       <section id=\"start\" >\r\n         <HomeHeader/>\r\n+        <HomeThreeColumns/>\r\n       </section>\r\n-      \r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><HomeFundations/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n"
+                },
+                {
+                    "date": 1684419761750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,16 +39,18 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <section id=\"start\" >\r\n-        <HomeHeader/>\r\n-        <HomeThreeColumns/>\r\n-      </section>\r\n-      <section id=\"about\"><HomeSimpleSteps/></section>\r\n-      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\"><HomeFundations/></section>\r\n-      <section id=\"contact\"><Contact/></section>\r\n+      <div className=\"space\">\r\n+        <section id=\"start\" >\r\n+          <HomeHeader/>\r\n+          <HomeThreeColumns/>\r\n+        </section>\r\n+        <section id=\"about\"><HomeSimpleSteps/></section>\r\n+        <section id=\"aboutus\"><HomeAboutUs/></section>\r\n+        <section id=\"fundations\"><HomeFundations/></section>\r\n+        <section id=\"contact\"><Contact/></section>\r\n+      </div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684419776365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <div className=\"space\">\r\n+      <div className=\"\">\r\n         <section id=\"start\" >\r\n           <HomeHeader/>\r\n           <HomeThreeColumns/>\r\n         </section>\r\n"
+                },
+                {
+                    "date": 1684419782765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,17 +39,17 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <div className=\"\">\r\n-        <section id=\"start\" >\r\n-          <HomeHeader/>\r\n-          <HomeThreeColumns/>\r\n-        </section>\r\n-        <section id=\"about\"><HomeSimpleSteps/></section>\r\n-        <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-        <section id=\"fundations\"><HomeFundations/></section>\r\n-        <section id=\"contact\"><Contact/></section>\r\n+      <div>\r\n+      <section id=\"start\" >\r\n+        <HomeHeader/>\r\n+        <HomeThreeColumns/>\r\n+      </section>\r\n+      <section id=\"about\"><HomeSimpleSteps/></section>\r\n+      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n+      <section id=\"fundations\"><HomeFundations/></section>\r\n+      <section id=\"contact\"><Contact/></section>\r\n       </div>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1684419787968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,18 +39,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <div>\r\n-      <section id=\"start\" >\r\n-        <HomeHeader/>\r\n-        <HomeThreeColumns/>\r\n-      </section>\r\n-      <section id=\"about\"><HomeSimpleSteps/></section>\r\n-      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\"><HomeFundations/></section>\r\n-      <section id=\"contact\"><Contact/></section>\r\n-      </div>\r\n+      div\r\n     </div>\r\n   );\r\n }\r\n \r\n"
                 }
             ],
             "date": 1684393043140,

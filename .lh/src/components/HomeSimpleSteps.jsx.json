@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1684398617838,
@@ -20,6 +20,38 @@
                 {
                     "date": 1684415808336,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import decorationline from '../assets/Decoration.svg';\r\n const HomeSimpleSteps = () =>{\r\n     return (<>\r\n     <h1>Wystarczą 4 proste kroki</h1>\r\n+    <img src={decorationline} alt=\"line\"/>\r\n \r\n     </>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684418783152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n const HomeSimpleSteps = () =>{\r\n     return (<>\r\n     <h1>Wystarczą 4 proste kroki</h1>\r\n     <img src={decorationline} alt=\"line\"/>\r\n-\r\n     </>)\r\n }\r\n \r\n export default HomeSimpleSteps\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684419150968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import decorationline from '../assets/Decoration.svg';\r\n+import icon1 from '../assets/Decoration.svg';\r\n+\r\n const HomeSimpleSteps = () =>{\r\n     return (<>\r\n     <h1>Wystarczą 4 proste kroki</h1>\r\n     <img src={decorationline} alt=\"line\"/>\r\n"
+                },
+                {
+                    "date": 1684419178328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n import decorationline from '../assets/Decoration.svg';\r\n-import icon1 from '../assets/Decoration.svg';\r\n+import icon1 from '../assets/Icon-1.svg';\r\n \r\n const HomeSimpleSteps = () =>{\r\n     return (<>\r\n     <h1>Wystarczą 4 proste kroki</h1>\r\n     <img src={decorationline} alt=\"line\"/>\r\n+    <img src={icon1} alt=\"line\"/>\r\n     </>)\r\n }\r\n \r\n export default HomeSimpleSteps\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684419204778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,15 @@\n import decorationline from '../assets/Decoration.svg';\r\n import icon1 from '../assets/Icon-1.svg';\r\n+import icon2 from '../assets/Icon-2.svg';\r\n \r\n+\r\n const HomeSimpleSteps = () =>{\r\n     return (<>\r\n     <h1>Wystarczą 4 proste kroki</h1>\r\n     <img src={decorationline} alt=\"line\"/>\r\n     <img src={icon1} alt=\"line\"/>\r\n+    <img src={icon2} alt=\"line\"/>\r\n     </>)\r\n }\r\n \r\n export default HomeSimpleSteps\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684419225658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,12 @@\n const HomeSimpleSteps = () =>{\r\n     return (<>\r\n     <h1>Wystarczą 4 proste kroki</h1>\r\n     <img src={decorationline} alt=\"line\"/>\r\n-    <img src={icon1} alt=\"line\"/>\r\n-    <img src={icon2} alt=\"line\"/>\r\n+    <div>\r\n+        <img src={icon1} alt=\"line\"/>\r\n+        <img src={icon2} alt=\"line\"/>\r\n+    </div>\r\n     </>)\r\n }\r\n \r\n export default HomeSimpleSteps\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684419261152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n import decorationline from '../assets/Decoration.svg';\r\n import icon1 from '../assets/Icon-1.svg';\r\n import icon2 from '../assets/Icon-2.svg';\r\n+import icon3 from '../assets/Icon-3.svg';\r\n+import icon4 from '../assets/Icon-4.svg';\r\n \r\n \r\n const HomeSimpleSteps = () =>{\r\n     return (<>\r\n@@ -9,8 +11,10 @@\n     <img src={decorationline} alt=\"line\"/>\r\n     <div>\r\n         <img src={icon1} alt=\"line\"/>\r\n         <img src={icon2} alt=\"line\"/>\r\n+        <img src={icon3} alt=\"line\"/>\r\n+        <img src={icon4} alt=\"line\"/>\r\n     </div>\r\n     </>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684419297781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,12 @@\n     return (<>\r\n     <h1>Wystarczą 4 proste kroki</h1>\r\n     <img src={decorationline} alt=\"line\"/>\r\n     <div>\r\n-        <img src={icon1} alt=\"line\"/>\r\n-        <img src={icon2} alt=\"line\"/>\r\n-        <img src={icon3} alt=\"line\"/>\r\n-        <img src={icon4} alt=\"line\"/>\r\n+        <img src={icon1} alt=\"t-shirt\"/>\r\n+        <img src={icon2} alt=\"bag\"/>\r\n+        <img src={icon3} alt=\"search\"/>\r\n+        <img src={icon4} alt=\"arraws\"/>\r\n     </div>\r\n     </>)\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684419316794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     <div>\r\n         <img src={icon1} alt=\"t-shirt\"/>\r\n         <img src={icon2} alt=\"bag\"/>\r\n         <img src={icon3} alt=\"search\"/>\r\n-        <img src={icon4} alt=\"arraws\"/>\r\n+        <img src={icon4} alt=\"arrows\"/>\r\n     </div>\r\n     </>)\r\n }\r\n \r\n"
                 }
             ],
             "date": 1684398617838,

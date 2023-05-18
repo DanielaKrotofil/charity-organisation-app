@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 93,
+            "activePatchIndex": 106,
             "patches": [
                 {
                     "date": 1684394531172,
@@ -380,6 +380,58 @@
                 {
                     "date": 1684404099365,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   text-align: center;\r\n }\r\n \r\n section {\r\n-  max-height: 100vh;\r\n+  height: 100vh;\r\n }\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n"
+                },
+                {
+                    "date": 1684419510473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,11 +25,8 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-section {\r\n-  height: 100vh;\r\n-}\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n   padding: 0.55em 1em;\r\n"
+                },
+                {
+                    "date": 1684419528406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,11 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n+section {\r\n+  height: 50vh;\r\n+}\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n   padding: 0.55em 1em;\r\n"
+                },
+                {
+                    "date": 1684419544190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   text-align: center;\r\n }\r\n \r\n section {\r\n-  height: 50vh;\r\n+  height: 90vh;\r\n }\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n"
+                },
+                {
+                    "date": 1684419552110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,11 +25,8 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-section {\r\n-  height: 90vh;\r\n-}\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n   padding: 0.55em 1em;\r\n"
+                },
+                {
+                    "date": 1684420208867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,11 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n+section {\r\n+  height: 90vh;\r\n+}\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n   padding: 0.55em 1em;\r\n"
+                },
+                {
+                    "date": 1684420224823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n   text-align: center;\r\n }\r\n \r\n section {\r\n-  height: 90vh;\r\n+  height: 100vh;\r\n }\r\n \r\n .startlink {\r\n   border: 0.75px solid $color-dark-grey;\r\n"
+                },
+                {
+                    "date": 1684420251474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-section {\r\n+#about {\r\n   height: 100vh;\r\n }\r\n \r\n .startlink {\r\n"
+                },
+                {
+                    "date": 1684420259366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-#about {\r\n+#start {\r\n   height: 100vh;\r\n }\r\n \r\n .startlink {\r\n"
+                },
+                {
+                    "date": 1684420273357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-#start {\r\n+#start,  {\r\n   height: 100vh;\r\n }\r\n \r\n .startlink {\r\n"
+                },
+                {
+                    "date": 1684420287154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-#start,  {\r\n+#start, #about {\r\n   height: 100vh;\r\n }\r\n \r\n .startlink {\r\n"
+                },
+                {
+                    "date": 1684420308107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-#start, #about {\r\n+#start, #about, #aboutus {\r\n   height: 100vh;\r\n }\r\n \r\n .startlink {\r\n"
+                },
+                {
+                    "date": 1684420324692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-#start, #about, #aboutus {\r\n+#start, #about, #aboutus, #fundations {\r\n   height: 100vh;\r\n }\r\n \r\n .startlink {\r\n"
+                },
+                {
+                    "date": 1684420332461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n   color: $color-dark-grey;\r\n   text-align: center;\r\n }\r\n \r\n-#start, #about, #aboutus, #fundations {\r\n+#start, #about, #aboutus, #fundations, #contact {\r\n   height: 100vh;\r\n }\r\n \r\n .startlink {\r\n"
                 }
             ],
             "date": 1684394531172,
