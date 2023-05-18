@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 26,
             "patches": [
                 {
                     "date": 1684393813791,
@@ -12,6 +12,106 @@
                 {
                     "date": 1684398902029,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n const HomeAboutUs = () => {\r\n-    return (<>Home About Us</>)\r\n+    return (<>O nas</>)\r\n }\r\n export default HomeAboutUs\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425345519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n const HomeAboutUs = () => {\r\n-    return (<>O nas</>)\r\n+    return (<>\r\n+    <div>O nas</div>\r\n+    \r\n+    </>)\r\n }\r\n export default HomeAboutUs\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425362075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n+import people from '../assets/Icon-1.svg';\r\n+\r\n const HomeAboutUs = () => {\r\n     return (<>\r\n     <div>O nas</div>\r\n-    \r\n+\r\n     </>)\r\n }\r\n export default HomeAboutUs\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425390504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import people from '../assets/Icon-1.svg';\r\n+import people from '../assets/People.svg';\r\n \r\n const HomeAboutUs = () => {\r\n     return (<>\r\n     <div>O nas</div>\r\n"
+                },
+                {
+                    "date": 1684425421052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n-import people from '../assets/People.svg';\r\n+import people from '../assets/People.jpg';\r\n \r\n const HomeAboutUs = () => {\r\n     return (<>\r\n     <div>O nas</div>\r\n-\r\n+    \r\n     </>)\r\n }\r\n export default HomeAboutUs\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425438914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n \r\n const HomeAboutUs = () => {\r\n     return (<>\r\n     <div>O nas</div>\r\n-    \r\n+    <img src={people} alt=\"people\"/>\r\n     </>)\r\n }\r\n export default HomeAboutUs\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425485769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import people from '../assets/People.jpg';\r\n+import signature from '../assets/People.jpg';\r\n \r\n const HomeAboutUs = () => {\r\n     return (<>\r\n     <div>O nas</div>\r\n"
+                },
+                {
+                    "date": 1684425534215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,13 @@\n import people from '../assets/People.jpg';\r\n-import signature from '../assets/People.jpg';\r\n+import signature from '../assets/Signature.svg';\r\n \r\n const HomeAboutUs = () => {\r\n     return (<>\r\n-    <div>O nas</div>\r\n+    <div>\r\n+        O nas\r\n+        <img src={signature} alt=\"signature\"/>\r\n+    </div>\r\n     <img src={people} alt=\"people\"/>\r\n     </>)\r\n }\r\n export default HomeAboutUs\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425721198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,11 @@\n import signature from '../assets/Signature.svg';\r\n \r\n const HomeAboutUs = () => {\r\n     return (<>\r\n-    <div>\r\n-        O nas\r\n-        <img src={signature} alt=\"signature\"/>\r\n-    </div>\r\n-    <img src={people} alt=\"people\"/>\r\n+    <div class=\"row\">\r\n+  <div class=\"col\">lorem ipsum</div>\r\n+  <div class=\"col\">lorem ipsum</div>\r\n+</div>\r\n     </>)\r\n }\r\n export default HomeAboutUs\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425789732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,20 @@\n import people from '../assets/People.jpg';\r\n import signature from '../assets/Signature.svg';\r\n \r\n const HomeAboutUs = () => {\r\n-    return (<>\r\n-    <div class=\"row\">\r\n+    return (<div className='row'>\r\n+    <div className='col'>\r\n+        O nas\r\n+        <img src={signature} alt=\"signature\"/>\r\n+    </div>\r\n+    <div className=\"col\">\r\n\\ No newline at end of file\n+    </div>)\r\n+}\r\n+export default HomeAboutUs\r\n+\r\n+/*\r\n+<div class=\"row\">\r\n   <div class=\"col\">lorem ipsum</div>\r\n   <div class=\"col\">lorem ipsum</div>\r\n </div>\r\n-    </>)\r\n-}\r\n-export default HomeAboutUs\n+*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425795519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n     <div className='col'>\r\n         O nas\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n-    <div className=\"col\">\r\n-    </div>)\r\n+    <di className=\"col\">\r\n+    </di>)\r\n }\r\n export default HomeAboutUs\r\n \r\n /*\r\n"
+                },
+                {
+                    "date": 1684425810741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,12 @@\n     <div className='col'>\r\n         O nas\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n-    <di className=\"col\">\r\n-    </di>)\r\n+    <div className=\"col\">\r\n+        <img src={people} alt=\"people\"/>\r\n+    </div>\r\n+    </div>)\r\n }\r\n export default HomeAboutUs\r\n \r\n /*\r\n"
+                },
+                {
+                    "date": 1684425915187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import people from '../assets/People.jpg';\r\n import signature from '../assets/Signature.svg';\r\n \r\n const HomeAboutUs = () => {\r\n-    return (<div className='row'>\r\n+    return (<div className='row aboutus'>\r\n     <div className='col'>\r\n         O nas\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n@@ -11,12 +11,5 @@\n         <img src={people} alt=\"people\"/>\r\n     </div>\r\n     </div>)\r\n }\r\n-export default HomeAboutUs\r\n-\r\n-/*\r\n-<div class=\"row\">\r\n-  <div class=\"col\">lorem ipsum</div>\r\n-  <div class=\"col\">lorem ipsum</div>\r\n-</div>\r\n-*/\n\\ No newline at end of file\n+export default HomeAboutUs\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684425968598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import signature from '../assets/Signature.svg';\r\n \r\n const HomeAboutUs = () => {\r\n     return (<div className='row aboutus'>\r\n-    <div className='col'>\r\n+    <div className='col aboutus-text'>\r\n         O nas\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n     <div className=\"col\">\r\n"
+                },
+                {
+                    "date": 1684426018455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import signature from '../assets/Signature.svg';\r\n \r\n const HomeAboutUs = () => {\r\n     return (<div className='row aboutus'>\r\n-    <div className='col aboutus-text'>\r\n+    <div className='aboutus-text'>\r\n         O nas\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n     <div className=\"col\">\r\n"
+                },
+                {
+                    "date": 1684426036681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <div className='aboutus-text'>\r\n         O nas\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n-    <div className=\"col\">\r\n+    <div className=\"\">\r\n         <img src={people} alt=\"people\"/>\r\n     </div>\r\n     </div>)\r\n }\r\n"
+                },
+                {
+                    "date": 1684426044643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <div className='aboutus-text'>\r\n         O nas\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n-    <div className=\"\">\r\n+    <div className=\"aboutus-img\">\r\n         <img src={people} alt=\"people\"/>\r\n     </div>\r\n     </div>)\r\n }\r\n"
+                },
+                {
+                    "date": 1684426168191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n const HomeAboutUs = () => {\r\n     return (<div className='row aboutus'>\r\n     <div className='aboutus-text'>\r\n         O nas\r\n+        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n     <div className=\"aboutus-img\">\r\n         <img src={people} alt=\"people\"/>\r\n"
+                },
+                {
+                    "date": 1684426199608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import people from '../assets/People.jpg';\r\n import signature from '../assets/Signature.svg';\r\n+import decorationline from '../assets/Decoration.svg';\r\n \r\n const HomeAboutUs = () => {\r\n     return (<div className='row aboutus'>\r\n     <div className='aboutus-text'>\r\n"
+                },
+                {
+                    "date": 1684426217584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n \r\n const HomeAboutUs = () => {\r\n     return (<div className='row aboutus'>\r\n     <div className='aboutus-text'>\r\n-        O nas\r\n+        <h3>O nas</h3>\r\n+        <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n         <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n     <div className=\"aboutus-img\">\r\n"
+                },
+                {
+                    "date": 1684426228468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const HomeAboutUs = () => {\r\n     return (<div className='row aboutus'>\r\n     <div className='aboutus-text'>\r\n-        <h3>O nas</h3>\r\n+        <h4>O nas</h4>\r\n         <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n         <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684426239378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n const HomeAboutUs = () => {\r\n     return (<div className='row aboutus'>\r\n     <div className='aboutus-text'>\r\n-        <h4>O nas</h4>\r\n+        <h5>O nas</h5>\r\n         <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n         <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>\r\n         <img src={signature} alt=\"signature\"/>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684426277361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <div className='aboutus-text'>\r\n         <h5>O nas</h5>\r\n         <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n         <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>\r\n-        <img src={signature} alt=\"signature\"/>\r\n+        <img src={signature} alt=\"signature\" className='signature'/>\r\n     </div>\r\n     <div className=\"aboutus-img\">\r\n         <img src={people} alt=\"people\"/>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684426420105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,13 @@\n \r\n const HomeAboutUs = () => {\r\n     return (<div className='row aboutus'>\r\n     <div className='aboutus-text'>\r\n-        <h5>O nas</h5>\r\n-        <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>\r\n+        <span>\r\n+            <h5>O nas</h5>\r\n+            <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n+            <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>\r\n+        </span>\r\n         <img src={signature} alt=\"signature\" className='signature'/>\r\n     </div>\r\n     <div className=\"aboutus-img\">\r\n         <img src={people} alt=\"people\"/>\r\n"
+                },
+                {
+                    "date": 1684426742644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n             <h5>O nas</h5>\r\n             <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n             <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>\r\n         </span>\r\n-        <img src={signature} alt=\"signature\" className='signature'/>\r\n+        <div>\r\n+            <img src={signature} alt=\"signature\" className='signature'/>\r\n+        </div>\r\n     </div>\r\n     <div className=\"aboutus-img\">\r\n         <img src={people} alt=\"people\"/>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1684426770104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n             <h5>O nas</h5>\r\n             <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n             <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>\r\n         </span>\r\n-        <div>\r\n-            <img src={signature} alt=\"signature\" className='signature'/>\r\n+        <div className='signature'>\r\n+            <img src={signature} alt=\"signature\" />\r\n         </div>\r\n     </div>\r\n     <div className=\"aboutus-img\">\r\n         <img src={people} alt=\"people\"/>\r\n"
                 }
             ],
             "date": 1684393813791,
