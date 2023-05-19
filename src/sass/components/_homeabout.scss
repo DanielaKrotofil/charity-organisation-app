@@ -12,13 +12,11 @@
         width: 100%;
         align-items: baseline;
         justify-content:center;
-        gap: 2.3em;
-        padding: 5em;
+        gap: 10em;
         display: flex;
+        padding: 4.469em 0;
 
         &-box {
-            max-width: 18%;
-            padding: 0 4em;
             display: flex;
             gap: 1em;
             flex-direction: column;
