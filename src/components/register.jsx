@@ -3,9 +3,9 @@ import decorationline from '../assets/Decoration.svg';
 
 export const RegisterForm = () => {
     return (<section className='LoginForm'>
-    <h3>Zarejestruj się</h3>
+    <h2>Zarejestruj się</h2>
     <img className='decoration-line' src={decorationline} alt="line"/>
-    <h6>Strona w budowie</h6>
+    <span className='LoginForm__main'>Strona w budowie</span>
     <div>
         <Link to="/" className='button'>Wracam na główną stronę</Link>
     </div>

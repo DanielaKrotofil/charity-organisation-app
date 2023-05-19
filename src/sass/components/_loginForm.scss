@@ -1,3 +1,4 @@
+@import '../settings/variables';
 .LoginForm {
     display: flex;
     flex-direction: column;
@@ -6,5 +7,17 @@
     gap: 2em;
     a {
         text-decoration: none;
+    }
+    h2 {
+        font-size: 40px;
+    }
+
+    &__main {
+        background-color: $color-base;
+        width: 384.5px;
+        height: 235px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
     }
 }

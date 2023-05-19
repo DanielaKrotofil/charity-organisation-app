@@ -1,5 +1,5 @@
 const HomeFundations = () =>{
-    return (<h1>Fundacje</h1>)
+    return (<h2>Komu pomagamy?</h2>)
 }
 
 export default HomeFundations
