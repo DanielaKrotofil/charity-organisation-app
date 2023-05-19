@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 226,
+            "activePatchIndex": 295,
             "patches": [
                 {
                     "date": 1683991843387,
@@ -912,6 +912,282 @@
                 {
                     "date": 1684434610342,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left -25%/55%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left -50%/55%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n"
+                },
+                {
+                    "date": 1684485371676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left -50%/55%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left -40%/55%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n"
+                },
+                {
+                    "date": 1684485402972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,10 @@\n     }\r\n }\r\n \r\n \r\n+src/assets/3 Columns Background@2x.png\r\n \r\n-\r\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n"
+                },
+                {
+                    "date": 1684485426665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,16 +24,16 @@\n     }\r\n }\r\n \r\n \r\n-src/assets/3 Columns Background@2x.png\r\n \r\n+\r\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n     padding: 1.6em 7em;\r\n-    background-color: $color-yellow;\r\n+    background: url('/src/assets/3 Columns Background@2x.png') repeat;\r\n     max-height: 40%;\r\n \r\n     &__box {\r\n         text-align: center;\r\n"
+                },
+                {
+                    "date": 1684485475768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n     padding: 1.6em 7em;\r\n-    background: url('/src/assets/3 Columns Background@2x.png') repeat;\r\n-    max-height: 40%;\r\n+    background: url('/src/assets/3 Columns Background@2x3-Columns-Background\r\n \r\n     &__box {\r\n         text-align: center;\r\n         display: flex;\r\n"
+                },
+                {
+                    "date": 1684485485193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,10 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n     padding: 1.6em 7em;\r\n-    background: url('/src/assets/3 Columns Background@2x3-Columns-Background\r\n+    background: url('/src/assets/3-Columns-Background.png') repeat;\r\n+    max-height: 40%;\r\n \r\n     &__box {\r\n         text-align: center;\r\n         display: flex;\r\n"
+                },
+                {
+                    "date": 1684485955852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,12 @@\n     padding: 1.6em 7em;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n     max-height: 40%;\r\n \r\n+    span {\r\n+        font-size: 90px;\r\n+    }\r\n+\r\n     &__box {\r\n         text-align: center;\r\n         display: flex;\r\n         flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1684485969566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n     max-height: 40%;\r\n \r\n     span {\r\n         font-size: 90px;\r\n+        font-weight: lighter;\r\n     }\r\n \r\n     &__box {\r\n         text-align: center;\r\n"
+                },
+                {
+                    "date": 1684485994430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,8 +37,9 @@\n \r\n     span {\r\n         font-size: 90px;\r\n         font-weight: lighter;\r\n+        padding-top: 46px;\r\n     }\r\n \r\n     &__box {\r\n         text-align: center;\r\n"
+                },
+                {
+                    "date": 1684486201880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,17 +37,17 @@\n \r\n     span {\r\n         font-size: 90px;\r\n         font-weight: lighter;\r\n-        padding-top: 46px;\r\n     }\r\n \r\n     &__box {\r\n         text-align: center;\r\n         display: flex;\r\n         flex-direction: column;\r\n         max-width: 25%;\r\n         gap: 1.35em;\r\n+        padding-top: 46px;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684486336421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,8 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n-    padding: 1.6em 7em;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n     max-height: 40%;\r\n \r\n     span {\r\n"
+                },
+                {
+                    "date": 1684486376978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n+    padding: 46px ;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n     max-height: 40%;\r\n \r\n     span {\r\n@@ -44,9 +45,8 @@\n         display: flex;\r\n         flex-direction: column;\r\n         max-width: 25%;\r\n         gap: 1.35em;\r\n-        padding-top: 46px;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684486395555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n-    padding: 46px ;\r\n+    padding: 46px 163px 0;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n     max-height: 40%;\r\n \r\n     span {\r\n"
+                },
+                {
+                    "date": 1684486456500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,11 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n     padding: 46px 163px 0;\r\n+    width: 334px;\r\n+    height: 252px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n-    max-height: 40%;\r\n \r\n     span {\r\n         font-size: 90px;\r\n         font-weight: lighter;\r\n"
+                },
+                {
+                    "date": 1684486477551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,8 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n     padding: 46px 163px 0;\r\n-    width: 334px;\r\n-    height: 252px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n@@ -44,10 +42,10 @@\n     &__box {\r\n         text-align: center;\r\n         display: flex;\r\n         flex-direction: column;\r\n-        max-width: 25%;\r\n-        gap: 1.35em;\r\n+        width: 334px;\r\n+        height: 252px;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684486505668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n \r\n     &__box {\r\n         text-align: center;\r\n         display: flex;\r\n+        justify-content: end;\r\n         flex-direction: column;\r\n         width: 334px;\r\n         height: 252px;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684486530908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n     display: flex;\r\n     justify-content: space-between;\r\n     line-height: 1.5em;\r\n     padding: 46px 163px 0;\r\n+    gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684486593674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,11 +29,9 @@\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n-    line-height: 1.5em;\r\n     padding: 46px 163px 0;\r\n-    gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684486603861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n .HomeThreeColumns {\r\n     display: flex;\r\n     justify-content: space-between;\r\n     padding: 46px 163px 0;\r\n+\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684486613407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,12 +27,11 @@\n \r\n \r\n \r\n .HomeThreeColumns {\r\n-    display: flex;\r\n-    justify-content: space-between;\r\n+    display: flex;    \r\n     padding: 46px 163px 0;\r\n-\r\n+    gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684486624003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \r\n \r\n \r\n .HomeThreeColumns {\r\n-    display: flex;    \r\n+    display: flex;\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n"
+                },
+                {
+                    "date": 1684486651840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \r\n \r\n \r\n .HomeThreeColumns {\r\n-    display: flex;\r\n+\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n"
+                },
+                {
+                    "date": 1684486658455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \r\n \r\n \r\n .HomeThreeColumns {\r\n-\r\n+    display: flex;\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n"
+                },
+                {
+                    "date": 1684486690461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,7 @@\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n         margin-top: 1em;\r\n+        white-space: nowrap;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684486732991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,5 +51,8 @@\n         text-transform: uppercase;\r\n         margin-top: 1em;\r\n         white-space: nowrap;\r\n     }\r\n+    p {\r\n+        white-space: nowrap;\r\n+    }\r\n }\r\n"
+                },
+                {
+                    "date": 1684486777951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,8 @@\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n-        margin-top: 1em;\r\n         white-space: nowrap;\r\n     }\r\n     p {\r\n         white-space: nowrap;\r\n"
+                },
+                {
+                    "date": 1684486803291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n \r\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n-    padding: 46px 163px 0;\r\n+    padding: 46px 63px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n"
+                },
+                {
+                    "date": 1684486812448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,9 @@\n \r\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n-    padding: 46px 63px 0;\r\n-    gap: 286px;\r\n+    padding: 46px 163px 0;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684486817895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     padding: 46px 163px 0;\r\n+\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684486827256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     padding: 46px 163px 0;\r\n-\r\n+    gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684486860789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n \r\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n+    max-width: 384px;\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n"
+                },
+                {
+                    "date": 1684486871375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n \r\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n-    max-width: 384px;\r\n+    max-height: 384px;\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n"
+                },
+                {
+                    "date": 1684486886628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     max-height: 384px;\r\n+    width: 100%;\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n"
+                },
+                {
+                    "date": 1684486895996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     max-height: 384px;\r\n-    width: 100%;\r\n+    width: 100vh;\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n"
+                },
+                {
+                    "date": 1684486902737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,8 @@\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     max-height: 384px;\r\n-    width: 100vh;\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n"
+                },
+                {
+                    "date": 1684486909511,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,8 @@\n \r\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n-    max-height: 384px;\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n"
+                },
+                {
+                    "date": 1684486928663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     padding: 46px 163px 0;\r\n-    gap: 286px;\r\n+\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684486935507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n     padding: 46px 163px 0;\r\n-\r\n+    gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684486994726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,9 @@\n         text-align: center;\r\n         display: flex;\r\n         justify-content: end;\r\n         flex-direction: column;\r\n-        width: 334px;\r\n-        height: 252px;\r\n+\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684487017395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,10 @@\n         text-align: center;\r\n         display: flex;\r\n         justify-content: end;\r\n         flex-direction: column;\r\n-\r\n+        max-width: 334px;\r\n+        max-height: 252px;\r\n     }\r\n \r\n     h6 {\r\n         text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1684487138716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,10 +24,8 @@\n     }\r\n }\r\n \r\n \r\n-\r\n-\r\n .HomeThreeColumns {\r\n     display: flex;\r\n     padding: 46px 163px 0;\r\n     gap: 286px;\r\n@@ -40,9 +38,8 @@\n \r\n     &__box {\r\n         text-align: center;\r\n         display: flex;\r\n-        justify-content: end;\r\n         flex-direction: column;\r\n         max-width: 334px;\r\n         max-height: 252px;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684487159244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n-    padding: 46px 163px 0;\r\n+\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n@@ -47,8 +47,9 @@\n     h6 {\r\n         text-transform: uppercase;\r\n         white-space: nowrap;\r\n     }\r\n+\r\n     p {\r\n         white-space: nowrap;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684487202901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n \r\n \r\n .HomeThreeColumns {\r\n     display: flex;\r\n-\r\n+    padding: 46px 163px 0;\r\n     gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     span {\r\n"
+                },
+                {
+                    "date": 1684487215057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,6 +50,7 @@\n     }\r\n \r\n     p {\r\n         white-space: nowrap;\r\n+        font-size: 16px;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684487330816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,13 +25,16 @@\n }\r\n \r\n \r\n .HomeThreeColumns {\r\n-    display: flex;\r\n     padding: 46px 163px 0;\r\n-    gap: 286px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n+    &__container {\r\n+        display: flex;\r\n+        gap: 286px;\r\n+    }\r\n+\r\n     span {\r\n         font-size: 90px;\r\n         font-weight: lighter;\r\n     }\r\n"
+                },
+                {
+                    "date": 1684487402046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n \r\n     &__container {\r\n         display: flex;\r\n         gap: 286px;\r\n+        max-width: 100vh;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487419970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,14 +26,15 @@\n \r\n \r\n .HomeThreeColumns {\r\n     padding: 46px 163px 0;\r\n+    max-width: 100vh;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n         display: flex;\r\n         gap: 286px;\r\n-        max-width: 100vh;\r\n+        \r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487435438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,15 +26,15 @@\n \r\n \r\n .HomeThreeColumns {\r\n     padding: 46px 163px 0;\r\n-    max-width: 100vh;\r\n+    \r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n         display: flex;\r\n         gap: 286px;\r\n-        \r\n+        max-width: 100%;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487456932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,15 +26,12 @@\n \r\n \r\n .HomeThreeColumns {\r\n     padding: 46px 163px 0;\r\n-    \r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n-        display: flex;\r\n-        gap: 286px;\r\n-        max-width: 100%;\r\n+        \r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487465838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,11 @@\n     padding: 46px 163px 0;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n-        \r\n+        display: flex;\r\n+\r\n+        max-width: 100%;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487485323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,13 +27,13 @@\n \r\n .HomeThreeColumns {\r\n     padding: 46px 163px 0;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n+    display: flex;\r\n+    max-width: 100%;\r\n \r\n     &__container {\r\n-        display: flex;\r\n-\r\n-        max-width: 100%;\r\n+       \r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487492949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n \r\n .HomeThreeColumns {\r\n     padding: 46px 163px 0;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n-    display: flex;\r\n-    max-width: 100%;\r\n+     display: flex;\r\n+        max-width: 100%;\r\n \r\n     &__container {\r\n        \r\n     }\r\n"
+                },
+                {
+                    "date": 1684487569777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,13 +27,13 @@\n \r\n .HomeThreeColumns {\r\n     padding: 46px 163px 0;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n-     display: flex;\r\n-        max-width: 100%;\r\n \r\n     &__container {\r\n-       \r\n+        display: flex;\r\n+        max-width: 100%;\r\n+        gap: 20px;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487584510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \r\n     &__container {\r\n         display: flex;\r\n         max-width: 100%;\r\n-        gap: 20px;\r\n+        gap: 200px;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487601530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \r\n     &__container {\r\n         display: flex;\r\n         max-width: 100%;\r\n-        gap: 200px;\r\n+        max-gap: 286px;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487608781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n \r\n     &__container {\r\n         display: flex;\r\n         max-width: 100%;\r\n-        max-gap: 286px;\r\n+        gap: 286px;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487631388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,8 @@\n \r\n     &__container {\r\n         display: flex;\r\n         max-width: 100%;\r\n-        gap: 286px;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487640912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n         display: flex;\r\n+        justify-content: space-between;\r\n         max-width: 100%;\r\n     }\r\n \r\n     span {\r\n"
+                },
+                {
+                    "date": 1684487693718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n     &__container {\r\n         display: flex;\r\n         justify-content: space-between;\r\n         max-width: 100%;\r\n+        line-height: 18;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487704372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     &__container {\r\n         display: flex;\r\n         justify-content: space-between;\r\n         max-width: 100%;\r\n-        line-height: 18;\r\n+\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487722647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     &__container {\r\n         display: flex;\r\n         justify-content: space-between;\r\n         max-width: 100%;\r\n-\r\n+        line-height: 8;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n"
+                },
+                {
+                    "date": 1684487749636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,8 @@\n     &__container {\r\n         display: flex;\r\n         justify-content: space-between;\r\n         max-width: 100%;\r\n-        line-height: 8;\r\n     }\r\n \r\n     span {\r\n         font-size: 90px;\r\n@@ -56,6 +55,7 @@\n \r\n     p {\r\n         white-space: nowrap;\r\n         font-size: 16px;\r\n+        line-height: 8;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684487756382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,7 +55,7 @@\n \r\n     p {\r\n         white-space: nowrap;\r\n         font-size: 16px;\r\n-        line-height: 8;\r\n+        line-height: 8px;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684487763398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,7 +55,7 @@\n \r\n     p {\r\n         white-space: nowrap;\r\n         font-size: 16px;\r\n-        line-height: 8px;\r\n+        line-height: 18px;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684487800053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,7 +55,7 @@\n \r\n     p {\r\n         white-space: nowrap;\r\n         font-size: 16px;\r\n-        line-height: 18px;\r\n+        letter-spacing: -0.32px;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684487837574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,7 +55,6 @@\n \r\n     p {\r\n         white-space: nowrap;\r\n         font-size: 16px;\r\n-        letter-spacing: -0.32px;\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1684487911371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n }\r\n \r\n \r\n .HomeThreeColumns {\r\n-    padding: 46px 163px 0;\r\n+    padding: 46px 163px 86px;\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n         display: flex;\r\n"
+                },
+                {
+                    "date": 1684487974389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n         display: flex;\r\n-        justify-content: space-between;\r\n+        gap: 286px;\r\n         max-width: 100%;\r\n     }\r\n \r\n     span {\r\n"
+                },
+                {
+                    "date": 1684488021919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n         display: flex;\r\n-        gap: 286px;\r\n+        gap: 286px; //rozjezdza sie stronkapod doaniu gapu o takim wymiarze\r\n         max-width: 100%;\r\n     }\r\n \r\n     span {\r\n"
+                },
+                {
+                    "date": 1684488093356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n         display: flex;\r\n-        gap: 286px; //rozjezdza sie stronkapod doaniu gapu o takim wymiarze\r\n+        gap: 286px; //rozjezdza sie stronka po dodaniu gapu o takim wymiarze (rozszerza sie poza ganice strony)\r\n         max-width: 100%;\r\n     }\r\n \r\n     span {\r\n"
                 }
             ],
             "date": 1683991843387,
