@@ -15,12 +15,12 @@ import { RegisterForm } from './components/register';
 
 const Layout = () => {
 
-  const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 900 } : undefined
+  const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined
   return (
       <>
           <nav className='mainNav container'>
               <ul>
-                  <li><NavLink style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>
+                  <li><NavLink className='mainNav__login' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>
                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>
               </ul>
           </nav>

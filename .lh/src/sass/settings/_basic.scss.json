@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 40,
+            "activePatchIndex": 42,
             "patches": [
                 {
                     "date": 1683989555016,
@@ -168,6 +168,14 @@
                 {
                     "date": 1684484275242,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n .container {\r\n     margin-right: 142px;\r\n }\r\n-$font-size-buttons: 36px;\r\n+\r\n h1 {\r\n     font-size: 38px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684485170170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     font-size: 1.5rem;\r\n }\r\n \r\n .decoration-line {\r\n-    max-width: 10em;\r\n+    width: 253px;\r\n }\r\n \r\n a {\r\n     text-decoration: none;\r\n"
+                },
+                {
+                    "date": 1684485185958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n }\r\n \r\n .decoration-line {\r\n     width: 253px;\r\n+    height: 33px;\r\n }\r\n \r\n a {\r\n     text-decoration: none;\r\n"
                 }
             ],
             "date": 1683989555016,

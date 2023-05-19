@@ -1,14 +1,20 @@
 @import '../settings/variables';
 .mainNav {
-  padding-top: 1.3em;
+  padding-top: 37px;
+  text-align: right;
+
+  &__login {
+    font-size: 14px;
+  }
 
   &__registration {
-    border: 0.075em solid $color-yellow;
-    padding: 0.4em 0.6em;
+    border: 0.075px solid $color-yellow;
+    padding: 9px 10px;
+    font-size: 13px;
   }
 
   ul {
-    gap: 1rem;
+    gap: 30px;
 
     li {
       color: $color-grey;
@@ -32,12 +38,13 @@
 
 .startlink {
   border: 0.75px solid $color-dark-grey;
-  padding: 0.55em 1em;
+  padding: 9px 20px;
 }
 
 .nav {
     display: flex;
     align-items: center;
+    font-size: 18px;
 
   &__container {
     display: flex;
@@ -54,7 +61,7 @@
       flex: 1;
 
       ul {
-        gap: 2rem;
+        gap: 55px;
       }
     }
   }
