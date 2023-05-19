@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 97,
+            "activePatchIndex": 99,
             "patches": [
                 {
                     "date": 1683988520382,
@@ -396,6 +396,14 @@
                 {
                     "date": 1684423400732,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n             <div className='home__homeheader__text'>\r\n                 <h5>Zacznij pomagać!</h5>\r\n                 <h5>Oddaj niechciane rzeczy w zaufane ręce</h5>\r\n                 <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-                <div className='buttons_set'>\r\n+                <div className='buttons-set'>\r\n                     <Link to=\"/logowanie\" className='button'>ODDAJ <br/> RZECZY</Link>\r\n                     <Link to=\"/logowanie\" className='button'>ZORGANIZUJ <br/> ZBIÓRKĘ</Link>\r\n                 </div>\r\n             </div>\r\n"
+                },
+                {
+                    "date": 1684484360551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,9 @@\n const HomeHeader = () => {\r\n     return (<>\r\n         <section className='home__homeheader container'>\r\n             <div className='home__homeheader__text'>\r\n-                <h5>Zacznij pomagać!</h5>\r\n-                <h5>Oddaj niechciane rzeczy w zaufane ręce</h5>\r\n+                <h1>Zacznij pomagać <br /> !Oddaj niechciane rzeczy w zaufane ręce</h1>\r\n                 <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n                 <div className='buttons-set'>\r\n                     <Link to=\"/logowanie\" className='button'>ODDAJ <br/> RZECZY</Link>\r\n                     <Link to=\"/logowanie\" className='button'>ZORGANIZUJ <br/> ZBIÓRKĘ</Link>\r\n"
+                },
+                {
+                    "date": 1684484369368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const HomeHeader = () => {\r\n     return (<>\r\n         <section className='home__homeheader container'>\r\n             <div className='home__homeheader__text'>\r\n-                <h1>Zacznij pomagać <br /> !Oddaj niechciane rzeczy w zaufane ręce</h1>\r\n+                <h1>Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce</h1>\r\n                 <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n                 <div className='buttons-set'>\r\n                     <Link to=\"/logowanie\" className='button'>ODDAJ <br/> RZECZY</Link>\r\n                     <Link to=\"/logowanie\" className='button'>ZORGANIZUJ <br/> ZBIÓRKĘ</Link>\r\n"
                 }
             ],
             "date": 1683988520382,

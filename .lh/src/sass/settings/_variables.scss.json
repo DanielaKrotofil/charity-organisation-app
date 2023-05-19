@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1683985630582,
@@ -24,6 +24,22 @@
                 {
                     "date": 1683993899914,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n $color-base: #F0F1F1;\r\n+$color-white:#FFFFFF;\r\n $color-dark-yellow: #5E5322;\r\n $color-yellow: #FAD648;\r\n $color-grey: #737373;\r\n $color-dark-grey: #3C3C3C;\r\n"
+                },
+                {
+                    "date": 1684484047863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,7 @@\n $color-grey: #737373;\r\n $color-dark-grey: #3C3C3C;\r\n \r\n $font-family-basic: 'Open Sans', sans-serif;\r\n-$font-family-second: 'Merriweather', serif;\n\\ No newline at end of file\n+$font-family-second: 'Merriweather', serif;\r\n+\r\n+$font-size-buttons: \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684484066908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,5 @@\n \r\n $font-family-basic: 'Open Sans', sans-serif;\r\n $font-family-second: 'Merriweather', serif;\r\n \r\n-$font-size-buttons: \n\\ No newline at end of file\n+$font-size-buttons: 36px;\r\n"
+                },
+                {
+                    "date": 1684484160466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,5 @@\n \r\n $font-family-basic: 'Open Sans', sans-serif;\r\n $font-family-second: 'Merriweather', serif;\r\n \r\n-$font-size-buttons: 36px;\r\n+$font-size-buttons: 36px;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684484178880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,5 @@\n $color-grey: #737373;\r\n $color-dark-grey: #3C3C3C;\r\n \r\n $font-family-basic: 'Open Sans', sans-serif;\r\n-$font-family-second: 'Merriweather', serif;\r\n-\r\n-$font-size-buttons: 36px;\n\\ No newline at end of file\n+$font-family-second: 'Merriweather', serif;\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683985630582,

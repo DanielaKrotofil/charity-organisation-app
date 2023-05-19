@@ -3,7 +3,7 @@
 .home {
     display: flex;
     flex-direction: column;
-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left/55%;
+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left -40%/55%;
 
     &__homeheader {
         display: flex;

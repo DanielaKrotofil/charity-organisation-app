@@ -5,8 +5,7 @@ const HomeHeader = () => {
     return (<>
         <section className='home__homeheader container'>
             <div className='home__homeheader__text'>
-                <h5>Zacznij pomagać!</h5>
-                <h5>Oddaj niechciane rzeczy w zaufane ręce</h5>
+                <h1>Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce</h1>
                 <img className='decoration-line' src={decorationline} alt="line"/>
                 <div className='buttons-set'>
                     <Link to="/logowanie" className='button'>ODDAJ <br/> RZECZY</Link>
