@@ -40,10 +40,8 @@ export default function Navigation() {
           </ul>
         </nav>
       </header>
-      <section id="start" >
-        <HomeHeader/>
-        <HomeThreeColumns/>
-      </section>
+      <section id="start" ><HomeHeader/></section>
+      <section><HomeThreeColumns/></section>
       <section id="about"><HomeSimpleSteps/></section>
       <section id="aboutus"><HomeAboutUs/></section>
       <section id="fundations"><HomeFundations/></section>

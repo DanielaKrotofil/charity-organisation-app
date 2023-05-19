@@ -3,58 +3,53 @@
 .home {
     display: flex;
     flex-direction: column;
-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left -40%/55%;
+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top 1% left -40%/55%;
 
     &__homeheader {
         display: flex;
         justify-content: flex-end;
-        align-items: center;
-        margin: 9.5em;
+        max-height: 60.188em;
 
         &__text {
             display: flex;
             gap: 1em;
             flex-direction: column;
-            text-align: center;
             white-space: nowrap;
             align-items: center;
             justify-content: flex-end;
-            padding: 1em;
+            padding: 8.5em 0;
         }
     }
 }
-
-
-.HomeThreeColumns {
-    padding: 46px 163px 86px;
+.HomeThreeColumns { //wyjezdza poza strone ta sekcja
     background: url('/src/assets/3-Columns-Background.png') repeat;
+    padding: 2.875em 10.188em 5.375em;
 
     &__container {
         display: flex;
-        gap: 286px; //rozjezdza sie stronka po dodaniu gapu o takim wymiarze (rozszerza sie poza ganice strony)
-        max-width: 100%;
-    }
-
-    span {
-        font-size: 90px;
-        font-weight: lighter;
+        gap: 17.875em;
     }
 
     &__box {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        max-width: 334px;
-        max-height: 252px;
-    }
+        max-width: 20.875em;
+        max-height: 15.750em;
+        line-height: 1.6;
 
-    h6 {
-        text-transform: uppercase;
-        white-space: nowrap;
-    }
+        span {
+            font-size: 5.625em;
+            font-weight: lighter;
+        }
 
-    p {
-        white-space: nowrap;
-        font-size: 16px;
+        h6 {
+            text-transform: uppercase;
+            white-space: nowrap;
+            margin-bottom: 1.750em;
+        }
+
+        p {
+            white-space: nowrap;
+            font-size: 1.000em;
+            font-family: $font-family-second;
+        }
     }
 }
