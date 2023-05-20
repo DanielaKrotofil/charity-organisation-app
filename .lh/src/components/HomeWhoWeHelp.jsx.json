@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1684609160851,
@@ -24,6 +24,14 @@
                 {
                     "date": 1684609437607,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,14 @@\n import HomeFundations from \"./HomeFundations\";\r\n import HomeOrganizations from \"./HomeOrganizations\";\r\n+import HomeLocalFundraisers from \"./HomeLocalFundraisers\";\r\n \r\n const WhoWeHelp = () =>{\r\n     return (<>\r\n     <h2>Komu pomagamy?</h2>\r\n     <HomeFundations/>\r\n     <HomeOrganizations/>\r\n+    <HomeLocalFundraisers/>\r\n     </>)\r\n }\r\n \r\n export default WhoWeHelp\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684612935022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import HomeFundations from \"./HomeFundations\";\r\n import HomeOrganizations from \"./HomeOrganizations\";\r\n import HomeLocalFundraisers from \"./HomeLocalFundraisers\";\r\n+import decorationline from '../assets/Decoration.svg';\r\n \r\n const WhoWeHelp = () =>{\r\n     return (<>\r\n     <h2>Komu pomagamy?</h2>\r\n"
+                },
+                {
+                    "date": 1684612953353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n \r\n const WhoWeHelp = () =>{\r\n     return (<>\r\n     <h2>Komu pomagamy?</h2>\r\n+    <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <HomeFundations/>\r\n     <HomeOrganizations/>\r\n     <HomeLocalFundraisers/>\r\n     </>)\r\n"
                 }
             ],
             "date": 1684609160851,
