@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 60,
+            "activePatchIndex": 65,
             "patches": [
                 {
                     "date": 1684393043140,
@@ -248,6 +248,26 @@
                 {
                     "date": 1684419787968,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,18 +39,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <div>\r\n-      <section id=\"start\" >\r\n-        <HomeHeader/>\r\n-        <HomeThreeColumns/>\r\n-      </section>\r\n-      <section id=\"about\"><HomeSimpleSteps/></section>\r\n-      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\"><HomeFundations/></section>\r\n-      <section id=\"contact\"><Contact/></section>\r\n-      </div>\r\n+      div\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684609493705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import HomeAboutUs from \"./HomeAboutUs\";\r\n import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n import HomeFundations from \"./HomeFundations\";\r\n+import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation\">\r\n@@ -39,9 +40,15 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      div\r\n+      <section id=\"start\" ><HomeHeader/></section>\r\n+      <section><HomeThreeColumns/></section>\r\n+      <section id=\"about\"><HomeSimpleSteps/></section>\r\n+      <section id=\"aboutus\"><HomeAboutUs/></section>\r\n+      <section id=\"fundations\"><import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n+/></section>\r\n+      <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684609504333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,10 +44,9 @@\n       <section id=\"start\" ><HomeHeader/></section>\r\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\"><import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n-/></section>\r\n+      <section id=\"fundations\"><Home/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1684609515679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n       <section id=\"start\" ><HomeHeader/></section>\r\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\"><Home/></section>\r\n+      <section id=\"fundations\">KK</section>\r\n       <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1684609532203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n import HomeThreeColumns from \"./HomeThreeColumns\";\r\n import HomeAboutUs from \"./HomeAboutUs\";\r\n import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n-import HomeFundations from \"./HomeFundations\";\r\n import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1684609569806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n       <section id=\"start\" ><HomeHeader/></section>\r\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\">KK</section>\r\n+      <section id=\"fundations\"><WhoWeHelp/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n"
                 }
             ],
             "date": 1684393043140,

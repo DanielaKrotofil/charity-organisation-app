@@ -4,7 +4,7 @@ import HomeThreeColumns from "./HomeThreeColumns";
 import HomeAboutUs from "./HomeAboutUs";
 import HomeSimpleSteps from "./HomeSimpleSteps";
 import Contact from "./HomeContactFooter";
-import HomeFundations from "./HomeFundations";
+import WhoWeHelp from "./HomeWhoWeHelp";
 
 export default function Navigation() {
   return (
@@ -44,7 +44,7 @@ export default function Navigation() {
       <section><HomeThreeColumns/></section>
       <section id="about"><HomeSimpleSteps/></section>
       <section id="aboutus"><HomeAboutUs/></section>
-      <section id="fundations"><HomeFundations/></section>
+      <section id="fundations"><WhoWeHelp/></section>
       <section id="contact"><Contact/></section>
     </div>
   );
