@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/firebase.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1684610355128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684610618891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n import { initializeApp } from \"firebase/app\";\r\n-import { getAnalytics } from \"firebase/analytics\";\r\n // TODO: Add SDKs for Firebase products that you want to use\r\n // https://firebase.google.com/docs/web/setup#available-libraries\r\n \r\n const firebaseConfig = {\r\n@@ -12,6 +11,5 @@\n   appId: \"1:809936677730:web:5437815d23e8f9b2951a3b\",\r\n   measurementId: \"G-G0BMGMKGX6\"\r\n };\r\n \r\n-const app = initializeApp(firebaseConfig);\r\n-const analytics = getAnalytics(app);\n\\ No newline at end of file\n+const app = initializeApp(firebaseConfig);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1684610355128,
+            "name": "Commit-0",
+            "content": "import { initializeApp } from \"firebase/app\";\r\nimport { getAnalytics } from \"firebase/analytics\";\r\n// TODO: Add SDKs for Firebase products that you want to use\r\n// https://firebase.google.com/docs/web/setup#available-libraries\r\n\r\nconst firebaseConfig = {\r\n  apiKey: \"AIzaSyCu_vcz59l5aaVJJvFU1wCA0gyvK8Ylqhk\",\r\n  authDomain: \"oddaj-rzeczy-projekt.firebaseapp.com\",\r\n  projectId: \"oddaj-rzeczy-projekt\",\r\n  storageBucket: \"oddaj-rzeczy-projekt.appspot.com\",\r\n  messagingSenderId: \"809936677730\",\r\n  appId: \"1:809936677730:web:5437815d23e8f9b2951a3b\",\r\n  measurementId: \"G-G0BMGMKGX6\"\r\n};\r\n\r\nconst app = initializeApp(firebaseConfig);\r\nconst analytics = getAnalytics(app);"
+        }
+    ]
+}
