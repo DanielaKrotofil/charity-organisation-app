@@ -45,7 +45,7 @@ export default function Navigation() {
       <section id="about"><HomeSimpleSteps/></section>
       <section id="aboutus"><HomeAboutUs/></section>
       <section id="fundations"><WhoWeHelp/></section>
-      <section id="contact"><Contact/></section>
+      <section className="contactForm" id="contact"><Contact/></section>
     </div>
   );
 }

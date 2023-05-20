@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 65,
+            "activePatchIndex": 67,
             "patches": [
                 {
                     "date": 1684393043140,
@@ -268,6 +268,14 @@
                 {
                     "date": 1684609569806,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n       <section id=\"start\" ><HomeHeader/></section>\r\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\">KK</section>\r\n+      <section id=\"fundations\"><WhoWeHelp/></section>\r\n       <section id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1684613093670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><WhoWeHelp/></section>\r\n-      <section id=\"contact\"><Contact/></section>\r\n+      <section className=\"ContactForm\" id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1684613117305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\"><WhoWeHelp/></section>\r\n-      <section className=\"ContactForm\" id=\"contact\"><Contact/></section>\r\n+      <section className=\"contactForm\" id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
                 }
             ],
             "date": 1684393043140,

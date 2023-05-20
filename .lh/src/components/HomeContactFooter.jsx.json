@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/HomeContactFooter.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1684612961372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1684612967667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n const Contact = () => {\r\n     return (<>Contact\r\n+    <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     </>)\r\n }\r\n export default Contact\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684612981255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n+import decorationline from '../assets/Decoration.svg';\r\n const Contact = () => {\r\n     return (<>Contact\r\n+    <h2></h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     </>)\r\n }\r\n export default Contact\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684613004647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import decorationline from '../assets/Decoration.svg';\r\n const Contact = () => {\r\n-    return (<>Contact\r\n-    <h2></h2>\r\n+    return (<>\r\n+    <h2>Skontaktuj się z nami</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     </>)\r\n }\r\n export default Contact\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1684612961372,
+            "name": "Commit-0",
+            "content": "const Contact = () => {\r\n    return (<>Contact\r\n    </>)\r\n}\r\nexport default Contact"
+        }
+    ]
+}
