@@ -49,10 +49,6 @@ const WhoWeHelp = () => {
 
   const [institution, setInstitution] = useState([]);
 
-  const handleClick = (id) => {
-    console.log(`ID: ${id}`);
-  };
-
   return (
     <>
       <h2>Komu pomagamy?</h2>
@@ -63,23 +59,21 @@ const WhoWeHelp = () => {
         <button className='button__whowehelp' onClick={() => setInstitution(locals)}>Lokalnym zbiórkom</button>
       </div>
       <div className="whowehelp__container">
-        {institution.map(({index, buttonName, description}) => (
-          <div className="wedding-styles__element" key={index}>
-            <p>{buttonName}</p>
-            <p>{description}</p>
+        {institution.map(({index, id, description, title, goal, needs}) => (
+          <div key={index}>
+            <p className="whowehelp__description">{description}</p>
+            <div className="whowehelp__container__element">
+                <div className="whowehelp__container__element-part1">
+                    <h4>{title}</h4>
+                    <h6>{goal}</h6>
+                </div>
+                <span><h6>{needs}</h6></span>
+            </div>
           </div>
         ))}
-        <button onClick={() => handleClick(1)}>1</button>
-        <button onClick={() => handleClick(2)}>2</button>
-        <button onClick={() => handleClick(3)}>3</button>
       </div>
     </>
   );
 }
 
 export default WhoWeHelp;
-/*
-goal
-needs
-title
-*/

@@ -6,9 +6,23 @@
     align-items: center;
     gap: 1.2em;
 
+    &__description {
+        text-align: center;
+        margin: 0 22em;
+    }
+
 
     &__container {
         margin: 25px 150px 75px;
-        background-color: $color-yellow;
+        background-color: $color-white;
+
+        &__element {
+            display: flex;
+            justify-content: space-between;
+            &-part1 {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 }

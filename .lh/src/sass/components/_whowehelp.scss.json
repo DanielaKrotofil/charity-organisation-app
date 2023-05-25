@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 22,
+            "activePatchIndex": 30,
             "patches": [
                 {
                     "date": 1685017332099,
@@ -96,6 +96,38 @@
                 {
                     "date": 1685018450871,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 1.2em;\r\n-    max-height: 800px;\r\n \r\n+\r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685034839275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,11 @@\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n+\r\n+        &__element {\r\n+            display: flex;\r\n+            justify-content: space-between;\r\n+        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685034862166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,11 @@\n \r\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n+            &-part1 {\r\n+                display: flex;\r\n+                flex-direction: column;\r\n+            }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685035286050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n-        background-color: $color-yellow;\r\n+        background-color: $color-white;\r\n \r\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1685035752858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,14 @@\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 1.2em;\r\n \r\n+    &__description {\r\n+        text-align: center;\r\n+        margin: 0 2em;\r\n+    }\r\n \r\n+\r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-white;\r\n \r\n"
+                },
+                {
+                    "date": 1685035835908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     gap: 1.2em;\r\n \r\n     &__description {\r\n         text-align: center;\r\n-        margin: 0 2em;\r\n+        margin: 0 12em;\r\n     }\r\n \r\n \r\n     &__container {\r\n"
+                },
+                {
+                    "date": 1685035847871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     gap: 1.2em;\r\n \r\n     &__description {\r\n         text-align: center;\r\n-        margin: 0 12em;\r\n+        margin: 0 22em;\r\n     }\r\n \r\n \r\n     &__container {\r\n"
+                },
+                {
+                    "date": 1685035882326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     gap: 1.2em;\r\n \r\n     &__description {\r\n         text-align: center;\r\n-        margin: 0 22em;\r\n+        margin: 0 22em 4em;\r\n     }\r\n \r\n \r\n     &__container {\r\n"
+                },
+                {
+                    "date": 1685035902910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     gap: 1.2em;\r\n \r\n     &__description {\r\n         text-align: center;\r\n-        margin: 0 22em 4em;\r\n+        margin: 0 22em;\r\n     }\r\n \r\n \r\n     &__container {\r\n"
                 }
             ],
             "date": 1685017332099,
