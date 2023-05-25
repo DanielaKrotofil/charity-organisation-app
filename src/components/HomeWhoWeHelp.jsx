@@ -57,17 +57,22 @@ const WhoWeHelp = () => {
     setPage(pageNumber);
   };
 
+  const handleInstitutionChange = (newInstitution) => {
+    setInstitution(newInstitution);
+    setPage(1);
+  };
+
   const sortedInstitution = [...institution].sort((a, b) => {
-  const idA = a.id || "";
-  const idB = b.id || "";
-  if (idA < idB) {
-        return -1;
-        }
+    const idA = a.id || "";
+    const idB = b.id || "";
+    if (idA < idB) {
+      return -1;
+    }
     if (idA > idB) {
-        return 1;
-        }
+      return 1;
+    }
     return 0;
-    });
+  });
 
   const displayItems = sortedInstitution
     .filter(({ id }) => id !== undefined)
@@ -78,9 +83,9 @@ const WhoWeHelp = () => {
       <h2>Komu pomagamy?</h2>
       <img className='decoration-line' src={decorationline} alt="line" />
       <div>
-        <button className='button__whowehelp' onClick={() => setInstitution(fundations)}>Fundajcom</button>
-        <button className='button__whowehelp' onClick={() => setInstitution(organizations)}>Organizacjom pozarządowym</button>
-        <button className='button__whowehelp' onClick={() => setInstitution(locals)}>Lokalnym zbiórkom</button>
+        <button className='button__whowehelp' onClick={() => handleInstitutionChange(fundations)}>Fundajcom</button>
+        <button className='button__whowehelp' onClick={() => handleInstitutionChange(organizations)}>Organizacjom pozarządowym</button>
+        <button className='button__whowehelp' onClick={() => handleInstitutionChange(locals)}>Lokalnym zbiórkom</button>
       </div>
       <div className="whowehelp__container">
         {sortedInstitution.map(({ index, description }) => (
@@ -102,17 +107,17 @@ const WhoWeHelp = () => {
           </div>
         ))}
         {totalPages > 1 && (
-            <div className="pagination">
-                {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
-                <button
-                    key={`page_${pageNumber}`}
-                    className={`pagination__button ${pageNumber == page ? 'active' : ''}`}
-                    onClick={() => handlePageChange(pageNumber)}
-                >
-                    {pageNumber}
-                </button>
-                ))}
-            </div>
+          <div className="whowehelp__navigation">
+            {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
+              <button
+                key={`page_${pageNumber}`}
+                className={`whowehelp__navigation__button ${pageNumber === page ? 'active' : ''}`}
+                onClick={() => handlePageChange(pageNumber)}
+              >
+                {pageNumber}
+              </button>
+            ))}
+          </div>
         )}
       </div>
     </>
@@ -120,4 +125,3 @@ const WhoWeHelp = () => {
 }
 
 export default WhoWeHelp;
-

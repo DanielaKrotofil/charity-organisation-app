@@ -27,4 +27,16 @@
             }
         }
     }
+
+    &__navigation {
+        display: flex;
+        justify-content:center;
+        gap: 1em;
+
+        &__button {
+            background-color: $color-white;
+            padding: 13px 15px;
+            border: 0;
+        }
+    }
 }

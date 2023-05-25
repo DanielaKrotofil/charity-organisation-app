@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 34,
+            "activePatchIndex": 45,
             "patches": [
                 {
                     "date": 1685017332099,
@@ -144,6 +144,50 @@
                 {
                     "date": 1685037555696,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     gap: 1.2em;\r\n \r\n     &__description {\r\n         text-align: center;\r\n-        margin: 0 22em;\r\n+        margin: 0 12em;\r\n     }\r\n \r\n \r\n     &__container {\r\n"
+                },
+                {
+                    "date": 1685046541063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,9 @@\n                 flex-direction: column;\r\n             }\r\n         }\r\n     }\r\n+\r\n+    &__navigation {\r\n+        \r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685046550575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,7 +28,7 @@\n         }\r\n     }\r\n \r\n     &__navigation {\r\n-        \r\n+        &__button {}\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685046576948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,7 +28,9 @@\n         }\r\n     }\r\n \r\n     &__navigation {\r\n-        &__button {}\r\n+        &__button {\r\n+            background-color: $color-white;\r\n+        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685046633020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,7 +30,9 @@\n \r\n     &__navigation {\r\n         &__button {\r\n             background-color: $color-white;\r\n+            display: flex;\r\n+            justify-content: space-around;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685046650179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,11 +28,12 @@\n         }\r\n     }\r\n \r\n     &__navigation {\r\n+        display: flex;\r\n+        justify-content: space-around;\r\n         &__button {\r\n             background-color: $color-white;\r\n-            display: flex;\r\n-            justify-content: space-around;\r\n+            \r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685046661291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n \r\n     &__navigation {\r\n         display: flex;\r\n         justify-content: space-around;\r\n+        align-items: center;\r\n         &__button {\r\n             background-color: $color-white;\r\n             \r\n         }\r\n"
+                },
+                {
+                    "date": 1685046672134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     &__navigation {\r\n         display: flex;\r\n         justify-content: space-around;\r\n-        align-items: center;\r\n+\r\n         &__button {\r\n             background-color: $color-white;\r\n             \r\n         }\r\n"
+                },
+                {
+                    "date": 1685046709466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,8 @@\n         justify-content: space-around;\r\n \r\n         &__button {\r\n             background-color: $color-white;\r\n-            \r\n+            padding: 13px 15px;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685046735799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,10 @@\n     }\r\n \r\n     &__navigation {\r\n         display: flex;\r\n-        justify-content: space-around;\r\n+        justify-content:center;\r\n+        \r\n \r\n         &__button {\r\n             background-color: $color-white;\r\n             padding: 13px 15px;\r\n"
+                },
+                {
+                    "date": 1685046745124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n \r\n     &__navigation {\r\n         display: flex;\r\n         justify-content:center;\r\n-        \r\n+        gap: 1em;\r\n \r\n         &__button {\r\n             background-color: $color-white;\r\n             padding: 13px 15px;\r\n"
+                },
+                {
+                    "date": 1685046763344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,7 +35,8 @@\n \r\n         &__button {\r\n             background-color: $color-white;\r\n             padding: 13px 15px;\r\n+            border: 0;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1685017332099,
