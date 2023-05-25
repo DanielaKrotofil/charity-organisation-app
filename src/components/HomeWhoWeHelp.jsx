@@ -1,14 +1,10 @@
 import decorationline from '../assets/Decoration.svg';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { collection, getDocs } from "firebase/firestore";
 import { db } from '../firebase';
 
 const WhoWeHelp = () => {
   const [fundations, setFundations] = useState([]);
-  const [organizations, setOrganizations] = useState([]);
-  const [locals, setLocals] = useState([]);
-  const [institution, setInstitution] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => {
       const querySnapshot = await getDocs(collection(db, "fundations"));
@@ -23,6 +19,7 @@ const WhoWeHelp = () => {
     fetchData();
   }, []);
 
+  const [organizations, setOrganizations] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const querySnapshot = await getDocs(collection(db, "organizations"));
@@ -31,17 +28,12 @@ const WhoWeHelp = () => {
         tempArr.push(doc.data());
         console.log(doc.id, " => ", doc.data());
       });
-      // Sortowanie organizacji według pola "title"
-      tempArr.sort((a, b) => {
-        const titleA = a.title || "";
-        const titleB = b.title || "";
-        return titleA.localeCompare(titleB);
-      });
       setOrganizations(tempArr);
     };
     fetchData();
   }, []);
 
+  const [locals, setLocals] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       const querySnapshot = await getDocs(collection(db, "LocalFundraisers"));
@@ -50,24 +42,41 @@ const WhoWeHelp = () => {
         tempArr.push(doc.data());
         console.log(doc.id, " => ", doc.data());
       });
-      // Sortowanie lokalnych zbiórek według pola "title"
-      tempArr.sort((a, b) => {
-        const titleA = a.title || "";
-        const titleB = b.title || "";
-        return titleA.localeCompare(titleB);
-      });
       setLocals(tempArr);
     };
     fetchData();
   }, []);
 
-  // Sortowanie tablicy institution przed użyciem w renderowaniu
-  const sortedInstitution = [...institution].sort((a, b) => a.id - b.id);
+  const [institution, setInstitution] = useState([]);
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 3;
+  const totalItems = institution.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setPage(pageNumber);
+  };
+
+  const sortedInstitution = [...institution].sort((a, b) => {
+  const idA = a.id || "";
+  const idB = b.id || "";
+  if (idA < idB) {
+        return -1;
+        }
+    if (idA > idB) {
+        return 1;
+        }
+    return 0;
+    });
+
+  const displayItems = sortedInstitution
+    .filter(({ id }) => id !== undefined) // Pomijanie pozycji bez pola "id"
+    .slice((page - 1) * itemsPerPage, page * itemsPerPage);
 
   return (
     <>
       <h2>Komu pomagamy?</h2>
-      <img className='decoration-line' src={decorationline} alt="line"/>
+      <img className='decoration-line' src={decorationline} alt="line" />
       <div>
         <button className='button__whowehelp' onClick={() => setInstitution(fundations)}>Fundajcom</button>
         <button className='button__whowehelp' onClick={() => setInstitution(organizations)}>Organizacjom pozarządowym</button>
@@ -81,22 +90,34 @@ const WhoWeHelp = () => {
             )}
           </div>
         ))}
-        {sortedInstitution
-          .filter(({ id }) => id !== undefined) // Pomijanie pozycji bez pola "id"
-          .map(({ id, title, goal, needs }) => (
-            <div key={`element_${id}`}>
-              <div className="whowehelp__container__element">
-                <div className="whowehelp__container__element-part1">
-                  <h4>{title}</h4>
-                  <h6>{goal}</h6>
-                </div>
-                <span><h6>{needs}</h6></span>
+        {displayItems.map(({ id, title, goal, needs }) => (
+          <div key={`element_${id}`}>
+            <div className="whowehelp__container__element">
+              <div className="whowehelp__container__element-part1">
+                <h4>{title}</h4>
+                <h6>{goal}</h6>
               </div>
+              <span><h6>{needs}</h6></span>
             </div>
-          ))}
+          </div>
+        ))}
+        {totalPages > 1 && (
+            <div className="pagination">
+                {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
+                <button
+                    key={`page_${pageNumber}`}
+                    className={`pagination__button ${pageNumber === page ? 'active' : ''}`}
+                    onClick={() => handlePageChange(pageNumber)}
+                >
+                    {pageNumber}
+                </button>
+                ))}
+            </div>
+        )}
       </div>
     </>
   );
 }
 
 export default WhoWeHelp;
+
