@@ -30,4 +30,12 @@
             font-weight: lighter;
         }
     }
+
+    &__whowehelp {
+        background-color: $color-white;
+        border: 0.038em solid $color-dark-grey;
+        padding: 23px 42px;
+        height: 79px;
+        max-width: 208px;
+    }
 }

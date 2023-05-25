@@ -44,7 +44,7 @@ export default function Navigation() {
       <section><HomeThreeColumns/></section>
       <section id="about"><HomeSimpleSteps/></section>
       <section id="aboutus"><HomeAboutUs/></section>
-      <section id="fundations"><WhoWeHelp/></section>
+      <section id="fundations" className="whowehelp"><WhoWeHelp/></section>
       <section className="contactForm" id="contact"><Contact/></section>
     </div>
   );

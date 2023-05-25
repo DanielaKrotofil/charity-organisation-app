@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 16,
             "patches": [
                 {
                     "date": 1684423294785,
@@ -28,6 +28,50 @@
                 {
                     "date": 1684484300497,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     display: flex;\r\n     gap: 1.5rem;\r\n     text-align: center;\r\n     padding-top: 1em;\r\n-    font-size: 18px;\r\n+    font-size: 36px;\r\n }\r\n \r\n .button {\r\n     padding:  0.5em 1em;\r\n"
+                },
+                {
+                    "date": 1685017769717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,5 +29,7 @@\n             color: $color-dark-grey;\r\n             font-weight: lighter;\r\n         }\r\n     }\r\n+\r\n+    &__whowehelp {}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018137707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,6 +30,7 @@\n             font-weight: lighter;\r\n         }\r\n     }\r\n \r\n-    &__whowehelp {}\r\n+    &__whowehelp {\r\n+        padding: 24px 50px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018155183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n         }\r\n     }\r\n \r\n     &__whowehelp {\r\n-        padding: 24px 50px;\r\n+        padding: 24px 50px;}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018175564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,6 @@\n         }\r\n     }\r\n \r\n     &__whowehelp {\r\n-        padding: 24px 50px;}\r\n+        padding: 23px 42px;}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018205258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,6 +31,7 @@\n         }\r\n     }\r\n \r\n     &__whowehelp {\r\n-        padding: 23px 42px;}\r\n+        padding: 23px 42px;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018229046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,7 +31,9 @@\n         }\r\n     }\r\n \r\n     &__whowehelp {\r\n+        background-color: $color-white;\r\n+        border: 0.038em solid $color-dark-grey;\r\n         padding: 23px 42px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018573472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,7 @@\n     &__whowehelp {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 23px 42px;\r\n+        max-height: 208px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018588499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,6 +35,7 @@\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 23px 42px;\r\n         max-height: 208px;\r\n+        max-width: 50px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018610699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,8 @@\n     &__whowehelp {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 23px 42px;\r\n-        max-height: 208px;\r\n-        max-width: 50px;\r\n+        max-height: 79px;\r\n+        max-width: 208px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018633542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,7 +35,7 @@\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 23px 42px;\r\n         max-height: 79px;\r\n-        max-width: 208px;\r\n+        width: 208px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685018643816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,8 @@\n     &__whowehelp {\r\n         background-color: $color-white;\r\n         border: 0.038em solid $color-dark-grey;\r\n         padding: 23px 42px;\r\n-        max-height: 79px;\r\n-        width: 208px;\r\n+        height: 79px;\r\n+        max-width: 208px;\r\n     }\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1684423294785,

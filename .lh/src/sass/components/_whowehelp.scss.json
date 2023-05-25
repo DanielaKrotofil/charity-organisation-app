@@ -1,0 +1,106 @@
+{
+    "sourceFile": "src/sass/components/_whowehelp.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 22,
+            "patches": [
+                {
+                    "date": 1685017332099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1685017343615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n .whowehelp {\r\n-    \r\n+    &__button{}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685017369780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n+\r\n .whowehelp {\r\n-    &__button{}\r\n+    &__button {}\r\n+    &__container {}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685017448427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n \r\n .whowehelp {\r\n+    display: block;\r\n+    \r\n     &__button {}\r\n     &__container {}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685017472364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n \r\n .whowehelp {\r\n-    display: block;\r\n-    \r\n+    display: flex;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n+\r\n     &__button {}\r\n     &__container {}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685017499032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,8 @@\n     justify-content: center;\r\n     align-items: center;\r\n \r\n     &__button {}\r\n-    &__container {}\r\n+    &__container {\r\n+        \r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685017533578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     align-items: center;\r\n \r\n     &__button {}\r\n     &__container {\r\n-        \r\n+        margin: 25px 50px 75px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685017582192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n     align-items: center;\r\n \r\n     &__button {}\r\n     &__container {\r\n-        margin: 25px 50px 75px;\r\n+        margin: 25px 150px 75px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685017600202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,7 @@\n \r\n     &__button {}\r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n+        background-color: $color-yellow;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685017606972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\r\n+@import '../settings/variables';\r\n .whowehelp {\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n"
+                },
+                {
+                    "date": 1685017784189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n \r\n-    &__button {}\r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685017974142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n .whowehelp {\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n+    gap: 0.2em;\r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n"
+                },
+                {
+                    "date": 1685017980561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n .whowehelp {\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n-    gap: 0.2em;\r\n+    gap: 2em;\r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n"
+                },
+                {
+                    "date": 1685017991573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n .whowehelp {\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n-    gap: 2em;\r\n+    gap: 0.2em;\r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n"
+                },
+                {
+                    "date": 1685018039115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n @import '../settings/variables';\r\n .whowehelp {\r\n     display: flex;\r\n+    flex-direction: column;\r\n     justify-content: center;\r\n     align-items: center;\r\n     gap: 0.2em;\r\n \r\n"
+                },
+                {
+                    "date": 1685018046640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     align-items: center;\r\n-    gap: 0.2em;\r\n+    gap: 2em;\r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n"
+                },
+                {
+                    "date": 1685018060293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     align-items: center;\r\n-    gap: 2em;\r\n+    gap: 1.2em;\r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n"
+                },
+                {
+                    "date": 1685018298393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n .whowehelp {\r\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n-    align-items: center;\r\n     gap: 1.2em;\r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n"
+                },
+                {
+                    "date": 1685018324685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n @import '../settings/variables';\r\n .whowehelp {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    justify-content: center;\r\n     gap: 1.2em;\r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n"
+                },
+                {
+                    "date": 1685018332846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n @import '../settings/variables';\r\n .whowehelp {\r\n     display: flex;\r\n     flex-direction: column;\r\n+    align-items: center;\r\n     gap: 1.2em;\r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n"
+                },
+                {
+                    "date": 1685018380078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n @import '../settings/variables';\r\n .whowehelp {\r\n+    padding-top: 12px;\r\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 1.2em;\r\n"
+                },
+                {
+                    "date": 1685018441494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 1.2em;\r\n+    max-height: 800px;\r\n \r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n"
+                },
+                {
+                    "date": 1685018450871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,10 @@\n     display: flex;\r\n     flex-direction: column;\r\n     align-items: center;\r\n     gap: 1.2em;\r\n-    max-height: 800px;\r\n \r\n+\r\n     &__container {\r\n         margin: 25px 150px 75px;\r\n         background-color: $color-yellow;\r\n     }\r\n"
+                }
+            ],
+            "date": 1685017332099,
+            "name": "Commit-0",
+            "content": ".whowehelp {\r\n    \r\n}"
+        }
+    ]
+}

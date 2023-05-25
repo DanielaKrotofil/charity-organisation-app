@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 295,
+            "activePatchIndex": 302,
             "patches": [
                 {
                     "date": 1683991843387,
@@ -1188,6 +1188,34 @@
                 {
                     "date": 1684488093356,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n \r\n     &__container {\r\n         display: flex;\r\n-        gap: 286px; //rozjezdza sie stronkapod doaniu gapu o takim wymiarze\r\n+        gap: 286px; //rozjezdza sie stronka po dodaniu gapu o takim wymiarze (rozszerza sie poza ganice strony)\r\n         max-width: 100%;\r\n     }\r\n \r\n     span {\r\n"
+                },
+                {
+                    "date": 1684778673995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,59 +2,54 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top left -40%/55%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top 1% left -40%/55%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n-        align-items: center;\r\n-        margin: 9.5em;\r\n+        max-height: 60.188em;\r\n \r\n         &__text {\r\n             display: flex;\r\n             gap: 1em;\r\n             flex-direction: column;\r\n-            text-align: center;\r\n             white-space: nowrap;\r\n             align-items: center;\r\n             justify-content: flex-end;\r\n-            padding: 1em;\r\n+            padding: 8.5em 0;\r\n         }\r\n     }\r\n }\r\n-\r\n-\r\n-.HomeThreeColumns {\r\n-    padding: 46px 163px 86px;\r\n+.HomeThreeColumns { //wyjezdza poza strone ta sekcja\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n+    padding: 2.875em 10.188em 5.375em;\r\n \r\n     &__container {\r\n         display: flex;\r\n-        gap: 286px; //rozjezdza sie stronka po dodaniu gapu o takim wymiarze (rozszerza sie poza ganice strony)\r\n-        max-width: 100%;\r\n+        justify-content: space-between;\r\n     }\r\n \r\n-    span {\r\n-        font-size: 90px;\r\n-        font-weight: lighter;\r\n-    }\r\n-\r\n     &__box {\r\n-        text-align: center;\r\n-        display: flex;\r\n-        flex-direction: column;\r\n-        max-width: 334px;\r\n-        max-height: 252px;\r\n-    }\r\n+        max-width: 20.875em;\r\n+        max-height: 15.750em;\r\n+        line-height: 1.6;\r\n \r\n-    h6 {\r\n-        text-transform: uppercase;\r\n-        white-space: nowrap;\r\n-    }\r\n+        span {\r\n+            font-size: 5.625em;\r\n+            font-weight: lighter;\r\n+        }\r\n \r\n-    p {\r\n-        white-space: nowrap;\r\n-        font-size: 16px;\r\n+        h6 {\r\n+            text-transform: uppercase;\r\n+            white-space: nowrap;\r\n+            margin-bottom: 1.750em;\r\n+        }\r\n+\r\n+        p {\r\n+            white-space: nowrap;\r\n+            font-size: 1.000em;\r\n+            font-family: $font-family-second;\r\n+        }\r\n     }\r\n-}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1684778744158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     }\r\n }\r\n .HomeThreeColumns { //wyjezdza poza strone ta sekcja\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n-    padding: 2.875em 10.188em 5.375em;\r\n+    padding: 2.875em 9.188em 5.375em;\r\n \r\n     &__container {\r\n         display: flex;\r\n         justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1684778751312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     }\r\n }\r\n .HomeThreeColumns { //wyjezdza poza strone ta sekcja\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n-    padding: 2.875em 9.188em 5.375em;\r\n+    padding: 2.875em 7.188em 5.375em;\r\n \r\n     &__container {\r\n         display: flex;\r\n         justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1684778767348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     }\r\n }\r\n .HomeThreeColumns { //wyjezdza poza strone ta sekcja\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n-    padding: 2.875em 7.188em 5.375em;\r\n+    padding: 2.875em 6.188em 4.375em;\r\n \r\n     &__container {\r\n         display: flex;\r\n         justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1684778781966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     }\r\n }\r\n .HomeThreeColumns { //wyjezdza poza strone ta sekcja\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n-    padding: 2.875em 6.188em 4.375em;\r\n+    padding: 2.575em 6.188em 4.375em;\r\n \r\n     &__container {\r\n         display: flex;\r\n         justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1684778790867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     }\r\n }\r\n .HomeThreeColumns { //wyjezdza poza strone ta sekcja\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n-    padding: 2.575em 6.188em 4.375em;\r\n+    padding: 2.575em 5.188em 4.375em;\r\n \r\n     &__container {\r\n         display: flex;\r\n         justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1684778815829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,9 @@\n         h6 {\r\n             text-transform: uppercase;\r\n             white-space: nowrap;\r\n             margin-bottom: 1.750em;\r\n+            text-align: center;\r\n         }\r\n \r\n         p {\r\n             white-space: nowrap;\r\n"
                 }
             ],
             "date": 1683991843387,
