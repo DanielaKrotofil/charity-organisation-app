@@ -83,9 +83,9 @@ const WhoWeHelp = () => {
       <h2>Komu pomagamy?</h2>
       <img className='decoration-line' src={decorationline} alt="line" />
       <div>
-        <button className='button__whowehelp' onClick={() => handleInstitutionChange(fundations)}>Fundajcom</button>
-        <button className='button__whowehelp' onClick={() => handleInstitutionChange(organizations)}>Organizacjom pozarządowym</button>
-        <button className='button__whowehelp' onClick={() => handleInstitutionChange(locals)}>Lokalnym zbiórkom</button>
+        <button className={`button__whowehelp ${institution === fundations ? 'active' : ''}`} onClick={() => handleInstitutionChange(fundations)}>Fundajcom</button>
+        <button className={`button__whowehelp ${institution === organizations ? 'active' : ''}`} onClick={() => handleInstitutionChange(organizations)}>Organizacjom pozarządowym</button>
+        <button className={`button__whowehelp ${institution === locals ? 'active' : ''}`} onClick={() => handleInstitutionChange(locals)}>Lokalnym zbiórkom</button>
       </div>
       <div className="whowehelp__container">
         {sortedInstitution.map(({ index, description }) => (
@@ -95,16 +95,17 @@ const WhoWeHelp = () => {
             )}
           </div>
         ))}
-        {displayItems.map(({ id, title, goal, needs }) => (
-          <div key={`element_${id}`}>
-            <div className="whowehelp__container__element">
-              <div className="whowehelp__container__element-part1">
-                <h4>{title}</h4>
-                <h6>{goal}</h6>
-              </div>
-              <span><h6>{needs}</h6></span>
+        {displayItems.map(({ id, title, goal, needs }, index) => (
+            <div key={`element_${id}`}>
+                <div className="whowehelp__container__element">
+                <div className="whowehelp__container__element-part1">
+                    <h4>{title}</h4>
+                    <h6>{goal}</h6>
+                </div>
+                <span><h6>{needs}</h6></span>
+                </div>
+                {index !== displayItems.length - 1 && <span className="separator"></span>}
             </div>
-          </div>
         ))}
         {totalPages > 1 && (
           <div className="whowehelp__navigation">

@@ -20,10 +20,14 @@
             display: flex;
             justify-content: space-between;
             padding-bottom: 1.2em;
-            border-bottom: 1px solid $color-dark-grey;
+
             &-part1 {
                 display: flex;
                 flex-direction: column;
+
+                &:last-child {
+                    border-bottom: 1px solid $color-grey;
+                }
             }
         }
     }
@@ -39,4 +43,15 @@
             border: 0;
         }
     }
+}
+
+.active {
+    border: 1px solid $color-grey;
+}
+
+.separator {
+    display: block;
+    height: 1px;
+    background: $color-grey;
+    margin: 1em 0;
 }

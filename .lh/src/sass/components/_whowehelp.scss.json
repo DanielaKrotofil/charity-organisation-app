@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 45,
+            "activePatchIndex": 73,
             "patches": [
                 {
                     "date": 1685017332099,
@@ -188,6 +188,118 @@
                 {
                     "date": 1685046763344,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,7 +35,8 @@\n \r\n         &__button {\r\n             background-color: $color-white;\r\n             padding: 13px 15px;\r\n+            border: 0;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685048458861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,8 @@\n             padding: 13px 15px;\r\n             border: 0;\r\n         }\r\n     }\r\n+}\r\n+.active {\r\n+    border: 1px solid $color-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685048523741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,5 @@\n             padding: 13px 15px;\r\n             border: 0;\r\n         }\r\n     }\r\n-}\r\n-.active {\r\n-    border: 1px solid $color-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685048591389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,5 +38,9 @@\n             padding: 13px 15px;\r\n             border: 0;\r\n         }\r\n     }\r\n+}\r\n+\r\n+.active {\r\n+    border: 1px solid $color-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685048698267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n     &__navigation {\r\n         display: flex;\r\n         justify-content:center;\r\n         gap: 1em;\r\n+        font-family: $font-family-basic;\r\n \r\n         &__button {\r\n             background-color: $color-white;\r\n             padding: 13px 15px;\r\n"
+                },
+                {
+                    "date": 1685048723952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,8 @@\n     &__navigation {\r\n         display: flex;\r\n         justify-content:center;\r\n         gap: 1em;\r\n-        font-family: $font-family-basic;\r\n \r\n         &__button {\r\n             background-color: $color-white;\r\n             padding: 13px 15px;\r\n"
+                },
+                {
+                    "date": 1685048812067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n             padding-bottom: 1.2em;\r\n-            border-bottom: 1px solid $color-dark-grey;\r\n+\r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685048905995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,13 @@\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n             padding-bottom: 1.2em;\r\n-\r\n+            \r\n+            &:nth-child(2) {\r\n+                background: orangered;\r\n+                color: #fff;\r\n+            }\r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685048938722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,11 @@\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n             padding-bottom: 1.2em;\r\n-            \r\n+\r\n             &:nth-child(2) {\r\n-                background: orangered;\r\n-                color: #fff;\r\n+                border: 1px solid $color-grey;\r\n             }\r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1685048969429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             display: flex;\r\n             justify-content: space-between;\r\n             padding-bottom: 1.2em;\r\n \r\n-            &:nth-child(2) {\r\n+            &:last-child {\r\n                 border: 1px solid $color-grey;\r\n             }\r\n             &-part1 {\r\n                 display: flex;\r\n"
+                },
+                {
+                    "date": 1685048992863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,14 +20,14 @@\n             display: flex;\r\n             justify-content: space-between;\r\n             padding-bottom: 1.2em;\r\n \r\n-            &:last-child {\r\n-                border: 1px solid $color-grey;\r\n-            }\r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n+                &:last-child {\r\n+                    border: 1px solid $color-grey;\r\n+                }\r\n             }\r\n         }\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1685049014816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,15 +19,15 @@\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n             padding-bottom: 1.2em;\r\n+            &:last-child {\r\n+                border: 1px solid $color-grey;\r\n+            }\r\n \r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n-                &:last-child {\r\n-                    border: 1px solid $color-grey;\r\n-                }\r\n             }\r\n         }\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1685049036127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,11 @@\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n             padding-bottom: 1.2em;\r\n+\r\n             &:last-child {\r\n-                border: 1px solid $color-grey;\r\n+                border-bottom: 1px solid $color-grey;\r\n             }\r\n \r\n             &-part1 {\r\n                 display: flex;\r\n"
+                },
+                {
+                    "date": 1685049065002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,15 +20,17 @@\n             display: flex;\r\n             justify-content: space-between;\r\n             padding-bottom: 1.2em;\r\n \r\n-            &:last-child {\r\n-                border-bottom: 1px solid $color-grey;\r\n-            }\r\n+            \r\n \r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n+\r\n+                &:last-child {\r\n+                    border-bottom: 1px solid $color-grey;\r\n+                }\r\n             }\r\n         }\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1685049242295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,8 @@\n             display: flex;\r\n             justify-content: space-between;\r\n             padding-bottom: 1.2em;\r\n \r\n-            \r\n-\r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n \r\n@@ -48,5 +46,9 @@\n }\r\n \r\n .active {\r\n     border: 1px solid $color-grey;\r\n+}\r\n+\r\n+.separator {\r\n+    border: 1px solid $color-dark-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049253688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,6 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-    border: 1px solid $color-dark-grey;\r\n+    border-bottom: 1px solid $color-dark-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049338355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,7 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-    border-bottom: 1px solid $color-dark-grey;\r\n+    height: 2px;\r\n+    background-color: $color-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049389763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,7 +49,9 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-    height: 2px;\r\n-    background-color: $color-grey;\r\n+    background: #fff;/*tło dla naszego napisu w nagłówku, który przykryje poziomą linię*/\r\n+    padding: 0 15px;\r\n+    position: relative;\r\n+    top: 10px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049398358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,6 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-    background: #fff;/*tło dla naszego napisu w nagłówku, który przykryje poziomą linię*/\r\n-    padding: 0 15px;\r\n-    position: relative;\r\n-    top: 10px;\r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049470660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,6 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-\r\n+    border-top: 8px solid #bbb;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049532034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,5 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-    border-top: 8px solid #bbb;\r\n-}\n\\ No newline at end of file\n+    border-top: 3px solid #bbb;}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049572022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,7 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-    border-top: 3px solid #bbb;}\n\\ No newline at end of file\n+    border-top: 3px solid #bbb;\r\n+    width: 100%;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049607260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,6 +50,7 @@\n }\r\n \r\n .separator {\r\n     border-top: 3px solid #bbb;\r\n+    height: 1px;\r\n     width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049625822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,6 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-    border-top: 3px solid #bbb;\r\n-    height: 1px;\r\n-    width: 100%;\r\n+    border: 1px solid $color-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049652344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,6 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-    border: 1px solid $color-grey;\r\n+    border-bottom: 1px solid $color-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049710588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,8 @@\n     border: 1px solid $color-grey;\r\n }\r\n \r\n .separator {\r\n-    border-bottom: 1px solid $color-grey;\r\n+    display: block;\r\n+  height: 3px;\r\n+  background: #222;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049729944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,7 +50,7 @@\n }\r\n \r\n .separator {\r\n     display: block;\r\n-  height: 3px;\r\n-  background: #222;\r\n+    height: 3px;\r\n+    background: $color-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049755799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,7 +50,7 @@\n }\r\n \r\n .separator {\r\n     display: block;\r\n-    height: 3px;\r\n+    height: 1px;\r\n     background: $color-grey;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685049791286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,5 +52,6 @@\n .separator {\r\n     display: block;\r\n     height: 1px;\r\n     background: $color-grey;\r\n+    margin: 1em 0;\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1685017332099,
