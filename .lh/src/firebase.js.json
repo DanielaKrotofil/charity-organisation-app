@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1684610355128,
@@ -12,6 +12,14 @@
                 {
                     "date": 1684610618891,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n import { initializeApp } from \"firebase/app\";\r\n-import { getAnalytics } from \"firebase/analytics\";\r\n // TODO: Add SDKs for Firebase products that you want to use\r\n // https://firebase.google.com/docs/web/setup#available-libraries\r\n \r\n const firebaseConfig = {\r\n@@ -12,6 +11,5 @@\n   appId: \"1:809936677730:web:5437815d23e8f9b2951a3b\",\r\n   measurementId: \"G-G0BMGMKGX6\"\r\n };\r\n \r\n-const app = initializeApp(firebaseConfig);\r\n-const analytics = getAnalytics(app);\n\\ No newline at end of file\n+const app = initializeApp(firebaseConfig);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685009598047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n import { initializeApp } from \"firebase/app\";\r\n-// TODO: Add SDKs for Firebase products that you want to use\r\n-// https://firebase.google.com/docs/web/setup#available-libraries\r\n+import { getFirestore } from \"firebase/firestore\";\r\n \r\n const firebaseConfig = {\r\n   apiKey: \"AIzaSyCu_vcz59l5aaVJJvFU1wCA0gyvK8Ylqhk\",\r\n   authDomain: \"oddaj-rzeczy-projekt.firebaseapp.com\",\r\n"
+                },
+                {
+                    "date": 1685009679618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,6 @@\n   appId: \"1:809936677730:web:5437815d23e8f9b2951a3b\",\r\n   measurementId: \"G-G0BMGMKGX6\"\r\n };\r\n \r\n-const app = initializeApp(firebaseConfig);\n\\ No newline at end of file\n+const app = initializeApp(firebaseConfig);\r\n+export const db = getFirestore(app);\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1684610355128,

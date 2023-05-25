@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 87,
+            "activePatchIndex": 93,
             "patches": [
                 {
                     "date": 1683983953405,
@@ -356,6 +356,30 @@
                 {
                     "date": 1684484793976,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n import { RegisterForm } from './components/register';\n \n const Layout = () => {\n \n-  const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 300 } : undefined\n+  const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n   return (\n       <>\n           <nav className='mainNav container'>\n               <ul>\n"
+                },
+                {
+                    "date": 1685009710328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n } from 'react-router-dom';\n import Home from './components/home';\n import { LoginForm } from './components/login';\n import { RegisterForm } from './components/register';\n+import './firebase.js'\n \n const Layout = () => {\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n"
+                },
+                {
+                    "date": 1685010108516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n } from 'react-router-dom';\n import Home from './components/home';\n import { LoginForm } from './components/login';\n import { RegisterForm } from './components/register';\n-import './firebase.js'\n \n const Layout = () => {\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n"
+                },
+                {
+                    "date": 1685010147162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n import Home from './components/home';\n import { LoginForm } from './components/login';\n import { RegisterForm } from './components/register';\n \n-const Layout = () => {\n+const Layout = () => {import './firebase.js'\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n   return (\n       <>\n"
+                },
+                {
+                    "date": 1685011517871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n \n+\n import './sass/main.scss'\n import React from 'react';\n import {\n   HashRouter,\n@@ -12,9 +13,9 @@\n import Home from './components/home';\n import { LoginForm } from './components/login';\n import { RegisterForm } from './components/register';\n \n-const Layout = () => {import './firebase.js'\n+const Layout = () => {\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n   return (\n       <>\n"
+                },
+                {
+                    "date": 1685011532758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \n-\n+import './firebase.js'\n import './sass/main.scss'\n import React from 'react';\n import {\n   HashRouter,\n"
+                },
+                {
+                    "date": 1685011546497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n \n-import './firebase.js'\n import './sass/main.scss'\n import React from 'react';\n import {\n   HashRouter,\n"
                 }
             ],
             "date": 1683983953405,

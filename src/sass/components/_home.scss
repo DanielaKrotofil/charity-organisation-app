@@ -23,11 +23,11 @@
 }
 .HomeThreeColumns { //wyjezdza poza strone ta sekcja
     background: url('/src/assets/3-Columns-Background.png') repeat;
-    padding: 2.875em 10.188em 5.375em;
+    padding: 2.575em 5.188em 4.375em;
 
     &__container {
         display: flex;
-        gap: 17.875em;
+        justify-content: space-between;
     }
 
     &__box {
@@ -44,6 +44,7 @@
             text-transform: uppercase;
             white-space: nowrap;
             margin-bottom: 1.750em;
+            text-align: center;
         }
 
         p {
