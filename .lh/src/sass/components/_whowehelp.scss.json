@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 30,
+            "activePatchIndex": 34,
             "patches": [
                 {
                     "date": 1685017332099,
@@ -128,6 +128,22 @@
                 {
                     "date": 1685035902910,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     gap: 1.2em;\r\n \r\n     &__description {\r\n         text-align: center;\r\n-        margin: 0 22em 4em;\r\n+        margin: 0 22em;\r\n     }\r\n \r\n \r\n     &__container {\r\n"
+                },
+                {
+                    "date": 1685036190773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n \r\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n+            border-bottom: 1px solid $color-dark-grey;\r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685036220650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n \r\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n+            margin-bottom: 1.2em;\r\n             border-bottom: 1px solid $color-dark-grey;\r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1685036239962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \r\n         &__element {\r\n             display: flex;\r\n             justify-content: space-between;\r\n-            margin-bottom: 1.2em;\r\n+            padding-bottom: 1.2em;\r\n             border-bottom: 1px solid $color-dark-grey;\r\n             &-part1 {\r\n                 display: flex;\r\n                 flex-direction: column;\r\n"
+                },
+                {
+                    "date": 1685037555696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     gap: 1.2em;\r\n \r\n     &__description {\r\n         text-align: center;\r\n-        margin: 0 22em;\r\n+        margin: 0 12em;\r\n     }\r\n \r\n \r\n     &__container {\r\n"
                 }
             ],
             "date": 1685017332099,
