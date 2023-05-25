@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 358,
+            "activePatchIndex": 377,
             "patches": [
                 {
                     "date": 1684609160851,
@@ -1440,6 +1440,82 @@
                 {
                     "date": 1685045338329,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,22 +100,21 @@\n               <span><h6>{needs}</h6></span>\r\n             </div>\r\n           </div>\r\n         ))}\r\n-{totalPages > 1 && (\r\n-  <div className=\"pagination\">\r\n-    {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n-      <button\r\n-        key={`page_${pageNumber}`}\r\n-        className={`pagination__button ${pageNumber === page ? 'active' : ''}`}\r\n-        onClick={() => handlePageChange(pageNumber)}\r\n-      >\r\n-        {pageNumber}\r\n-      </button>\r\n-    ))}\r\n-  </div>\r\n-)}\r\n-\r\n+        {totalPages > 1 && (\r\n+            <div className=\"pagination\">\r\n+                {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n+                <button\r\n+                    key={`page_${pageNumber}`}\r\n+                    className={`pagination__button ${pageNumber === page ? 'active' : ''}`}\r\n+                    onClick={() => handlePageChange(pageNumber)}\r\n+                >\r\n+                    {pageNumber}\r\n+                </button>\r\n+                ))}\r\n+            </div>\r\n+        )}\r\n       </div>\r\n     </>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685045436794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n               <span><h6>{needs}</h6></span>\r\n             </div>\r\n           </div>\r\n         ))}\r\n-        {totalPages > 1 && (\r\n+        {totalPages > 0 && (\r\n             <div className=\"pagination\">\r\n                 {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n                 <button\r\n                     key={`page_${pageNumber}`}\r\n"
+                },
+                {
+                    "date": 1685045446552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n               <span><h6>{needs}</h6></span>\r\n             </div>\r\n           </div>\r\n         ))}\r\n-        {totalPages > 0 && (\r\n+        {totalPages > 2 && (\r\n             <div className=\"pagination\">\r\n                 {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n                 <button\r\n                     key={`page_${pageNumber}`}\r\n"
+                },
+                {
+                    "date": 1685045466650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n               <span><h6>{needs}</h6></span>\r\n             </div>\r\n           </div>\r\n         ))}\r\n-        {totalPages > 2 && (\r\n+        {totalPages >= 2 && (\r\n             <div className=\"pagination\">\r\n                 {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n                 <button\r\n                     key={`page_${pageNumber}`}\r\n"
+                },
+                {
+                    "date": 1685045588639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n             <div className=\"pagination\">\r\n                 {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n                 <button\r\n                     key={`page_${pageNumber}`}\r\n-                    className={`pagination__button ${pageNumber === page ? 'active' : ''}`}\r\n+                    className={`pagination__button ${pageNumber === page ? 'active' : 'd-none'}`}\r\n                     onClick={() => handlePageChange(pageNumber)}\r\n                 >\r\n                     {pageNumber}\r\n                 </button>\r\n"
+                },
+                {
+                    "date": 1685045599833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n             <div className=\"pagination\">\r\n                 {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n                 <button\r\n                     key={`page_${pageNumber}`}\r\n-                    className={`pagination__button ${pageNumber === page ? 'active' : 'd-none'}`}\r\n+                    className={`pagination__button ${pageNumber === page ? 'active' : ''}`}\r\n                     onClick={() => handlePageChange(pageNumber)}\r\n                 >\r\n                     {pageNumber}\r\n                 </button>\r\n"
+                },
+                {
+                    "date": 1685045626514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n               <span><h6>{needs}</h6></span>\r\n             </div>\r\n           </div>\r\n         ))}\r\n-        {totalPages >= 2 && (\r\n+        {totalPages > 2 && (\r\n             <div className=\"pagination\">\r\n                 {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n                 <button\r\n                     key={`page_${pageNumber}`}\r\n"
+                },
+                {
+                    "date": 1685045663775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n               <span><h6>{needs}</h6></span>\r\n             </div>\r\n           </div>\r\n         ))}\r\n-        {totalPages > 2 && (\r\n+        {totalPages >= 1 && (\r\n             <div className=\"pagination\">\r\n                 {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n                 <button\r\n                     key={`page_${pageNumber}`}\r\n"
+                },
+                {
+                    "date": 1685045685490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n               <span><h6>{needs}</h6></span>\r\n             </div>\r\n           </div>\r\n         ))}\r\n-        {totalPages >= 1 && (\r\n+        {totalPages >= 2 && (\r\n             <div className=\"pagination\">\r\n                 {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n                 <button\r\n                     key={`page_${pageNumber}`}\r\n"
+                },
+                {
+                    "date": 1685045756119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,21 +100,22 @@\n               <span><h6>{needs}</h6></span>\r\n             </div>\r\n           </div>\r\n         ))}\r\n-        {totalPages >= 2 && (\r\n-            <div className=\"pagination\">\r\n-                {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n-                <button\r\n-                    key={`page_${pageNumber}`}\r\n-                    className={`pagination__button ${pageNumber === page ? 'active' : ''}`}\r\n-                    onClick={() => handlePageChange(pageNumber)}\r\n-                >\r\n-                    {pageNumber}\r\n-                </button>\r\n-                ))}\r\n-            </div>\r\n-        )}\r\n+{totalPages > 1 && (\r\n+  <div className=\"pagination\">\r\n+    {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n+      <button\r\n+        key={`page_${pageNumber}`}\r\n+        className={`pagination__button ${pageNumber === page ? 'active' : ''}`}\r\n+        onClick={() => handlePageChange(pageNumber)}\r\n+      >\r\n+        {pageNumber}\r\n+      </button>\r\n+    ))}\r\n+  </div>\r\n+)}\r\n+\r\n       </div>\r\n     </>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685045779136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n   <div className=\"pagination\">\r\n     {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n       <button\r\n         key={`page_${pageNumber}`}\r\n-        className={`pagination__button ${pageNumber === page ? 'active' : ''}`}\r\n+        className={`pagination__button ${pageNumber == page ? 'active' : ''}`}\r\n         onClick={() => handlePageChange(pageNumber)}\r\n       >\r\n         {pageNumber}\r\n       </button>\r\n"
+                },
+                {
+                    "date": 1685045789316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n   <div className=\"pagination\">\r\n     {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n       <button\r\n         key={`page_${pageNumber}`}\r\n-        className={`pagination__button ${pageNumber == page ? 'active' : ''}`}\r\n+        className={`pagination__button ${pageNumber === page ? 'active' : ''}`}\r\n         onClick={() => handlePageChange(pageNumber)}\r\n       >\r\n         {pageNumber}\r\n       </button>\r\n"
+                },
+                {
+                    "date": 1685045830859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n     return 0;\r\n     });\r\n \r\n   const displayItems = sortedInstitution\r\n-    .filter(({ id }) => id !== undefined) // Pomijanie pozycji bez pola \"id\"\r\n+    .filter(({ id }) => id !== undefined)\r\n     .slice((page - 1) * itemsPerPage, page * itemsPerPage);\r\n \r\n   return (\r\n     <>\r\n"
+                },
+                {
+                    "date": 1685045842577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n   <div className=\"pagination\">\r\n     {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n       <button\r\n         key={`page_${pageNumber}`}\r\n-        className={`pagination__button ${pageNumber === page ? 'active' : ''}`}\r\n+        className={`pagination__button ${pageNumber == page ? 'active' : ''}`}\r\n         onClick={() => handlePageChange(pageNumber)}\r\n       >\r\n         {pageNumber}\r\n       </button>\r\n"
+                },
+                {
+                    "date": 1685045892874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     fetchData();\r\n   }, []);\r\n \r\n   const [institution, setInstitution] = useState([]);\r\n-  const [page, setPage] = useState(1);\r\n+  const [page, setPage] = useState();\r\n   const itemsPerPage = 3;\r\n   const totalItems = institution.length;\r\n   const totalPages = Math.ceil(totalItems / itemsPerPage);\r\n \r\n"
+                },
+                {
+                    "date": 1685045920754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,10 +47,10 @@\n     fetchData();\r\n   }, []);\r\n \r\n   const [institution, setInstitution] = useState([]);\r\n-  const [page, setPage] = useState();\r\n-  const itemsPerPage = 3;\r\n+  const [page, setPage] = useState(1);\r\n+  const itemsPerPage = 2;\r\n   const totalItems = institution.length;\r\n   const totalPages = Math.ceil(totalItems / itemsPerPage);\r\n \r\n   const handlePageChange = (pageNumber) => {\r\n"
+                },
+                {
+                    "date": 1685045926969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n   }, []);\r\n \r\n   const [institution, setInstitution] = useState([]);\r\n   const [page, setPage] = useState(1);\r\n-  const itemsPerPage = 2;\r\n+  const itemsPerPage = 4;\r\n   const totalItems = institution.length;\r\n   const totalPages = Math.ceil(totalItems / itemsPerPage);\r\n \r\n   const handlePageChange = (pageNumber) => {\r\n"
+                },
+                {
+                    "date": 1685045943900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n   }, []);\r\n \r\n   const [institution, setInstitution] = useState([]);\r\n   const [page, setPage] = useState(1);\r\n-  const itemsPerPage = 4;\r\n+  const itemsPerPage = 3;\r\n   const totalItems = institution.length;\r\n   const totalPages = Math.ceil(totalItems / itemsPerPage);\r\n \r\n   const handlePageChange = (pageNumber) => {\r\n"
+                },
+                {
+                    "date": 1685046186241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n \r\n   const [institution, setInstitution] = useState([]);\r\n   const [page, setPage] = useState(1);\r\n   const itemsPerPage = 3;\r\n-  const totalItems = institution.length;\r\n+  const totalItems = institution.filter(({ id }) => id !== undefined).length;\r\n   const totalPages = Math.ceil(totalItems / itemsPerPage);\r\n \r\n   const handlePageChange = (pageNumber) => {\r\n     setPage(pageNumber);\r\n"
+                },
+                {
+                    "date": 1685046269408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,22 +100,21 @@\n               <span><h6>{needs}</h6></span>\r\n             </div>\r\n           </div>\r\n         ))}\r\n-{totalPages > 1 && (\r\n-  <div className=\"pagination\">\r\n-    {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n-      <button\r\n-        key={`page_${pageNumber}`}\r\n-        className={`pagination__button ${pageNumber == page ? 'active' : ''}`}\r\n-        onClick={() => handlePageChange(pageNumber)}\r\n-      >\r\n-        {pageNumber}\r\n-      </button>\r\n-    ))}\r\n-  </div>\r\n-)}\r\n-\r\n+        {totalPages > 1 && (\r\n+            <div className=\"pagination\">\r\n+                {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n+                <button\r\n+                    key={`page_${pageNumber}`}\r\n+                    className={`pagination__button ${pageNumber == page ? 'active' : ''}`}\r\n+                    onClick={() => handlePageChange(pageNumber)}\r\n+                >\r\n+                    {pageNumber}\r\n+                </button>\r\n+                ))}\r\n+            </div>\r\n+        )}\r\n       </div>\r\n     </>\r\n   );\r\n }\r\n"
                 }
             ],
             "date": 1684609160851,

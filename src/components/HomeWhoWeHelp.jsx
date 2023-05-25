@@ -50,7 +50,7 @@ const WhoWeHelp = () => {
   const [institution, setInstitution] = useState([]);
   const [page, setPage] = useState(1);
   const itemsPerPage = 3;
-  const totalItems = institution.length;
+  const totalItems = institution.filter(({ id }) => id !== undefined).length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
@@ -70,7 +70,7 @@ const WhoWeHelp = () => {
     });
 
   const displayItems = sortedInstitution
-    .filter(({ id }) => id !== undefined) // Pomijanie pozycji bez pola "id"
+    .filter(({ id }) => id !== undefined)
     .slice((page - 1) * itemsPerPage, page * itemsPerPage);
 
   return (
@@ -106,7 +106,7 @@ const WhoWeHelp = () => {
                 {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
                 <button
                     key={`page_${pageNumber}`}
-                    className={`pagination__button ${pageNumber === page ? 'active' : ''}`}
+                    className={`pagination__button ${pageNumber == page ? 'active' : ''}`}
                     onClick={() => handlePageChange(pageNumber)}
                 >
                     {pageNumber}
