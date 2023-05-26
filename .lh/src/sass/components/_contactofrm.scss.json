@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 121,
+            "activePatchIndex": 130,
             "patches": [
                 {
                     "date": 1684613124728,
@@ -492,6 +492,42 @@
                 {
                     "date": 1685137935977,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         content: \"\";\r\n         position: absolute;\r\n         background-size: cover;\r\n         background-image: url('/src/assets/Background-Contact-Form.jpg');\r\n-        opacity:0.3;\r\n+        opacity:0.2;\r\n         top: -46px;\r\n         right: 0px;\r\n         bottom: 0px;\r\n         left: 0px;\r\n"
+                },
+                {
+                    "date": 1685138516441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,16 @@\n         bottom: 0px;\r\n         left: 0px;\r\n     }\r\n \r\n-    h2 {\r\n-        position: relative;\r\n+    &__container {\r\n+        h2 {\r\n+            position: relative;\r\n+        }\r\n     }\r\n \r\n+    \r\n+\r\n     .decoration-line {\r\n         position: relative;\r\n         margin: 2em 0;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685138524880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,16 +23,18 @@\n     &__container {\r\n         h2 {\r\n             position: relative;\r\n         }\r\n+\r\n+        .decoration-line {\r\n+            position: relative;\r\n+            margin: 2em 0;\r\n+        }\r\n     }\r\n \r\n     \r\n \r\n-    .decoration-line {\r\n-        position: relative;\r\n-        margin: 2em 0;\r\n-    }\r\n+    \r\n \r\n     form {\r\n         position: relative;\r\n         display: flex;\r\n"
+                },
+                {
+                    "date": 1685138559452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,43 +28,39 @@\n         .decoration-line {\r\n             position: relative;\r\n             margin: 2em 0;\r\n         }\r\n-    }\r\n \r\n-    \r\n+        form {\r\n+            position: relative;\r\n+            display: flex;\r\n+            flex-direction: column;\r\n+            gap: 1em;\r\n+            gap: 0.5em;\r\n \r\n-    \r\n+            label {\r\n+                font-weight: bolder;\r\n+            }\r\n \r\n-    form {\r\n-        position: relative;\r\n-        display: flex;\r\n-        flex-direction: column;\r\n-        gap: 1em;\r\n-        gap: 0.5em;\r\n+            input {\r\n+                border: none;\r\n+                border-bottom: 1px solid $color-dark-grey;\r\n+                background-color: transparent;\r\n+                &::placeholder {\r\n+                    text-align: left;\r\n+                }\r\n+            }\r\n \r\n-        label {\r\n-            font-weight: bolder;\r\n-        }\r\n+            textarea {\r\n+                border: none;\r\n+                border-bottom: 1px solid $color-dark-grey;\r\n+                background-color: transparent;\r\n+                resize: none;\r\n+            }\r\n \r\n-        input {\r\n-            border: none;\r\n-            border-bottom: 1px solid $color-dark-grey;\r\n-            background-color: transparent;\r\n-            &::placeholder {\r\n-                text-align: left;\r\n+            button {\r\n+                justify-self: right;\r\n             }\r\n         }\r\n-\r\n-        textarea {\r\n-            border: none;\r\n-            border-bottom: 1px solid $color-dark-grey;\r\n-            background-color: transparent;\r\n-            resize: none;\r\n-        }\r\n-\r\n-        button {\r\n-            justify-self: right;\r\n-        }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685138593411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,7 +60,11 @@\n             button {\r\n                 justify-self: right;\r\n             }\r\n         }\r\n+\r\n+        footer {\r\n+            justify-content: center;\r\n+        }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685138770067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,11 @@\n             }\r\n         }\r\n \r\n         footer {\r\n-            justify-content: center;\r\n+            span {\r\n+                justify-content: center;\r\n+            }\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685138778517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n         }\r\n \r\n         footer {\r\n             span {\r\n-                justify-content: center;\r\n+                \r\n             }\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1685138784196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,11 +62,9 @@\n             }\r\n         }\r\n \r\n         footer {\r\n-            span {\r\n-                \r\n-            }\r\n+            justify-content: center;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685138793452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,10 +61,7 @@\n                 justify-self: right;\r\n             }\r\n         }\r\n \r\n-        footer {\r\n-            justify-content: center;\r\n-        }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685138810809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,7 @@\n             button {\r\n                 justify-self: right;\r\n             }\r\n         }\r\n-\r\n     }\r\n }\r\n \r\n"
                 }
             ],
             "date": 1684613124728,

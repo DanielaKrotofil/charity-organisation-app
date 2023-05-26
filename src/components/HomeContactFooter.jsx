@@ -18,3 +18,11 @@ const Contact = () => {
     </div>)
 }
 export default Contact
+
+export const Footer = () => {
+    return (<>
+        <footer>
+            <span>Copyright by Coders Lab</span>
+        </footer>
+    </>)
+}

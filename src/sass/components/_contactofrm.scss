@@ -20,44 +20,46 @@
         left: 0px;
     }
 
-    h2 {
-        position: relative;
-    }
-
-    .decoration-line {
-        position: relative;
-        margin: 2em 0;
-    }
-
-    form {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        gap: 0.5em;
-
-        label {
-            font-weight: bolder;
+    &__container {
+        h2 {
+            position: relative;
         }
 
-        input {
-            border: none;
-            border-bottom: 1px solid $color-dark-grey;
-            background-color: transparent;
-            &::placeholder {
-                text-align: left;
+        .decoration-line {
+            position: relative;
+            margin: 2em 0;
+        }
+
+        form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            gap: 0.5em;
+
+            label {
+                font-weight: bolder;
             }
-        }
 
-        textarea {
-            border: none;
-            border-bottom: 1px solid $color-dark-grey;
-            background-color: transparent;
-            resize: none;
-        }
+            input {
+                border: none;
+                border-bottom: 1px solid $color-dark-grey;
+                background-color: transparent;
+                &::placeholder {
+                    text-align: left;
+                }
+            }
 
-        button {
-            justify-self: right;
+            textarea {
+                border: none;
+                border-bottom: 1px solid $color-dark-grey;
+                background-color: transparent;
+                resize: none;
+            }
+
+            button {
+                justify-self: right;
+            }
         }
     }
 }
