@@ -82,27 +82,31 @@ const WhoWeHelp = () => {
     <>
       <h2>Komu pomagamy?</h2>
       <img className='decoration-line' src={decorationline} alt="line" />
-      <div>
+      <div className='whowehelp__buttons'>
         <button className={`button__whowehelp ${institution === fundations ? 'active' : ''}`} onClick={() => handleInstitutionChange(fundations)}>Fundajcom</button>
         <button className={`button__whowehelp ${institution === organizations ? 'active' : ''}`} onClick={() => handleInstitutionChange(organizations)}>Organizacjom pozarządowym</button>
         <button className={`button__whowehelp ${institution === locals ? 'active' : ''}`} onClick={() => handleInstitutionChange(locals)}>Lokalnym zbiórkom</button>
       </div>
       <div className="whowehelp__container">
+        <div className="whowehelp__description">
         {sortedInstitution.map(({ index, description }) => (
           <div key={`description_${index}`}>
             {description && (
-              <p className="whowehelp__description">{description}</p>
+              <p >{description}</p>
             )}
           </div>
         ))}
+        </div>
         {displayItems.map(({ id, title, goal, needs }, index) => (
             <div key={`element_${id}`}>
                 <div className="whowehelp__container__element">
-                <div className="whowehelp__container__element-part1">
-                    <h4>{title}</h4>
-                    <h6>{goal}</h6>
-                </div>
-                <span><h6>{needs}</h6></span>
+                  <div className="whowehelp__container__element-part1">
+                      <h4>{title}</h4>
+                      <h6>{goal}</h6>
+                  </div>
+                  <span>
+                    <h6>{`${needs}`}</h6>
+                  </span>
                 </div>
                 {index !== displayItems.length - 1 && <span className="separator"></span>}
             </div>
