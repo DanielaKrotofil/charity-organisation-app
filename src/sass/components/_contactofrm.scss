@@ -1,3 +1,64 @@
+@import '../settings/variables';
 .contactForm {
-    background: url('/src/assets/Background-Contact-Form.jpg') no-repeat;
+    position:relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    padding: 0 15em;
+    background-color: $color-white;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-size: cover;
+        background-image: url('/src/assets/Background-Contact-Form.jpg');
+        opacity:0.2;
+        top: -46px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    h2 {
+        position: relative;
+    }
+
+    .decoration-line {
+        position: relative;
+        margin: 2em 0;
+    }
+
+    form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        gap: 0.5em;
+
+        label {
+            font-weight: bolder;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid $color-dark-grey;
+            background-color: transparent;
+            &::placeholder {
+                text-align: left;
+            }
+        }
+
+        textarea {
+            border: none;
+            border-bottom: 1px solid $color-dark-grey;
+            background-color: transparent;
+            resize: none;
+        }
+
+        button {
+            justify-self: right;
+        }
+    }
 }
+
