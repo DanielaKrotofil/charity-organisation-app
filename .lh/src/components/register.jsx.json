@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 10,
+            "activePatchIndex": 15,
             "patches": [
                 {
                     "date": 1683990639048,
@@ -48,6 +48,26 @@
                 {
                     "date": 1684428411658,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n \r\n export const RegisterForm = () => {\r\n     return (<section className='LoginForm'>\r\n     <h3>Zarejestruj się</h3>\r\n-    <h2>Strona w budowie</h2>\r\n+    <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n+    <h6>Strona w budowie</h6>\r\n     <div>\r\n         <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </div>\r\n     </section>)\r\n"
+                },
+                {
+                    "date": 1685176363020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,13 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const RegisterForm = () => {\r\n     return (<section className='LoginForm'>\r\n-    <h3>Zarejestruj się</h3>\r\n+    <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <h6>Strona w budowie</h6>\r\n+    <span className='LoginForm__main'>Strona w budowie</span>\r\n     <div>\r\n         <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n+        <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n     </div>\r\n     </section>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685176404078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <span className='LoginForm__main'>Strona w budowie</span>\r\n     <div>\r\n-        <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n+        \r\n         <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n     </div>\r\n+    <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </section>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685176437831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <span className='LoginForm__main'>Strona w budowie</span>\r\n     <div>\r\n-        \r\n+        <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n         <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n     </div>\r\n     <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </section>)\r\n"
+                },
+                {
+                    "date": 1685176546008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,11 @@\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <span className='LoginForm__main'>Strona w budowie</span>\r\n     <div>\r\n+        <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n         <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n-        <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n+        \r\n     </div>\r\n     <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </section>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685176579381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n     <span className='LoginForm__main'>Strona w budowie</span>\r\n     <div>\r\n         <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n         <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n-        \r\n     </div>\r\n     <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </section>)\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683990639048,

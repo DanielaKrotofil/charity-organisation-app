@@ -7,7 +7,9 @@ export const RegisterForm = () => {
     <img className='decoration-line' src={decorationline} alt="line"/>
     <span className='LoginForm__main'>Strona w budowie</span>
     <div>
-        <Link to="/" className='button'>Wracam na główną stronę</Link>
+        <Link to="/logowanie" className='button'>Zaloguj się</Link>
+        <Link to="/rejestracja" className='button'>Załóż konto</Link>
     </div>
+    <Link to="/" className='button'>Wracam na główną stronę</Link>
     </section>)
 }
