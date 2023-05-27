@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 23,
+            "activePatchIndex": 25,
             "patches": [
                 {
                     "date": 1683990639048,
@@ -100,6 +100,14 @@
                 {
                     "date": 1685178702516,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import { Link } from 'react-router-dom';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const RegisterForm = () => {\r\n-    return (<section className='LoginForm registration'>\r\n+    return (<section className='LoginForm '>\r\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <span className='LoginForm__main'>\r\n+    <span className='LoginForm__main registration'>\r\n     <form>\r\n         <label htmlFor=\"email\">Email</label>\r\n         <input type=\"email\" />\r\n \r\n"
+                },
+                {
+                    "date": 1685182796720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,25 +1,27 @@\n import { Link } from 'react-router-dom';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const RegisterForm = () => {\r\n-    return (<section className='LoginForm '>\r\n-    <h2>Zarejestruj się</h2>\r\n-    <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <span className='LoginForm__main registration'>\r\n-    <form>\r\n-        <label htmlFor=\"email\">Email</label>\r\n-        <input type=\"email\" />\r\n+    return (<>\r\n+    <section className='LoginForm '>\r\n+        <h2>Zarejestruj się</h2>\r\n+        <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n+        <span className='LoginForm__main registration'>\r\n+        <form>\r\n+            <label htmlFor=\"email\">Email</label>\r\n+            <input type=\"email\" />\r\n \r\n-        <label htmlFor=\"password\">Hasło</label>\r\n-        <input type=\"password\"/>\r\n+            <label htmlFor=\"password\">Hasło</label>\r\n+            <input type=\"password\"/>\r\n \r\n-        <label htmlFor=\"password\">Powtórz hasło</label>\r\n-        <input type=\"password\"/>\r\n-    </form>\r\n-    </span>\r\n-    <div className='LoginForm-buttons'>\r\n-        <Link to=\"/logowanie\" className='button noborder'>Zaloguj się</Link>\r\n-        <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n-    </div>\r\n-    </section>)\r\n+            <label htmlFor=\"password\">Powtórz hasło</label>\r\n+            <input type=\"password\"/>\r\n+        </form>\r\n+        </span>\r\n+        <div className='LoginForm-buttons'>\r\n+            <Link to=\"/logowanie\" className='button noborder'>Zaloguj się</Link>\r\n+            <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n+        </div>\r\n+    </section>\r\n+    </>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685182814862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,39 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const RegisterForm = () => {\r\n     return (<>\r\n+    <header className=\"nav container\">\r\n+        <nav className=\"nav__container__actions nav-loginForm\">\r\n+          <ul>\r\n+            <li>\r\n+              <Link to='/' >\r\n+                Start\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link to='/'>\r\n+                O co chodzi?\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link to='/'>\r\n+                O nas\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link to='/'>\r\n+                Fundacje i organizacje\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link to='/'>\r\n+                Kontakt\r\n+              </Link>\r\n+            </li>\r\n+          </ul>\r\n+        </nav>\r\n+    </header>\r\n     <section className='LoginForm '>\r\n         <h2>Zarejestruj się</h2>\r\n         <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n         <span className='LoginForm__main registration'>\r\n"
                 }
             ],
             "date": 1683990639048,
