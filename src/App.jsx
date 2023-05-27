@@ -17,22 +17,50 @@ import GiveThingsBack from './components/oddaj-rzeczy';
 import Navigation from './components/Navigation';
 
 const Layout = () => {
+    const getStyle = () => ({ isActive }) => (isActive ? { fontWeight: 400 } : undefined);
 
-  const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined
-  return (
+    return (
       <>
-          <nav className='mainNav container'>
-              <ul>
-                  <li><NavLink className='mainNav__login noborder' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>
-                  <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>
-              </ul>
-          </nav>
-          <Navigation/>
-          <Outlet/>
+        <nav className="mainNav container">
+          <ul>
+            <li>
+              <NavLink
+                className="mainNav__login noborder"
+                style={getStyle()}
+                to="logowanie"
+                isActive={(match, location) => {
+                  if (match) {
+                    return true;
+                  }
+                  return false;
+                }}
+              >
+                Zaloguj
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="mainNav__registration"
+                style={getStyle()}
+                to="rejestracja"
+                isActive={(match, location) => {
+                  if (match) {
+                    return true;
+                  }
+                  return false;
+                }}
+              >
+                Załóż konto
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+        <Navigation />
+        <Outlet />
       </>
-  )
-}
-
+    );
+  };
+  
 const App = () => {
   return (
       <HashRouter>

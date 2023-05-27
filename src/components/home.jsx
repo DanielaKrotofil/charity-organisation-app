@@ -5,6 +5,7 @@ import HomeSimpleSteps from "./HomeSimpleSteps";
 import Contact from "./HomeContactFooter";
 import WhoWeHelp from "./HomeWhoWeHelp";
 import { Footer } from "./HomeContactFooter";
+import Navigation from "./Navigation";
 
 const Home = () => {
     return (<section className='home'>

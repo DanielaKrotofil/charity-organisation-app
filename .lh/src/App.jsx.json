@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 108,
+            "activePatchIndex": 110,
             "patches": [
                 {
                     "date": 1683983953405,
@@ -440,6 +440,14 @@
                 {
                     "date": 1685204018187,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n import { LoginForm } from './components/login';\n import { RegisterForm } from './components/register';\n import { LogoutForm } from './components/logout';\n import GiveThingsBack from './components/oddaj-rzeczy';\n+import Navigation from './components/Navigation';\n \n const Layout = () => {\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n@@ -25,8 +26,9 @@\n                   <li><NavLink className='mainNav__login noborder' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n+          <Navigation/>\n           <Outlet/>\n       </>\n   )\n }\n"
+                },
+                {
+                    "date": 1685205851209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,24 +16,52 @@\n import GiveThingsBack from './components/oddaj-rzeczy';\n import Navigation from './components/Navigation';\n \n const Layout = () => {\n-\n-  const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n-  return (\n+    const getStyle = () => ({ isActive }) => (isActive ? { fontWeight: 400 } : undefined);\n+    \n+    return (\n       <>\n-          <nav className='mainNav container'>\n-              <ul>\n-                  <li><NavLink className='mainNav__login noborder' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n-                  <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n-              </ul>\n-          </nav>\n-          <Navigation/>\n-          <Outlet/>\n+        <nav className=\"mainNav container\">\n+          <ul>\n+            <li>\n+              <NavLink\n+                className=\"mainNav__login noborder\"\n+                style={getStyle()}\n+                to=\"logowanie\"\n+                isActive={(match, location) => {\n+                  if (match) {\n+                    return true;\n+                  }\n+                  return false;\n+                }}\n+              >\n+                Zaloguj\n+              </NavLink>\n+            </li>\n+            <li>\n+              <NavLink\n+                className=\"mainNav__registration\"\n+                style={getStyle()}\n+                to=\"rejestracja\"\n+                isActive={(match, location) => {\n+                  if (match) {\n+                    return true;\n+                  }\n+                  return false;\n+                }}\n+              >\n+                Załóż konto\n+              </NavLink>\n+            </li>\n+          </ul>\n+        </nav>\n+        <Navigation />\n+        <Outlet />\n       </>\n-  )\n-}\n-\n+    );\n+  };\n+  \n const App = () => {\n   return (\n       <HashRouter>\n           <Routes>\n"
+                },
+                {
+                    "date": 1685217950121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n import Navigation from './components/Navigation';\n \n const Layout = () => {\n     const getStyle = () => ({ isActive }) => (isActive ? { fontWeight: 400 } : undefined);\n-    \n+\n     return (\n       <>\n         <nav className=\"mainNav container\">\n           <ul>\n"
                 }
             ],
             "date": 1683983953405,
