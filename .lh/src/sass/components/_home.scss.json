@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 302,
+            "activePatchIndex": 303,
             "patches": [
                 {
                     "date": 1683991843387,
@@ -1216,6 +1216,10 @@
                 {
                     "date": 1684778815829,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,9 @@\n         h6 {\r\n             text-transform: uppercase;\r\n             white-space: nowrap;\r\n             margin-bottom: 1.750em;\r\n+            text-align: center;\r\n         }\r\n \r\n         p {\r\n             white-space: nowrap;\r\n"
+                },
+                {
+                    "date": 1685180658074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             padding: 8.5em 0;\r\n         }\r\n     }\r\n }\r\n-.HomeThreeColumns { //wyjezdza poza strone ta sekcja\r\n+.HomeThreeColumns {\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n     padding: 2.575em 5.188em 4.375em;\r\n \r\n     &__container {\r\n"
                 }
             ],
             "date": 1683991843387,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 83,
+            "activePatchIndex": 86,
             "patches": [
                 {
                     "date": 1684393043140,
@@ -340,6 +340,18 @@
                 {
                     "date": 1685172008557,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,19 +47,9 @@\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactFooter\" id=\"contact\">\r\n         <Contact/>\r\n+        <Footer/>\r\n       </section>\r\n-      <Footer/>\r\n     </div>\r\n   );\r\n-}\r\n-\r\n-/*\r\n-HomeHeader\r\n-HomeThreeColumns\r\n-HomeSimpleSteps\r\n-HomeAboutUs\r\n-HomeAbout\r\n-HomeContactForm\r\n-HomeFooter\r\n\\ No newline at end of file\n-*/\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685180262126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n import Contact from \"./HomeContactFooter\";\r\n import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n import { Footer } from \"./HomeContactFooter\";\r\n \r\n+\r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation\">\r\n       <header className=\"nav container\">\r\n"
+                },
+                {
+                    "date": 1685180296269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n import { Footer } from \"./HomeContactFooter\";\r\n+import { LoginForm } from \"./login\";\r\n \r\n-\r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation\">\r\n       <header className=\"nav container\">\r\n@@ -41,8 +41,9 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n+      <LoginForm/>\r\n       <section id=\"start\" ><HomeHeader/></section>\r\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n"
+                },
+                {
+                    "date": 1685180309143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n import { Footer } from \"./HomeContactFooter\";\r\n-import { LoginForm } from \"./login\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation\">\r\n@@ -41,9 +40,8 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <LoginForm/>\r\n       <section id=\"start\" ><HomeHeader/></section>\r\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n"
                 }
             ],
             "date": 1684393043140,

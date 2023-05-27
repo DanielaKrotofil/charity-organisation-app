@@ -17,9 +17,3 @@ const HomeHeader = () => {
 }
 
 export default HomeHeader
-
-/*
-<div>
-        <img src={homeImage} className='home__homeheader__image'></img>
-        </div>
-*/
