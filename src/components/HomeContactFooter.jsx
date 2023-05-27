@@ -22,7 +22,7 @@ const Contact = () => {
     const localErrors = [];
 
     const nameWords = nameValue.split(" ");
-    if (nameWords.length >= 1) localErrors.push("Podane imię jest nieprawidłowe! \n");
+    if (nameWords.length > 1) localErrors.push("Podane imię jest nieprawidłowe! \n");
     if (messageValue.length < 120)
       localErrors.push("Wiadomość musi mieć co najmniej 120 znaków! \n");
     if (!emailValue.includes("@"))
