@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 111,
+            "activePatchIndex": 113,
             "patches": [
                 {
                     "date": 1683983953405,
@@ -452,6 +452,14 @@
                 {
                     "date": 1685218082974,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n         <Outlet />\n       </>\n     );\n   };\n-  \n+\n const App = () => {\n   return (\n       <HashRouter>\n           <Routes>\n"
+                },
+                {
+                    "date": 1685219431916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           <ul>\n             <li>\n               <NavLink\n                 className=\"mainNav__login noborder\"\n-                style={getStyle()}\n+                \n                 to=\"logowanie\"\n                 isActive={(match, location) => {\n                   if (match) {\n                     return true;\n@@ -40,9 +40,9 @@\n             </li>\n             <li>\n               <NavLink\n                 className=\"mainNav__registration\"\n-                style={getStyle()}\n+                \n                 to=\"rejestracja\"\n                 isActive={(match, location) => {\n                   if (match) {\n                     return true;\n"
+                },
+                {
+                    "date": 1685219459319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n             </li>\n             <li>\n               <NavLink\n                 className=\"mainNav__registration\"\n-                \n+                style={getStyle()}\n                 to=\"rejestracja\"\n                 isActive={(match, location) => {\n                   if (match) {\n                     return true;\n"
                 }
             ],
             "date": 1683983953405,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 411,
+            "activePatchIndex": 412,
             "patches": [
                 {
                     "date": 1684609160851,
@@ -1652,6 +1652,10 @@
                 {
                     "date": 1685132541735,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,12 +99,12 @@\n         </div>\r\n         {displayItems.map(({ id, title, goal, needs }, index) => (\r\n             <div key={`element_${id}`}>\r\n                 <div className=\"whowehelp__container__element\">\r\n-                <div className=\"whowehelp__container__element-part1\">\r\n-                    <h4>{title}</h4>\r\n-                    <h6>{goal}</h6>\r\n-                </div>\r\n+                  <div className=\"whowehelp__container__element-part1\">\r\n+                      <h4>{title}</h4>\r\n+                      <h6>{goal}</h6>\r\n+                  </div>\r\n                   <span>\r\n                     <h6>{`${needs}`}</h6>\r\n                   </span>\r\n                 </div>\r\n"
+                },
+                {
+                    "date": 1685219656190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,11 +82,11 @@\n     <>\r\n       <h2>Komu pomagamy?</h2>\r\n       <img className='decoration-line' src={decorationline} alt=\"line\" />\r\n       <div className='whowehelp__buttons'>\r\n-        <button className={`button__whowehelp ${institution === fundations ? 'active' : ''}`} onClick={() => handleInstitutionChange(fundations)}>Fundajcom</button>\r\n-        <button className={`button__whowehelp ${institution === organizations ? 'active' : ''}`} onClick={() => handleInstitutionChange(organizations)}>Organizacjom pozarządowym</button>\r\n-        <button className={`button__whowehelp ${institution === locals ? 'active' : ''}`} onClick={() => handleInstitutionChange(locals)}>Lokalnym zbiórkom</button>\r\n+        <button className={`button__whowehelp ${institution === fundations ? 'whowehelp__active' : ''}`} onClick={() => handleInstitutionChange(fundations)}>Fundajcom</button>\r\n+        <button className={`button__whowehelp ${institution === organizations ? 'whowehelp__active' : ''}`} onClick={() => handleInstitutionChange(organizations)}>Organizacjom pozarządowym</button>\r\n+        <button className={`button__whowehelp ${institution === locals ? 'whowehelp__active' : ''}`} onClick={() => handleInstitutionChange(locals)}>Lokalnym zbiórkom</button>\r\n       </div>\r\n       <div className=\"whowehelp__container\">\r\n         <div className=\"whowehelp__description\">\r\n         {sortedInstitution.map(({ index, description }) => (\r\n@@ -115,9 +115,9 @@\n           <div className=\"whowehelp__navigation\">\r\n             {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (\r\n               <button\r\n                 key={`page_${pageNumber}`}\r\n-                className={`whowehelp__navigation__button ${pageNumber === page ? 'active' : ''}`}\r\n+                className={`whowehelp__navigation__button ${pageNumber === page ? 'whowehelp__active' : ''}`}\r\n                 onClick={() => handlePageChange(pageNumber)}\r\n               >\r\n                 {pageNumber}\r\n               </button>\r\n"
                 }
             ],
             "date": 1684609160851,

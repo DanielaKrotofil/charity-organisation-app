@@ -83,9 +83,9 @@ const WhoWeHelp = () => {
       <h2>Komu pomagamy?</h2>
       <img className='decoration-line' src={decorationline} alt="line" />
       <div className='whowehelp__buttons'>
-        <button className={`button__whowehelp ${institution === fundations ? 'active' : ''}`} onClick={() => handleInstitutionChange(fundations)}>Fundajcom</button>
-        <button className={`button__whowehelp ${institution === organizations ? 'active' : ''}`} onClick={() => handleInstitutionChange(organizations)}>Organizacjom pozarządowym</button>
-        <button className={`button__whowehelp ${institution === locals ? 'active' : ''}`} onClick={() => handleInstitutionChange(locals)}>Lokalnym zbiórkom</button>
+        <button className={`button__whowehelp ${institution === fundations ? 'whowehelp__active' : ''}`} onClick={() => handleInstitutionChange(fundations)}>Fundajcom</button>
+        <button className={`button__whowehelp ${institution === organizations ? 'whowehelp__active' : ''}`} onClick={() => handleInstitutionChange(organizations)}>Organizacjom pozarządowym</button>
+        <button className={`button__whowehelp ${institution === locals ? 'whowehelp__active' : ''}`} onClick={() => handleInstitutionChange(locals)}>Lokalnym zbiórkom</button>
       </div>
       <div className="whowehelp__container">
         <div className="whowehelp__description">
@@ -116,7 +116,7 @@ const WhoWeHelp = () => {
             {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
               <button
                 key={`page_${pageNumber}`}
-                className={`whowehelp__navigation__button ${pageNumber === page ? 'active' : ''}`}
+                className={`whowehelp__navigation__button ${pageNumber === page ? 'whowehelp__active' : ''}`}
                 onClick={() => handlePageChange(pageNumber)}
               >
                 {pageNumber}
