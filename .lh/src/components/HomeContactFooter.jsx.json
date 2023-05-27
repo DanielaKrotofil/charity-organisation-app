@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 127,
+            "activePatchIndex": 131,
             "patches": [
                 {
                     "date": 1684612961372,
@@ -516,6 +516,22 @@
                 {
                     "date": 1685203026123,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n \r\n     const localErrors = [];\r\n \r\n     const nameWords = nameValue.split(\" \");\r\n-    if (nameWords.length >= 1) localErrors.push(\"Podane imię jest nieprawidłowe! \\n\");\r\n+    if (nameWords.length > 1) localErrors.push(\"Podane imię jest nieprawidłowe! \\n\");\r\n     if (messageValue.length < 120)\r\n       localErrors.push(\"Wiadomość musi mieć co najmniej 120 znaków! \\n\");\r\n     if (!emailValue.includes(\"@\"))\r\n       localErrors.push(\"Podany email jest nieprawidłowy! \\n\");\r\n"
+                },
+                {
+                    "date": 1685219044153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n           <form onSubmit={sendMessage}>\r\n             {alert.message && (\r\n               <p className={`alert ${alert.className}`}>{alert.message}</p>\r\n             )}\r\n-            <span className=\"form__part1\">\r\n+            <span>\r\n               <span className=\"form__part1\">\r\n                 <label htmlFor=\"name\">Wpisz swoje imię</label>\r\n                 <input\r\n                   type=\"text\"\r\n"
+                },
+                {
+                    "date": 1685219059379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n           <form onSubmit={sendMessage}>\r\n             {alert.message && (\r\n               <p className={`alert ${alert.className}`}>{alert.message}</p>\r\n             )}\r\n-            <span>\r\n+            <span className=\"form__part1\">\r\n               <span className=\"form__part1\">\r\n                 <label htmlFor=\"name\">Wpisz swoje imię</label>\r\n                 <input\r\n                   type=\"text\"\r\n"
+                },
+                {
+                    "date": 1685219080510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n             {alert.message && (\r\n               <p className={`alert ${alert.className}`}>{alert.message}</p>\r\n             )}\r\n             <span className=\"form__part1\">\r\n-              <span className=\"form__part1\">\r\n+              <span>\r\n                 <label htmlFor=\"name\">Wpisz swoje imię</label>\r\n                 <input\r\n                   type=\"text\"\r\n                   placeholder=\"Krzysztof\"\r\n"
+                },
+                {
+                    "date": 1685219089169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n                   onChange={updateName}\r\n                 />\r\n               </span>\r\n \r\n-              <span className=\"form__part1\">\r\n+              <span>\r\n                 <label htmlFor=\"email\">Wpisz swój e-mail</label>\r\n                 <input\r\n                   type=\"email\"\r\n                   placeholder=\"abc@xyz.pl\"\r\n"
                 }
             ],
             "date": 1684612961372,

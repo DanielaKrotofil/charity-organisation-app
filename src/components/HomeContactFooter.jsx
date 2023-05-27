@@ -79,7 +79,7 @@ const Contact = () => {
               <p className={`alert ${alert.className}`}>{alert.message}</p>
             )}
             <span className="form__part1">
-              <span className="form__part1">
+              <span>
                 <label htmlFor="name">Wpisz swoje imię</label>
                 <input
                   type="text"
@@ -89,7 +89,7 @@ const Contact = () => {
                 />
               </span>
 
-              <span className="form__part1">
+              <span>
                 <label htmlFor="email">Wpisz swój e-mail</label>
                 <input
                   type="email"

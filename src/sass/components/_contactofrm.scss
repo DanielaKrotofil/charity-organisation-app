@@ -32,6 +32,7 @@
 
 .contactForm {
     display: flex;
+    text-align: center;
 
     &_empty {
         width: 49%;
@@ -72,11 +73,13 @@
 
         .form__part1 {
             display: flex;
-            gap: 0.65em;
-            margin-bottom: 1em;
+            gap: 0.5em;
+            margin-bottom: 0.5em;
+            justify-content: space-between;
             span {
                display: flex;
                flex-direction: column;
+               width: 48%;
             }
         }
 
