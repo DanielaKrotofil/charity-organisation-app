@@ -3,11 +3,11 @@ import instaIcon from '../assets/Instagram.svg';
 import fbIcon from '../assets/Facebook.svg';
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from '../firebase';
+import { db } from "../firebase";
 
 const Contact = () => {
   const [messageList, setMessagesList] = useState([]);
-  const [alert, setAlert] = useState([]);
+  const [alert, setAlert] = useState({ message: "", className: "" });
 
   const [nameValue, setNameValue] = useState("");
   const updateName = ({ target }) => setNameValue(target.value);
@@ -22,13 +22,11 @@ const Contact = () => {
     const localErrors = [];
 
     const nameWords = nameValue.split(" ");
-    if (nameWords.length > 1) localErrors.push("Podane imię jest nieprawidłowe!");
+    if (nameWords.length >= 1) localErrors.push("Podane imię jest nieprawidłowe! \n");
     if (messageValue.length < 120)
-      localErrors.push("Wiadomość musi mieć co najmniej 120 znaków!");
+      localErrors.push("Wiadomość musi mieć co najmniej 120 znaków! \n");
     if (!emailValue.includes("@"))
-      localErrors.push("Podany email jest nieprawidłowy!");
-
-    setAlert(localErrors);
+      localErrors.push("Podany email jest nieprawidłowy! \n");
 
     if (localErrors.length === 0) {
       try {
@@ -54,10 +52,18 @@ const Contact = () => {
         setEmailValue("");
         setMessageValue("");
 
-        setAlert(["Wiadomość została wysłana! Wkrótce się skontaktujemy."]);
+        setAlert({
+            message: "Wiadomość została wysłana!\n Wkrótce się skontaktujemy.",
+            className: "alert_success",
+          });
       } catch (error) {
         console.error("Błąd podczas zapisywania danych do Firestore:", error);
       }
+    } else {
+      setAlert({
+        message: localErrors.join("\n"),
+        className: "alert_errors",
+      });
     }
   };
 
@@ -69,7 +75,9 @@ const Contact = () => {
           <h2>Skontaktuj się z nami</h2>
           <img className="decoration-line" src={decorationline} alt="line" />
           <form onSubmit={sendMessage}>
-            <p className="alert_errors">{alert.join(", ")}</p>
+            {alert.message && (
+              <p className={`alert ${alert.className}`}>{alert.message}</p>
+            )}
             <span className="form__part1">
               <span className="form__part1">
                 <label htmlFor="name">Wpisz swoje imię</label>

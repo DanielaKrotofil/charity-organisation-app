@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 290,
+            "activePatchIndex": 301,
             "patches": [
                 {
                     "date": 1684613124728,
@@ -1168,6 +1168,50 @@
                 {
                     "date": 1685175674596,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 9.5em 2em 8em 9em;\r\n+        padding: 9.5em 2em 7.5em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685200570422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 9.5em 2em 7.5em 9em;\r\n+        padding: 9.5em 2em 7em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685200582348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 9.5em 2em 7em 9em;\r\n+        padding: 9em 2em 7em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685200591775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 9em 2em 7em 9em;\r\n+        padding: 9em 2em 6em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685200942474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,10 @@\n         flex-direction: column;\r\n         text-align: left;\r\n         gap: 0.65em;\r\n \r\n+        \r\n+\r\n         .form__part1 {\r\n             display: flex;\r\n             gap: 0.65em;\r\n             margin-bottom: 1em;\r\n"
+                },
+                {
+                    "date": 1685201034565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,11 @@\n         flex-direction: column;\r\n         text-align: left;\r\n         gap: 0.65em;\r\n \r\n-        \r\n+        .alert {\r\n+            &_success {}\r\n+        }\r\n \r\n         .form__part1 {\r\n             display: flex;\r\n             gap: 0.65em;\r\n"
+                },
+                {
+                    "date": 1685201069833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,14 @@\n         text-align: left;\r\n         gap: 0.65em;\r\n \r\n         .alert {\r\n-            &_success {}\r\n+            &_success {\r\n+                color: green;\r\n+            }\r\n+            &_errors {\r\n+                color: red;\r\n+            }\r\n         }\r\n \r\n         .form__part1 {\r\n             display: flex;\r\n"
+                },
+                {
+                    "date": 1685201258338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,10 @@\n         text-align: left;\r\n         gap: 0.65em;\r\n \r\n         .alert {\r\n+            font-family: $font-family-basic;\r\n+            font-weight: bolder;\r\n             &_success {\r\n                 color: green;\r\n             }\r\n             &_errors {\r\n"
+                },
+                {
+                    "date": 1685202711891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n \r\n         .alert {\r\n             font-family: $font-family-basic;\r\n             font-weight: bolder;\r\n+            max-width: 20%;\r\n             &_success {\r\n                 color: green;\r\n             }\r\n             &_errors {\r\n"
+                },
+                {
+                    "date": 1685202720980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n \r\n         .alert {\r\n             font-family: $font-family-basic;\r\n             font-weight: bolder;\r\n-            max-width: 20%;\r\n+            max-width: 60%;\r\n             &_success {\r\n                 color: green;\r\n             }\r\n             &_errors {\r\n"
+                },
+                {
+                    "date": 1685202728039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n \r\n         .alert {\r\n             font-family: $font-family-basic;\r\n             font-weight: bolder;\r\n-            max-width: 60%;\r\n+            max-width: 80%;\r\n             &_success {\r\n                 color: green;\r\n             }\r\n             &_errors {\r\n"
+                },
+                {
+                    "date": 1685202736696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n         .alert {\r\n             font-family: $font-family-basic;\r\n             font-weight: bolder;\r\n             max-width: 80%;\r\n+            text-align: center;\r\n             &_success {\r\n                 color: green;\r\n             }\r\n             &_errors {\r\n"
                 }
             ],
             "date": 1684613124728,

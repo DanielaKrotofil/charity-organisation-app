@@ -39,7 +39,7 @@
 
     &_form {
         max-width: 45%;
-        padding: 9.5em 2em 7.5em 9em;
+        padding: 9em 2em 6em 9em;
     }
     h2 {
         position: relative;
@@ -56,6 +56,19 @@
         flex-direction: column;
         text-align: left;
         gap: 0.65em;
+
+        .alert {
+            font-family: $font-family-basic;
+            font-weight: bolder;
+            max-width: 80%;
+            text-align: center;
+            &_success {
+                color: green;
+            }
+            &_errors {
+                color: red;
+            }
+        }
 
         .form__part1 {
             display: flex;
