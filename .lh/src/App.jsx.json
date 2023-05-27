@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 96,
+            "activePatchIndex": 103,
             "patches": [
                 {
                     "date": 1683983953405,
@@ -392,6 +392,34 @@
                 {
                     "date": 1685179735027,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,8 @@\n           <nav className='mainNav container'>\n               <ul>\n                   <li><NavLink className='mainNav__login' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n-                  <li><NavLink className='mainNav__login' style={getStyle()} to='wylogowano'>Wyloguj</NavLink></li>\n               </ul>\n           </nav>\n           <Outlet/>\n       </>\n"
+                },
+                {
+                    "date": 1685180847117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n import Home from './components/home';\n import { LoginForm } from './components/login';\n import { RegisterForm } from './components/register';\n import { LogoutForm } from './components/logout';\n+import Navigation from './components/Navigation';\n \n const Layout = () => {\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n@@ -39,8 +40,9 @@\n                   <Route path='logowanie' element={<LoginForm />} />\n                   <Route path='rejestracja' element={<RegisterForm />} />\n                   <Route path='wylogowano' element={<LogoutForm/>}/>\n               </Route>\n+              <Navigation/>\n           </Routes>\n       </HashRouter>\n   )\n }\n"
+                },
+                {
+                    "date": 1685180867007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,14 +35,13 @@\n   return (\n       <HashRouter>\n           <Routes>\n               <Route element={<Layout/>}>\n-                  <Route path='/' element={<Home/>}/>\n+                  <Route path='/' element={<Navigation/>}/>\n                   <Route path='logowanie' element={<LoginForm />} />\n                   <Route path='rejestracja' element={<RegisterForm />} />\n                   <Route path='wylogowano' element={<LogoutForm/>}/>\n               </Route>\n-              <Navigation/>\n           </Routes>\n       </HashRouter>\n   )\n }\n"
+                },
+                {
+                    "date": 1685180880077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n   return (\n       <HashRouter>\n           <Routes>\n               <Route element={<Layout/>}>\n-                  <Route path='/' element={<Navigation/>}/>\n+                  <Route path='/' element={<Home/>}/>\n                   <Route path='logowanie' element={<LoginForm />} />\n                   <Route path='rejestracja' element={<RegisterForm />} />\n                   <Route path='wylogowano' element={<LogoutForm/>}/>\n               </Route>\n"
+                },
+                {
+                    "date": 1685181079654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n import Home from './components/home';\n import { LoginForm } from './components/login';\n import { RegisterForm } from './components/register';\n import { LogoutForm } from './components/logout';\n-import Navigation from './components/Navigation';\n+import GiveThingsBack from './components/oddaj-rzeczy';\n \n const Layout = () => {\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n"
+                },
+                {
+                    "date": 1685181127374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n                   <Route path='/' element={<Home/>}/>\n                   <Route path='logowanie' element={<LoginForm />} />\n                   <Route path='rejestracja' element={<RegisterForm />} />\n                   <Route path='wylogowano' element={<LogoutForm/>}/>\n+                  <Route path='oddaj-rzeczy' element={<GiveThingsBack/>}/>\n               </Route>\n           </Routes>\n       </HashRouter>\n   )\n"
+                },
+                {
+                    "date": 1685181180601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n           <nav className='mainNav container'>\n               <ul>\n                   <li><NavLink className='mainNav__login' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n+                  <li><NavLink className='mainNav__login' style={getStyle()} to='oddaj-rzeczy'>Oddaj rzeczy</NavLink></li>\n               </ul>\n           </nav>\n           <Outlet/>\n       </>\n"
+                },
+                {
+                    "date": 1685181216552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n           <nav className='mainNav container'>\n               <ul>\n                   <li><NavLink className='mainNav__login' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n-                  <li><NavLink className='mainNav__login' style={getStyle()} to='oddaj-rzeczy'>Oddaj rzeczy</NavLink></li>\n               </ul>\n           </nav>\n           <Outlet/>\n       </>\n"
                 }
             ],
             "date": 1683983953405,

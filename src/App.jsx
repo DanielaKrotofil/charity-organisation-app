@@ -13,6 +13,7 @@ import Home from './components/home';
 import { LoginForm } from './components/login';
 import { RegisterForm } from './components/register';
 import { LogoutForm } from './components/logout';
+import GiveThingsBack from './components/oddaj-rzeczy';
 
 const Layout = () => {
 
@@ -39,6 +40,7 @@ const App = () => {
                   <Route path='logowanie' element={<LoginForm />} />
                   <Route path='rejestracja' element={<RegisterForm />} />
                   <Route path='wylogowano' element={<LogoutForm/>}/>
+                  <Route path='oddaj-rzeczy' element={<GiveThingsBack/>}/>
               </Route>
           </Routes>
       </HashRouter>
