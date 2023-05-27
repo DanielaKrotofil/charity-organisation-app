@@ -22,7 +22,7 @@ const Layout = () => {
       <>
           <nav className='mainNav container'>
               <ul>
-                  <li><NavLink className='mainNav__login' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>
+                  <li><NavLink className='mainNav__login noborder' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>
                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>
               </ul>
           </nav>

@@ -3,7 +3,7 @@ import decorationline from '../assets/Decoration.svg';
 
 export const LoginForm = () => {
     return (<>
-    <header className="nav container">
+      <header className="nav container">
         <nav className="nav__container__actions nav-loginForm">
           <ul>
             <li>
