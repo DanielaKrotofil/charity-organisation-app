@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 303,
+            "activePatchIndex": 310,
             "patches": [
                 {
                     "date": 1683991843387,
@@ -1220,6 +1220,34 @@
                 {
                     "date": 1685180658074,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             padding: 8.5em 0;\r\n         }\r\n     }\r\n }\r\n-.HomeThreeColumns { //wyjezdza poza strone ta sekcja\r\n+.HomeThreeColumns {\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n     padding: 2.575em 5.188em 4.375em;\r\n \r\n     &__container {\r\n"
+                },
+                {
+                    "date": 1685218142493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,12 @@\n             white-space: nowrap;\r\n             align-items: center;\r\n             justify-content: flex-end;\r\n             padding: 8.5em 0;\r\n+\r\n+            h2 {\r\n+                text-align: center;\r\n+            }\r\n         }\r\n     }\r\n }\r\n .HomeThreeColumns {\r\n"
+                },
+                {
+                    "date": 1685218180896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n \r\n         span {\r\n             font-size: 5.625em;\r\n             font-weight: lighter;\r\n+            text-align: center;\r\n         }\r\n \r\n         h6 {\r\n             text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1685218239003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,13 +37,13 @@\n     &__box {\r\n         max-width: 20.875em;\r\n         max-height: 15.750em;\r\n         line-height: 1.6;\r\n+        text-align: center;\r\n \r\n         span {\r\n             font-size: 5.625em;\r\n             font-weight: lighter;\r\n-            text-align: center;\r\n         }\r\n \r\n         h6 {\r\n             text-transform: uppercase;\r\n"
+                },
+                {
+                    "date": 1685218261338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top 1% left -40%/55%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top 4% left -40%/55%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n"
+                },
+                {
+                    "date": 1685218274314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top 4% left -40%/55%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top 1% left -40%/55%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n"
+                },
+                {
+                    "date": 1685218283495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n .home {\r\n     display: flex;\r\n     flex-direction: column;\r\n-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top 1% left -40%/55%;\r\n+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top -1% left -40%/55%;\r\n \r\n     &__homeheader {\r\n         display: flex;\r\n         justify-content: flex-end;\r\n"
+                },
+                {
+                    "date": 1685218330789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n             }\r\n         }\r\n     }\r\n }\r\n+\r\n .HomeThreeColumns {\r\n     background: url('/src/assets/3-Columns-Background.png') repeat;\r\n     padding: 2.575em 5.188em 4.375em;\r\n \r\n"
                 }
             ],
             "date": 1683991843387,

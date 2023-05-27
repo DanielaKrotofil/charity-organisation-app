@@ -60,7 +60,7 @@ const Layout = () => {
       </>
     );
   };
-  
+
 const App = () => {
   return (
       <HashRouter>

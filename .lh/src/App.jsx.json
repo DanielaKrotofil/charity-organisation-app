@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 110,
+            "activePatchIndex": 111,
             "patches": [
                 {
                     "date": 1683983953405,
@@ -448,6 +448,10 @@
                 {
                     "date": 1685217950121,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n import Navigation from './components/Navigation';\n \n const Layout = () => {\n     const getStyle = () => ({ isActive }) => (isActive ? { fontWeight: 400 } : undefined);\n-    \n+\n     return (\n       <>\n         <nav className=\"mainNav container\">\n           <ul>\n"
+                },
+                {
+                    "date": 1685218082974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n         <Outlet />\n       </>\n     );\n   };\n-  \n+\n const App = () => {\n   return (\n       <HashRouter>\n           <Routes>\n"
                 }
             ],
             "date": 1683983953405,

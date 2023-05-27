@@ -3,7 +3,7 @@
 .home {
     display: flex;
     flex-direction: column;
-    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top 1% left -40%/55%;
+    background: url('/src/assets/Home-Hero-Image.jpg') no-repeat top -1% left -40%/55%;
 
     &__homeheader {
         display: flex;
@@ -18,9 +18,14 @@
             align-items: center;
             justify-content: flex-end;
             padding: 8.5em 0;
+
+            h2 {
+                text-align: center;
+            }
         }
     }
 }
+
 .HomeThreeColumns {
     background: url('/src/assets/3-Columns-Background.png') repeat;
     padding: 2.575em 5.188em 4.375em;
@@ -34,6 +39,7 @@
         max-width: 20.875em;
         max-height: 15.750em;
         line-height: 1.6;
+        text-align: center;
 
         span {
             font-size: 5.625em;
