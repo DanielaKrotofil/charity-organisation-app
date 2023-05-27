@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 23,
             "patches": [
                 {
                     "date": 1683990639048,
@@ -68,6 +68,38 @@
                 {
                     "date": 1685176579381,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n     <span className='LoginForm__main'>Strona w budowie</span>\r\n     <div>\r\n         <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n         <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n-        \r\n     </div>\r\n     <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </section>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685178409334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <span className='LoginForm__main'>Strona w budowie</span>\r\n     <div>\r\n-        <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n+        <Link to=\"/logowanie\" className='button noborder'>Zaloguj się</Link>\r\n         <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n     </div>\r\n     <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </section>)\r\n"
+                },
+                {
+                    "date": 1685178426619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     return (<section className='LoginForm'>\r\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <span className='LoginForm__main'>Strona w budowie</span>\r\n-    <div>\r\n+    <div className='LoginForm-buttons'>\r\n         <Link to=\"/logowanie\" className='button noborder'>Zaloguj się</Link>\r\n         <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n     </div>\r\n     <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n"
+                },
+                {
+                    "date": 1685178486782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,20 @@\n export const RegisterForm = () => {\r\n     return (<section className='LoginForm'>\r\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <span className='LoginForm__main'>Strona w budowie</span>\r\n+    <span className='LoginForm__main'>\r\n+    <form>\r\n+        <label htmlFor=\"email\">Email</label>\r\n+        <input type=\"email\" />\r\n+\r\n+        <label htmlFor=\"password\">Hasło</label>\r\n+        <input type=\"password\"/>\r\n+\r\n+        <label htmlFor=\"password\">Powtórz hasło</label>\r\n+        <input type=\"password\"/>\r\n+    </form>\r\n+    </span>\r\n     <div className='LoginForm-buttons'>\r\n         <Link to=\"/logowanie\" className='button noborder'>Zaloguj się</Link>\r\n         <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1685178523330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,6 @@\n     <div className='LoginForm-buttons'>\r\n         <Link to=\"/logowanie\" className='button noborder'>Zaloguj się</Link>\r\n         <Link to=\"/rejestracja\" className='button'>Załóż konto</Link>\r\n     </div>\r\n-    <Link to=\"/\" className='button'>Wracam na główną stronę</Link>\r\n     </section>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685178545842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Link } from 'react-router-dom';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const RegisterForm = () => {\r\n-    return (<section className='LoginForm'>\r\n+    return (<section className='LoginForm registration'>\r\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <span className='LoginForm__main'>\r\n     <form>\r\n"
+                },
+                {
+                    "date": 1685178608378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Link } from 'react-router-dom';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const RegisterForm = () => {\r\n-    return (<section className='LoginForm registration'>\r\n+    return (<section className='registration'>\r\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <span className='LoginForm__main'>\r\n     <form>\r\n"
+                },
+                {
+                    "date": 1685178620764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Link } from 'react-router-dom';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const RegisterForm = () => {\r\n-    return (<section className='registration'>\r\n+    return (<section className='LoginForm registration'>\r\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <span className='LoginForm__main'>\r\n     <form>\r\n"
+                },
+                {
+                    "date": 1685178702516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import { Link } from 'react-router-dom';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const RegisterForm = () => {\r\n-    return (<section className='LoginForm registration'>\r\n+    return (<section className='LoginForm '>\r\n     <h2>Zarejestruj się</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <span className='LoginForm__main'>\r\n+    <span className='LoginForm__main registration'>\r\n     <form>\r\n         <label htmlFor=\"email\">Email</label>\r\n         <input type=\"email\" />\r\n \r\n"
                 }
             ],
             "date": 1683990639048,

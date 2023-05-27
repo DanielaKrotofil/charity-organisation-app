@@ -11,7 +11,7 @@ export const LoginForm = () => {
         <input type="email" />
 
         <label htmlFor="password">Hasło</label>
-        <input type="password" id="password" />
+        <input type="password"/>
     </form>
     </span>
     <div className='LoginForm-buttons'>

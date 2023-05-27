@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 46,
+            "activePatchIndex": 47,
             "patches": [
                 {
                     "date": 1683990596457,
@@ -192,6 +192,10 @@
                 {
                     "date": 1685178101099,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,7 +17,6 @@\n     <div className='LoginForm-buttons'>\r\n         <Link to=\"/rejestracja\" className='button noborder'>Załóż konto</Link>\r\n         <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n     </div>\r\n-\r\n     </section>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685178491068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         <label htmlFor=\"email\">Email</label>\r\n         <input type=\"email\" />\r\n \r\n         <label htmlFor=\"password\">Hasło</label>\r\n-        <input type=\"password\" id=\"password\" />\r\n+        <input type=\"password\"/>\r\n     </form>\r\n     </span>\r\n     <div className='LoginForm-buttons'>\r\n         <Link to=\"/rejestracja\" className='button noborder'>Załóż konto</Link>\r\n"
                 }
             ],
             "date": 1683990596457,
