@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 48,
+            "activePatchIndex": 61,
             "patches": [
                 {
                     "date": 1683990596457,
@@ -200,6 +200,58 @@
                 {
                     "date": 1685181558930,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,24 @@\n import { Link } from 'react-router-dom';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const LoginForm = () => {\r\n-    return (<section className='LoginForm'>\r\n-    <h2>Zaloguj się</h2>\r\n-    <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <span className='LoginForm__main'>\r\n-    <form>\r\n-        <label htmlFor=\"email\">Email</label>\r\n-        <input type=\"email\" />\r\n+    return (<>\r\n+    <section className='LoginForm'>\r\n+        <h2>Zaloguj się</h2>\r\n+        <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n+        <span className='LoginForm__main'>\r\n+        <form>\r\n+            <label htmlFor=\"email\">Email</label>\r\n+            <input type=\"email\" />\r\n \r\n-        <label htmlFor=\"password\">Hasło</label>\r\n-        <input type=\"password\"/>\r\n-    </form>\r\n-    </span>\r\n-    <div className='LoginForm-buttons'>\r\n-        <Link to=\"/rejestracja\" className='button noborder'>Załóż konto</Link>\r\n-        <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n-    </div>\r\n-    </section>)\r\n+            <label htmlFor=\"password\">Hasło</label>\r\n+            <input type=\"password\"/>\r\n+        </form>\r\n+        </span>\r\n+        <div className='LoginForm-buttons'>\r\n+            <Link to=\"/rejestracja\" className='button noborder'>Załóż konto</Link>\r\n+            <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n+        </div>\r\n+    </section>\r\n+    </>)\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685182131437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,39 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const LoginForm = () => {\r\n     return (<>\r\n+    <header className=\"nav container\">\r\n+        <nav className=\"nav__container__actions\">\r\n+          <ul>\r\n+            <li>\r\n+              <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n+                Start\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link activeClass=\"active\" smooth spy to=\"about\">\r\n+                O co chodzi?\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link activeClass=\"active\" smooth spy to=\"aboutus\">\r\n+                O nas\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link activeClass=\"active\" smooth spy to=\"fundations\">\r\n+                Fundacje i organizacje\r\n+              </Link>\r\n+            </li>\r\n+            <li>\r\n+              <Link activeClass=\"active\" smooth spy to=\"contact\">\r\n+                Kontakt\r\n+              </Link>\r\n+            </li>\r\n+          </ul>\r\n+        </nav>\r\n+      </header>\r\n     <section className='LoginForm'>\r\n         <h2>Zaloguj się</h2>\r\n         <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n         <span className='LoginForm__main'>\r\n"
+                },
+                {
+                    "date": 1685182160954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n+              <Link path='/' className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685182187140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link path='/' className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n+              <Link to='/' className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685182228859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link to='/' className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n+              <Link to='/' className=\"startlink\" activeClass=\"active\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685182267343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,19 +11,19 @@\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"about\">\r\n+              <Link to='/' activeClass=\"active\">\r\n                 O co chodzi?\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"aboutus\">\r\n+              <Link to='/' activeClass=\"active\">\r\n                 O nas\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"fundations\">\r\n+              <Link to='/' activeClass=\"active\">\r\n                 Fundacje i organizacje\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685182287054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n                 Fundacje i organizacje\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"contact\">\r\n+              <Link to='/' activeClass=\"active\">\r\n                 Kontakt\r\n               </Link>\r\n             </li>\r\n           </ul>\r\n"
+                },
+                {
+                    "date": 1685182297029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link to='/' className=\"startlink\" activeClass=\"active\">\r\n+              <Link to='/' className=\"startlink\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685182316250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link to='/' className=\"startlink\">\r\n+              <Link to='/' className=\"startlink \">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685182337105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link to='/' className=\"startlink \">\r\n+              <Link to='/' className=\"startlink noborder\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685182357453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link to='/' className=\"startlink noborder\">\r\n+              <Link to='/' >\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685182372480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link to='/' activeClass=\"active\">\r\n+              <Link to='/'>\r\n                 O co chodzi?\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685182394056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,19 +16,19 @@\n                 O co chodzi?\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link to='/' activeClass=\"active\">\r\n+              <Link to='/'>\r\n                 O nas\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link to='/' activeClass=\"active\">\r\n+              <Link to='/'>\r\n                 Fundacje i organizacje\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link to='/' activeClass=\"active\">\r\n+              <Link to='/'>\r\n                 Kontakt\r\n               </Link>\r\n             </li>\r\n           </ul>\r\n"
+                },
+                {
+                    "date": 1685182535811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n export const LoginForm = () => {\r\n     return (<>\r\n     <header className=\"nav container\">\r\n-        <nav className=\"nav__container__actions\">\r\n+        <nav className=\"nav__container__actions nav-loginForm\">\r\n           <ul>\r\n             <li>\r\n               <Link to='/' >\r\n                 Start\r\n"
                 }
             ],
             "date": 1683990596457,

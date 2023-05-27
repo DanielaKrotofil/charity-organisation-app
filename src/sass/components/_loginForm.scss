@@ -5,10 +5,12 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
+
     a {
         text-decoration: none;
     }
     h2 {
+        margin-top: 1em;
         font-size: 40px;
     }
 
@@ -33,4 +35,10 @@
 
 .registration {
     padding: 10em 0;
+}
+
+.nav-loginForm {
+    a {
+        color: $color-dark-grey
+    }
 }
