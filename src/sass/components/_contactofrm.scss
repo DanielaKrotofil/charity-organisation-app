@@ -63,10 +63,10 @@
             max-width: 80%;
             text-align: center;
             &_success {
-                color: green;
+                color: $color-green-success;
             }
             &_errors {
-                color: red;
+                color: $color-red-errors;
             }
         }
 

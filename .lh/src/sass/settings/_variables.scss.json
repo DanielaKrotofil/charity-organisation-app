@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1683985630582,
@@ -40,6 +40,22 @@
                 {
                     "date": 1684484178880,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,5 @@\n $color-grey: #737373;\r\n $color-dark-grey: #3C3C3C;\r\n \r\n $font-family-basic: 'Open Sans', sans-serif;\r\n-$font-family-second: 'Merriweather', serif;\r\n-\r\n-$font-size-buttons: 36px;\n\\ No newline at end of file\n+$font-family-second: 'Merriweather', serif;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685218598695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,8 @@\n $color-dark-yellow: #5E5322;\r\n $color-yellow: #FAD648;\r\n $color-grey: #737373;\r\n $color-dark-grey: #3C3C3C;\r\n+$color-red-errors: red;\r\n \r\n $font-family-basic: 'Open Sans', sans-serif;\r\n $font-family-second: 'Merriweather', serif;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685218628930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,8 @@\n $color-yellow: #FAD648;\r\n $color-grey: #737373;\r\n $color-dark-grey: #3C3C3C;\r\n $color-red-errors: red;\r\n+$color-green-success: green;\r\n \r\n $font-family-basic: 'Open Sans', sans-serif;\r\n $font-family-second: 'Merriweather', serif;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685218645652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n $color-dark-yellow: #5E5322;\r\n $color-yellow: #FAD648;\r\n $color-grey: #737373;\r\n $color-dark-grey: #3C3C3C;\r\n-$color-red-errors: red;\r\n+$color-red-errors: rgb(220, 0, 0);\r\n $color-green-success: green;\r\n \r\n $font-family-basic: 'Open Sans', sans-serif;\r\n $font-family-second: 'Merriweather', serif;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685218668227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n $color-dark-yellow: #5E5322;\r\n $color-yellow: #FAD648;\r\n $color-grey: #737373;\r\n $color-dark-grey: #3C3C3C;\r\n-$color-red-errors: rgb(220, 0, 0);\r\n+$color-red-errors: rgb(228, 24, 24);\r\n $color-green-success: green;\r\n \r\n $font-family-basic: 'Open Sans', sans-serif;\r\n $font-family-second: 'Merriweather', serif;\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683985630582,

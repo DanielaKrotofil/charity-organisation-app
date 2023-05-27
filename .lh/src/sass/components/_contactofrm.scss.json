@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 301,
+            "activePatchIndex": 303,
             "patches": [
                 {
                     "date": 1684613124728,
@@ -1212,6 +1212,14 @@
                 {
                     "date": 1685202736696,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n         .alert {\r\n             font-family: $font-family-basic;\r\n             font-weight: bolder;\r\n             max-width: 80%;\r\n+            text-align: center;\r\n             &_success {\r\n                 color: green;\r\n             }\r\n             &_errors {\r\n"
+                },
+                {
+                    "date": 1685218605965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n             &_success {\r\n                 color: green;\r\n             }\r\n             &_errors {\r\n-                color: red;\r\n+                color: $color-red-errors;\r\n             }\r\n         }\r\n \r\n         .form__part1 {\r\n"
+                },
+                {
+                    "date": 1685218632113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n             font-weight: bolder;\r\n             max-width: 80%;\r\n             text-align: center;\r\n             &_success {\r\n-                color: green;\r\n+                color: $color-green-success;\r\n             }\r\n             &_errors {\r\n                 color: $color-red-errors;\r\n             }\r\n"
                 }
             ],
             "date": 1684613124728,
