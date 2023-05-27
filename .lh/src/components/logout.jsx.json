@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1685178222356,
@@ -44,6 +44,10 @@
                 {
                     "date": 1685183153710,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,39 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const LogoutForm = () => {\r\n     return (<>\r\n+        <header className=\"nav container\">\r\n+            <nav className=\"nav__container__actions nav-loginForm\">\r\n+                <ul>\r\n+                    <li>\r\n+                    <Link to='/' >\r\n+                        Start\r\n+                    </Link>\r\n+                    </li>\r\n+                    <li>\r\n+                    <Link to='/'>\r\n+                        O co chodzi?\r\n+                    </Link>\r\n+                    </li>\r\n+                    <li>\r\n+                    <Link to='/'>\r\n+                        O nas\r\n+                    </Link>\r\n+                    </li>\r\n+                    <li>\r\n+                    <Link to='/'>\r\n+                        Fundacje i organizacje\r\n+                    </Link>\r\n+                    </li>\r\n+                    <li>\r\n+                    <Link to='/'>\r\n+                        Kontakt\r\n+                    </Link>\r\n+                    </li>\r\n+                </ul>\r\n+            </nav>\r\n+        </header>\r\n     <section className='logout-layout'>\r\n     <h2>Wylogowanie nastąpiło <br /> pomyślnie!</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <Link to=\"/\" className='button'>Strona główna</Link>\r\n"
+                },
+                {
+                    "date": 1685204207826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,39 +2,8 @@\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const LogoutForm = () => {\r\n     return (<>\r\n-        <header className=\"nav container\">\r\n-            <nav className=\"nav__container__actions nav-loginForm\">\r\n-                <ul>\r\n-                    <li>\r\n-                    <Link to='/' >\r\n-                        Start\r\n-                    </Link>\r\n-                    </li>\r\n-                    <li>\r\n-                    <Link to='/'>\r\n-                        O co chodzi?\r\n-                    </Link>\r\n-                    </li>\r\n-                    <li>\r\n-                    <Link to='/'>\r\n-                        O nas\r\n-                    </Link>\r\n-                    </li>\r\n-                    <li>\r\n-                    <Link to='/'>\r\n-                        Fundacje i organizacje\r\n-                    </Link>\r\n-                    </li>\r\n-                    <li>\r\n-                    <Link to='/'>\r\n-                        Kontakt\r\n-                    </Link>\r\n-                    </li>\r\n-                </ul>\r\n-            </nav>\r\n-        </header>\r\n     <section className='logout-layout'>\r\n     <h2>Wylogowanie nastąpiło <br /> pomyślnie!</h2>\r\n     <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n     <Link to=\"/\" className='button'>Strona główna</Link>\r\n"
                 }
             ],
             "date": 1685178222356,

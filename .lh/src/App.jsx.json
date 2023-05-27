@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 107,
+            "activePatchIndex": 108,
             "patches": [
                 {
                     "date": 1683983953405,
@@ -436,6 +436,10 @@
                 {
                     "date": 1685183185630,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n           <nav className='mainNav container'>\n               <ul>\n                   <li><NavLink className='mainNav__login noborder' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n-                  <li><NavLink className='mainNav__login noborder' style={getStyle()} to='wylogowano'>Wyloguj</NavLink></li>\n               </ul>\n           </nav>\n           <Outlet/>\n       </>\n"
+                },
+                {
+                    "date": 1685204018187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n import { LoginForm } from './components/login';\n import { RegisterForm } from './components/register';\n import { LogoutForm } from './components/logout';\n import GiveThingsBack from './components/oddaj-rzeczy';\n+import Navigation from './components/Navigation';\n \n const Layout = () => {\n \n   const getStyle = () => ({ isActive }) => isActive ? { fontWeight: 400 } : undefined\n@@ -25,8 +26,9 @@\n                   <li><NavLink className='mainNav__login noborder' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n               </ul>\n           </nav>\n+          <Navigation/>\n           <Outlet/>\n       </>\n   )\n }\n"
                 }
             ],
             "date": 1683983953405,

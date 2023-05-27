@@ -14,6 +14,7 @@ import { LoginForm } from './components/login';
 import { RegisterForm } from './components/register';
 import { LogoutForm } from './components/logout';
 import GiveThingsBack from './components/oddaj-rzeczy';
+import Navigation from './components/Navigation';
 
 const Layout = () => {
 
@@ -26,6 +27,7 @@ const Layout = () => {
                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>
               </ul>
           </nav>
+          <Navigation/>
           <Outlet/>
       </>
   )
