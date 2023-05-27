@@ -48,20 +48,3 @@ const App = () => {
 }
 
 export default App
-/**
- Home (/)
-Home – Organizations (/)
-Home – Local (/)
-Home – Logged In (/)
-Form - Step 1 (/oddaj-rzeczy)
-Form - Step 2 (/oddaj-rzeczy)
-Form - Step 2 - Opened Select (/oddaj-rzeczy)
-Form - Step 3 (/oddaj-rzeczy)
-Form - Step 3 - Opened Select (/oddaj-rzeczy)
-Form - Step 4 (/oddaj-rzeczy)
-Form - Summary (/oddaj-rzeczy)
-Form - Thank You (/oddaj-rzeczy)
-Login (/logowanie)
-Register (/rejestracja)
-Logoutn (/wylogowano)
- */

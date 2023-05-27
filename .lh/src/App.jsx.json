@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 103,
+            "activePatchIndex": 104,
             "patches": [
                 {
                     "date": 1683983953405,
@@ -420,6 +420,10 @@
                 {
                     "date": 1685181216552,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n           <nav className='mainNav container'>\n               <ul>\n                   <li><NavLink className='mainNav__login' style={getStyle()} to='logowanie'>Zaloguj</NavLink></li>\n                   <li><NavLink className='mainNav__registration' style={getStyle()} to='rejestracja'>Załóż konto</NavLink></li>\n-                  <li><NavLink className='mainNav__login' style={getStyle()} to='oddaj-rzeczy'>Oddaj rzeczy</NavLink></li>\n               </ul>\n           </nav>\n           <Outlet/>\n       </>\n"
+                },
+                {
+                    "date": 1685181804583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,22 +46,5 @@\n       </HashRouter>\n   )\n }\n \n-export default App\n-/**\n- Home (/)\n-Home – Organizations (/)\n-Home – Local (/)\n-Home – Logged In (/)\n-Form - Step 1 (/oddaj-rzeczy)\n-Form - Step 2 (/oddaj-rzeczy)\n-Form - Step 2 - Opened Select (/oddaj-rzeczy)\n-Form - Step 3 (/oddaj-rzeczy)\n-Form - Step 3 - Opened Select (/oddaj-rzeczy)\n-Form - Step 4 (/oddaj-rzeczy)\n-Form - Summary (/oddaj-rzeczy)\n-Form - Thank You (/oddaj-rzeczy)\n-Login (/logowanie)\n-Register (/rejestracja)\n-Logoutn (/wylogowano)\n- */\n\\ No newline at end of file\n+export default App\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683983953405,

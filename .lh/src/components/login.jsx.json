@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 47,
+            "activePatchIndex": 48,
             "patches": [
                 {
                     "date": 1683990596457,
@@ -196,6 +196,10 @@
                 {
                     "date": 1685178491068,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         <label htmlFor=\"email\">Email</label>\r\n         <input type=\"email\" />\r\n \r\n         <label htmlFor=\"password\">Hasło</label>\r\n-        <input type=\"password\" id=\"password\" />\r\n+        <input type=\"password\"/>\r\n     </form>\r\n     </span>\r\n     <div className='LoginForm-buttons'>\r\n         <Link to=\"/rejestracja\" className='button noborder'>Załóż konto</Link>\r\n"
+                },
+                {
+                    "date": 1685181558930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,24 @@\n import { Link } from 'react-router-dom';\r\n import decorationline from '../assets/Decoration.svg';\r\n \r\n export const LoginForm = () => {\r\n-    return (<section className='LoginForm'>\r\n-    <h2>Zaloguj się</h2>\r\n-    <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n-    <span className='LoginForm__main'>\r\n-    <form>\r\n-        <label htmlFor=\"email\">Email</label>\r\n-        <input type=\"email\" />\r\n+    return (<>\r\n+    <section className='LoginForm'>\r\n+        <h2>Zaloguj się</h2>\r\n+        <img className='decoration-line' src={decorationline} alt=\"line\"/>\r\n+        <span className='LoginForm__main'>\r\n+        <form>\r\n+            <label htmlFor=\"email\">Email</label>\r\n+            <input type=\"email\" />\r\n \r\n-        <label htmlFor=\"password\">Hasło</label>\r\n-        <input type=\"password\"/>\r\n-    </form>\r\n-    </span>\r\n-    <div className='LoginForm-buttons'>\r\n-        <Link to=\"/rejestracja\" className='button noborder'>Załóż konto</Link>\r\n-        <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n-    </div>\r\n-    </section>)\r\n+            <label htmlFor=\"password\">Hasło</label>\r\n+            <input type=\"password\"/>\r\n+        </form>\r\n+        </span>\r\n+        <div className='LoginForm-buttons'>\r\n+            <Link to=\"/rejestracja\" className='button noborder'>Załóż konto</Link>\r\n+            <Link to=\"/logowanie\" className='button'>Zaloguj się</Link>\r\n+        </div>\r\n+    </section>\r\n+    </>)\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683990596457,

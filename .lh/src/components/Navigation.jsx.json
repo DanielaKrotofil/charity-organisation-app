@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 86,
+            "activePatchIndex": 93,
             "patches": [
                 {
                     "date": 1684393043140,
@@ -352,6 +352,34 @@
                 {
                     "date": 1685180309143,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n import { Footer } from \"./HomeContactFooter\";\r\n-import { LoginForm } from \"./login\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation\">\r\n@@ -41,9 +40,8 @@\n             </li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n-      <LoginForm/>\r\n       <section id=\"start\" ><HomeHeader/></section>\r\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n"
+                },
+                {
+                    "date": 1685181443204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n       <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n+              <Link path='/' className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685181458242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,14 +18,14 @@\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"about\">\r\n+              <Link path='/' activeClass=\"active\" smooth spy to=\"about\">\r\n                 O co chodzi?\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"aboutus\">\r\n+              <Link path='/' activeClass=\"active\" smooth spy to=\"aboutus\">\r\n                 O nas\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685181505181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,14 +28,14 @@\n                 O nas\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"fundations\">\r\n+              <Link path='/' activeClass=\"active\" smooth spy to=\"fundations\">\r\n                 Fundacje i organizacje\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link activeClass=\"active\" smooth spy to=\"contact\">\r\n+              <Link path='/' activeClass=\"active\" smooth spy to=\"contact\">\r\n                 Kontakt\r\n               </Link>\r\n             </li>\r\n           </ul>\r\n"
+                },
+                {
+                    "date": 1685181511451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,19 +23,19 @@\n                 O co chodzi?\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link path='/' activeClass=\"active\" smooth spy to=\"aboutus\">\r\n+              <Link  activeClass=\"active\" smooth spy to=\"aboutus\">\r\n                 O nas\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link path='/' activeClass=\"active\" smooth spy to=\"fundations\">\r\n+              <Link activeClass=\"active\" smooth spy to=\"fundations\">\r\n                 Fundacje i organizacje\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link path='/' activeClass=\"active\" smooth spy to=\"contact\">\r\n+              <Link activeClass=\"active\" smooth spy to=\"contact\">\r\n                 Kontakt\r\n               </Link>\r\n             </li>\r\n           </ul>\r\n"
+                },
+                {
+                    "date": 1685181520541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,19 +13,19 @@\n       <header className=\"nav container\">\r\n         <nav className=\"nav__container__actions\">\r\n           <ul>\r\n             <li>\r\n-              <Link path='/' className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n+              <Link className=\"startlink\" activeClass=\"active\" smooth spy to=\"start\">\r\n                 Start\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link path='/' activeClass=\"active\" smooth spy to=\"about\">\r\n+              <Link activeClass=\"active\" smooth spy to=\"about\">\r\n                 O co chodzi?\r\n               </Link>\r\n             </li>\r\n             <li>\r\n-              <Link  activeClass=\"active\" smooth spy to=\"aboutus\">\r\n+              <Link activeClass=\"active\" smooth spy to=\"aboutus\">\r\n                 O nas\r\n               </Link>\r\n             </li>\r\n             <li>\r\n"
+                },
+                {
+                    "date": 1685181712469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,16 @@\n import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n import { Footer } from \"./HomeContactFooter\";\r\n+import {\r\n+  HashRouter,\r\n+  Route,\r\n+  Routes,\r\n+  Link,\r\n+  NavLink,\r\n+  Outlet\r\n+} from 'react-router-dom';\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation\">\r\n"
+                },
+                {
+                    "date": 1685181739751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,16 +5,8 @@\n import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n import { Footer } from \"./HomeContactFooter\";\r\n-import {\r\n-  HashRouter,\r\n-  Route,\r\n-  Routes,\r\n-  Link,\r\n-  NavLink,\r\n-  Outlet\r\n-} from 'react-router-dom';\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation\">\r\n"
                 }
             ],
             "date": 1684393043140,
