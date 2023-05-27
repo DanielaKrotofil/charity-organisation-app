@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/sass/components/_logout.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1685179374121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1685179393208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,6 @@\n .logout-layout {\r\n-    display: block;\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685179538258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,6 @@\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     align-items: center;\r\n+    padding: 8em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685179552048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n     flex-direction: column;\r\n     justify-content: center;\r\n     align-items: center;\r\n     padding: 8em;\r\n+    gap: 2em;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685179603430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,8 @@\n     display: flex;\r\n     flex-direction: column;\r\n     justify-content: center;\r\n     align-items: center;\r\n+    text-align: center;\r\n     padding: 8em;\r\n     gap: 2em;\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1685179374121,
+            "name": "Commit-0",
+            "content": ".logout-layout {\r\n    display: block;\r\n}"
+        }
+    ]
+}

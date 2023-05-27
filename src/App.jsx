@@ -12,6 +12,7 @@ import {
 import Home from './components/home';
 import { LoginForm } from './components/login';
 import { RegisterForm } from './components/register';
+import { LogoutForm } from './components/logout';
 
 const Layout = () => {
 
@@ -37,6 +38,7 @@ const App = () => {
                   <Route path='/' element={<Home/>}/>
                   <Route path='logowanie' element={<LoginForm />} />
                   <Route path='rejestracja' element={<RegisterForm />} />
+                  <Route path='wylogowano' element={<LogoutForm/>}/>
               </Route>
           </Routes>
       </HashRouter>

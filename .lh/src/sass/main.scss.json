@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 10,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1683985480814,
@@ -48,6 +48,10 @@
                 {
                     "date": 1685017394588,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,6 @@\n @import './components/homeabout';\r\n @import './components//loginForm';\r\n @import './components/buttons';\r\n @import './components/aboutus';\r\n+@import './components/whowehelp';\r\n @import './components/contactofrm';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685179525294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,6 @@\n @import './components//loginForm';\r\n @import './components/buttons';\r\n @import './components/aboutus';\r\n @import './components/whowehelp';\r\n-@import './components/contactofrm';\n\\ No newline at end of file\n+@import './components/contactofrm';\r\n+@import './components//logout';\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1683985480814,
