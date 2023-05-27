@@ -54,3 +54,19 @@ a {
 .d-none {
     display: none;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    label {
+        font-weight: bolder;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid $color-dark-grey;
+        background-color: transparent;
+    }
+}
