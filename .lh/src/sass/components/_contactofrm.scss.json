@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 130,
+            "activePatchIndex": 290,
             "patches": [
                 {
                     "date": 1684613124728,
@@ -528,6 +528,646 @@
                 {
                     "date": 1685138810809,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,7 @@\n             button {\r\n                 justify-self: right;\r\n             }\r\n         }\r\n-\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685167920591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,8 @@\n @import '../settings/variables';\r\n-.contactForm {\r\n+\r\n+.contactFooter {\r\n     position:relative;\r\n-    text-align: center;\r\n-    display: flex;\r\n-    align-items: center;\r\n-    justify-content:end;\r\n-    padding: 0 15em;\r\n-    background-color: $color-white;\r\n \r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n@@ -18,9 +13,20 @@\n         right: 0px;\r\n         bottom: 0px;\r\n         left: 0px;\r\n     }\r\n+}\r\n+.contactForm {\r\n+    \r\n+    text-align: center;\r\n+    display: flex;\r\n+    align-items: center;\r\n+    justify-content:end;\r\n+    padding: 0 15em;\r\n+    background-color: $color-white;\r\n \r\n+    \r\n+\r\n     &__container {\r\n         h2 {\r\n             position: relative;\r\n         }\r\n"
+                },
+                {
+                    "date": 1685168046373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,52 +21,49 @@\n     display: flex;\r\n     align-items: center;\r\n     justify-content:end;\r\n     padding: 0 15em;\r\n-    background-color: $color-white;\r\n \r\n-    \r\n \r\n-    &__container {\r\n-        h2 {\r\n-            position: relative;\r\n-        }\r\n+    h2 {\r\n+        position: relative;\r\n+    }\r\n \r\n-        .decoration-line {\r\n-            position: relative;\r\n-            margin: 2em 0;\r\n-        }\r\n+    .decoration-line {\r\n+        position: relative;\r\n+        margin: 2em 0;\r\n+    }\r\n \r\n-        form {\r\n-            position: relative;\r\n-            display: flex;\r\n-            flex-direction: column;\r\n-            gap: 1em;\r\n-            gap: 0.5em;\r\n+    form {\r\n+        position: relative;\r\n+        display: flex;\r\n+        flex-direction: column;\r\n+        gap: 1em;\r\n+        gap: 0.5em;\r\n \r\n-            label {\r\n-                font-weight: bolder;\r\n-            }\r\n+        label {\r\n+            font-weight: bolder;\r\n+        }\r\n \r\n-            input {\r\n-                border: none;\r\n-                border-bottom: 1px solid $color-dark-grey;\r\n-                background-color: transparent;\r\n-                &::placeholder {\r\n-                    text-align: left;\r\n-                }\r\n+        input {\r\n+            border: none;\r\n+            border-bottom: 1px solid $color-dark-grey;\r\n+            background-color: transparent;\r\n+            &::placeholder {\r\n+                text-align: left;\r\n             }\r\n+        }\r\n \r\n-            textarea {\r\n-                border: none;\r\n-                border-bottom: 1px solid $color-dark-grey;\r\n-                background-color: transparent;\r\n-                resize: none;\r\n-            }\r\n+        textarea {\r\n+            border: none;\r\n+            border-bottom: 1px solid $color-dark-grey;\r\n+            background-color: transparent;\r\n+            resize: none;\r\n+        }\r\n \r\n-            button {\r\n-                justify-self: right;\r\n-            }\r\n+        button {\r\n+            justify-self: right;\r\n         }\r\n     }\r\n+\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685168058568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,13 +15,11 @@\n         left: 0px;\r\n     }\r\n }\r\n .contactForm {\r\n-    \r\n     text-align: center;\r\n     display: flex;\r\n     align-items: center;\r\n-    justify-content:end;\r\n     padding: 0 15em;\r\n \r\n \r\n     h2 {\r\n"
+                },
+                {
+                    "date": 1685168083336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n \r\n .contactFooter {\r\n     position:relative;\r\n \r\n+    \r\n+\r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n         background-size: cover;\r\n@@ -16,13 +18,12 @@\n     }\r\n }\r\n .contactForm {\r\n     text-align: center;\r\n-    display: flex;\r\n+    \r\n     align-items: center;\r\n     padding: 0 15em;\r\n \r\n-\r\n     h2 {\r\n         position: relative;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1685168090980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n @import '../settings/variables';\r\n \r\n .contactFooter {\r\n     position:relative;\r\n+    display: flex;\r\n \r\n-    \r\n \r\n+\r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n         background-size: cover;\r\n"
+                },
+                {
+                    "date": 1685168101127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n .contactFooter {\r\n     position:relative;\r\n     display: flex;\r\n+    flex-direction: column;\r\n \r\n \r\n \r\n     &::before {\r\n"
+                },
+                {
+                    "date": 1685168123908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n     display: flex;\r\n     flex-direction: column;\r\n \r\n \r\n-\r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n         background-size: cover;\r\n@@ -20,9 +19,8 @@\n     }\r\n }\r\n .contactForm {\r\n     text-align: center;\r\n-    \r\n     align-items: center;\r\n     padding: 0 15em;\r\n \r\n     h2 {\r\n"
+                },
+                {
+                    "date": 1685168137867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n     position:relative;\r\n     display: flex;\r\n     flex-direction: column;\r\n \r\n-\r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n         background-size: cover;\r\n"
+                },
+                {
+                    "date": 1685168195709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n         bottom: 0px;\r\n         left: 0px;\r\n     }\r\n }\r\n+\r\n .contactForm {\r\n     text-align: center;\r\n     align-items: center;\r\n     padding: 0 15em;\r\n@@ -62,6 +63,5 @@\n             justify-self: right;\r\n         }\r\n     }\r\n \r\n-}\r\n-\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685168211802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,5 +63,4 @@\n             justify-self: right;\r\n         }\r\n     }\r\n \r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685168235151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,13 @@\n         right: 0px;\r\n         bottom: 0px;\r\n         left: 0px;\r\n     }\r\n+\r\n+    footer {\r\n+        display: flex;\r\n+        justify-content: space-between;\r\n+    }\r\n }\r\n \r\n .contactForm {\r\n     text-align: center;\r\n@@ -62,5 +67,5 @@\n         button {\r\n             justify-self: right;\r\n         }\r\n     }\r\n-\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685168275478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n-        justify-content: space-between;\r\n+        justify-content: space-around;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685168324950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n .contactFooter {\r\n     position:relative;\r\n     display: flex;\r\n     flex-direction: column;\r\n+    max-width: 50%;\r\n \r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n"
+                },
+                {
+                    "date": 1685168344080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n .contactFooter {\r\n     position:relative;\r\n     display: flex;\r\n     flex-direction: column;\r\n-    max-width: 50%;\r\n \r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n@@ -20,8 +19,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: space-around;\r\n+        max-width: 50%;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685168413276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n     footer {\r\n         display: flex;\r\n         justify-content: space-around;\r\n         max-width: 50%;\r\n+        align-items: end;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685168548784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,12 @@\n         bottom: 0px;\r\n         left: 0px;\r\n     }\r\n \r\n+    &__container {\r\n+        max-width: 49%;\r\n+    }\r\n+\r\n     footer {\r\n         display: flex;\r\n         justify-content: space-around;\r\n         max-width: 50%;\r\n"
+                },
+                {
+                    "date": 1685168652791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \r\n .contactFooter {\r\n     position:relative;\r\n     display: flex;\r\n-    flex-direction: column;\r\n \r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n@@ -18,8 +17,10 @@\n     }\r\n \r\n     &__container {\r\n         max-width: 49%;\r\n+        display: flex;\r\n+        flex-direction: column;\r\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n"
+                },
+                {
+                    "date": 1685169960201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: space-around;\r\n-        max-width: 50%;\r\n+        max-width: 40%;\r\n         align-items: end;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685169966873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: space-around;\r\n-        max-width: 40%;\r\n+        max-width: 50%;\r\n         align-items: end;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685171051276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,13 +15,8 @@\n         bottom: 0px;\r\n         left: 0px;\r\n     }\r\n \r\n-    &__container {\r\n-        max-width: 49%;\r\n-        display: flex;\r\n-        flex-direction: column;\r\n-    }\r\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: space-around;\r\n"
+                },
+                {
+                    "date": 1685171070199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,13 @@\n         bottom: 0px;\r\n         left: 0px;\r\n     }\r\n \r\n+    &__container {\r\n+        max-width: 49%;\r\n+        display: flex;\r\n+        flex-direction: column;\r\n+    }\r\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: space-around;\r\n"
+                },
+                {
+                    "date": 1685171265935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,9 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n-    text-align: center;\r\n-    align-items: center;\r\n+    text-align: left;\r\n     padding: 0 15em;\r\n \r\n     h2 {\r\n         position: relative;\r\n@@ -58,11 +57,9 @@\n         input {\r\n             border: none;\r\n             border-bottom: 1px solid $color-dark-grey;\r\n             background-color: transparent;\r\n-            &::placeholder {\r\n-                text-align: left;\r\n-            }\r\n+            &::placeholder {}\r\n         }\r\n \r\n         textarea {\r\n             border: none;\r\n"
+                },
+                {
+                    "date": 1685171276354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n }\r\n \r\n .contactForm {\r\n     text-align: left;\r\n+    align-items: center;\r\n     padding: 0 15em;\r\n \r\n     h2 {\r\n         position: relative;\r\n"
+                },
+                {
+                    "date": 1685171286679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n-    text-align: left;\r\n+\r\n     align-items: center;\r\n     padding: 0 15em;\r\n \r\n     h2 {\r\n"
+                },
+                {
+                    "date": 1685171305230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,8 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n-\r\n     align-items: center;\r\n     padding: 0 15em;\r\n \r\n     h2 {\r\n@@ -47,8 +46,9 @@\n     form {\r\n         position: relative;\r\n         display: flex;\r\n         flex-direction: column;\r\n+        text-align: left;\r\n         gap: 1em;\r\n         gap: 0.5em;\r\n \r\n         label {\r\n"
+                },
+                {
+                    "date": 1685171351816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,11 @@\n         input {\r\n             border: none;\r\n             border-bottom: 1px solid $color-dark-grey;\r\n             background-color: transparent;\r\n-            &::placeholder {}\r\n+            &::placeholder {\r\n+                font-family: $font-family-basic;\r\n+            }\r\n         }\r\n \r\n         textarea {\r\n             border: none;\r\n"
+                },
+                {
+                    "date": 1685171376081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n         input {\r\n             border: none;\r\n             border-bottom: 1px solid $color-dark-grey;\r\n             background-color: transparent;\r\n+            font-family: $font-family-basic;\r\n             &::placeholder {\r\n                 font-family: $font-family-basic;\r\n             }\r\n         }\r\n"
+                },
+                {
+                    "date": 1685171384783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n         gap: 0.5em;\r\n \r\n         label {\r\n             font-weight: bolder;\r\n+            font-family: $font-family-basic;\r\n         }\r\n \r\n         input {\r\n             border: none;\r\n"
+                },
+                {
+                    "date": 1685171394554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,8 @@\n         gap: 0.5em;\r\n \r\n         label {\r\n             font-weight: bolder;\r\n-            font-family: $font-family-basic;\r\n         }\r\n \r\n         input {\r\n             border: none;\r\n"
+                },
+                {
+                    "date": 1685171509290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,8 @@\n         bottom: 0px;\r\n         left: 0px;\r\n     }\r\n \r\n-    &__container {\r\n-        max-width: 49%;\r\n-        display: flex;\r\n-        flex-direction: column;\r\n-    }\r\n-\r\n     footer {\r\n         display: flex;\r\n         justify-content: space-around;\r\n         max-width: 50%;\r\n"
+                },
+                {
+                    "date": 1685171523776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n-        justify-content: space-around;\r\n         max-width: 50%;\r\n-        align-items: end;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685171888221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n \r\n .contactForm {\r\n     align-items: center;\r\n     padding: 0 15em;\r\n+    max-width: 50%;\r\n \r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685171905492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n .contactFooter {\r\n     position:relative;\r\n     display: flex;\r\n+    max-width: 100vh;\r\n \r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n"
+                },
+                {
+                    "date": 1685171912020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \r\n .contactFooter {\r\n     position:relative;\r\n     display: flex;\r\n-    max-width: 100vh;\r\n \r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n"
+                },
+                {
+                    "date": 1685171923327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,52 +21,4 @@\n         max-width: 50%;\r\n     }\r\n }\r\n \r\n-.contactForm {\r\n-    align-items: center;\r\n-    padding: 0 15em;\r\n-    max-width: 50%;\r\n-\r\n-    h2 {\r\n-        position: relative;\r\n-    }\r\n-\r\n-    .decoration-line {\r\n-        position: relative;\r\n-        margin: 2em 0;\r\n-    }\r\n-\r\n-    form {\r\n-        position: relative;\r\n-        display: flex;\r\n-        flex-direction: column;\r\n-        text-align: left;\r\n-        gap: 1em;\r\n-        gap: 0.5em;\r\n-\r\n-        label {\r\n-            font-weight: bolder;\r\n-        }\r\n-\r\n-        input {\r\n-            border: none;\r\n-            border-bottom: 1px solid $color-dark-grey;\r\n-            background-color: transparent;\r\n-            font-family: $font-family-basic;\r\n-            &::placeholder {\r\n-                font-family: $font-family-basic;\r\n-            }\r\n-        }\r\n-\r\n-        textarea {\r\n-            border: none;\r\n-            border-bottom: 1px solid $color-dark-grey;\r\n-            background-color: transparent;\r\n-            resize: none;\r\n-        }\r\n-\r\n-        button {\r\n-            justify-self: right;\r\n-        }\r\n-    }\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685171932777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,4 +21,52 @@\n         max-width: 50%;\r\n     }\r\n }\r\n \r\n+.contactForm {\r\n+    align-items: center;\r\n+    padding: 0 15em;\r\n+    max-width: 50%;\r\n+\r\n+    h2 {\r\n+        position: relative;\r\n+    }\r\n+\r\n+    .decoration-line {\r\n+        position: relative;\r\n+        margin: 2em 0;\r\n+    }\r\n+\r\n+    form {\r\n+        position: relative;\r\n+        display: flex;\r\n+        flex-direction: column;\r\n+        text-align: left;\r\n+        gap: 1em;\r\n+        gap: 0.5em;\r\n+\r\n+        label {\r\n+            font-weight: bolder;\r\n+        }\r\n+\r\n+        input {\r\n+            border: none;\r\n+            border-bottom: 1px solid $color-dark-grey;\r\n+            background-color: transparent;\r\n+            font-family: $font-family-basic;\r\n+            &::placeholder {\r\n+                font-family: $font-family-basic;\r\n+            }\r\n+        }\r\n+\r\n+        textarea {\r\n+            border: none;\r\n+            border-bottom: 1px solid $color-dark-grey;\r\n+            background-color: transparent;\r\n+            resize: none;\r\n+        }\r\n+\r\n+        button {\r\n+            justify-self: right;\r\n+        }\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685172027000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n @import '../settings/variables';\r\n \r\n .contactFooter {\r\n     position:relative;\r\n+    flex-direction: column;\r\n     display: flex;\r\n \r\n     &::before {\r\n         content: \"\";\r\n"
+                },
+                {
+                    "date": 1685172035517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n .contactFooter {\r\n     position:relative;\r\n     flex-direction: column;\r\n     display: flex;\r\n+    align-items: center;\r\n \r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n"
+                },
+                {
+                    "date": 1685172048750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n .contactFooter {\r\n     position:relative;\r\n     flex-direction: column;\r\n     display: flex;\r\n-    align-items: center;\r\n+    align-items:end;\r\n \r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n"
+                },
+                {
+                    "date": 1685172065389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n+        justify-content: space-around;\r\n         max-width: 50%;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685172082955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n-        justify-content: space-around;\r\n+        gap: 3em;\r\n         max-width: 50%;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685172092587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n-        gap: 3em;\r\n+        gap: 7em;\r\n         max-width: 50%;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685172113306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n     footer {\r\n         display: flex;\r\n         gap: 7em;\r\n         max-width: 50%;\r\n+        padding: 0 5em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172132733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     footer {\r\n         display: flex;\r\n         gap: 7em;\r\n         max-width: 50%;\r\n-        padding: 0 5em;\r\n+        padding: 0 15em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172140190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n \r\n     footer {\r\n         display: flex;\r\n         gap: 7em;\r\n-        max-width: 50%;\r\n         padding: 0 15em;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685172151533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         gap: 7em;\r\n-        padding: 0 15em;\r\n+        padding: 0 85em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172160720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         gap: 7em;\r\n-        padding: 0 85em;\r\n+        padding: 0 19em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172167419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n-        gap: 7em;\r\n+        gap: 17em;\r\n         padding: 0 19em;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685172177965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n-        gap: 17em;\r\n+        gap: 20em;\r\n         padding: 0 19em;\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685172196740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,11 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n+        justify-content: center;\r\n         gap: 20em;\r\n-        padding: 0 19em;\r\n+        padding: 0 20em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172205172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n-        gap: 20em;\r\n-        padding: 0 20em;\r\n+\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172236547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n .contactFooter {\r\n     position:relative;\r\n     flex-direction: column;\r\n     display: flex;\r\n-    align-items:end;\r\n \r\n     &::before {\r\n         content: \"\";\r\n         position: absolute;\r\n@@ -20,9 +19,10 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n-\r\n+        gap: 20em;\r\n+        padding: 0 20em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172252127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n         gap: 20em;\r\n-        padding: 0 20em;\r\n+        padding: 0 2em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172259970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n         gap: 20em;\r\n-        padding: 0 2em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172265352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n-        gap: 20em;\r\n+\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172270813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n-\r\n+        gap: 20em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172285053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n-        gap: 20em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172323955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n-        justify-content: center;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172338583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,12 +22,10 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n-    align-items: center;\r\n-    padding: 0 15em;\r\n-    max-width: 50%;\r\n \r\n+\r\n     h2 {\r\n         position: relative;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1685172355394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,11 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n+    padding: 0 15em;\r\n+    max-width: 50%;\r\n \r\n-\r\n     h2 {\r\n         position: relative;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1685172363274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,10 +23,10 @@\n }\r\n \r\n .contactForm {\r\n     padding: 0 15em;\r\n-    max-width: 50%;\r\n \r\n+\r\n     h2 {\r\n         position: relative;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1685172394572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,27 +22,21 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n-    padding: 0 15em;\r\n-\r\n-\r\n     h2 {\r\n         position: relative;\r\n     }\r\n \r\n     .decoration-line {\r\n         position: relative;\r\n-        margin: 2em 0;\r\n     }\r\n \r\n     form {\r\n         position: relative;\r\n         display: flex;\r\n         flex-direction: column;\r\n         text-align: left;\r\n-        gap: 1em;\r\n-        gap: 0.5em;\r\n \r\n         label {\r\n             font-weight: bolder;\r\n         }\r\n"
+                },
+                {
+                    "date": 1685172401342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n         display: flex;\r\n         flex-direction: column;\r\n         text-align: left;\r\n \r\n+\r\n         label {\r\n             font-weight: bolder;\r\n         }\r\n \r\n"
+                },
+                {
+                    "date": 1685172407119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,10 @@\n         position: relative;\r\n         display: flex;\r\n         flex-direction: column;\r\n         text-align: left;\r\n+        gap: 0.5em;\r\n \r\n-\r\n         label {\r\n             font-weight: bolder;\r\n         }\r\n \r\n"
+                },
+                {
+                    "date": 1685172427708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,6 @@\n             border-bottom: 1px solid $color-dark-grey;\r\n             background-color: transparent;\r\n             resize: none;\r\n         }\r\n-\r\n-        button {\r\n-            justify-self: right;\r\n-        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685172579711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,13 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n+    max-width: 49%;\r\n+\r\n+    &_empty {\r\n+        max-width: 49%;\r\n+    }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1685172590820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n-    max-width: 49%;\r\n+    max-width: 40%;\r\n \r\n     &_empty {\r\n         max-width: 49%;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172601338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n }\r\n \r\n .contactForm {\r\n     max-width: 40%;\r\n+    padding: 2em;\r\n \r\n     &_empty {\r\n         max-width: 49%;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172607460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n }\r\n \r\n .contactForm {\r\n     max-width: 40%;\r\n-    padding: 2em;\r\n+    padding: 4em;\r\n \r\n     &_empty {\r\n         max-width: 49%;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172619203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n }\r\n \r\n .contactForm {\r\n     max-width: 40%;\r\n-    padding: 4em;\r\n+    padding: 6em 4em;\r\n \r\n     &_empty {\r\n         max-width: 49%;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172626129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n }\r\n \r\n .contactForm {\r\n     max-width: 40%;\r\n-    padding: 6em 4em;\r\n+    padding: 8em 4em;\r\n \r\n     &_empty {\r\n         max-width: 49%;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172644408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n     padding: 8em 4em;\r\n \r\n     &_empty {\r\n         max-width: 49%;\r\n+        background-color: $color-dark-yellow;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172655102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     max-width: 40%;\r\n     padding: 8em 4em;\r\n \r\n     &_empty {\r\n-        max-width: 49%;\r\n+        width: 49%;\r\n         background-color: $color-dark-yellow;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n"
+                },
+                {
+                    "date": 1685172758964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,15 +22,19 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n-    max-width: 40%;\r\n-    padding: 8em 4em;\r\n+    \r\n \r\n     &_empty {\r\n         width: 49%;\r\n         background-color: $color-dark-yellow;\r\n     }\r\n+\r\n+    &_form {\r\n+        max-width: 40%;\r\n+        padding: 8em 4em;\r\n+    }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n \r\n"
+                },
+                {
+                    "date": 1685172768023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     }\r\n }\r\n \r\n .contactForm {\r\n-    \r\n+    display: flex;\r\n \r\n     &_empty {\r\n         width: 49%;\r\n         background-color: $color-dark-yellow;\r\n"
+                },
+                {
+                    "date": 1685172782728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,8 @@\n     display: flex;\r\n \r\n     &_empty {\r\n         width: 49%;\r\n-        background-color: $color-dark-yellow;\r\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n"
+                },
+                {
+                    "date": 1685172790937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 4em;\r\n+        padding: 8em 6em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172798081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 6em;\r\n+        padding: 8em 8em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172809554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 8em;\r\n+        padding: 8em 7.5em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172815820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 7.5em;\r\n+        padding: 8em 7.35em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172822585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 7.35em;\r\n+        padding: 8em 7.25em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685172846051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n+        justify-content: space-around;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172882499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n-        justify-content: space-around;\r\n+        justify-content: center;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172894312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n+        \r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172902292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n-        \r\n+        gap: 7em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172916231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: center;\r\n-        gap: 7em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685172965488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n         padding: 8em 7.25em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n+        margin: 2em 0;\r\n     }\r\n \r\n     .decoration-line {\r\n         position: relative;\r\n"
+                },
+                {
+                    "date": 1685172986836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,13 +35,13 @@\n         padding: 8em 7.25em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n-        margin: 2em 0;\r\n     }\r\n \r\n     .decoration-line {\r\n         position: relative;\r\n+        margin: 1.4em 0;\r\n     }\r\n \r\n     form {\r\n         position: relative;\r\n"
+                },
+                {
+                    "date": 1685173277540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,10 +44,8 @@\n     }\r\n \r\n     form {\r\n         position: relative;\r\n-        display: flex;\r\n-        flex-direction: column;\r\n         text-align: left;\r\n         gap: 0.5em;\r\n \r\n         label {\r\n"
+                },
+                {
+                    "date": 1685173290624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,10 @@\n     }\r\n \r\n     form {\r\n         position: relative;\r\n+        display: flex;\r\n+        flex-direction: column;\r\n         text-align: left;\r\n         gap: 0.5em;\r\n \r\n         label {\r\n"
+                },
+                {
+                    "date": 1685173321797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,13 @@\n         flex-direction: column;\r\n         text-align: left;\r\n         gap: 0.5em;\r\n \r\n+        span {\r\n+            display: flex;\r\n+            flex-direction: column;\r\n+        }\r\n+\r\n         label {\r\n             font-weight: bolder;\r\n         }\r\n \r\n"
+                },
+                {
+                    "date": 1685173331744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,8 @@\n         gap: 0.5em;\r\n \r\n         span {\r\n             display: flex;\r\n-            flex-direction: column;\r\n         }\r\n \r\n         label {\r\n             font-weight: bolder;\r\n"
+                },
+                {
+                    "date": 1685173391244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,12 @@\n         gap: 0.5em;\r\n \r\n         span {\r\n             display: flex;\r\n+            span {\r\n+               display: flex;\r\n+               flex-direction: column;\r\n+            }\r\n         }\r\n \r\n         label {\r\n             font-weight: bolder;\r\n"
+                },
+                {
+                    "date": 1685173403047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n         gap: 0.5em;\r\n \r\n         span {\r\n             display: flex;\r\n+            gap: 0.2em;\r\n             span {\r\n                display: flex;\r\n                flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685173429036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 7.25em;\r\n+        padding: 8em 7em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173448123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         gap: 0.5em;\r\n \r\n         span {\r\n             display: flex;\r\n-            gap: 0.2em;\r\n+            gap: 0.3em;\r\n             span {\r\n                display: flex;\r\n                flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685173462114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         gap: 0.5em;\r\n \r\n         span {\r\n             display: flex;\r\n-            gap: 0.3em;\r\n+            gap: 0.5em;\r\n             span {\r\n                display: flex;\r\n                flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685173487250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 7em;\r\n+        padding: 8em 6em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173573614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 6em;\r\n+        padding: 25px 50px 75px 100px;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173595048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 25px 50px 75px 100px;\r\n+        padding: 8em 50px 8em 100px;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173608392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 50px 8em 100px;\r\n+        padding: 8em 5em 8em 100px;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173615155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 5em 8em 100px;\r\n+        padding: 8em 5em 8em 2em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173630329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 5em 8em 2em;\r\n+        padding: 8em 3em 8em 6em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173637852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 3em 8em 6em;\r\n+        padding: 8em 3em 8em 8em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173649394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 3em 8em 8em;\r\n+        padding: 8em 2em 8em 8em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173663615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 40%;\r\n-        padding: 8em 2em 8em 8em;\r\n+        padding: 8em 2em 8em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173670189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n         width: 49%;\r\n     }\r\n \r\n     &_form {\r\n-        max-width: 40%;\r\n+        max-width: 45%;\r\n         padding: 8em 2em 8em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n"
+                },
+                {
+                    "date": 1685173704545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n         position: relative;\r\n         display: flex;\r\n         flex-direction: column;\r\n         text-align: left;\r\n-        gap: 0.5em;\r\n+        gap: 0.7em;\r\n \r\n         span {\r\n             display: flex;\r\n             gap: 0.5em;\r\n"
+                },
+                {
+                    "date": 1685173715371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         gap: 0.7em;\r\n \r\n         span {\r\n             display: flex;\r\n-            gap: 0.5em;\r\n+            gap: 0.7em;\r\n             span {\r\n                display: flex;\r\n                flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685173721137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         gap: 0.7em;\r\n \r\n         span {\r\n             display: flex;\r\n-            gap: 0.7em;\r\n+            gap: 1em;\r\n             span {\r\n                display: flex;\r\n                flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685173731355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         gap: 0.7em;\r\n \r\n         span {\r\n             display: flex;\r\n-            gap: 1em;\r\n+            gap: 0.5em;\r\n             span {\r\n                display: flex;\r\n                flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685173741984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         gap: 0.7em;\r\n \r\n         span {\r\n             display: flex;\r\n-            gap: 0.5em;\r\n+            gap: 0.65em;\r\n             span {\r\n                display: flex;\r\n                flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685173776680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,9 @@\n             background-color: transparent;\r\n             font-family: $font-family-basic;\r\n             &::placeholder {\r\n                 font-family: $font-family-basic;\r\n+                color: $color-grey;\r\n             }\r\n         }\r\n \r\n         textarea {\r\n"
+                },
+                {
+                    "date": 1685173804217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,18 +67,19 @@\n             border: none;\r\n             border-bottom: 1px solid $color-dark-grey;\r\n             background-color: transparent;\r\n             font-family: $font-family-basic;\r\n-            &::placeholder {\r\n-                font-family: $font-family-basic;\r\n-                color: $color-grey;\r\n-            }\r\n+            \r\n         }\r\n \r\n         textarea {\r\n             border: none;\r\n             border-bottom: 1px solid $color-dark-grey;\r\n             background-color: transparent;\r\n             resize: none;\r\n+            &::placeholder {\r\n+                font-family: $font-family-basic;\r\n+                color: $color-grey;\r\n+            }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685173822268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,8 +78,9 @@\n             resize: none;\r\n             &::placeholder {\r\n                 font-family: $font-family-basic;\r\n                 color: $color-grey;\r\n+                font-size: xx-small;\r\n             }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685173832450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n             resize: none;\r\n             &::placeholder {\r\n                 font-family: $font-family-basic;\r\n                 color: $color-grey;\r\n-                font-size: xx-small;\r\n+                font-size:smaller;\r\n             }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685173872656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n             resize: none;\r\n             &::placeholder {\r\n                 font-family: $font-family-basic;\r\n                 color: $color-grey;\r\n-                font-size:smaller;\r\n+                font-size:small;\r\n             }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685173889489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,16 +67,20 @@\n             border: none;\r\n             border-bottom: 1px solid $color-dark-grey;\r\n             background-color: transparent;\r\n             font-family: $font-family-basic;\r\n-            \r\n+            &::placeholder {\r\n+                font-family: $font-family-basic;\r\n+                color: $color-grey;\r\n+            }\r\n         }\r\n \r\n         textarea {\r\n             border: none;\r\n             border-bottom: 1px solid $color-dark-grey;\r\n             background-color: transparent;\r\n             resize: none;\r\n+\r\n             &::placeholder {\r\n                 font-family: $font-family-basic;\r\n                 color: $color-grey;\r\n                 font-size:small;\r\n"
+                },
+                {
+                    "date": 1685173901853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,9 @@\n             font-family: $font-family-basic;\r\n             &::placeholder {\r\n                 font-family: $font-family-basic;\r\n                 color: $color-grey;\r\n+                font-size: small;\r\n             }\r\n         }\r\n \r\n         textarea {\r\n"
+                },
+                {
+                    "date": 1685173928164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 8em 2em 8em 9em;\r\n+        padding: 8.5em 2em 8em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173937150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 8.5em 2em 8em 9em;\r\n+        padding: 8.5em 2em 8.5em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685173951987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 8.5em 2em 8.5em 9em;\r\n+        padding: 9em 2em 9em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685174005643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 9em 2em 9em 9em;\r\n+        padding: 10em 2em 10em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685174018650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n-        justify-content: center;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685174079093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n     }\r\n \r\n     footer {\r\n         display: flex;\r\n+        justify-content: right;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685174098769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: right;\r\n+        padding: 0 10em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685174106429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \r\n     footer {\r\n         display: flex;\r\n         justify-content: right;\r\n-        padding: 0 10em;\r\n+        padding: 0 14em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685174116777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n     footer {\r\n         display: flex;\r\n         justify-content: right;\r\n         padding: 0 14em;\r\n+        gap: 9em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685174123858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     footer {\r\n         display: flex;\r\n         justify-content: right;\r\n         padding: 0 14em;\r\n-        gap: 9em;\r\n+        gap: 15em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685174133662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n     footer {\r\n         display: flex;\r\n         justify-content: right;\r\n         padding: 0 14em;\r\n-        gap: 15em;\r\n+        gap: 25em;\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685174479828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,13 @@\n         display: flex;\r\n         justify-content: right;\r\n         padding: 0 14em;\r\n         gap: 25em;\r\n+\r\n+        .footer-icons {\r\n+            display: flex;\r\n+            gap: 0.5em;\r\n+        }\r\n     }\r\n }\r\n \r\n .contactForm {\r\n"
+                },
+                {
+                    "date": 1685174504583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         gap: 25em;\r\n \r\n         .footer-icons {\r\n             display: flex;\r\n-            gap: 0.5em;\r\n+            gap: 1em;\r\n         }\r\n     }\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685174740862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,9 @@\n \r\n     &_form {\r\n         max-width: 45%;\r\n         padding: 10em 2em 10em 9em;\r\n+        gap: 1em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685174760367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n \r\n     &_form {\r\n         max-width: 45%;\r\n         padding: 10em 2em 10em 9em;\r\n-        gap: 1em;\r\n+        gap: 4em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685174788563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,17 +31,18 @@\n }\r\n \r\n .contactForm {\r\n     display: flex;\r\n+    gap: 4em;\r\n \r\n     &_empty {\r\n         width: 49%;\r\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n         padding: 10em 2em 10em 9em;\r\n-        gap: 4em;\r\n+        \r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685174807158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,18 +31,16 @@\n }\r\n \r\n .contactForm {\r\n     display: flex;\r\n-    gap: 4em;\r\n \r\n     &_empty {\r\n         width: 49%;\r\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n         padding: 10em 2em 10em 9em;\r\n-        \r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n@@ -56,9 +54,9 @@\n         position: relative;\r\n         display: flex;\r\n         flex-direction: column;\r\n         text-align: left;\r\n-        gap: 0.7em;\r\n+        gap: 4em;\r\n \r\n         span {\r\n             display: flex;\r\n             gap: 0.65em;\r\n"
+                },
+                {
+                    "date": 1685174813653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n         position: relative;\r\n         display: flex;\r\n         flex-direction: column;\r\n         text-align: left;\r\n-        gap: 4em;\r\n+        gap: 1em;\r\n \r\n         span {\r\n             display: flex;\r\n             gap: 0.65em;\r\n"
+                },
+                {
+                    "date": 1685174839794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,8 @@\n         position: relative;\r\n         display: flex;\r\n         flex-direction: column;\r\n         text-align: left;\r\n-        gap: 1em;\r\n \r\n         span {\r\n             display: flex;\r\n             gap: 0.65em;\r\n"
+                },
+                {
+                    "date": 1685174856158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,9 @@\n         position: relative;\r\n         display: flex;\r\n         flex-direction: column;\r\n         text-align: left;\r\n+        gap: 0.65em;\r\n \r\n         span {\r\n             display: flex;\r\n             gap: 0.65em;\r\n"
+                },
+                {
+                    "date": 1685174870274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n \r\n         span {\r\n             display: flex;\r\n             gap: 0.65em;\r\n+            margin: 1em 0;\r\n             span {\r\n                display: flex;\r\n                flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685174885689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     }\r\n \r\n     .decoration-line {\r\n         position: relative;\r\n-        margin: 1.4em 0;\r\n+        margin: 1em 0;\r\n     }\r\n \r\n     form {\r\n         position: relative;\r\n"
+                },
+                {
+                    "date": 1685174918788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     }\r\n \r\n     .decoration-line {\r\n         position: relative;\r\n-        margin: 1em 0;\r\n+        margin: 1.4em 0;\r\n     }\r\n \r\n     form {\r\n         position: relative;\r\n@@ -59,9 +59,9 @@\n \r\n         span {\r\n             display: flex;\r\n             gap: 0.65em;\r\n-            margin: 1em 0;\r\n+            margin-bottom: 1em;\r\n             span {\r\n                display: flex;\r\n                flex-direction: column;\r\n             }\r\n"
+                },
+                {
+                    "date": 1685174951689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 10em 2em 10em 9em;\r\n+        padding: 10em 2em 9.8em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685174957544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 10em 2em 9.8em 9em;\r\n+        padding: 10em 2em 9.7em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685174968327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 10em 2em 9.7em 9em;\r\n+        padding: 10em 2em 9.5em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685174995729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 10em 2em 9.5em 9em;\r\n+        padding: 10em 2em 9.3em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685175076852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         flex-direction: column;\r\n         text-align: left;\r\n         gap: 0.65em;\r\n \r\n-        span {\r\n+        .form_nameemail {\r\n             display: flex;\r\n             gap: 0.65em;\r\n             margin-bottom: 1em;\r\n             span {\r\n"
+                },
+                {
+                    "date": 1685175087007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         flex-direction: column;\r\n         text-align: left;\r\n         gap: 0.65em;\r\n \r\n-        .form_nameemail {\r\n+        .form_name_email {\r\n             display: flex;\r\n             gap: 0.65em;\r\n             margin-bottom: 1em;\r\n             span {\r\n"
+                },
+                {
+                    "date": 1685175117068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         flex-direction: column;\r\n         text-align: left;\r\n         gap: 0.65em;\r\n \r\n-        .form_name_email {\r\n+        .form_part1 {\r\n             display: flex;\r\n             gap: 0.65em;\r\n             margin-bottom: 1em;\r\n             span {\r\n"
+                },
+                {
+                    "date": 1685175141812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n         flex-direction: column;\r\n         text-align: left;\r\n         gap: 0.65em;\r\n \r\n-        .form_part1 {\r\n+        .form__part1 {\r\n             display: flex;\r\n             gap: 0.65em;\r\n             margin-bottom: 1em;\r\n             span {\r\n"
+                },
+                {
+                    "date": 1685175455318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,6 +94,11 @@\n                 color: $color-grey;\r\n                 font-size:small;\r\n             }\r\n         }\r\n+\r\n+        .btn-form {\r\n+            display: flex;\r\n+            justify-content: right;\r\n+        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685175567308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,7 +98,8 @@\n \r\n         .btn-form {\r\n             display: flex;\r\n             justify-content: right;\r\n+            background-color: tomato;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685175585964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,10 @@\n \r\n         .btn-form {\r\n             display: flex;\r\n             justify-content: right;\r\n-            background-color: tomato;\r\n+            button {\r\n+                background-color: transparent;\r\n+            }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685175598780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,10 +98,8 @@\n \r\n         .btn-form {\r\n             display: flex;\r\n             justify-content: right;\r\n-            button {\r\n-                background-color: transparent;\r\n-            }\r\n+\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685175606630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,10 @@\n \r\n         .btn-form {\r\n             display: flex;\r\n             justify-content: right;\r\n-\r\n+            button {\r\n+                background-color: transparent;\r\n+            }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1685175629878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,9 @@\n \r\n         .btn-form {\r\n             display: flex;\r\n             justify-content: right;\r\n+            padding: 1em 0;\r\n             button {\r\n                 background-color: transparent;\r\n             }\r\n         }\r\n"
+                },
+                {
+                    "date": 1685175650076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 10em 2em 9.3em 9em;\r\n+        padding: 10em 2em 9em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685175657776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 10em 2em 9em 9em;\r\n+        padding: 10em 2em 8em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685175666328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 10em 2em 8em 9em;\r\n+        padding: 9.5em 2em 8em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
+                },
+                {
+                    "date": 1685175674596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\r\n \r\n     &_form {\r\n         max-width: 45%;\r\n-        padding: 9.5em 2em 8em 9em;\r\n+        padding: 9.5em 2em 7.5em 9em;\r\n     }\r\n     h2 {\r\n         position: relative;\r\n     }\r\n"
                 }
             ],
             "date": 1684613124728,

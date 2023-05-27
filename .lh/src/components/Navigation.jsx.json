@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 68,
+            "activePatchIndex": 83,
             "patches": [
                 {
                     "date": 1684393043140,
@@ -280,6 +280,66 @@
                 {
                     "date": 1685018025012,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n       <section id=\"start\" ><HomeHeader/></section>\r\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n-      <section id=\"fundations\"><WhoWeHelp/></section>\r\n+      <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactForm\" id=\"contact\"><Contact/></section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685167795179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import HomeAboutUs from \"./HomeAboutUs\";\r\n import HomeSimpleSteps from \"./HomeSimpleSteps\";\r\n import Contact from \"./HomeContactFooter\";\r\n import WhoWeHelp from \"./HomeWhoWeHelp\";\r\n+import { Footer } from \"./HomeContactFooter\";\r\n \r\n export default function Navigation() {\r\n   return (\r\n     <div className=\"navigation\">\r\n@@ -44,9 +45,12 @@\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n-      <section className=\"contactForm\" id=\"contact\"><Contact/></section>\r\n+      <section className=\"contactForm\" id=\"contact\">\r\n+        <Contact/>\r\n+        <Footer/>\r\n+      </section>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685167932133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n-      <section className=\"contactForm\" id=\"contact\">\r\n+      <section className=\" contactFooter \" id=\"contact\">\r\n         <Contact/>\r\n         <Footer/>\r\n       </section>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1685167941915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n-      <section className=\" contactFooter \" id=\"contact\">\r\n+      <section className=\" contactFooter contactForm\" id=\"contact\">\r\n         <Contact/>\r\n         <Footer/>\r\n       </section>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1685167967953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n-      <section className=\" contactFooter contactForm\" id=\"contact\">\r\n+      <section className=\" contactFooter \" id=\"contact\">\r\n         <Contact/>\r\n         <Footer/>\r\n       </section>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1685168483689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,10 +46,13 @@\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\" contactFooter \" id=\"contact\">\r\n-        <Contact/>\r\n-        <Footer/>\r\n+        <div></div>\r\n+        <div>\r\n+          <Contact/>\r\n+          <Footer/>\r\n+        </div>\r\n       </section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685168526102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,11 +45,11 @@\n       <section><HomeThreeColumns/></section>\r\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n-      <section className=\" contactFooter \" id=\"contact\">\r\n-        <div></div>\r\n-        <div>\r\n+      <section className=\"contactFooter\" id=\"contact\">\r\n+        <div className=\"contactFooter__container\"></div>\r\n+        <div className=\"contactFooter__container\">\r\n           <Contact/>\r\n           <Footer/>\r\n         </div>\r\n       </section>\r\n"
+                },
+                {
+                    "date": 1685168598552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,13 +46,13 @@\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactFooter\" id=\"contact\">\r\n-        <div className=\"contactFooter__container\"></div>\r\n         <div className=\"contactFooter__container\">\r\n           <Contact/>\r\n           <Footer/>\r\n         </div>\r\n+        <div className=\"contactFooter__container\"></div>\r\n       </section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685168604660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,11 @@\n         <div className=\"contactFooter__container\">\r\n           <Contact/>\r\n           <Footer/>\r\n         </div>\r\n-        <div className=\"contactFooter__container\"></div>\r\n+        <div className=\"contactFooter__container\">\r\n+          k\r\n+        </div>\r\n       </section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685168631950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,15 +46,13 @@\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactFooter\" id=\"contact\">\r\n+        <div className=\"contactFooter__container\"></div>\r\n         <div className=\"contactFooter__container\">\r\n           <Contact/>\r\n           <Footer/>\r\n         </div>\r\n-        <div className=\"contactFooter__container\">\r\n-          k\r\n-        </div>\r\n       </section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685171092821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,13 +46,10 @@\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactFooter\" id=\"contact\">\r\n-        <div className=\"contactFooter__container\"></div>\r\n-        <div className=\"contactFooter__container\">\r\n-          <Contact/>\r\n+        <Contact/>\r\n           <Footer/>\r\n-        </div>\r\n       </section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685171197699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactFooter\" id=\"contact\">\r\n         <Contact/>\r\n-          <Footer/>\r\n+        <Footer/>\r\n       </section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685171547202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,10 +46,11 @@\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactFooter\" id=\"contact\">\r\n+        <Footer/>\r\n         <Contact/>\r\n-        <Footer/>\r\n+        \r\n       </section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685171822430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,8 @@\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactFooter\" id=\"contact\">\r\n         <Footer/>\r\n         <Contact/>\r\n-        \r\n       </section>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1685171954967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,11 +46,11 @@\n       <section id=\"about\"><HomeSimpleSteps/></section>\r\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactFooter\" id=\"contact\">\r\n-        <Footer/>\r\n         <Contact/>\r\n       </section>\r\n+      <Footer/>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1685172008557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,19 +47,9 @@\n       <section id=\"aboutus\"><HomeAboutUs/></section>\r\n       <section id=\"fundations\" className=\"whowehelp\"><WhoWeHelp/></section>\r\n       <section className=\"contactFooter\" id=\"contact\">\r\n         <Contact/>\r\n+        <Footer/>\r\n       </section>\r\n-      <Footer/>\r\n     </div>\r\n   );\r\n-}\r\n-\r\n-/*\r\n-HomeHeader\r\n-HomeThreeColumns\r\n-HomeSimpleSteps\r\n-HomeAboutUs\r\n-HomeAbout\r\n-HomeContactForm\r\n-HomeFooter\r\n\\ No newline at end of file\n-*/\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1684393043140,

@@ -5,6 +5,7 @@ import HomeAboutUs from "./HomeAboutUs";
 import HomeSimpleSteps from "./HomeSimpleSteps";
 import Contact from "./HomeContactFooter";
 import WhoWeHelp from "./HomeWhoWeHelp";
+import { Footer } from "./HomeContactFooter";
 
 export default function Navigation() {
   return (
@@ -45,17 +46,10 @@ export default function Navigation() {
       <section id="about"><HomeSimpleSteps/></section>
       <section id="aboutus"><HomeAboutUs/></section>
       <section id="fundations" className="whowehelp"><WhoWeHelp/></section>
-      <section className="contactForm" id="contact"><Contact/></section>
+      <section className="contactFooter" id="contact">
+        <Contact/>
+        <Footer/>
+      </section>
     </div>
   );
 }
-
-/*
-HomeHeader
-HomeThreeColumns
-HomeSimpleSteps
-HomeAboutUs
-HomeAbout
-HomeContactForm
-HomeFooter
-*/
